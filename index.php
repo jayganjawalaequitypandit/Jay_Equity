@@ -51,7 +51,7 @@ require __DIR__ . './includes/header.php';
         /* Glassmorphism — Bootstrap has no backdrop-filter utility */
         .glass-bg {
             /* From https://css.glass */
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.25);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(14.1px);
             -webkit-backdrop-filter: blur(14.1px);
@@ -230,7 +230,7 @@ require __DIR__ . './includes/header.php';
                                         alt="background">
                                 </div>
                             </div>
-                            <div class="py-5 px-3 text-center">
+                            <div class="py-3 py-md-0 px-3 text-center">
                                 <h2 class="display-5 titleFont fw-semibold d-inline-block">Start Your wealth creation journey</h2>
                                 <p class="fs-6 pFont mb-0">Put your money to work with our research, that suits your style.</p>
                             </div>
