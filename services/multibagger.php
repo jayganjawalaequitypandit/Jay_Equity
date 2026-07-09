@@ -179,8 +179,8 @@ require __DIR__ . '/../includes/header.php';
                         <p class="mb-0 small">Research Algorithms</p>
                     </div>
                     <!-- Button -->
-                    <div class="col-md-5 text-md-end mt-md-4 mt-3">
-                        <a href="#" class="btn btn-light px-3 py-2 rounded-0">
+                    <div class="col-md-5 text-md-end my-4">
+                        <a href="#" class="btn btn-light px-4 py-2 rounded-0">
                             Explore Benefits →
                         </a>
                     </div>
