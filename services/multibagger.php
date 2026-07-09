@@ -150,7 +150,7 @@ require __DIR__ . '/../includes/header.php';
             <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
                 <div class="row">
                     <div class="col-md-10">
-                        <div class="d-md-none mb-3"><a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none text-white" href="">Poftfolio</a></div>
+                        <div class="d-md-none mb-3"><a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none text-white" href="">Multibagger</a></div>
                         <h1 class="display-5 fw-semibold mb-3 titleFont">
                             Invest Early. Own Tomorrow’s Success.
                         </h1>
