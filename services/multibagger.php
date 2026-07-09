@@ -179,7 +179,7 @@ require __DIR__ . '/../includes/header.php';
                         <p class="mb-0 small">Research Algorithms</p>
                     </div>
                     <!-- Button -->
-                    <div class="col-md-5 text-md-end my-4">
+                    <div class="col-md-5 text-start text-md-end my-4">
                         <a href="#" class="btn btn-light px-4 py-2 rounded-0">
                             Explore Benefits →
                         </a>
@@ -267,6 +267,11 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
             </div>
+            <div class="text-center py-5 pb-0">
+                <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+                    Get Started →
+                </button>
+            </div>
         </div>
     </div>
 </section>
@@ -276,34 +281,35 @@ require __DIR__ . '/../includes/header.php';
     <div class="container">
 
         <div class="border border-light border-bottom">
-            <div class="row  align-items-center">
+            <div class="row align-items-center">
 
                 <!-- Left Content -->
-                <div class="col-md-6">
-                    <div class=" p-4">
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="p-4">
 
                         <h2 class="display-6 titleFont fw-semibold mb-4">
                             Who Should Avail?
                         </h2>
 
                         <p class="mb-4">
-                            Whether You're Starting Your Journey Or Advancing Your <br />Career,
-                            Explore The Right Opportunities To Grow And <br /> Succeed.
+                            Whether You're Starting Your Journey Or Advancing Your <br>
+                            Career, Explore The Right Opportunities To Grow And <br>
+                            Succeed.
                         </p>
 
                         <ul class="list-unstyled mb-4">
 
                             <li class="border-start border-2 border-dark ps-3 mb-3">
                                 Active Investor, Business Professionals,
-                                Salaried / <br /> Retired Person
+                                Salaried / <br> Retired Person
                             </li>
 
                             <li class="border-start border-2 border-dark ps-3 mb-3">
-                                Who Can Invest Min. ₹25,000 Or More <br /> Per Stock
+                                Who Can Invest Min. ₹25,000 Or More <br> Per Stock
                             </li>
 
                             <li class="border-start border-2 border-dark ps-3 mb-3">
-                                Who Can Look For Mid To Long Term <br /> Investment
+                                Who Can Look For Mid To Long Term <br> Investment
                             </li>
 
                             <li class="border-start border-2 border-dark ps-3">
@@ -320,13 +326,16 @@ require __DIR__ . '/../includes/header.php';
                 </div>
 
                 <!-- Right Image -->
-                <div class="col-md-6">
-                    <img src="<?= $base ?>imgs/services/Avail.jpg" class="img-fluid my-5 py-3" alt="">
+                <div class="col-md-6 order-1 order-md-2">
+                    <img src="<?= $base ?>imgs/services/Avail.jpg"
+                        class="img-fluid w-100 mt-5 mb-1 mb-md-5 pt-3 pb-0 pb-md-3"
+                        alt="Who Should Avail">
                 </div>
 
             </div>
+
             <div class="text-end">
-                <img src="<?= $base ?>imgs/Polygon5.svg">
+                <img src="<?= $base ?>imgs/Polygon5.svg" alt="">
             </div>
         </div>
 
@@ -389,8 +398,8 @@ require __DIR__ . '/../includes/header.php';
             }
         </style>
         <div class="border border-start border-end border-light">
-            <div class="row g-0">
-                <div class="col-md-4">
+            <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
+                <div class="col-md-4 col-11 flex-shrink-0">
                     <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
@@ -429,7 +438,7 @@ require __DIR__ . '/../includes/header.php';
 
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-11 flex-shrink-0">
                     <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
@@ -468,7 +477,7 @@ require __DIR__ . '/../includes/header.php';
 
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-11 flex-shrink-0">
                     <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
@@ -507,15 +516,16 @@ require __DIR__ . '/../includes/header.php';
 
                     </div>
                 </div>
-                <div class="text-center py-5">
-                    <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
-                        Get Started →
-                    </button>
-                </div>
+            </div>
+            <div class="text-center py-5">
+                <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+                    Get Started →
+                </button>
             </div>
         </div>
     </div>
 </section>
+
 
 
 <!-- Get Started -->
