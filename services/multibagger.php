@@ -267,8 +267,8 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
             </div>
-            <div class="text-center py-5 pb-0">
-                <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+            <div class="py-5 pb-0 ">
+                <button class="btn text-white rounded-0 px-4 py-2 text-start  ms-3 pFont" style="background-color: #02181A;">
                     Get Started →
                 </button>
             </div>
@@ -517,8 +517,8 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
             </div>
-            <div class="text-center py-5">
-                <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+            <div class="py-5">
+                <button class="btn text-white rounded-0 px-4 py-2 text-start  ms-3 pFont" style="background-color: #02181A;">
                     Get Started →
                 </button>
             </div>
