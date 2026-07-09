@@ -73,6 +73,7 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </div>
 </section>
+
 <!-- Hero -->
 <section class="position-relative">
     <style>
@@ -129,10 +130,9 @@ require __DIR__ . '/../includes/header.php';
     </style>
 
     <!-- Content Box -->
-    <div class="container position-relative portfolio-card" style="margin-top:-120px; z-index:10;">
+    <div class="container position-relative portfolio-card">
         <div class="border-start border-end border-light">
             <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
-
                 <div class="row">
                     <div class="col-md-10">
                         <div class="d-md-none mb-3"><a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none text-white" href="">Poftfolio</a></div>
@@ -178,61 +178,81 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- What You'll Get -->
-<section class="">
+<section>
     <div class="container">
+        <div class="py-5 border-start border-end border-light">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="pb-md-4 px-3 text-start text-md-center">
+                        <h2 class="display-5 titleFont fw-semibold d-inline-block">What You'll Get</h2>
+                        <p class="fs-6 pFont">Everything you need to execute trades with precision and confidence.</p>
+                    </div>
+                </div>
 
-        <!-- Heading -->
-        <div class="border border-light text-center py-5">
-            <h2 class="display-6 titleFont fw-semibold mb-3">What You'll Get</h2>
-            <p class="fs-5 mb-0">
-                Everything you need to execute trades with precision and confidence.
-            </p>
-        </div>
+                <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
 
-        <!-- Features -->
-        <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto"
-            style="scrollbar-width: none; -ms-overflow-style: none;">
-
-            <style>
-                .row::-webkit-scrollbar {
-                    display: none;
-                }
-            </style>
-
-            <?php
-            $features = [
-                ['../imgs/Vector4.svg', '1 High Growth Stock <br/> Per Month', 'Discover carefully selected high growth stock every month.'],
-                ['../imgs/Vector5.svg', 'A Detailed Research <br/> Report', 'Expert research highlighting key trends and opportunities.'],
-                ['../imgs/Vector6.svg', 'Timely Entry & Exit <br/> Guidance', 'Maximize returns with timely entry and exit strategies.'],
-                ['../imgs/Vector5.svg', 'Quarterly Review & <br/> Updates', 'Regular quarterly updates to refine strategy and improve performance.'],
-                ['../imgs/Vector4.svg', 'Real Time <br/> Dashboard', 'Monitor your portfolio performance with live market data.'],
-                ['../imgs/Vector6.svg', 'Priority <br/> Support', 'Dedicated support team ensuring faster responses and solutions.'],
-            ];
-
-            foreach ($features as $f): ?>
-                <div class="col-10 col-md-6 col-lg-4 flex-shrink-0 flex-md-shrink-1">
-
-                    <div class="border border-light h-100 p-3">
-
-                        <img src="<?= $f[0] ?>" alt="feature icon"
-                            class="mb-4"
-                            style="width:45px; height:45px; object-fit:contain;">
-
-                        <h3 class="titleFont fw-semibold mb-3" style="font-size:1.5rem;">
-                            <?= $f[1] ?>
-                        </h3>
-
-                        <p class="mb-0 fs-6 fw-medium">
-                            <?= $f[2] ?>
-                        </p>
-
+                    <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="h-100 p-3 border border-light">
+                            <img src="../imgs/Vector4.svg" class="mb-3" alt="">
+                            <h3 class="fs-3 titleFont fw-semibold">1 High Growth Stock Per Month</h3>
+                            <p class="mb-0 pFont">
+                                Discover carefully selected high growth stock every month.
+                            </p>
+                        </div>
                     </div>
 
+                    <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="h-100 p-3 border border-light">
+                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <h3 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h3>
+                            <p class="mb-0 pFont">
+                                Expert research highlighting key trends and opportunities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="h-100 p-3 border border-light">
+                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <h3 class="fs-3 titleFont fw-semibold">Timely Entry & Exit Guidance</h3>
+                            <p class="mb-0 pFont">
+                                Maximize returns with timely entry and exit strategies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="h-100 p-3 border border-light">
+                            <img src="../imgs/Vector4.svg" class="mb-3" alt="">
+                            <h3 class="fs-3 titleFont fw-semibold">Quarterly Review & Updates</h3>
+                            <p class="mb-0 pFont">
+                                Regular quarterly updates to refine strategy and improve performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="h-100 p-3 border border-light">
+                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <h3 class="fs-3 titleFont fw-semibold">Real Time <br /> Dashboard</h3>
+                            <p class="mb-0 pFont">
+                                Monitor your portfolio performance with live market data.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="h-100 p-3 border border-light">
+                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <h3 class="fs-3 titleFont fw-semibold">Priority <br /> Support</h3>
+                            <p class="mb-0 pFont">
+                                Dedicated support team ensuring faster responses and solutions
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            <?php endforeach; ?>
-
+            </div>
         </div>
-
     </div>
 </section>
 
