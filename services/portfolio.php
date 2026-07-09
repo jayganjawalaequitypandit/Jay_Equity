@@ -182,7 +182,7 @@ require __DIR__ . '/../includes/header.php';
                             <p class="mb-0 small">Research Algorithms</p>
                         </div>
                         <!-- Button -->
-                        <div class="col-md-5 text-md-end my-4">
+                        <div class="col-md-5 text-md-end my-4 text-start">
                             <a href="#" class="btn btn-light px-4 py-2 rounded-0">
                                 Explore Benefits →
                             </a>
@@ -257,6 +257,11 @@ require __DIR__ . '/../includes/header.php';
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+                            Get Started →
+                        </button>
                     </div>
                 </div>
             </div>
@@ -545,8 +550,8 @@ require __DIR__ . '/../includes/header.php';
                 }
             </style>
             <div class="border border-start border-end border-light">
-                <div class="row g-0">
-                    <div class="col-md-4">
+                <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
+                    <div class="col-md-4 col-11 flex-shrink-0">
                         <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                             <div class="image-wrapper">
@@ -585,7 +590,7 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-11 flex-shrink-0">
                         <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                             <div class="image-wrapper">
@@ -624,7 +629,7 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-11 flex-shrink-0">
                         <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                             <div class="image-wrapper">
@@ -663,11 +668,11 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
-                    <div class="text-center py-5">
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
-                            Get Started →
-                        </button>
-                    </div>
+                </div>
+                <div class="text-center py-5">
+                    <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+                        Get Started →
+                    </button>
                 </div>
             </div>
         </div>
