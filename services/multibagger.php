@@ -95,11 +95,39 @@ require __DIR__ . '/../includes/header.php';
                 margin-top: -40px;
             }
         }
+
+        .portfolio-banner {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        /* Tablet */
+        @media (max-width:991.98px) {
+            .portfolio-banner {
+                height: 350px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width:767.98px) {
+            .portfolio-banner {
+                height: 260px;
+                object-fit: cover;
+                object-position: right;
+            }
+
+            .portfolio-card {
+                margin-top: -60px;
+            }
+        }
     </style>
 
     <!-- Hero Image -->
     <div class="container-fluid px-0 position-relative">
-        <img src="<?= $base ?>imgs/s1.jpg" class="banner-img img-fluid w-100" alt="">
+        <img src="<?= $base ?>imgs/s1.jpg" class="portfolio-banner" alt="">
 
 
         <!-- Border aligned with container -->
@@ -115,19 +143,6 @@ require __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </div>
-
-    <style>
-        .banner-img {
-            height: 420px;
-            object-fit: cover;
-        }
-
-        @media (max-width: 768px) {
-            .banner-img {
-                height: 220px;
-            }
-        }
-    </style>
 
     <!-- Content Box -->
     <div class="container position-relative portfolio-card">
