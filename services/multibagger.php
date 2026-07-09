@@ -771,65 +771,108 @@ require __DIR__ . '/../includes/header.php';
 <!-- Multibagger form -->
 <section class="pb-2">
     <div class="container">
-        <div class="border border-top-0 border-bottom-0 ">
+        <div class="border-start border-end border-light">
 
-            <div class="row g-0 align-items-center justify-content-between">
+            <div class="row g-2">
 
-                <!-- LEFT SIDE -->
-                <div class="col-12 col-md-6 p-4">
-
+                <div class="col-md-6 p-4">
+                    <h3 class="display-6 titleFont fw-semibold">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h3>
+                    <p class="pFont fs-6 fw-medium mt-3 mb-3">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
                     <?php
                     $awards = [
-                        ['image' => 'Award1.png', 'title' => 'CEO Magazine'],
-                        ['image' => 'Award2.png', 'title' => 'Economic Times'],
-                        ['image' => 'Award3.png', 'title' => 'News24'],
-                        ['image' => 'Award4.png', 'title' => 'The Economic World'],
-                        ['image' => 'Award5.png', 'title' => 'Finext'],
-                        ['image' => 'Award6.png', 'title' => 'India Today'],
-                        ['image' => 'Award7.png', 'title' => 'Forbes India'],
-                        ['image' => 'Award8.png', 'title' => 'Times Business'],
-                        ['image' => 'Award9.png', 'title' => 'Global Business'],
+                        [
+                            'image' => 'Award1.png',
+                            'title' => 'CEO Magazine',
+                            'award' => 'Best Leadership Award',
+                            'year'  => '2025'
+                        ],
+                        [
+                            'image' => 'Award2.png',
+                            'title' => 'Economic Times',
+                            'award' => 'Business Excellence Award',
+                            'year'  => '2025'
+                        ],
+                        [
+                            'image' => 'Award3.png',
+                            'title' => 'News24',
+                            'award' => 'Industry Recognition',
+                            'year'  => '2024'
+                        ],
+                        [
+                            'image' => 'Award4.png',
+                            'title' => 'The Economic World',
+                            'award' => 'Emerging Brand Award',
+                            'year'  => '2024'
+                        ],
+                        [
+                            'image' => 'Award5.png',
+                            'title' => 'Finext',
+                            'award' => 'Excelence in Finnance',
+                            'year'  => '2024'
+                        ],
+                        [
+                            'image' => 'Award6.png',
+                            'title' => 'India Today',
+                            'award' => 'Customer Choice Award',
+                            'year'  => '2023'
+                        ],
+                        [
+                            'image' => 'Award7.png',
+                            'title' => 'Forbes India',
+                            'award' => 'Innovation Excellence',
+                            'year'  => '2023'
+                        ],
+                        [
+                            'image' => 'Award8.png',
+                            'title' => 'Times Business',
+                            'award' => 'Trusted Brand Award',
+                            'year'  => '2023'
+                        ],
+                        [
+                            'image' => 'Award9.png',
+                            'title' => 'Global Business',
+                            'award' => 'Business Leader Award',
+                            'year'  => '2022'
+                        ],
                     ];
                     ?>
-
-                    <h2 class="display-6 titleFont fw-semibold">
-                        Put your money to work with our research, that suits your style.
-                    </h2>
-
-                    <p class="mb-3 fw-medium">
-                        Writerap loved from thousands of customers worldwide and is trusted by big companies.
-                    </p>
-
 
                     <marquee
                         behavior="scroll"
                         direction="left"
-                        scrollamount="10"
+                        scrollamount="12"
                         onmouseover="this.stop();"
-                        onmouseout="this.start();"
-                        class="w-100">
+                        onmouseout="this.start();">
 
-                        <?php foreach ($awards as $award): ?>
+                        <div class="d-inline-flex gap-3">
 
-                            <img
-                                src="../imgs/awards/<?= $award['image']; ?>"
-                                alt="<?= htmlspecialchars($award['title']); ?>"
-                                class="img-fluid"
-                                style="
-                                    height:clamp(90px, 12vw, 150px);
-                                    margin-right:clamp(15px, 3vw, 30px);
-                                ">
+                            <?php foreach ($awards as $award): ?>
+                                <img
+                                    src="../imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                    class="img-fluid"
+                                    alt="<?= htmlspecialchars($award['title']) ?>">
 
-                        <?php endforeach; ?>
+                                <div class="card-body text-center d-none">
+                                    <span class="small text-body-secondary">
+                                        (<?= htmlspecialchars($award['year']) ?>)
+                                    </span>
 
+                                    <h3 class="h6 fw-bold mt-2 titleFont">
+                                        <?= htmlspecialchars($award['title']) ?>
+                                    </h3>
+
+                                    <p class="small text-secondary mb-0">
+                                        <?= htmlspecialchars($award['award']) ?>
+                                    </p>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
                     </marquee>
-
                 </div>
-
 
                 <!-- RIGHT SIDE -->
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mb-1">
-                    <div class="position-relative w-100 p-5 "
+                    <div class="position-relative p-5 overflow-hidden"
                         style="max-width:430px;">
                         <!-- Background Image -->
                         <img
