@@ -87,7 +87,7 @@ require __DIR__ . './includes/header.php';
                 playsinline
                 class="position-absolute top-0 start-0 w-100 h-100"
                 style="object-fit: cover; z-index:0;">
-                <source src="./imgs/skv2.mp4" type="video/mp4">
+                <source src="./imgs/skv2.mp4" type="video/mp4" decoding="async">
             </video>
 
             <!-- Overlay -->
