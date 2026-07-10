@@ -110,8 +110,11 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="px-md-4 px-3 py-5 text-white text-md-center text-start">
 
-                                        <h1 class="display-5 fw-semibold titleFont mb-4">
+                                        <!-- <h1 class="display-5 fw-semibold titleFont mb-4">
                                             Long-Term Wealth Built On Discipline Not Noise
+                                        </h1> -->
+                                        <h1 class="display-3 fw-semibold titleFont mb-4">
+                                            Clarity. <br class="d-md-none"/>Conviction. <br class="d-md-none"/>Compounding
                                         </h1>
 
                                         <p class="fs-6 pFont mb-3" style="color:#FFFFFFBF;">
