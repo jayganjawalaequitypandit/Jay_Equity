@@ -116,7 +116,7 @@ require __DIR__ . '/../includes/header.php';
             .portfolio-banner {
                 height: 260px;
                 object-fit: cover;
-                object-position: right;
+                object-position: left;
             }
 
             .portfolio-card {
@@ -127,7 +127,7 @@ require __DIR__ . '/../includes/header.php';
 
     <!-- Hero Image -->
     <div class="container-fluid px-0 position-relative">
-        <img src="<?= $base ?>imgs/s1.jpg" class="portfolio-banner" alt="">
+        <img src="<?= $base ?>imgs/s2.jpg" class="portfolio-banner" alt="">
 
 
         <!-- Border aligned with container -->
@@ -139,13 +139,13 @@ require __DIR__ . '/../includes/header.php';
             <div class="d-md-inline d-none">
                 <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
                 <span class="text-white mx-1">&gt;</span>
-                <a href="" class="text-decoration-none text-white">Multibagger</a>
+                <a href="" class="text-decoration-none " style="color:#00DF9C;">Multibagger</a>
             </div>
         </div>
     </div>
 
     <!-- Content Box -->
-    <div class="container position-relative portfolio-card">
+    <div class="container position-relative portfolio-card d-none">
         <div class="border-start border-end border-light">
             <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
                 <div class="row">
@@ -190,6 +190,88 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </div>
 
+    <!-- Content Box -->
+    <div class="container position-relative portfolio-card">
+        <div class="border-start border-end border-light">
+            <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
+                <div class="row align-items-center">
+
+                    <div class="col-md-7">
+                        <div class="d-md-none mb-3">
+                            <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a>
+                            <span>></span>
+                            <a class="text-decoration-none text-white" href="">Multibagger</a>
+                        </div>
+
+                        <h1 class="display-6 fw-semibold mb-3 titleFont">
+                            Invest early, before the stock opportunity becomes a success story.
+                        </h1>
+
+                        <p class="text-white-50 mb-3 pFont">
+                            Mid-term Investing, Proven Results, Real Wealth
+                        </p>
+
+                        <div>
+                            <a href="#" class="btn btn-light px-4 py-2 rounded-0">
+                                Explore Benefits →
+                            </a>
+                        </div>
+
+                        <p class="text-white mt-3 pFont">
+                            Minimum Investment:
+                            <span style="color:#00DF9C;">₹20,000 per stock</span>
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-5 col-12">
+                        <!-- Form Box -->
+                        <style>
+                            @media (min-width: 768px) {
+                                .custom-form-box {
+                                    margin-top: -180px !important;
+                                }
+                            }
+                        </style>
+
+                        <div class="bg-white p-3 p-md-4 form-box custom-form-box ms-0 ms-md-5" style="margin-top: 0; width: 350px;">
+                            <small class="text-muted">
+                                Know more about
+                            </small>
+
+                            <h4 class="fw-bold text-dark mb-4">
+                                Multibaggers Service
+                            </h4>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-0" id="name" placeholder="Enter Your Name">
+                                <label for="name">Enter Your Name*</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-0" id="email" placeholder="Enter Your Email">
+                                <label for="email">Enter Your Email*</label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control rounded-0" id="mobile" placeholder="Enter Your Mobile">
+                                <label for="mobile">Enter Your Mobile*</label>
+                            </div>
+
+                            <button class="btn rounded-0 w-100 text-white" style="background-color:#02181A;">
+                                Sign in
+                            </button>
+
+                            <p class="small text-muted mt-3 mb-0">
+                                By submitting, you agree to our Terms & Conditions
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- What You'll Get -->
