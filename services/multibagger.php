@@ -157,7 +157,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <p class="text-white-50 mb-3 pFont">
                             One high-conviction stock every month, selected for long-term
-                            holding—focused on proven businesses that aim to create real
+                            holding-focused on proven businesses that aim to create real
                             wealth over time. </p>
                     </div>
                 </div>
@@ -165,17 +165,17 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row text-center text-md-start">
 
                     <div class="col-md-2 col-4">
-                        <h2 class="fw-bold display-6 mb-2">01+</h2>
+                        <h2 class="fw-semibold  display-6 mb-2">21+</h2>
                         <p class="mb-0 small">Years Experience</p>
                     </div>
 
                     <div class="col-md-2 col-4">
-                        <h2 class="fw-bold display-6 mb-2">1M+</h2>
+                        <h2 class="fw-semibold  display-6 mb-2">1M+</h2>
                         <p class="mb-0 small">Registered Users</p>
                     </div>
 
                     <div class="col-md-3 col-4">
-                        <h2 class="fw-bold display-6 mb-2">350+</h2>
+                        <h2 class="fw-semibold display-6 mb-2">350+</h2>
                         <p class="mb-0 small">Research Algorithms</p>
                     </div>
                     <!-- Button -->
@@ -217,7 +217,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
 
                     <div class="col-md-4 col-10 flex-shrink-0">
-                        <div class="h-100 p-3 border border-light">
+                        <div class="h-100 p-3 border  border-light">
                             <img src="../imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h3>
                             <p class="mb-0 pFont">
@@ -400,7 +400,7 @@ require __DIR__ . '/../includes/header.php';
         <div class="border border-start border-end border-light">
             <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
                 <div class="col-md-4 col-11 flex-shrink-0">
-                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
+                    <div class="strength-card h-100 p-3 border border-start-0 border-top-0 border-end-0 border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
 
@@ -439,7 +439,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
                 <div class="col-md-4 col-11 flex-shrink-0">
-                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
+                    <div class="strength-card h-100 p-3 border border-top-0 border-end-0 border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
 
@@ -478,7 +478,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
                 <div class="col-md-4 col-11 flex-shrink-0">
-                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
+                    <div class="strength-card h-100 p-3 border border-end-0 border-top-0 border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
 
