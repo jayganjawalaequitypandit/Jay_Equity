@@ -14,9 +14,9 @@
                 <div class="border-start border-end border-light">
                     <div class="row g-3 justify-content-center">
                         <div class="col-md-12 p-4 pb-md-0">
-                            <p class="h2 text-white fw-bold mb-1 titleFont">
+                            <h3 class="fs-2 text-white fw-bold mb-2 titleFont" style="line-height: 1.5;">
                                 Need any help? Contact To Our Support Team!
-                            </p>
+                            </h3>
 
                             <p class="text-light pFont">
                                 We are always there for you every time and will guide you at every step.
@@ -49,8 +49,101 @@
                     </div>
                     <div class="row g-3 justify-content-between px-3 py-5 pFont small">
                         <div class="col-md-12">
+
                             <!-- Company -->
-                            <div class="d-flex align-items-center mb-3 flex-wrap">
+                            <div class="row align-items-start mb-3">
+
+                                <div class="col-auto pe-0">
+                                    <span class="text-white">Company</span>
+                                </div>
+
+                                <div class="col px-2 pt-2">
+                                    <div class="border-bottom border-2"
+                                        style="border-bottom-style:dotted !important;"></div>
+                                </div>
+
+                                <div class="col-7 col-md-auto text-start text-md-end">
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Home</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>about" class="text-decoration-none text-white">About Us</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>career" class="text-decoration-none text-white">Careers</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>contact" class="text-decoration-none text-white">Contact Us</a>
+                                </div>
+
+                            </div>
+
+                            <!-- Services -->
+                            <div class="row align-items-start mb-3">
+
+                                <div class="col-auto pe-0">
+                                    <span class="text-white">Services</span>
+                                </div>
+
+                                <div class="col px-2 pt-2">
+                                    <div class="border-bottom border-2"
+                                        style="border-bottom-style:dotted !important;"></div>
+                                </div>
+
+                                <div class="col-7 col-md-auto text-start text-md-end">
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Plan &amp; Pricing</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Investing &amp; Trading</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">HNI Services</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Institutional Investors</a>
+                                </div>
+
+                            </div>
+
+                            <!-- Legal -->
+                            <div class="row align-items-start">
+
+                                <div class="col-auto pe-0">
+                                    <span class="text-white">Legal &amp; Privacy</span>
+                                </div>
+
+                                <div class="col px-2 pt-2">
+                                    <div class="border-bottom border-2"
+                                        style="border-bottom-style:dotted !important;"></div>
+                                </div>
+
+                                <div class="col-7 col-md-end text-start text-md-end">
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Terms and Conditions</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Grievance Redressal</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Escalation Matrix</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Privacy Policy</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Disclosure</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Investor Charter</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Investor Grievance</a>
+                                    <span class="mx-1">/</span>
+
+                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Compliance Audit</a>
+                                </div>
+
+                            </div>
+
+                            <!-- <div class="d-flex align-items-center mb-3 flex-wrap">
                                 <div class="text-white">Company</div>
 
                                 <div class="flex-grow-1 mx-2 border-bottom border-2 mt-2"
@@ -70,7 +163,6 @@
                                 </div>
                             </div>
 
-                            <!-- Services -->
                             <div class="d-flex align-items-center mb-3 flex-wrap">
                                 <div class="text-white">Services</div>
 
@@ -91,7 +183,6 @@
                                 </div>
                             </div>
 
-                            <!-- Legal -->
                             <div class="d-flex align-items-start flex-wrap">
                                 <div class="text-white">Legal &amp; Privacy</div>
 
@@ -122,7 +213,7 @@
 
                                     <a href="<?= $base ?>" class="text-decoration-none text-white">Compliance Audit</a>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- <p>
                                 <small>
