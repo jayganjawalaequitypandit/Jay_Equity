@@ -127,7 +127,7 @@ require __DIR__ . '/../includes/header.php';
         <!-- Full Width Image -->
         <div class="container-fluid p-0 position-relative">
             <img
-                src="<?= $base ?>imgs/services/portfolio_bg.svg"
+                src="<?= $base ?>imgs/services/portfolio_bg.jpg"
                 class="portfolio-banner"
                 alt="Portfolio"
                 loading="lazy"
@@ -168,7 +168,7 @@ require __DIR__ . '/../includes/header.php';
                     <div class="row text-center text-md-start">
 
                         <div class="col-md-2 col-4">
-                            <h2 class="fw-semibold display-6 mb-2">01+</h2>
+                            <h2 class="fw-semibold display-6 mb-2">21+</h2>
                             <p class="mb-0 small">Years Experience</p>
                         </div>
 
@@ -211,7 +211,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-4 col-10 flex-shrink-0">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector4.svg" class="mb-3" alt="">
-                                <h3 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h3>
+                                <h2 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h2>
                                 <p class="mb-0 pFont">
                                     Expert research highlighting key trends and opportunities
                                 </p>
@@ -221,7 +221,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-4 col-10 flex-shrink-0">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector5.svg" class="mb-3" alt="">
-                                <h3 class="fs-3 titleFont fw-semibold">Timely Entry & Exit Guidance</h3>
+                                <h2 class="fs-3 titleFont fw-semibold">Timely Entry & Exit Guidance</h2>
                                 <p class="mb-0 pFont">
                                     Maximize returns with timely entry and exit strategies
                                 </p>
@@ -231,7 +231,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-4 col-10 flex-shrink-0">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector6.svg" class="mb-3" alt="">
-                                <h3 class="fs-3 titleFont fw-semibold">Quarterly Review & Updates</h3>
+                                <h2 class="fs-3 titleFont fw-semibold">Quarterly Review & Updates</h2>
                                 <p class="mb-0 pFont">
                                     Regular quarterly updates to refine strategy and improve performance
                                 </p>
@@ -241,7 +241,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-4 col-10 flex-shrink-0">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector5.svg" class="mb-3" alt="">
-                                <h3 class="fs-3 titleFont fw-semibold">Real Time Dashboard</h3>
+                                <h2 class="fs-3 titleFont fw-semibold">Real Time Dashboard</h2>
                                 <p class="mb-0 pFont">
                                     Monitor your portfolio performance with live market data
                                 </p>
@@ -251,7 +251,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-4 col-10 flex-shrink-0">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector6.svg" class="mb-3" alt="">
-                                <h3 class="fs-3 titleFont fw-semibold">Priority Support</h3>
+                                <h2 class="fs-3 titleFont fw-semibold">Priority Support</h2>
                                 <p class="mb-0 pFont">
                                     Dedicated support team ensuring faster responses and solutions
                                 </p>
@@ -282,14 +282,14 @@ require __DIR__ . '/../includes/header.php';
                         <div class="d-flex gap-3 align-items-start mb-4">
                             <span class="fs-3 fw-bold titleFont text-success">1.</span>
                             <div>
-                                <h3 class="fs-5 titleFont fw-semibold mb-1">Share your goals</h3>
+                                <h2 class="fs-5 titleFont fw-semibold mb-1">Share your goals</h2>
                                 <p class="mb-0">Tell us your investment horizon and risk appetite.</p>
                             </div>
                         </div>
                         <div class="d-flex gap-3 align-items-start mb-4">
                             <span class="fs-3 fw-bold titleFont text-success">2.</span>
                             <div>
-                                <h3 class="fs-5 titleFont fw-semibold mb-1">Receive your portfolio</h3>
+                                <h2 class="fs-5 titleFont fw-semibold mb-1">Receive your portfolio</h2>
                                 <p class="mb-0">Get a research-backed list with clear allocation guidance.</p>
                             </div>
                         </div>
@@ -298,14 +298,14 @@ require __DIR__ . '/../includes/header.php';
                         <div class="d-flex gap-3 align-items-start mb-4">
                             <span class="fs-3 fw-bold titleFont text-success">3.</span>
                             <div>
-                                <h3 class="fs-5 titleFont fw-semibold mb-1">Track &amp; rebalance</h3>
+                                <h2 class="fs-5 titleFont fw-semibold mb-1">Track &amp; rebalance</h2>
                                 <p class="mb-0">Monitor performance and act on periodic rebalancing updates.</p>
                             </div>
                         </div>
                         <div class="d-flex gap-3 align-items-start mb-4">
                             <span class="fs-3 fw-bold titleFont text-success">4.</span>
                             <div>
-                                <h3 class="fs-5 titleFont fw-semibold mb-1">Stay supported</h3>
+                                <h2 class="fs-5 titleFont fw-semibold mb-1">Stay supported</h2>
                                 <p class="mb-0">Reach our team whenever you need guidance along the way.</p>
                             </div>
                         </div>
@@ -346,9 +346,9 @@ require __DIR__ . '/../includes/header.php';
 
                     <div class="position-sticky top-0 p-3 sticky-section">
 
-                        <h3 class="display-6 fw-semibold titleFont">
+                        <h2 class="display-6 fw-semibold titleFont">
                             Focused On Sustainable Wealth Creation.
-                        </h3>
+                        </h2>
 
                         <p class="small fs-6 mt-3">
                             Rigorous Screening, Smart Entries, And Active Monitoring
@@ -360,7 +360,7 @@ require __DIR__ . '/../includes/header.php';
                             alt="background">
 
                         <a href="<?= $base ?>contact-us.php"
-                            class="btn btn-light rounded-0 mt-3">
+                            class="btn btn-light rounded-0 mt-5">
                             Get Started →
                         </a>
 
@@ -383,7 +383,7 @@ require __DIR__ . '/../includes/header.php';
                         <section id="stocks" class="p-3 border-bottom border-light">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h3 class="fs-4 fw-semibold titleFont">18 Stocks For A Strong 2026</h3>
+                                    <h2 class="fs-4 fw-semibold titleFont">18 Stocks For A Strong 2026</h2>
                                     <p class="fs-6 pFont">
                                         A thoughtfully selected basket of high-potential
                                         stocks across emerging and stable sectors.
@@ -418,7 +418,7 @@ require __DIR__ . '/../includes/header.php';
                         <section id="rebalance" class="p-3 border-bottom border-light">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h3 class="fs-4 titleFont fw-semibold">Quarterly Rebalancing</h3>
+                                    <h2 class="fs-4 titleFont fw-semibold">Quarterly Rebalancing</h2>
                                     <p class="fs-6 pFont">
                                         Markets change. Your portfolio should too. We continuously monitor economic trends, sector movements, and company performance to keep your portfolio optimized.
                                     </p>
@@ -454,7 +454,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h3 class="fs-4 titleFont fw-semibold">Timely Entry & Exit Guidance</h3>
+                                    <h2 class="fs-4 titleFont fw-semibold">Timely Entry & Exit Guidance</h2>
                                     <p class="fs-6 pFont">
                                         Don’t just buy stocks — buy them at the right time. We provide clear, actionable updates so you know exactly what to do. Structured alerts. No confusion. No noise.
                                     </p>
@@ -502,7 +502,7 @@ require __DIR__ . '/../includes/header.php';
                     <div class="row g-3 justify-content-center">
                         <div class="col-md-10">
                             <div class="text-start text-md-center">
-                                <h3 class="display-6 titleFont fw-semibold">How We Identify Portfolio Opportunities?</h3>
+                                <h2 class="display-6 titleFont fw-semibold">How We Identify Portfolio Opportunities?</h2>
                                 <p class="fs-6 pFont">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-md-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
                             </div>
                         </div>
@@ -577,9 +577,9 @@ require __DIR__ . '/../includes/header.php';
                                 </div>
                             </div>
 
-                            <h3 class="fs-4 titleFont fw-semibold mt-5">
+                            <h2 class="fs-4 titleFont fw-semibold mt-5">
                                 Business Strength
-                            </h3>
+                            </h2>
 
                             <ul class="Pfont mt-3 d-flex flex-column gap-1">
                                 <li>Consistent sales and profit growth.</li>
@@ -616,9 +616,9 @@ require __DIR__ . '/../includes/header.php';
                                 </div>
                             </div>
 
-                            <h3 class="fs-4 titleFont fw-semibold mt-5">
+                            <h2 class="fs-4 titleFont fw-semibold mt-5">
                                 Sector & Market Position
-                            </h3>
+                            </h2>
 
                             <ul class="Pfont mt-3 d-flex flex-column gap-1">
                                 <li>Sector growth cycles.</li>
@@ -655,9 +655,9 @@ require __DIR__ . '/../includes/header.php';
                                 </div>
                             </div>
 
-                            <h3 class="fs-4 titleFont fw-semibold mt-5">
+                            <h2 class="fs-4 titleFont fw-semibold mt-5">
                                 Right Timing
-                            </h3>
+                            </h2>
 
                             <ul class="Pfont mt-3 d-flex flex-column gap-1">
                                 <li>Strong institutional funds flow.</li>
@@ -686,7 +686,7 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-3 justify-content-center">
                     <div class="col-md-10">
                         <div class="text-start text-md-center">
-                            <h3 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h3>
+                            <h2 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h2>
                             <p class="fs-6 pFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                         </div>
                     </div>
@@ -743,9 +743,9 @@ require __DIR__ . '/../includes/header.php';
 
                                 <img src="../imgs/Vector11.svg" alt="">
 
-                                <h3 class="fw-semibold mt-2 titleFont">
+                                <h2 class="fw-semibold mt-2 titleFont">
                                     Risk Profiling
-                                </h3>
+                                </h2>
 
                                 <p class="process-desc Pfont mt-3 mb-0">
                                     To check the capability & willingness to take a risk.
@@ -773,9 +773,9 @@ require __DIR__ . '/../includes/header.php';
 
                                 <img src="../imgs/Vector12.svg" alt="">
 
-                                <h3 class="fw-semibold titleFont mt-2">
+                                <h2 class="fw-semibold titleFont mt-2">
                                     Documentation
-                                </h3>
+                                </h2>
 
                                 <p class="process-desc Pfont mt-3 mb-0">
                                     Sign an agreement & complete thepayment to begin the journey.
@@ -803,9 +803,9 @@ require __DIR__ . '/../includes/header.php';
 
                                 <img src="../imgs/Vector13.svg" alt="">
 
-                                <h3 class="fw-semibold titleFont mt-2">
+                                <h2 class="fw-semibold titleFont mt-2">
                                     Service Activation
-                                </h3>
+                                </h2>
 
                                 <p class="process-desc Pfont mt-3 mb-0">
                                     Complete the KYC to activateyour service.
@@ -835,7 +835,7 @@ require __DIR__ . '/../includes/header.php';
             <div class="px-3 py-5 border-start border-end border-light">
                 <div class="row g-3 py-4">
                     <div class="col-md-6">
-                        <h3 class="fs-3 pFont fw-semibold">Who are we?</h3>
+                        <h2 class="fs-3 pFont fw-semibold">Who are we?</h2>
                         <img
                             src="../imgs/Vector14.svg"
                             class="img-fluid mt-3"
@@ -934,9 +934,9 @@ require __DIR__ . '/../includes/header.php';
     <section>
         <div class="container">
             <div class="border-start border-end border-light">
-                <div class="row g-2">
-                    <div class="col-md-6 p-4">
-                        <h3 class="display-6 titleFont fw-semibold">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h3>
+                <div class="row g-0">
+                    <div class="col-md-6 p-3">
+                        <h2 class="display-6 titleFont fw-semibold">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h2>
                         <p class="pFont fs-6 fw-medium mt-3 mb-3">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
                         <?php
                         $awards = [
@@ -1017,9 +1017,9 @@ require __DIR__ . '/../includes/header.php';
                                             (<?= htmlspecialchars($award['year']) ?>)
                                         </span>
 
-                                        <h3 class="h6 fw-bold mt-2 titleFont">
+                                        <h2 class="h6 fw-bold mt-2 titleFont">
                                             <?= htmlspecialchars($award['title']) ?>
-                                        </h3>
+                                        </h2>
 
                                         <p class="small text-secondary mb-0">
                                             <?= htmlspecialchars($award['award']) ?>
