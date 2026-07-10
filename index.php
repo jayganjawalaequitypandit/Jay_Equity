@@ -106,21 +106,21 @@ require __DIR__ . './includes/header.php';
                         <div class="border-start border-end border-light h-100 d-flex align-items-end">
                             <div class="row">
 
-                                <div class="col-md-7">
+                                <div class="col-md-12">
 
-                                    <div class="px-3 py-5 text-white">
+                                    <div class="px-md-4 px-3 py-5 text-white text-md-center text-start">
 
                                         <h1 class="display-5 fw-semibold titleFont mb-4">
                                             Long-Term Wealth Built On Discipline Not Noise
                                         </h1>
 
-                                        <p class="fs-6 pFont mb-5" style="color:#FFFFFFBF;">
-                                            Since 2005, EquityPandit has helped Indian investors navigate <br class="d-md-block d-none" />market cycles through
+                                        <p class="fs-6 pFont mb-3" style="color:#FFFFFFBF;">
+                                            Since 2005, EquityPandit has helped Indian investors navigate <br class="d-none" />market cycles through
                                             research-driven equity strategies focused on consistency, risk control, and
                                             long-term value creation.
                                         </p>
 
-                                        <button class="btn btn-light rounded-0">
+                                        <button class="btn btn-light rounded-0 d-none">
                                             Let's Get Started
                                             <i class="fa-solid fa-right-long ms-2"></i>
                                         </button>
@@ -143,23 +143,23 @@ require __DIR__ . './includes/header.php';
                             </p>
                         </div> -->
 
-                        <div class="p-3">
+                        <div class="p-2">
                             <img src="./imgs/logo/Bussiness_Standard.png" alt="The Week" style="height:60px;">
                         </div>
 
-                        <div class="p-3">
+                        <div class="p-2">
                             <img src="./imgs/logo/Dailyhunt.png" alt="The Week" style="height:60px;">
                         </div>
 
-                        <div class="p-3">
+                        <div class="p-2">
                             <img src="./imgs/logo/Yahoo.png" alt="The Week" style="height:60px;">
                         </div>
 
-                        <div class="p-3">
+                        <div class="p-2">
                             <img src="./imgs/logo/Bloomberg.png" alt="The Week" style="height:60px;">
                         </div>
 
-                        <div class="p-3">
+                        <div class="p-2">
                             <img src="./imgs/logo/The Week.png" alt="The Week" style="height:60px;">
                         </div>
                     </div>
@@ -178,7 +178,7 @@ require __DIR__ . './includes/header.php';
                     <div class="row g-0">
                         <div class="col-md-3 col-6">
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100">
-                                <p class="display-4 fw-semibold d-inline-block ">20+</p>
+                                <p class="display-4 fw-semibold d-inline-block ">21+</p>
                                 <p class="fs-5">Years of Market<br />Expertise</p>
                             </div>
                         </div>
@@ -231,7 +231,7 @@ require __DIR__ . './includes/header.php';
                                 </div>
                             </div>
                             <div class="py-3 py-md-0 px-3 text-center">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block">Start Your wealth creation journey</h2>
+                                <h2 class="display-3 titleFont fw-semibold d-inline-block">Start Your Wealth Creation Journey</h2>
                                 <p class="fs-6 pFont mb-0">Put your money to work with our research, that suits your style.</p>
                             </div>
                             <div class="text-end">
@@ -301,7 +301,7 @@ require __DIR__ . './includes/header.php';
                                         src="./imgs/Vector1.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h3 class="mb-1 titleFont fs-4 fw-bold">Alpha India Portfolio</h3>
+                                    <h2 class="mb-1 titleFont fs-4 fw-bold">Alpha India Portfolio</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         A carefully curated list of 18-20 high-potential stocks, backed by 20+ years of market expertise, designed to create long-term wealth.
@@ -330,7 +330,7 @@ require __DIR__ . './includes/header.php';
                                         src="./imgs/Vector2.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h3 class="mb-1 titleFont fs-4 fw-bold">Multibagger</h3>
+                                    <h2 class="mb-1 titleFont fs-4 fw-bold">Multibagger</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         One high-growth stock every month for mid-term holding, focused on fundamentally strong businesses.
@@ -358,7 +358,7 @@ require __DIR__ . './includes/header.php';
                                         src="./imgs/Vector3.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h3 class="mb-1 titleFont fs-4 fw-bold">WealthX</h3>
+                                    <h2 class="mb-1 titleFont fs-4 fw-bold">WealthX</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
@@ -509,7 +509,7 @@ require __DIR__ . './includes/header.php';
                     <div class="row g-0">
                         <div class="col-md-12">
                             <div class="text-center py-5">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block">Fascinating Facts <br class="d-md-none" />That Shape Your <br class="d-none d-md-block" />Financial Knowledge</h2>
+                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Fascinating Facts <br class="d-md-none" />That Shape Your <br class="d-none d-md-block" />Financial Knowledge</h2>
                                 <p class="fs-6 pFont mb-0">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective<br class="d-none d-md-block" /> arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy <br class="d-md-block d-none" />excited ten carried manners talking how.</p>
                             </div>
                         </div>
@@ -524,9 +524,9 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="./imgs/Vector4.svg" class="mb-3" alt="">
 
-                                            <h3 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Experience You Can Trust
-                                            </h3>
+                                            </h2>
                                         </div>
 
                                         <p class="pFont mb-0 fs-6">
@@ -550,9 +550,9 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="./imgs/Vector5.svg" class="mb-3" alt="">
 
-                                            <h3 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Data-Driven Insights
-                                            </h3>
+                                            </h2>
                                         </div>
 
                                         <p class="pFont mb-0 fs-6">
@@ -576,9 +576,9 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="./imgs/Vector6.svg" class="mb-3" alt="">
 
-                                            <h3 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Client-Centered Approach
-                                            </h3>
+                                            </h2>
                                         </div>
 
                                         <p class="pFont mb-0 fs-6">
@@ -602,9 +602,9 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="./imgs/Vector7.svg" class="mb-3" alt="">
 
-                                            <h3 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Dedicated Support Every Step
-                                            </h3>
+                                            </h2>
                                         </div>
 
                                         <p class="pFont mb-0 fs-6">
@@ -635,7 +635,7 @@ require __DIR__ . './includes/header.php';
                     <div class="row g-3 align-items-center">
                         <div class="col-md-6">
                             <div class="py-md-5 py-0 pb-0">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block">National & International Awards</h2>
+                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">National & International Awards</h2>
                                 <p class="fs-6 pFont mb-0">EquityPandit has consistently recognized by<br class="d-md-block d-none" /> leading industry institution for innovation, research<br class="d-md-block d-none" /> quality and investor education initiatives.</p>
                                 <img
                                     src="./imgs/Google.svg"
@@ -742,9 +742,9 @@ require __DIR__ . './includes/header.php';
                                                                     (<?= htmlspecialchars($award['year']) ?>)
                                                                 </span>
 
-                                                                <h3 class="h6 fw-bold mb-2 titleFont">
+                                                                <h2 class="h6 fw-bold mb-2 titleFont">
                                                                     <?= htmlspecialchars($award['title']) ?>
-                                                                </h3>
+                                                                </h2>
 
                                                                 <p class="small text-secondary mb-0">
                                                                     <?= htmlspecialchars($award['award']) ?>
@@ -885,9 +885,9 @@ require __DIR__ . './includes/header.php';
                                                 (<?= htmlspecialchars($award['year']) ?>)
                                             </span>
 
-                                            <h3 class="h6 fw-bold mt-2 titleFont">
+                                            <h2 class="h6 fw-bold mt-2 titleFont">
                                                 <?= htmlspecialchars($award['title']) ?>
-                                            </h3>
+                                            </h2>
 
                                             <p class="small text-secondary mb-0">
                                                 <?= htmlspecialchars($award['award']) ?>
@@ -922,7 +922,7 @@ require __DIR__ . './includes/header.php';
                                     alt="Business" loading="lazy" decoding="async">
 
                                 <div class="image-content position-absolute bottom-0 start-0  bg-primary-subtle p-3 text-light" data-bs-theme="dark">
-                                    <h3 class="mb-1 titleFont fs-2 fw-bold">Factset</h3>
+                                    <h2 class="mb-1 titleFont fs-2 fw-bold">Factset</h2>
 
                                     <p class="sub-title titleFont mb-3 fs-5">
                                         A carefully curated list of 18-20 high-potential stocks, backed by 20+ years of market expertise, designed to create long-term wealth.
@@ -941,7 +941,7 @@ require __DIR__ . './includes/header.php';
                                     alt="Business" loading="lazy" decoding="async">
 
                                 <div class="image-content position-absolute bottom-0 start-0  bg-primary-subtle p-3 text-light" data-bs-theme="dark">
-                                    <h3 class="mb-1 titleFont fs-2 fw-bold">investing.com</h3>
+                                    <h2 class="mb-1 titleFont fs-2 fw-bold">investing.com</h2>
 
                                     <p class="sub-title titleFont mb-3 fs-5">
                                         One high-growth stock every month for mid-term holding, focused on fundamentally strong businesses.
@@ -959,7 +959,7 @@ require __DIR__ . './includes/header.php';
                                     alt="Business" loading="lazy" decoding="async">
 
                                 <div class="image-content position-absolute bottom-0 start-0  bg-primary-subtle p-3 text-light" data-bs-theme="dark">
-                                    <h3 class="mb-1 titleFont fs-2 fw-bold">Thomson Reuters</h3>
+                                    <h2 class="mb-1 titleFont fs-2 fw-bold">Thomson Reuters</h2>
 
                                     <p class="sub-title titleFont mb-3 fs-5">
                                         WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
@@ -979,7 +979,7 @@ require __DIR__ . './includes/header.php';
                 <div class="px-3 py-5 border border-start border-end border-light">
                     <div class="row g-3 py-md-5">
                         <div class="col-md-6">
-                            <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
+                            <h2 class="display-6 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Frequently Asked Questions</h2>
                             <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
                             <img
                                 src="./imgs/Faq1.svg"
