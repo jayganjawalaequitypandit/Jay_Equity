@@ -285,7 +285,7 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Left Content -->
                 <div class="col-md-6 order-2 order-md-1">
-                    <div class="p-4">
+                    <div class="p-3">
 
                         <h2 class="display-6 titleFont fw-semibold mb-4">
                             Who Should Avail?
