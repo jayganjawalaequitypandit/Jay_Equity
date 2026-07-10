@@ -73,7 +73,7 @@ require __DIR__ . '/../includes/header.php';
 
 <body class="">
     <!-- Intro -->
-    <section class="position-relative">
+    <section class="position-relative d-none">
         <style>
             /* Desktop */
             .portfolio-card {
@@ -189,6 +189,167 @@ require __DIR__ . '/../includes/header.php';
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="position-relative">
+        <style>
+            /* Desktop */
+            .portfolio-card {
+                margin-top: -120px;
+            }
+
+            .form-card {
+                margin-top: -180px;
+            }
+
+            /* Tablet */
+            @media (max-width: 991.98px) {
+                .portfolio-card {
+                    margin-top: -80px;
+                }
+            }
+
+            /* Mobile */
+            @media (max-width: 767.98px) {
+                .portfolio-card {
+                    margin-top: -40px;
+                }
+            }
+
+
+            .portfolio-banner {
+                width: 100%;
+                height: 420px;
+                object-fit: cover;
+                object-position: center;
+                display: block;
+            }
+
+            /* Tablet */
+            @media (max-width:991.98px) {
+                .portfolio-banner {
+                    height: 350px;
+                }
+            }
+
+            /* Mobile */
+            @media (max-width:767.98px) {
+                .portfolio-banner {
+                    height: 260px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .portfolio-card {
+                    margin-top: -60px;
+                }
+
+                .form-card {
+                    margin-top: 20px;
+                }
+            }
+        </style>
+
+        <!-- Full Width Image -->
+        <div class="container-fluid p-0 position-relative">
+            <img
+                src="<?= $base ?>imgs/services/portfolio_bg.jpg"
+                class="portfolio-banner"
+                alt="Portfolio"
+                loading="lazy"
+                decoding="async">
+            <!-- Border aligned with container -->
+            <div class="container position-absolute top-0 start-50 translate-middle-x h-100">
+                <div class="border-start border-end border-light h-100"></div>
+            </div>
+            <!-- Content Layer -->
+            <div class="container mt-5 position-absolute top-0 start-50 translate-middle-x px-4 py-5">
+                <div class="d-md-inline d-none">
+                    <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
+                    <span class="text-white mx-1">&gt;</span>
+                    <a href="" class="text-decoration-none" style="color:#00DF9C">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Box -->
+        <div class="container position-relative portfolio-card">
+            <div class="border-start border-end border-light">
+                <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="d-md-none mb-3">
+                                <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none" style="color:#00DF9C" href="">Poftfolio</a>
+                            </div>
+                            <h1 class="display-5 fw-semibold mb-3 titleFont">
+                                Perfect Portfolio for 2026 & Beyond
+                            </h1>
+
+                            <p class="text-white-50 mb-3 pFont">
+                                Selected stocks from high growth sectors.
+                            </p>
+
+                            <!-- Button -->
+                            <button href="#" class="btn btn-light px-4 py-2 rounded-0">
+                                Explore Benefits →
+                            </button>
+                            <p class="mb-0 mt-3 pFont">Minimum Investment: <span style="color: #00DF9C;">₹2 Lacs</span></p>
+                        </div>
+
+                        <!-- RIGHT SIDE -->
+                        <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
+
+                            <!-- Form Box -->
+                            <div class="bg-white text-body p-3 form-card">
+                                <p class="pFont mb-1 fs-6 fw-medium">
+                                    Know more about
+                                </p>
+
+                                <h4 class="fw-semibold mb-3 titleFont">
+                                    Portfolio Service
+                                </h4>
+
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control rounded-0"
+                                        id="name"
+                                        placeholder="Enter Your Name">
+                                    <label for="name">Enter Your Name*</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="email"
+                                        class="form-control rounded-0"
+                                        id="email"
+                                        placeholder="Enter Your Email">
+                                    <label for="email">Enter Your Email*</label>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <input
+                                        type="text"
+                                        class="form-control rounded-0"
+                                        id="mobile"
+                                        placeholder="Enter Your Mobile">
+                                    <label for="mobile">Enter Your Mobile*</label>
+                                </div>
+
+                                <button class="btn rounded-0 text-white w-100" style="background-color: #02181A;">
+                                    Sign in
+                                </button>
+
+                                <p class="small fw-medium mt-3 mb-0">
+                                    By submitting, you agree to our Terms & Conditions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
