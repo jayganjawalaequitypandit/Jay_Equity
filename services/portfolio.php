@@ -258,7 +258,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="text-start ms-3 mt-5">
+                    <div class="text-start px-3 mt-5">
                         <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
                             Get Started →
                         </button>
@@ -450,7 +450,7 @@ require __DIR__ . '/../includes/header.php';
                         </section>
 
                         <!-- Section 3 -->
-                        <section id="timing" class="p-4">
+                        <section id="timing" class="p-3">
 
                             <div class="row">
                                 <div class="col-md-10">
@@ -669,7 +669,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="text-start ms-3 py-5">
+                <div class="text-start px-3 py-5">
                     <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
                         Get Started →
                     </button>
