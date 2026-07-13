@@ -73,6 +73,35 @@ $solidHeader = $solidHeader ?? true;
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Desktop only */
+        @media (min-width: 1200px) {
+
+            .menu-link {
+                position: relative;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .menu-link::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 4px;
+                width: 0;
+                height: 2px;
+                background: #00DF9C;
+                border-radius: 50px;
+                transform: translateX(-50%);
+                transition: width .3s ease-in-out;
+            }
+
+            .menu-link:hover::after,
+            .menu-link.active::after {
+                width: calc(100% - 24px);
+            }
+        }
     </style>
 </head>
 
