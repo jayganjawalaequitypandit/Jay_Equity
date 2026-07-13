@@ -114,7 +114,7 @@ require __DIR__ . './includes/header.php';
                                             Long-Term Wealth Built On Discipline Not Noise
                                         </h1> -->
                                         <h1 class="display-3 fw-semibold titleFont mb-4">
-                                            Clarity. <br class="d-xl-none" />Conviction. <br class="d-xl-none" />Compounding
+                                            Clarity. <br class="d-xl-none" />Conviction. <br class="d-xl-none" />Compounding.
                                         </h1>
 
                                         <p class="fs-6 pFont mb-3" style="color:#FFFFFFBF;">
@@ -122,6 +122,9 @@ require __DIR__ . './includes/header.php';
                                             research-driven equity strategies focused on consistency, risk control, and
                                             long-term value creation.
                                         </p>
+                                        <!-- <p class="fs-4 pFont mb-3">
+                                            Since 2005, EquityPandit guides investors with research-driven strategies.
+                                        </p> -->
 
                                         <button class="btn btn-light rounded-0 d-none">
                                             Let's Get Started
