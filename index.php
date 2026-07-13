@@ -876,27 +876,28 @@ require __DIR__ . './includes/header.php';
 
                                 <div class="d-inline-flex gap-3">
 
-                                    <?php foreach ($awards as $award): ?>
-                                        <img
-                                            src="./imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                            class="img-fluid"
-                                            alt="<?= htmlspecialchars($award['title']) ?>">
+                                    <?php for ($i = 0; $i < 10; $i++): ?>
+                                        <?php foreach ($awards as $award): ?>
+                                            <img
+                                                src="./imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                                class="img-fluid"
+                                                alt="<?= htmlspecialchars($award['title']) ?>">
 
-                                        <div class="card-body text-center d-none">
-                                            <span class="small text-body-secondary">
-                                                (<?= htmlspecialchars($award['year']) ?>)
-                                            </span>
+                                            <div class="card-body text-center d-none">
+                                                <span class="small text-body-secondary">
+                                                    (<?= htmlspecialchars($award['year']) ?>)
+                                                </span>
 
-                                            <h2 class="h6 fw-bold mt-2 titleFont">
-                                                <?= htmlspecialchars($award['title']) ?>
-                                            </h2>
+                                                <h2 class="h6 fw-bold mt-2 titleFont">
+                                                    <?= htmlspecialchars($award['title']) ?>
+                                                </h2>
 
-                                            <p class="small text-secondary mb-0">
-                                                <?= htmlspecialchars($award['award']) ?>
-                                            </p>
-                                        </div>
-                                    <?php endforeach; ?>
-
+                                                <p class="small text-secondary mb-0">
+                                                    <?= htmlspecialchars($award['award']) ?>
+                                                </p>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    <?php endfor; ?>
                                 </div>
 
                             </marquee>
