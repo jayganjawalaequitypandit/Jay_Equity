@@ -849,7 +849,7 @@ require __DIR__ . '/../includes/header.php';
                     <div class="col-md-10">
                         <div class="text-start text-md-center">
                             <h2 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h2>
-                            <p class="fs-6 pFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                            <p class="fs-6 pFont mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                         </div>
                     </div>
                 </div>
