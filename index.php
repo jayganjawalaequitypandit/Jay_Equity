@@ -641,7 +641,7 @@ require __DIR__ . './includes/header.php';
                         <div class="col-md-6">
                             <div class="py-md-5 py-0 pb-0">
                                 <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">National & International Awards</h2>
-                                <p class="fs-6 pFont mb-0">EquityPandit has consistently recognized by<br class="d-md-block d-none" /> leading industry institution for innovation, research<br class="d-md-block d-none" /> quality and investor education initiatives.</p>
+                                <p class="fs-6 pFont mb-0">EquityPandit has consistently recognized by<br class="d-xl-block d-none" /> leading industry institution for innovation, research<br class="d-xl-block d-none" /> quality and investor education initiatives.</p>
                                 <img
                                     src="./imgs/Google.svg"
                                     class="img-fluid mt-3"
