@@ -704,7 +704,8 @@ require __DIR__ . '/../includes/header.php';
                     flex-shrink: 0;
                 }
 
-                .strength-card:hover .extra-img {
+                .strength-card:hover .extra-img,
+                .strength-card.active .extra-img {
                     width: 80px;
                     opacity: 1;
                     margin-left: 0;
@@ -872,15 +873,18 @@ require __DIR__ . '/../includes/header.php';
                         transition: opacity .3s ease, transform .3s ease;
                     }
 
-                    .process-card:hover .process-img {
+                    .process-card:hover .process-img,
+                    .process-card.active .process-img {
                         transform: translateY(-70px);
                     }
 
-                    .process-card:hover .process-content {
+                    .process-card:hover .process-content,
+                    .process-card.active .process-content {
                         height: 190px;
                     }
 
-                    .process-card:hover .process-desc {
+                    .process-card:hover .process-desc,
+                    .process-card.active .process-desc {
                         opacity: 1;
                         transform: translateY(0);
                     }
@@ -1094,9 +1098,9 @@ require __DIR__ . '/../includes/header.php';
     <!-- Form -->
     <section>
         <div class="container">
-            <div class="border-start border-end border-light">
+            <div class="py-5 px-3 border-start border-end border-light">
                 <div class="row g-0">
-                    <div class="col-md-6 p-3">
+                    <div class="col-md-12">
                         <h2 class="display-6 titleFont fw-semibold">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h2>
                         <p class="pFont fs-6 fw-medium mt-3 mb-3">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
                         <?php
@@ -1166,33 +1170,36 @@ require __DIR__ . '/../includes/header.php';
                             onmouseout="this.start();">
 
                             <div class="d-inline-flex gap-3">
+                                <?php for ($i = 0; $i < 10; $i++): ?>
+                                    <?php foreach ($awards as $award): ?>
+                                        <img
+                                            src="../imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                            class="img-fluid"
+                                            alt="<?= htmlspecialchars($award['title']) ?>">
 
-                                <?php foreach ($awards as $award): ?>
-                                    <img
-                                        src="../imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                        class="img-fluid"
-                                        alt="<?= htmlspecialchars($award['title']) ?>">
+                                        <div class="card-body text-center d-none">
+                                            <span class="small text-body-secondary">
+                                                (<?= htmlspecialchars($award['year']) ?>)
+                                            </span>
 
-                                    <div class="card-body text-center d-none">
-                                        <span class="small text-body-secondary">
-                                            (<?= htmlspecialchars($award['year']) ?>)
-                                        </span>
+                                            <h2 class="h6 fw-bold mt-2 titleFont">
+                                                <?= htmlspecialchars($award['title']) ?>
+                                            </h2>
 
-                                        <h2 class="h6 fw-bold mt-2 titleFont">
-                                            <?= htmlspecialchars($award['title']) ?>
-                                        </h2>
-
-                                        <p class="small text-secondary mb-0">
-                                            <?= htmlspecialchars($award['award']) ?>
-                                        </p>
-                                    </div>
-                                <?php endforeach; ?>
+                                            <p class="small text-secondary mb-0">
+                                                <?= htmlspecialchars($award['award']) ?>
+                                            </p>
+                                        </div>
+                                    <?php endforeach; ?>
+                                <?php endfor; ?>
                             </div>
                         </marquee>
+                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;">
+                            Get Started →
+                        </button>
                     </div>
-
                     <!-- RIGHT SIDE -->
-                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end d-none">
                         <div class="position-relative w-100 p-5 overflow-hidden"
                             style="max-width:450px; background-color:#02181A;box-sizing:border-box;">
                             <!-- Background Image -->
@@ -1273,6 +1280,41 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <?php require __DIR__ . '/../includes/footer.php'; ?>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            if (window.innerWidth < 768) {
+
+                function makeActive(selector) {
+
+                    const elements = document.querySelectorAll(selector);
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+
+                            if (entry.isIntersecting) {
+                                elements.forEach(el => el.classList.remove("active"));
+                                entry.target.classList.add("active");
+                            }
+
+                        });
+                    }, {
+                        threshold: 0.6
+                    });
+
+                    elements.forEach(el => observer.observe(el));
+                }
+
+                makeActive(".process-card");
+                makeActive(".strength-card");
+
+            }
+
+        });
+    </script>
 
 </body>
 

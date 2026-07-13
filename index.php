@@ -114,11 +114,11 @@ require __DIR__ . './includes/header.php';
                                             Long-Term Wealth Built On Discipline Not Noise
                                         </h1> -->
                                         <h1 class="display-3 fw-semibold titleFont mb-4">
-                                            Clarity. <br class="d-xl-none"/>Conviction. <br class="d-xl-none"/>Compounding
+                                            Clarity. <br class="d-xl-none" />Conviction. <br class="d-xl-none" />Compounding
                                         </h1>
 
                                         <p class="fs-6 pFont mb-3" style="color:#FFFFFFBF;">
-                                            Since 2005, EquityPandit has helped Indian investors navigate <br class="d-none" />market cycles through
+                                            Since 2005, EquityPandit has helped Indian investors navigate market cycles through
                                             research-driven equity strategies focused on consistency, risk control, and
                                             long-term value creation.
                                         </p>
@@ -178,32 +178,31 @@ require __DIR__ . './includes/header.php';
                             <p class="display-1 mb-0 fw-bold text-secondary text-opacity-25 text-center py-3">Since 2005</p>
                         </div>
                     </div>
-                    <div class="row g-0">
+                    <div class="row g-0" id="statsSection">
                         <div class="col-md-3 col-6">
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100">
-                                <p class="display-4 fw-semibold d-inline-block ">21+</p>
-                                <p class="fs-5">Years of Market<br />Expertise</p>
+                                <p class="display-4 fw-semibold d-inline-block pFont"><span class="counter" data-count="21">1</span>+</p>
+                                <p class="fs-5 pFont mb-md-0">Years of Market<br />Expertise</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100">
-                                <p class="display-4 fw-semibold d-inline-block ">1M+</p>
-                                <p class="fs-5">Registered<br />Users</p>
+                                <p class="display-4 fw-semibold d-inline-block pFont"><span class="counter" data-count="1">0</span>M+</p>
+                                <p class="fs-5 pFont mb-md-0">Registered<br />Users</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100">
-                                <p class="display-4 fw-semibold d-inline-block ">11+</p>
-                                <p class="fs-5">National & International<br />Awards</p>
+                                <p class="display-4 fw-semibold d-inline-block pFont"><span class="counter" data-count="11">1</span>+</p>
+                                <p class="fs-5 pFont mb-md-0">National & International<br />Awards</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
-                            <!-- <div class="d-flex flex-wrap"> -->
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100 position-relative">
 
-                                <p class="display-4 fw-semibold">SEBI</p>
+                                <p class="display-4 fw-semibold d-inline-block pFont">SEBI</p>
 
-                                <p class="fs-5 mb-5">
+                                <p class="fs-5 pFont mb-md-0">
                                     Registered Investment<br>
                                     Advisor
                                 </p>
@@ -213,8 +212,6 @@ require __DIR__ . './includes/header.php';
                                     class="position-absolute bottom-0 end-0"
                                     alt="">
                             </div>
-
-                            <!-- </div> -->
                         </div>
                     </div>
                     <div class="row g-0">
@@ -259,7 +256,8 @@ require __DIR__ . './includes/header.php';
                                         margin 0.6s ease;
                                 }
 
-                                .image-box:hover .sub-title {
+                                .image-box:hover .sub-title,
+                                .image-box.active .sub-title {
                                     max-height: 250px;
                                     margin-bottom: 1rem;
                                     opacity: 1;
@@ -271,7 +269,8 @@ require __DIR__ . './includes/header.php';
                                     transform: rotate(0deg);
                                 }
 
-                                .image-box:hover .logo {
+                                .image-box:hover .logo,
+                                .image-box.active .logo {
                                     animation: spinIn 0.8s cubic-bezier(.22, 1, .36, 1) forwards;
                                 }
 
@@ -513,7 +512,7 @@ require __DIR__ . './includes/header.php';
                         <div class="col-md-12">
                             <div class="text-center py-5">
                                 <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Fascinating Facts <br class="d-md-none" />That Shape Your <br class="d-none d-md-block" />Financial Knowledge</h2>
-                                <p class="fs-6 pFont mb-0">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective<br class="d-none d-md-block" /> arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy <br class="d-md-block d-none" />excited ten carried manners talking how.</p>
+                                <p class="fs-6 pFont mb-0">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective<br class="d-none d-xl-block" /> arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy <br class="d-xl-block d-none" />excited ten carried manners talking how.</p>
                             </div>
                         </div>
                         <div class="container px-0">
@@ -643,9 +642,9 @@ require __DIR__ . './includes/header.php';
                                 <img
                                     src="./imgs/Google.svg"
                                     class="img-fluid mt-3"
-                                    alt="background"><br />
-                                <button class="btn btn-dark rounded-0 mt-3">Let's Get Started</button>
+                                    alt="background">
                             </div>
+                            <button class="btn btn-dark rounded-0 mt-md-0 mt-3">Let's Get Started</button>
                         </div>
                         <div class="col-md-6 d-none">
                             <?php
@@ -1042,6 +1041,80 @@ require __DIR__ . './includes/header.php';
 
         <?php require __DIR__ . '/includes/footer.php'; ?>
     </main>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const counters = document.querySelectorAll(".counter");
+
+            const animateCounter = (counter) => {
+
+                const target = parseInt(counter.dataset.count);
+                const duration = 2000;
+                const start = 1;
+
+                let current = start;
+                const increment = Math.max(1, Math.ceil((target - start) / (duration / 20)));
+
+                const timer = setInterval(() => {
+                    current += increment;
+
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+
+                    counter.textContent = current;
+                }, 50);
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        counters.forEach(counter => animateCounter(counter));
+                        obs.disconnect();
+                    }
+                });
+            }, {
+                threshold: 0.3
+            });
+
+            observer.observe(document.getElementById("statsSection"));
+        });
+    </script>
+
+    <!-- Acive tab option in mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            // Only for mobile devices
+            if (window.innerWidth < 768) {
+
+                const boxes = document.querySelectorAll(".image-box");
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            // Close all cards
+                            boxes.forEach(box => box.classList.remove("active"));
+
+                            // Open current card
+                            entry.target.classList.add("active");
+                        }
+
+                    });
+                }, {
+                    threshold: 0.6
+                });
+
+                boxes.forEach(box => observer.observe(box));
+            }
+
+        });
+    </script>
 
 </body>
 
