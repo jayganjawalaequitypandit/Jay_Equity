@@ -76,198 +76,172 @@ require __DIR__ . '/../includes/header.php';
 
 <!-- Hero -->
 <section class="position-relative">
+
     <style>
         /* Desktop */
-        .portfolio-card {
-            margin-top: -120px;
+        .multibagger-card {
+            margin-top: -80px;
+            position: relative;
+            z-index: 2;
         }
 
-        /* Tablet */
-        @media (max-width: 991.98px) {
-            .portfolio-card {
-                margin-top: -80px;
-            }
+        .form-card {
+            margin-top: -180px;
         }
 
-        /* Mobile */
-        @media (max-width: 767.98px) {
-            .portfolio-card {
-                margin-top: -40px;
-            }
-        }
-
-        .portfolio-banner {
+        .multibagger-banner {
             width: 100%;
             height: 420px;
             object-fit: cover;
-            object-position: center;
+            object-position: left;
             display: block;
         }
 
         /* Tablet */
         @media (max-width:991.98px) {
-            .portfolio-banner {
+
+            .multibagger-banner {
                 height: 350px;
             }
+
+            .multibagger-card {
+                margin-top: -50px;
+            }
+
         }
 
         /* Mobile */
         @media (max-width:767.98px) {
-            .portfolio-banner {
+
+            .multibagger-banner {
                 height: 260px;
-                object-fit: cover;
-                object-position: left;
             }
 
-            .portfolio-card {
-                margin-top: -60px;
+            .multibagger-card {
+                margin-top: -30px;
             }
+
+            .form-card {
+                margin-top: 20px;
+            }
+
         }
     </style>
 
-    <!-- Hero Image -->
-    <div class="container-fluid px-0 position-relative">
-        <img src="<?= $base ?>imgs/s2.jpg" class="portfolio-banner" alt="">
 
-
-        <!-- Border aligned with container -->
+    <!-- Banner -->
+    <div class="container-fluid p-0 position-relative">
+        <img src="<?= $base ?>imgs/s2.jpg"
+            class="multibagger-banner d-block"
+            alt="multibagger"
+            loading="lazy"
+            decoding="async">
         <div class="container position-absolute top-0 start-50 translate-middle-x h-100">
             <div class="border-start border-end border-light h-100"></div>
         </div>
-        <!-- Content Layer -->
-        <div class="container mt-5 position-absolute top-0 start-50 translate-middle-x px-4 py-5">
-            <div class="d-md-inline d-none">
-                <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
-                <span class="text-white mx-1">&gt;</span>
-                <a href="" class="text-decoration-none " style="color:#00DF9C;">Multibagger</a>
-            </div>
+
+        <!-- Desktop Breadcrumb -->
+        <div class="container position-absolute start-50 translate-middle-x px-4 py-5 d-none d-md-block"
+            style="top:40px;">
+
+            <a href="<?= $base ?>index.php"
+                class="text-decoration-none text-white">
+                Home
+            </a>
+
+            <span class="text-white mx-1">></span>
+            <span style="color:#00DF9C">
+                Multibagger
+            </span>
         </div>
     </div>
-
-    <!-- Content Box -->
-    <div class="container position-relative portfolio-card d-none">
+    <!-- Content Card -->
+    <div class="container multibagger-card">
         <div class="border-start border-end border-light">
-            <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
-                <div class="row">
-                    <div class="col-md-11">
-                        <div class="d-md-none mb-3"><a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none text-white" href="">Multibagger</a></div>
-                        <h1 class="display-5 fw-semibold mb-3 titleFont">
-                            Invest Early. Own Tomorrow’s Success.
-                        </h1>
-
-                        <p class="text-white-50 mb-3 pFont">
-                            One high-conviction stock every month, selected for long-term
-                            holding-focused on proven businesses that aim to create real
-                            wealth over time. </p>
-                    </div>
-                </div>
-
-                <div class="row text-center text-md-start">
-
-                    <div class="col-md-2 col-4">
-                        <h2 class="fw-semibold  display-6 mb-2">21+</h2>
-                        <p class="mb-0 small">Years Experience</p>
-                    </div>
-
-                    <div class="col-md-2 col-4">
-                        <h2 class="fw-semibold  display-6 mb-2">1M+</h2>
-                        <p class="mb-0 small">Registered Users</p>
-                    </div>
-
-                    <div class="col-md-3 col-4">
-                        <h2 class="fw-semibold display-6 mb-2">350+</h2>
-                        <p class="mb-0 small">Research Algorithms</p>
-                    </div>
-                    <!-- Button -->
-                    <div class="col-md-5 text-start text-md-end my-4">
-                        <a href="#" class="btn btn-light px-4 py-2 rounded-0">
-                            Explore Benefits →
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Content Box -->
-    <div class="container position-relative portfolio-card">
-        <div class="border-start border-end border-light">
-            <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
-                <div class="row align-items-center">
-
-                    <div class="col-md-7">
+            <div class="text-white p-3 p-md-4"
+                style="background:#02181A;">
+                <div class="row align-items-center g-0">
+                    <!-- LEFT CONTENT -->
+                    <div class="col-lg-7">
+                        <!-- Mobile Breadcrumb -->
                         <div class="d-md-none mb-3">
-                            <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a>
+                            <a href="<?= $base ?>index.php"
+                                class="text-decoration-none text-white">
+                                Home
+                            </a>
                             <span>></span>
-                            <a class="text-decoration-none text-white" href="">Multibagger</a>
+                            <span style="color:#00DF9C">
+                                Multibagger
+                            </span>
                         </div>
-
                         <h1 class="display-6 fw-semibold mb-3 titleFont">
-                            Invest early, before the stock opportunity becomes a success story.
+                            Invest Early, Before The Stock Opportunity Becomes A Success Story.
                         </h1>
-
                         <p class="text-white-50 mb-3 pFont">
-                            Mid-term Investing, Proven Results, Real Wealth
+                            Mid-term Investing, Proven Results, Real Wealth.
                         </p>
 
-                        <div>
-                            <a href="#" class="btn btn-light px-4 py-2 rounded-0">
-                                Explore Benefits →
-                            </a>
-                        </div>
-
-                        <p class="text-white mt-3 pFont">
+                        <button class="btn btn-light px-4 py-2 rounded-0">
+                            Explore Benefits →
+                        </button>
+                        <p class="mt-3 mb-0 pFont">
                             Minimum Investment:
-                            <span style="color:#00DF9C;">₹20,000 per stock</span>
+                            <span style="color:#00DF9C">
+                                ₹20,000 per stock
+                            </span>
                         </p>
                     </div>
 
-
-                    <div class="col-md-5 col-12">
-                        <!-- Form Box -->
-                        <style>
-                            @media (min-width: 768px) {
-                                .custom-form-box {
-                                    margin-top: -180px !important;
-                                }
-                            }
-                        </style>
-
-                        <div class="bg-white p-3 p-md-4 form-box custom-form-box ms-0 ms-md-5" style="margin-top: 0; width: 350px;">
-                            <small class="text-muted">
+                    <!-- FORM -->
+                    <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
+                        <div class="bg-white text-body p-4 form-card shadow">
+                            <p class="mb-1 fs-6 fw-medium pFont">
                                 Know more about
-                            </small>
-
-                            <h4 class="fw-bold text-dark mb-4">
+                            </p>
+                            <h4 class="fw-semibold mb-3 titleFont">
                                 Multibaggers Service
                             </h4>
-
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control rounded-0" id="name" placeholder="Enter Your Name">
-                                <label for="name">Enter Your Name*</label>
-                            </div>
 
+                                <input type="text"
+                                    class="form-control rounded-0"
+                                    id="name"
+                                    placeholder="Enter Your Name">
+
+                                <label for="name">
+                                    Enter Your Name*
+                                </label>
+                            </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control rounded-0" id="email" placeholder="Enter Your Email">
-                                <label for="email">Enter Your Email*</label>
-                            </div>
 
+                                <input type="email"
+                                    class="form-control rounded-0"
+                                    id="email"
+                                    placeholder="Enter Your Email">
+                                <label for="email">
+                                    Enter Your Email*
+                                </label>
+
+                            </div>
                             <div class="form-floating mb-4">
-                                <input type="text" class="form-control rounded-0" id="mobile" placeholder="Enter Your Mobile">
-                                <label for="mobile">Enter Your Mobile*</label>
-                            </div>
 
-                            <button class="btn rounded-0 w-100 text-white" style="background-color:#02181A;">
+                                <input type="text"
+                                    class="form-control rounded-0"
+                                    id="mobile"
+                                    placeholder="Enter Your Mobile">
+                                <label for="mobile">
+                                    Enter Your Mobile*
+                                </label>
+                            </div>
+                            <button class="btn rounded-0 text-white w-100"
+                                style="background:#02181A;">
                                 Sign in
                             </button>
-
-                            <p class="small text-muted mt-3 mb-0">
+                            <p class="small fw-medium mt-3 mb-0">
                                 By submitting, you agree to our Terms & Conditions
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -432,8 +406,8 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-3 justify-content-center">
                     <div class="col-md-10">
                         <div class="text-start text-md-center">
-                            <h3 class="display-6 titleFont fw-semibold">How We Identify Portfolio Opportunities?</h3>
-                            <p class="fs-6 pFont">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-md-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
+                            <h2 class="display-6 titleFont fw-semibold">How We Identify Portfolio Opportunities?</h2>
+                            <p class="fs-6 pFont mb-0">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-md-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
                         </div>
                     </div>
                 </div>
@@ -473,7 +447,8 @@ require __DIR__ . '/../includes/header.php';
                 flex-shrink: 0;
             }
 
-            .strength-card:hover .extra-img {
+            .strength-card:hover .extra-img,
+            .strength-card.active .extra-img {
                 width: 80px;
                 opacity: 1;
                 margin-left: 0;
@@ -482,7 +457,7 @@ require __DIR__ . '/../includes/header.php';
         <div class="border border-start border-end border-light">
             <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
                 <div class="col-md-4 col-11 flex-shrink-0">
-                    <div class="strength-card h-100 p-3 border border-start-0 border-top-0 border-end-0 border-light" style="cursor: pointer;">
+                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
 
@@ -507,9 +482,9 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <h3 class="fs-4 titleFont fw-semibold mt-5">
+                        <h2 class="fs-4 titleFont fw-semibold mt-5">
                             Business Strength
-                        </h3>
+                        </h2>
 
                         <ul class="Pfont mt-3 d-flex flex-column gap-1">
                             <li>Consistent sales and profit growth.</li>
@@ -521,7 +496,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
                 <div class="col-md-4 col-11 flex-shrink-0">
-                    <div class="strength-card h-100 p-3 border border-top-0 border-end-0 border-light" style="cursor: pointer;">
+                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
 
@@ -546,9 +521,9 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <h3 class="fs-4 titleFont fw-semibold mt-5">
+                        <h2 class="fs-4 titleFont fw-semibold mt-5">
                             Sector & Market Position
-                        </h3>
+                        </h2>
 
                         <ul class="Pfont mt-3 d-flex flex-column gap-1">
                             <li>Sector growth cycles.</li>
@@ -560,7 +535,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
                 <div class="col-md-4 col-11 flex-shrink-0">
-                    <div class="strength-card h-100 p-3 border border-end-0 border-top-0 border-light" style="cursor: pointer;">
+                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
 
@@ -585,9 +560,9 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <h3 class="fs-4 titleFont fw-semibold mt-5">
+                        <h2 class="fs-4 titleFont fw-semibold mt-5">
                             Right Timing
-                        </h3>
+                        </h2>
 
                         <ul class="Pfont mt-3 d-flex flex-column gap-1">
                             <li>Strong institutional funds flow.</li>
@@ -599,16 +574,14 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
             </div>
-            <div class="py-5">
-                <button class="btn text-white rounded-0 px-4 py-2 text-start  ms-3 pFont" style="background-color: #02181A;">
+            <div class="text-start px-3 py-5">
+                <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
                     Get Started →
                 </button>
             </div>
         </div>
     </div>
 </section>
-
-
 
 <!-- Get Started -->
 <section class="text-white" style="background:#02181A;">
@@ -617,8 +590,8 @@ require __DIR__ . '/../includes/header.php';
             <div class="row g-3 justify-content-center">
                 <div class="col-md-10">
                     <div class="text-start text-md-center">
-                        <h3 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h3>
-                        <p class="fs-6 pFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <h2 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h2>
+                        <p class="fs-6 pFont mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                     </div>
                 </div>
             </div>
@@ -642,15 +615,18 @@ require __DIR__ . '/../includes/header.php';
                     transition: opacity .3s ease, transform .3s ease;
                 }
 
-                .process-card:hover .process-img {
+                .process-card:hover .process-img,
+                .process-card.active .process-img {
                     transform: translateY(-70px);
                 }
 
-                .process-card:hover .process-content {
+                .process-card:hover .process-content,
+                .process-card.active .process-content {
                     height: 190px;
                 }
 
-                .process-card:hover .process-desc {
+                .process-card:hover .process-desc,
+                .process-card.active .process-desc {
                     opacity: 1;
                     transform: translateY(0);
                 }
@@ -674,9 +650,9 @@ require __DIR__ . '/../includes/header.php';
 
                             <img src="../imgs/Vector11.svg" alt="">
 
-                            <h3 class="fw-semibold mt-2 titleFont">
+                            <h2 class="fw-semibold mt-2 titleFont">
                                 Risk Profiling
-                            </h3>
+                            </h2>
 
                             <p class="process-desc Pfont mt-3 mb-0">
                                 To check the capability & willingness to take a risk.
@@ -704,9 +680,9 @@ require __DIR__ . '/../includes/header.php';
 
                             <img src="../imgs/Vector12.svg" alt="">
 
-                            <h3 class="fw-semibold titleFont mt-2">
+                            <h2 class="fw-semibold titleFont mt-2">
                                 Documentation
-                            </h3>
+                            </h2>
 
                             <p class="process-desc Pfont mt-3 mb-0">
                                 Sign an agreement & complete thepayment to begin the journey.
@@ -734,9 +710,9 @@ require __DIR__ . '/../includes/header.php';
 
                             <img src="../imgs/Vector13.svg" alt="">
 
-                            <h3 class="fw-semibold titleFont mt-2">
+                            <h2 class="fw-semibold titleFont mt-2">
                                 Service Activation
-                            </h3>
+                            </h2>
 
                             <p class="process-desc Pfont mt-3 mb-0">
                                 Complete the KYC to activateyour service.
@@ -867,9 +843,18 @@ require __DIR__ . '/../includes/header.php';
 
             <div class="row g-2">
 
-                <div class="col-md-6 p-4">
-                    <h3 class="display-6 titleFont fw-semibold">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h3>
-                    <p class="pFont fs-6 fw-medium mt-3 mb-3">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
+                <div class="col-12 p-4">
+
+                    <h3 class="display-6 titleFont fw-semibold">
+                        Put Your Money To Work
+                        <br class="d-xl-block d-md-none d-none" />
+                        With Our Research, That Suits Your Style.
+                    </h3>
+
+                    <p class="pFont fs-6 fw-medium mt-3 mb-3">
+                        Writerap loved from thousands customers worldwide and get trusted from big companies.
+                    </p>
+
                     <?php
                     $awards = [
                         [
@@ -929,41 +914,71 @@ require __DIR__ . '/../includes/header.php';
                     ];
                     ?>
 
-                    <marquee
-                        behavior="scroll"
-                        direction="left"
-                        scrollamount="12"
-                        onmouseover="this.stop();"
-                        onmouseout="this.start();">
 
-                        <div class="d-inline-flex gap-3">
+                    <!-- Desktop Auto Scroll -->
+                    <div class="d-none d-md-block">
+
+                        <marquee
+                            behavior="scroll"
+                            direction="left"
+                            scrollamount="12">
+
+                            <div class="d-inline-flex gap-3">
+
+                                <?php for ($i = 0; $i < 10; $i++): ?>
+                                    <?php foreach ($awards as $award): ?>
+
+                                        <img
+                                            src="../imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                            class="img-fluid"
+                                            alt="<?= htmlspecialchars($award['title']) ?>">
+
+                                    <?php endforeach; ?>
+                                <?php endfor; ?>
+
+                            </div>
+
+                        </marquee>
+
+                    </div>
+
+
+                    <!-- Mobile Manual Scroll -->
+                    <div class="d-block d-md-none overflow-auto awards-scroll">
+
+                        <div class="d-flex gap-3">
 
                             <?php foreach ($awards as $award): ?>
+
                                 <img
                                     src="../imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                    class="img-fluid"
+                                    class="img-fluid flex-shrink-0"
                                     alt="<?= htmlspecialchars($award['title']) ?>">
 
-                                <div class="card-body text-center d-none">
-                                    <span class="small text-body-secondary">
-                                        (<?= htmlspecialchars($award['year']) ?>)
-                                    </span>
-
-                                    <h3 class="h6 fw-bold mt-2 titleFont">
-                                        <?= htmlspecialchars($award['title']) ?>
-                                    </h3>
-
-                                    <p class="small text-secondary mb-0">
-                                        <?= htmlspecialchars($award['award']) ?>
-                                    </p>
-                                </div>
                             <?php endforeach; ?>
+
                         </div>
-                    </marquee>
+
+                    </div>
+
+
                 </div>
 
+
+                <style>
+                    .awards-scroll {
+                        overflow-x: auto;
+                        scrollbar-width: none;
+                        -webkit-overflow-scrolling: touch;
+                    }
+
+                    .awards-scroll::-webkit-scrollbar {
+                        display: none;
+                    }
+                </style>
+
                 <!-- RIGHT SIDE -->
-                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mb-1">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mb-1 d-none">
                     <div class="position-relative p-5 overflow-hidden"
                         style="max-width:430px;">
                         <!-- Background Image -->
@@ -1080,5 +1095,39 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        if (window.innerWidth < 768) {
+
+            function makeActive(selector) {
+
+                const elements = document.querySelectorAll(selector);
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+                            elements.forEach(el => el.classList.remove("active"));
+                            entry.target.classList.add("active");
+                        }
+
+                    });
+                }, {
+                    threshold: 0.6
+                });
+
+                elements.forEach(el => observer.observe(el));
+            }
+
+            makeActive(".process-card");
+            makeActive(".strength-card");
+
+        }
+
+    });
+</script>
+
 
 <?php require __DIR__ . '/../includes/footer.php'; ?>
