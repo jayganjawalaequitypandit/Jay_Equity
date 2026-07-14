@@ -5,6 +5,8 @@ $solidHeader = true;
 require __DIR__ . '/../includes/header.php';
 ?>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
 <!-- Hero + lead form -->
 <section>
     <div class="container d-none">
@@ -252,88 +254,132 @@ require __DIR__ . '/../includes/header.php';
 <section>
     <div class="container">
         <div class="py-5 border-start border-end border-light">
+
+            <!-- Heading -->
             <div class="row g-0">
                 <div class="col-md-12">
-                    <div class="pb-md-4 px-3 text-start text-md-center">
-                        <h2 class="display-5 titleFont fw-semibold d-inline-block">What You'll Get</h2>
-                        <p class="fs-6 pFont">Everything you need to execute trades with precision and confidence.</p>
+                    <div class="pb-md-4 px-3 text-start text-md-center"
+                        data-aos="fade-up">
+                        <h2 class="display-5 titleFont fw-semibold d-inline-block">
+                            What You'll Get
+                        </h2>
+                        <p class="fs-6 pFont">
+                            Everything you need to execute trades with precision and confidence.
+                        </p>
                     </div>
                 </div>
 
-                <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
+                <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto hide-scrollbar">
 
-                    <div class="col-md-4 col-10 flex-shrink-0">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 col-10 flex-shrink-0"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
                         <div class="h-100 p-3 border border-light">
                             <img src="../imgs/Vector4.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">1 High Growth Stock Per Month</h3>
+                            <h3 class="fs-3 titleFont fw-semibold">
+                                1 High Growth Stock Per Month
+                            </h3>
                             <p class="mb-0 pFont">
                                 Discover carefully selected high growth stock every month.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-10 flex-shrink-0">
-                        <div class="h-100 p-3 border  border-light">
+                    <!-- Card 2 -->
+                    <div class="col-md-4 col-10 flex-shrink-0"
+                        data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="h-100 p-3 border border-light">
                             <img src="../imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h3>
+                            <h3 class="fs-3 titleFont fw-semibold">
+                                A Detailed Research Report
+                            </h3>
                             <p class="mb-0 pFont">
                                 Expert research highlighting key trends and opportunities.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-10 flex-shrink-0">
+                    <!-- Card 3 -->
+                    <div class="col-md-4 col-10 flex-shrink-0"
+                        data-aos="fade-up"
+                        data-aos-delay="300">
                         <div class="h-100 p-3 border border-light">
                             <img src="../imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">Timely Entry & Exit Guidance</h3>
+                            <h3 class="fs-3 titleFont fw-semibold">
+                                Timely Entry & Exit Guidance
+                            </h3>
                             <p class="mb-0 pFont">
                                 Maximize returns with timely entry and exit strategies.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-10 flex-shrink-0">
+                    <!-- Card 4 -->
+                    <div class="col-md-4 col-10 flex-shrink-0"
+                        data-aos="fade-up"
+                        data-aos-delay="400">
                         <div class="h-100 p-3 border border-light">
                             <img src="../imgs/Vector4.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">Quarterly Review & Updates</h3>
+                            <h3 class="fs-3 titleFont fw-semibold">
+                                Quarterly Review & Updates
+                            </h3>
                             <p class="mb-0 pFont">
                                 Regular quarterly updates to refine strategy and improve performance.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-10 flex-shrink-0">
+                    <!-- Card 5 -->
+                    <div class="col-md-4 col-10 flex-shrink-0"
+                        data-aos="fade-up"
+                        data-aos-delay="500">
                         <div class="h-100 p-3 border border-light">
                             <img src="../imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">Real Time <br /> Dashboard</h3>
+                            <h3 class="fs-3 titleFont fw-semibold">
+                                Real Time <br> Dashboard
+                            </h3>
                             <p class="mb-0 pFont">
                                 Monitor your portfolio performance with live market data.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-10 flex-shrink-0">
+                    <!-- Card 6 -->
+                    <div class="col-md-4 col-10 flex-shrink-0"
+                        data-aos="fade-up"
+                        data-aos-delay="600">
                         <div class="h-100 p-3 border border-light">
                             <img src="../imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">Priority <br /> Support</h3>
+                            <h3 class="fs-3 titleFont fw-semibold">
+                                Priority <br> Support
+                            </h3>
                             <p class="mb-0 pFont">
-                                Dedicated support team ensuring faster responses and solutions
+                                Dedicated support team ensuring faster responses and solutions.
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
-            <div class="py-5 pb-0 ">
-                <button class="btn text-white rounded-0 px-4 py-2 text-start  ms-3 pFont" style="background-color: #02181A;">
+
+            <!-- Button -->
+            <div class="py-5 pb-0"
+                data-aos="zoom-in"
+                data-aos-delay="700">
+                <button class="btn text-white rounded-0 px-4 py-2 ms-3 pFont"
+                    style="background-color:#02181A;">
                     Get Started →
                 </button>
             </div>
+
         </div>
     </div>
 </section>
 
 <!-- Who Should Avail-->
-<section class="">
+<section class="" data-aos="fade-up">
     <div class="container">
 
         <div class="border border-light border-bottom">
@@ -399,7 +445,7 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- How we identify -->
-<section class="">
+<section class="" data-aos="fade-up">
     <div class="container">
         <div class="position-relative">
             <div class="px-3 py-5 border-start border-end border-light">
@@ -584,7 +630,7 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- Get Started -->
-<section class="text-white" style="background:#02181A;">
+<section class="text-white" style="background:#02181A;" data-aos="fade-up">
     <div class="container">
         <div class="px-3 py-5 border-start border-end border-light">
             <div class="row g-3 justify-content-center">
@@ -741,7 +787,7 @@ require __DIR__ . '/../includes/header.php';
         <div class="px-3 py-5 border-start border-end border-light">
             <div class="row g-3 py-4">
                 <div class="col-md-6">
-                    <h3 class="fs-3 pFont fw-semibold">Who are we?</h3>
+                    <h3 class="fs-3 pFont fw-semibold" data-aos="fade-up">Who are we?</h3>
                     <img
                         src="../imgs/Vector14.svg"
                         class="img-fluid mt-3"
@@ -761,7 +807,7 @@ require __DIR__ . '/../includes/header.php';
                     </button>
                 </div>
                 <div class="col-md-6">
-                    <p class="mb-0 small pFont">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
+                    <p class="mb-0 small pFont" data-aos="fade-up">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
                     <img
                         src="../imgs/ep.svg"
                         class="img-fluid mt-3"
@@ -773,7 +819,7 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- FAQ -->
-<section>
+<section data-aos="fade-up">
     <div class="container">
         <div class="px-3 py-5 border border-start border-end border-light">
             <div class="row g-3 py-md-5">
@@ -837,7 +883,7 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- Multibagger form -->
-<section class="pb-2">
+<section class="pb-2" data-aos="fade-up">
     <div class="container">
         <div class="border-start border-end border-light">
 
@@ -1129,5 +1175,15 @@ require __DIR__ . '/../includes/header.php';
     });
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    });
+</script>
 
 <?php require __DIR__ . '/../includes/footer.php'; ?>
