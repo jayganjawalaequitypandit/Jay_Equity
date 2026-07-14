@@ -455,8 +455,8 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-3 justify-content-center">
                     <div class="col-md-10">
                         <div class="text-start text-md-center">
-                            <h2 class="display-6 titleFont fw-semibold">How We Identify Portfolio Opportunities?</h2>
-                            <p class="fs-6 pFont mb-0">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-md-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
+                            <h2 class="display-6 titleFont fw-semibold">How We Identify Multibagger Opportunities?</h2>
+                            <p class="fs-6 pFont mb-0">Our research team evaluates Multibagger stocks using a structured process that <br class="d-none d-md-block"> includes fundamental analysis, market conditions and technical analysis.</p>
                         </div>
                     </div>
                 </div>
