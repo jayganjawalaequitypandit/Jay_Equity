@@ -560,9 +560,9 @@ require __DIR__ . '/../includes/header.php';
                         data-bs-spy="scroll"
                         data-bs-target="#wealth-nav"
                         data-bs-smooth-scroll="true"
-                        tabindex="0"
-                        class="overflow-auto hide-scrollbar"
-                        style="height:100vh;">
+                        tabindex="0">
+                        <!-- class="overflow-auto hide-scrollbar"
+                        style="height:100vh;" -->
 
                         <!-- Section 1 -->
                         <section id="stocks" class="p-3 border-bottom border-light">
