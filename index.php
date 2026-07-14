@@ -554,9 +554,9 @@ require __DIR__ . './includes/header.php';
                 <div class="border border-start border-end border-light">
                     <div class="row g-0">
                         <div class="col-md-12">
-                            <div class="text-center py-5">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Fascinating Facts <br class="d-md-none" />That Shape Your Financial Knowledge</h2>
-                                <p class="fs-6 pFont mb-0">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective<br class="d-none d-xl-block" /> arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy <br class="d-xl-block d-none" />excited ten carried manners talking how.</p>
+                            <div class="text-md-center text-start py-5 px-3">
+                                <h2 class="display-5 titleFont fw-semibold d-inline-block">Why Choose Us?</h2>
+                                <p class="fs-6 pFont mb-0">For nearly two decades, we’ve built a legacy of trust, transparency, and results. When you work with us, you gain more than just an investment plan—you gain a long-term partner committed to your financial success. Here’s why thousands of clients trust us to manage their investments:</p>
                             </div>
                         </div>
                         <div class="container px-0">
@@ -951,74 +951,144 @@ require __DIR__ . './includes/header.php';
             </div>
         </section>
 
-        <section class="text-white d-none" style="background-color: #c20029;">
+        <section class="text-white" style="background:#02181A;">
             <div class="container">
-                <div class="py-5 border-start border-end border-light">
-                    <div class="row g-3">
+                <div class="px-3 py-5 border-start border-end border-light">
+                    <div class="row g-3 justify-content-center">
                         <div class="col-md-12">
-                            <div class="pb-md-5 px-3 text-start text-md-center">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block">What the press has been saying</h2>
-                                <p class="fs-5 titleFont">EquityPandit Is A Contributor To The World’s Biggest Financial Portals.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="image-box position-relative overflow-hidden">
-                                <img
-                                    src="./imgs/services/s1.jpeg"
-                                    class="img-fluid w-100"
-                                    alt="Business" loading="lazy" decoding="async">
+                            <div class="text-start text-md-center">
+                                <h2 class="display-5 titleFont fw-semibold" style="line-height: 1.5;">
+                                    What the press has been saying
+                                </h2>
 
-                                <div class="image-content position-absolute bottom-0 start-0  bg-primary-subtle p-3 text-light" data-bs-theme="dark">
-                                    <h2 class="mb-1 titleFont fs-2 fw-bold">Factset</h2>
-
-                                    <p class="sub-title titleFont mb-3 fs-5">
-                                        A carefully curated list of 18-20 high-potential stocks, backed by 20+ years of market expertise, designed to create long-term wealth.
-                                    </p>
-
-                                    <a href="#" class="text-light border-bottom border-2 border-success text-decoration-none fs-5">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4">
-                            <div class="image-box position-relative overflow-hidden">
-                                <img
-                                    src="./imgs/services/s2.jpeg"
-                                    class="img-fluid w-100"
-                                    alt="Business" loading="lazy" decoding="async">
-
-                                <div class="image-content position-absolute bottom-0 start-0  bg-primary-subtle p-3 text-light" data-bs-theme="dark">
-                                    <h2 class="mb-1 titleFont fs-2 fw-bold">investing.com</h2>
-
-                                    <p class="sub-title titleFont mb-3 fs-5">
-                                        One high-growth stock every month for mid-term holding, focused on fundamentally strong businesses.
-                                    </p>
-
-                                    <a href="#" class="text-light border-bottom border-2 border-success text-decoration-none fs-5">Know More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="image-box position-relative overflow-hidden">
-                                <img
-                                    src="./imgs/services/s3.jpeg"
-                                    class="img-fluid w-100"
-                                    alt="Business" loading="lazy" decoding="async">
-
-                                <div class="image-content position-absolute bottom-0 start-0  bg-primary-subtle p-3 text-light" data-bs-theme="dark">
-                                    <h2 class="mb-1 titleFont fs-2 fw-bold">Thomson Reuters</h2>
-
-                                    <p class="sub-title titleFont mb-3 fs-5">
-                                        WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
-                                    </p>
-
-                                    <a href="#" class="text-light border-bottom border-2 border-success text-decoration-none fs-5">Know More</a>
-                                </div>
+                                <p class="fs-6 pFont mb-0">
+                                    EquityPandit Is A Contributor To The World's Biggest Financial Portals.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Cards -->
+            <div class="border border-light" style="background:#02181A;">
+                <div class="container">
+
+                    <div class="row g-3">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="image-box position-relative overflow-hidden">
+
+                                <img
+                                    src="./imgs/services/s1.jpeg"
+                                    class="img-fluid w-100"
+                                    alt="Business"
+                                    loading="lazy"
+                                    decoding="async">
+
+                                <div class="image-content position-absolute bottom-0 start-0 p-3 bg-white text-dark">
+
+                                    <h2 class="mb-1 titleFont fs-2 fw-bold">
+                                        Factset
+                                    </h2>
+
+                                    <p class="sub-title pFont mb-3 fs-6">
+                                        A carefully curated list of 18-20 high-potential stocks,
+                                        backed by 20+ years of market expertise,
+                                        designed to create long-term wealth.
+                                    </p>
+
+                                    <a href="#"
+                                        class="text-dark text-decoration-none fs-5"
+                                        style="border-bottom:2px solid #00DF9C;">
+                                        Know More
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="image-box position-relative overflow-hidden">
+
+                                <img
+                                    src="./imgs/services/s2.jpeg"
+                                    class="img-fluid w-100"
+                                    alt="Business"
+                                    loading="lazy"
+                                    decoding="async">
+
+                                <div class="image-content position-absolute bottom-0 start-0 p-3 bg-white text-dark">
+
+                                    <h2 class="mb-1 titleFont fs-2 fw-bold">
+                                        Investing.com
+                                    </h2>
+
+                                    <p class="sub-title pFont mb-3 fs-6">
+                                        One high-growth stock every month for mid-term
+                                        holding, focused on fundamentally strong businesses.
+                                    </p>
+
+                                    <a href="#"
+                                        class="text-dark text-decoration-none fs-5"
+                                        style="border-bottom:2px solid #00DF9C;">
+                                        Know More
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="image-box position-relative overflow-hidden">
+
+                                <img
+                                    src="./imgs/services/s3.jpeg"
+                                    class="img-fluid w-100"
+                                    alt="Business"
+                                    loading="lazy"
+                                    decoding="async">
+
+                                <div class="image-content position-absolute bottom-0 start-0 p-3 bg-white text-dark">
+
+                                    <h2 class="mb-1 titleFont fs-2 fw-bold">
+                                        Thomson Reuters
+                                    </h2>
+
+                                    <p class="sub-title pFont mb-3 fs-6">
+                                        WealthX is a comprehensive equity investing service
+                                        built to keep you aligned with opportunities across
+                                        market cycles.
+                                    </p>
+
+                                    <a href="#"
+                                        class="text-dark text-decoration-none fs-5"
+                                        style="border-bottom:2px solid #00DF9C;">
+                                        Know More
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom spacing -->
+            <div style="background:#02181A;">
+                <div class="container">
+                    <div class="border-start border-end border-light py-4"></div>
+                </div>
+            </div>
+
         </section>
 
         <section>
