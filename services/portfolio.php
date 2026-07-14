@@ -28,6 +28,7 @@ require __DIR__ . '/../includes/header.php';
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <style>
         body {
             font-family: 'Work Sans', sans-serif;
@@ -67,6 +68,15 @@ require __DIR__ . '/../includes/header.php';
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
             /* Chrome/Safari/Edge */
+        }
+
+        /* Keep motion subtle and respect visitors who disable animation. */
+        @media (prefers-reduced-motion: reduce) {
+            [data-aos] {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
         }
     </style>
 </head>
@@ -285,26 +295,30 @@ require __DIR__ . '/../includes/header.php';
                             <div class="d-md-none mb-3">
                                 <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none" style="color:#00DF9C" href="">Poftfolio</a>
                             </div>
-                            <h1 class="display-5 fw-semibold mb-3 titleFont">
+                            <h1 class="display-5 fw-semibold mb-3 titleFont" data-aos="fade-right">
                                 Perfect Portfolio for 2026 & Beyond
                             </h1>
 
-                            <p class="text-white-50 mb-3 pFont">
+                            <p class="text-white-50 mb-3 pFont" data-aos="fade-right"
+                                data-aos-delay="100">
                                 Selected stocks from high growth sectors.
                             </p>
 
                             <!-- Button -->
-                            <button href="#" class="btn btn-light px-4 py-2 rounded-0">
+                            <button type="button" class="btn btn-light px-4 py-2 rounded-0" data-aos="fade-up"
+                                data-aos-delay="200">
                                 Explore Benefits →
                             </button>
-                            <p class="mb-0 mt-3 pFont">Minimum Investment: <span style="color: #00DF9C;">₹2 Lacs</span></p>
+                            <p class="mb-0 mt-3 pFont" data-aos="fade-up"
+                                data-aos-delay="250">Minimum Investment: <span style="color: #00DF9C;">₹2 Lacs</span></p>
                         </div>
 
                         <!-- RIGHT SIDE -->
                         <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
 
                             <!-- Form Box -->
-                            <div class="bg-white text-body p-3 form-card">
+                            <div class="bg-white text-body p-3 form-card" data-aos="fade-left"
+                                data-aos-delay="150">
                                 <p class="pFont mb-1 fs-6 fw-medium">
                                     Know more about
                                 </p>
@@ -362,14 +376,19 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-0">
                     <div class="col-md-12">
                         <div class="pb-md-4 px-3 text-start text-md-center">
-                            <h2 class="display-5 titleFont fw-semibold d-inline-block">What you get</h2>
-                            <p class="fs-6 pFont">A complete wealth management ecosystem — research, alerts, analytics, and expert support.</p>
+                            <h2 class="display-5 titleFont fw-semibold d-inline-block"
+                                data-aos="fade-up"
+                                data-aos-delay="100">
+                                What you get
+                            </h2>
+                            <p class="fs-6 pFont" data-aos="fade-up"
+                                data-aos-delay="250">A complete wealth management ecosystem — research, alerts, analytics, and expert support.</p>
                         </div>
                     </div>
 
                     <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
 
-                        <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector4.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h2>
@@ -379,7 +398,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector5.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Timely Entry & Exit Guidance</h2>
@@ -389,7 +408,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector6.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Quarterly Review & Updates</h2>
@@ -399,7 +418,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector5.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Real Time Dashboard</h2>
@@ -409,7 +428,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0">
+                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector6.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Priority Support</h2>
@@ -419,7 +438,8 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="text-start px-3 mt-5">
+                    <div class="text-start px-3 mt-5" data-aos="fade-up"
+                        data-aos-delay="100">
                         <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
                             Get Started →
                         </button>
@@ -507,21 +527,25 @@ require __DIR__ . '/../includes/header.php';
 
                     <div class="position-sticky top-0 p-3 sticky-section">
 
-                        <h2 class="display-6 fw-semibold titleFont">
+                        <h2 class="display-6 fw-semibold titleFont" data-aos="fade-up"
+                            data-aos-delay="100">
                             Focused On Sustainable Wealth Creation.
                         </h2>
 
-                        <p class="small fs-6 mt-3">
+                        <p class="small fs-6 mt-3" data-aos="fade-up"
+                            data-aos-delay="100">
                             Rigorous Screening, Smart Entries, And Active Monitoring
                             Deliver Long-Term Portfolio Growth.
                         </p>
                         <img
                             src="../imgs/Portfolio2.svg"
                             class="img-fluid"
-                            alt="background">
+                            alt="background" data-aos="fade-up"
+                            data-aos-delay="100">
 
                         <a href="<?= $base ?>contact-us.php"
-                            class="btn btn-light rounded-0 mt-5">
+                            class="btn btn-light rounded-0 mt-5" data-aos="fade-up"
+                            data-aos-delay="100">
                             Get Started →
                         </a>
 
@@ -544,13 +568,16 @@ require __DIR__ . '/../includes/header.php';
                         <section id="stocks" class="p-3 border-bottom border-light">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h2 class="fs-4 fw-semibold titleFont">18 Stocks For A Strong 2026</h2>
-                                    <p class="fs-6 pFont">
+                                    <h2 class="fs-4 fw-semibold titleFont" data-aos="fade-up"
+                                        data-aos-delay="100">18 Stocks For A Strong 2026</h2>
+                                    <p class="fs-6 pFont" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         A thoughtfully selected basket of high-potential
                                         stocks across emerging and stable sectors.
                                     </p>
                                 </div>
-                                <div class="col-md-2 text-end">
+                                <div class="col-md-2 text-end" data-aos="fade-up"
+                                    data-aos-delay="100">
                                     <button class="btn btn-outline-light border-secondary rounded-0">
                                         →
                                     </button>
@@ -558,16 +585,19 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                             <div class="row g-1 mt-3">
                                 <div class="col-md-12">
-                                    <p class="fs-6 fw-semibold pFont">What You Get</p>
+                                    <p class="fs-6 fw-semibold pFont" data-aos="fade-up"
+                                        data-aos-delay="100">What You Get</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <ul class="small">
+                                    <ul class="small" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         <li>Balanced allocation across Large, Mid & Small Cap</li>
                                         <li>Risk-managed structure to protect downside</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <ul class="small">
+                                    <ul class="small" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         <li>Exposure to high-growth sectors like Pharma, Finance, Manufacturing, Infra & Tech</li>
                                         <li>Long-term wealth creation strategy (not speculation)</li>
                                     </ul>
@@ -579,12 +609,15 @@ require __DIR__ . '/../includes/header.php';
                         <section id="rebalance" class="p-3 border-bottom border-light">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h2 class="fs-4 titleFont fw-semibold">Quarterly Rebalancing</h2>
-                                    <p class="fs-6 pFont">
+                                    <h2 class="fs-4 titleFont fw-semibold" data-aos="fade-up"
+                                        data-aos-delay="100">Quarterly Rebalancing</h2>
+                                    <p class="fs-6 pFont" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         Markets change. Your portfolio should too. We continuously monitor economic trends, sector movements, and company performance to keep your portfolio optimized.
                                     </p>
                                 </div>
-                                <div class="col-md-2 text-end">
+                                <div class="col-md-2 text-end" data-aos="fade-up"
+                                    data-aos-delay="100">
                                     <button class="btn btn-outline-light border-secondary rounded-0">
                                         →
                                     </button>
@@ -592,16 +625,19 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                             <div class="row g-1 mt-3">
                                 <div class="col-md-12">
-                                    <p class="fs-6 pFont fw-semibold">Our Process</p>
+                                    <p class="fs-6 pFont fw-semibold" data-aos="fade-up"
+                                        data-aos-delay="100">Our Process</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <ul class="small">
+                                    <ul class="small" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         <li>Ongoing performance tracking</li>
                                         <li>Adding new high-potential opportunities</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <ul class="small">
+                                    <ul class="small" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         <li>Removing underperforming stocks</li>
                                         <li>Rebalancing allocation for optimal returns</li>
                                     </ul>
@@ -615,12 +651,15 @@ require __DIR__ . '/../includes/header.php';
 
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h2 class="fs-4 titleFont fw-semibold">Timely Entry & Exit Guidance</h2>
-                                    <p class="fs-6 pFont">
+                                    <h2 class="fs-4 titleFont fw-semibold" data-aos="fade-up"
+                                        data-aos-delay="100">Timely Entry & Exit Guidance</h2>
+                                    <p class="fs-6 pFont" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         Don’t just buy stocks — buy them at the right time. We provide clear, actionable updates so you know exactly what to do. Structured alerts. No confusion. No noise.
                                     </p>
                                 </div>
-                                <div class="col-md-2 text-end">
+                                <div class="col-md-2 text-end" data-aos="fade-up"
+                                    data-aos-delay="100">
                                     <button class="btn btn-outline-light border-secondary rounded-0">
                                         →
                                     </button>
@@ -628,16 +667,19 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                             <div class="row g-1 mt-3">
                                 <div class="col-md-12">
-                                    <p class="fs-6 pFont fw-semibold">What You Get</p>
+                                    <p class="fs-6 pFont fw-semibold" data-aos="fade-up"
+                                        data-aos-delay="100">What You Get</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <ul class="small">
+                                    <ul class="small" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         <li>Balanced allocation across Large, Mid & Small Cap</li>
                                         <li>Risk-managed structure to protect downside</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <ul class="small">
+                                    <ul class="small" data-aos="fade-up"
+                                        data-aos-delay="100">
                                         <li>Exposure to high-growth sectors like Pharma, Finance, Manufacturing, Infra & Tech</li>
                                         <li>Long-term wealth creation strategy (not speculation)</li>
                                     </ul>
@@ -663,8 +705,10 @@ require __DIR__ . '/../includes/header.php';
                     <div class="row g-3 justify-content-center">
                         <div class="col-md-10">
                             <div class="text-start text-md-center">
-                                <h2 class="display-6 titleFont fw-semibold">How We Identify Portfolio Opportunities?</h2>
-                                <p class="fs-6 pFont">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-md-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
+                                <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                                    data-aos-delay="100">How We Identify Portfolio Opportunities?</h2>
+                                <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                                    data-aos-delay="100">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-xl-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
                             </div>
                         </div>
                     </div>
@@ -704,16 +748,33 @@ require __DIR__ . '/../includes/header.php';
                     flex-shrink: 0;
                 }
 
-                .strength-card:hover .extra-img,
-                .strength-card.active .extra-img {
-                    width: 80px;
-                    opacity: 1;
-                    margin-left: 0;
+                @media (min-width: 768px) {
+                    .strength-card:hover .extra-img {
+                        width: 80px;
+                        opacity: 1;
+                        margin-left: 0;
+                    }
+                }
+
+                /* On phones, reveal the two additional images only for the
+                   card currently in view. All other cards retain one image. */
+                @media (max-width: 767.98px) {
+                    .strength-card:not(.active) .extra-img {
+                        width: 0;
+                        opacity: 0;
+                        margin-left: 0;
+                    }
+
+                    .strength-card.active .extra-img {
+                        width: 80px;
+                        opacity: 1;
+                        margin-left: 0;
+                    }
                 }
             </style>
             <div class="border border-start border-end border-light">
                 <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
-                    <div class="col-md-4 col-11 flex-shrink-0">
+                    <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                         <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                             <div class="image-wrapper">
@@ -752,7 +813,7 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
-                    <div class="col-md-4 col-11 flex-shrink-0">
+                    <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                         <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                             <div class="image-wrapper">
@@ -791,7 +852,7 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
-                    <div class="col-md-4 col-11 flex-shrink-0">
+                    <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                         <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                             <div class="image-wrapper">
@@ -831,7 +892,8 @@ require __DIR__ . '/../includes/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="text-start px-3 py-5">
+                <div class="text-start px-3 py-5" data-aos="fade-up"
+                    data-aos-delay="100">
                     <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
                         Get Started →
                     </button>
@@ -848,8 +910,10 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-3 justify-content-center">
                     <div class="col-md-10">
                         <div class="text-start text-md-center">
-                            <h2 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h2>
-                            <p class="fs-6 pFont mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                            <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                                data-aos-delay="100">Get started in 3 simple steps for Wealth Creation</h2>
+                            <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                                data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                         </div>
                     </div>
                 </div>
@@ -892,7 +956,8 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-3">
 
                     <!-- Card 1 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up"
+                        data-aos-delay="150">
                         <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
 
                             <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
@@ -922,7 +987,8 @@ require __DIR__ . '/../includes/header.php';
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up"
+                        data-aos-delay="200">
                         <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
 
                             <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
@@ -952,7 +1018,8 @@ require __DIR__ . '/../includes/header.php';
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up"
+                        data-aos-delay="250">
                         <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
 
                             <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
@@ -1000,31 +1067,39 @@ require __DIR__ . '/../includes/header.php';
             <div class="px-3 py-5 border-start border-end border-light">
                 <div class="row g-3 py-4">
                     <div class="col-md-6">
-                        <h2 class="fs-3 pFont fw-semibold">Who are we?</h2>
+                        <h2 class="fs-3 pFont fw-semibold" data-aos="fade-up"
+                            data-aos-delay="100">Who are we?</h2>
                         <img
                             src="../imgs/Vector14.svg"
                             class="img-fluid mt-3"
-                            alt="background" />
+                            alt="background" data-aos="fade-up"
+                            data-aos-delay="100" />
                         <div class="d-flex mt-4">
                             <img
                                 src="../imgs/avatars.svg"
                                 class="img-fluid"
-                                alt="background" />
+                                alt="background" data-aos="fade-up"
+                                data-aos-delay="100" />
                             <div class="flex-column">
-                                <p class="mb-0 pFont fw-medium fs-5">Chosen by 1M+</p>
-                                <p class="pFont fw-medium fs-5">Registered Users</p>
+                                <p class="mb-0 pFont fw-medium fs-5" data-aos="fade-up"
+                                    data-aos-delay="100">Chosen by 1M+</p>
+                                <p class="pFont fw-medium fs-5" data-aos="fade-up"
+                                    data-aos-delay="100">Registered Users</p>
                             </div>
                         </div>
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;">
+                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
+                            data-aos-delay="100">
                             Get Started →
                         </button>
                     </div>
                     <div class="col-md-6">
-                        <p class="mb-0 small pFont">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
+                        <p class="mb-0 small pFont" data-aos="fade-up"
+                            data-aos-delay="100">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
                         <img
                             src="../imgs/ep.svg"
                             class="img-fluid mt-3"
-                            alt="background" />
+                            alt="background" data-aos="fade-up"
+                            data-aos-delay="100" />
                     </div>
                 </div>
             </div>
@@ -1037,15 +1112,19 @@ require __DIR__ . '/../includes/header.php';
             <div class="px-3 py-5 border border-start border-end border-light">
                 <div class="row g-3 py-md-5">
                     <div class="col-md-6">
-                        <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
-                        <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
+                        <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                            data-aos-delay="100">Frequently Asked Questions</h2>
+                        <p class="fs-6 pFont mb-3" data-aos="fade-up"
+                            data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
                         <img
                             src="../imgs/Faq1.svg"
                             class="img-fluid"
-                            alt="background">
+                            alt="background" data-aos="fade-up"
+                            data-aos-delay="100">
                     </div>
                     <div class="col-md-6">
-                        <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
+                        <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
+                            data-aos-delay="200">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
@@ -1101,8 +1180,10 @@ require __DIR__ . '/../includes/header.php';
             <div class="py-5 px-3 border-start border-end border-light">
                 <div class="row g-0">
                     <div class="col-md-12">
-                        <h2 class="display-6 titleFont fw-semibold">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h2>
-                        <p class="pFont fs-6 fw-medium mt-3 mb-3">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
+                        <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                            data-aos-delay="100">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h2>
+                        <p class="pFont fs-6 mt-3 mb-3" data-aos="fade-up"
+                            data-aos-delay="100">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
                         <?php
                         $awards = [
                             [
@@ -1167,7 +1248,9 @@ require __DIR__ . '/../includes/header.php';
                             direction="left"
                             scrollamount="12"
                             onmouseover="this.stop();"
-                            onmouseout="this.start();">
+                            onmouseout="this.start();"
+                            data-aos="fade-up"
+                            data-aos-delay="100">
 
                             <div class="d-inline-flex gap-3">
                                 <?php for ($i = 0; $i < 10; $i++): ?>
@@ -1194,7 +1277,8 @@ require __DIR__ . '/../includes/header.php';
                                 <?php endfor; ?>
                             </div>
                         </marquee>
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;">
+                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
+                            data-aos-delay="100">
                             Get Started →
                         </button>
                     </div>
@@ -1292,6 +1376,12 @@ require __DIR__ . '/../includes/header.php';
 
                     const elements = document.querySelectorAll(selector);
 
+                    if (!elements.length) return;
+
+                    // Ensure the first mobile card has its expanded state
+                    // before the observer receives its first callback.
+                    elements[0].classList.add("active");
+
                     const observer = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
 
@@ -1313,6 +1403,33 @@ require __DIR__ . '/../includes/header.php';
 
             }
 
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100,
+            anchorPlacement: 'top-bottom',
+            disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+        });
+
+        window.addEventListener('load', () => AOS.refresh());
+
+        const portfolioDetails = document.querySelector('[data-bs-spy="scroll"]');
+        portfolioDetails?.addEventListener('scroll', () => {
+            window.dispatchEvent(new Event('scroll'));
+        }, {
+            passive: true
+        });
+
+        document.querySelectorAll('.accordion-collapse').forEach((panel) => {
+            panel.addEventListener('shown.bs.collapse', () => AOS.refresh());
+            panel.addEventListener('hidden.bs.collapse', () => AOS.refresh());
         });
     </script>
 
