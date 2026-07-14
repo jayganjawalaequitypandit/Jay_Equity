@@ -182,21 +182,63 @@ require __DIR__ . './includes/header.php';
                         </div>
                     </div>
                     <div class="row g-0" id="statsSection">
+                        <style>
+                            .rolling-counter {
+                                display: inline-flex;
+                                align-items: baseline;
+                                line-height: 1;
+                                font: inherit;
+                            }
+
+                            .digit-box {
+                                position: relative;
+                                width: 0.65em;
+                                /* Adjust if needed */
+                                height: 1em;
+                                overflow: hidden;
+                                display: inline-block;
+                                line-height: 1;
+                            }
+
+                            .digit-track {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                transition: transform 4s cubic-bezier(.22, 1, .36, 1);
+                            }
+
+                            .digit {
+                                height: 1em;
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font: inherit;
+                                line-height: 1;
+                            }
+                        </style>
                         <div class="col-md-3 col-6">
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100">
-                                <p class="display-4 fw-semibold d-inline-block pFont"><span class="counter" data-count="21">1</span>+</p>
+                                <p class="display-4 fw-semibold d-flex align-items-center pFont">
+                                    <span class="rolling-counter" data-count="21"></span><span>+</span>
+                                </p>
                                 <p class="fs-5 pFont mb-md-0">Years of Market<br />Expertise</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100">
-                                <p class="display-4 fw-semibold d-inline-block pFont"><span class="counter" data-count="1">0</span>M+</p>
+                                <p class="display-4 fw-semibold d-flex align-items-center pFont">
+                                    <span class="rolling-counter" data-count="1"></span><span>M+</span>
+                                </p>
                                 <p class="fs-5 pFont mb-md-0">Registered<br />Users</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="border border-start-0 border-light py-md-5 py-3 px-3 h-100">
-                                <p class="display-4 fw-semibold d-inline-block pFont"><span class="counter" data-count="11">1</span>+</p>
+                                <p class="display-4 fw-semibold d-flex align-items-center pFont">
+                                    <span class="rolling-counter" data-count="11"></span><span>+</span>
+                                </p>
                                 <p class="fs-5 pFont mb-md-0">National & International<br />Awards</p>
                             </div>
                         </div>
@@ -1116,6 +1158,103 @@ require __DIR__ . './includes/header.php';
 
                 boxes.forEach(box => observer.observe(box));
             }
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const counters = document.querySelectorAll(".rolling-counter");
+
+            function createCounter(counter) {
+
+                const value = counter.dataset.count.toString();
+
+                counter.innerHTML = "";
+
+                [...value].forEach((num, index) => {
+
+                    const box = document.createElement("div");
+                    box.className = "digit-box";
+
+                    const track = document.createElement("div");
+                    track.className = "digit-track";
+
+                    const digit = parseInt(num);
+
+                    // Even index -> Top to Bottom
+                    if (index % 2 === 0) {
+
+                        // 0 -> target
+                        for (let i = 0; i <= digit; i++) {
+                            const d = document.createElement("div");
+                            d.className = "digit";
+                            d.textContent = i;
+                            track.appendChild(d);
+                        }
+
+                        box.appendChild(track);
+                        counter.appendChild(box);
+
+                        requestAnimationFrame(() => {
+                            track.style.transform = `translateY(-${digit}em)`;
+                        });
+
+                    }
+                    // Odd index -> Bottom to Top
+                    else {
+
+                        // target -> 9
+                        for (let i = digit; i <= 9; i++) {
+                            const d = document.createElement("div");
+                            d.className = "digit";
+                            d.textContent = i;
+                            track.appendChild(d);
+                        }
+
+                        box.appendChild(track);
+                        counter.appendChild(box);
+
+                        // Start at bottom
+                        track.style.transform = `translateY(-${9-digit}em)`;
+
+                        requestAnimationFrame(() => {
+                            track.style.transform = "translateY(0)";
+                        });
+
+                    }
+
+                });
+
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        counters.forEach(counter => {
+
+                            if (!counter.dataset.done) {
+                                createCounter(counter);
+                                counter.dataset.done = "true";
+                            }
+
+                        });
+
+                        observer.disconnect();
+
+                    }
+
+                });
+
+            }, {
+                threshold: 0.5
+            });
+
+            observer.observe(document.querySelector("#statsSection"));
 
         });
     </script>
