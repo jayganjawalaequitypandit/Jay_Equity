@@ -555,7 +555,7 @@ require __DIR__ . './includes/header.php';
                     <div class="row g-0">
                         <div class="col-md-12">
                             <div class="text-center py-5">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Fascinating Facts <br class="d-md-none" />That Shape Your <br class="d-none d-md-block" />Financial Knowledge</h2>
+                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Fascinating Facts <br class="d-md-none" />That Shape Your Financial Knowledge</h2>
                                 <p class="fs-6 pFont mb-0">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective<br class="d-none d-xl-block" /> arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy <br class="d-xl-block d-none" />excited ten carried manners talking how.</p>
                             </div>
                         </div>
