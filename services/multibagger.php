@@ -77,7 +77,7 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- Hero -->
-<section class="position-relative">
+<section class="position-relative" data-aos="fade-up">
 
     <style>
         /* Desktop */
