@@ -692,7 +692,7 @@ require __DIR__ . './includes/header.php';
                                 <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">National & International Awards</h2>
                                 <p class="fs-6 pFont mb-0">EquityPandit has consistently recognized by<br class="d-xl-block d-none" /> leading industry institution for innovation, research<br class="d-xl-block d-none" /> quality and investor education initiatives.</p>
                             </div>
-                            <button class="btn btn-dark rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center">
+                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;">
                                 Let's Get Started
                                 <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </button>
@@ -972,17 +972,17 @@ require __DIR__ . './includes/header.php';
                                     class="img-fluid mt-3"
                                     alt="background">
                             </div>
-                            <button class="btn btn-dark rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center">
+                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;">
                                 Contact Now
                                 <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </button>
                         </div>
 
                         <div class="col-md-6 pb-md-0 pb-5">
-                            <div class="row g-0">
+                            <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
 
                                 <!-- Card 1 -->
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-11 flex-shrink-0">
                                     <div class="card border h-100 p-3 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
@@ -1004,7 +1004,7 @@ require __DIR__ . './includes/header.php';
                                 </div>
 
                                 <!-- Card 2 -->
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-11 flex-shrink-0">
                                     <div class="card border h-100 p-3 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
@@ -1026,7 +1026,7 @@ require __DIR__ . './includes/header.php';
                                 </div>
 
                                 <!-- Card 3 -->
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-11 flex-shrink-0">
                                     <div class="card border h-100 p-3 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
@@ -1048,7 +1048,7 @@ require __DIR__ . './includes/header.php';
                                 </div>
 
                                 <!-- Card 4 -->
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-11 flex-shrink-0">
                                     <div class="card border h-100 p-3 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
