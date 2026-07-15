@@ -76,6 +76,7 @@ require __DIR__ . './includes/header.php';
     <!-- Demo page content -->
     <main id="home">
 
+        <!-- Hero Section -->
         <section id="hero-section" class="position-relative overflow-hidden vh-100">
 
             <!-- Video Background -->
@@ -172,6 +173,7 @@ require __DIR__ . './includes/header.php';
             </div>
         </section>
 
+        <!-- Since 2005 -->
         <section>
             <div class="container">
                 <div class="border-start border-end border-light">
@@ -287,6 +289,10 @@ require __DIR__ . './includes/header.php';
                         </div>
                         <div class="col-md-4">
                             <style>
+                                .image-box {
+                                    cursor: pointer;
+                                }
+
                                 .image-content .sub-title {
                                     max-height: 0;
                                     margin: 0;
@@ -315,7 +321,7 @@ require __DIR__ . './includes/header.php';
 
                                 .image-box:hover .logo,
                                 .image-box.active .logo {
-                                    animation: spinIn 0.8s cubic-bezier(.22, 1, .36, 1) forwards;
+                                    animation: spinIn 1s cubic-bezier(.22, 1, .36, 1) forwards;
                                 }
 
                                 /* .image-box:not(:hover) .logo {
@@ -347,7 +353,7 @@ require __DIR__ . './includes/header.php';
                                         src="./imgs/Vector1.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h2 class="mb-1 titleFont fs-4 fw-bold">Alpha India Portfolio</h2>
+                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For an Individuals<br>&nbsp</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         A carefully curated list of 18-20 high-potential stocks, backed by 20+ years of market expertise, designed to create long-term wealth.
@@ -376,7 +382,7 @@ require __DIR__ . './includes/header.php';
                                         src="./imgs/Vector2.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h2 class="mb-1 titleFont fs-4 fw-bold">Multibagger</h2>
+                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For HNI’s and Ultra HNI’s</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         One high-growth stock every month for mid-term holding, focused on fundamentally strong businesses.
@@ -404,7 +410,7 @@ require __DIR__ . './includes/header.php';
                                         src="./imgs/Vector3.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h2 class="mb-1 titleFont fs-4 fw-bold">WealthX</h2>
+                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For Family Offices & Institutions</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
@@ -424,6 +430,7 @@ require __DIR__ . './includes/header.php';
             </div>
         </section>
 
+        <!-- Why Choose Us? -->
         <section>
             <style>
                 .features-wrapper {
@@ -675,6 +682,7 @@ require __DIR__ . './includes/header.php';
             </div>
         </section>
 
+        <!-- National & International Awards -->
         <section>
             <div class="container">
                 <div class="px-3 py-5 border-start border-end border-light">
@@ -683,12 +691,11 @@ require __DIR__ . './includes/header.php';
                             <div class="py-md-5 py-0 pb-0">
                                 <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">National & International Awards</h2>
                                 <p class="fs-6 pFont mb-0">EquityPandit has consistently recognized by<br class="d-xl-block d-none" /> leading industry institution for innovation, research<br class="d-xl-block d-none" /> quality and investor education initiatives.</p>
-                                <img
-                                    src="./imgs/Google.svg"
-                                    class="img-fluid mt-3"
-                                    alt="background">
                             </div>
-                            <button class="btn btn-dark rounded-0 mt-md-0 mt-3">Let's Get Started</button>
+                            <button class="btn btn-dark rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center">
+                                Let's Get Started
+                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                            </button>
                         </div>
                         <div class="col-md-6 d-none">
                             <?php
@@ -951,6 +958,125 @@ require __DIR__ . './includes/header.php';
             </div>
         </section>
 
+        <!-- what Our Client Say -->
+        <section>
+            <div class="container">
+                <div class="border-top border-start border-end border-light">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-6 p-md-4 pt-5 px-4">
+                            <div class="py-md-5 py-0 pb-0">
+                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">What Our Clients Say</h2>
+                                <p class="fs-6 pFont mb-0">Read what our satisfied clients have to say about their experience with our platform.</p>
+                                <img
+                                    src="./imgs/Google.svg"
+                                    class="img-fluid mt-3"
+                                    alt="background">
+                            </div>
+                            <button class="btn btn-dark rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center">
+                                Contact Now
+                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-md-6 pb-md-0 pb-5">
+                            <div class="row g-0">
+
+                                <!-- Card 1 -->
+                                <div class="col-md-6">
+                                    <div class="card border h-100 p-3 rounded-0">
+                                        <div class="text-warning fs-5 mb-3">
+                                            ★ ★ ★ ★ ☆
+                                        </div>
+
+                                        <p class="mb-3 pFont small">
+                                            EP Investors has completely changed the way I invest.
+                                            The recommendations are accurate, and the risk management is solid!
+                                        </p>
+
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                                A
+                                            </div>
+                                            <h2 class="fw-semibold mb-0 fs-6 pFont">Amit S</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-6">
+                                    <div class="card border h-100 p-3 rounded-0">
+                                        <div class="text-warning fs-5 mb-3">
+                                            ★ ★ ★ ★ ☆
+                                        </div>
+
+                                        <p class="mb-3 pFont small">
+                                            Timely alerts and expert analysis make trading effortless.
+                                            Highly recommended for short-term investors!
+                                        </p>
+
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                                P
+                                            </div>
+                                            <h2 class="fw-semibold mb-0 fs-6 pFont">Priya M.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-6">
+                                    <div class="card border h-100 p-3 rounded-0">
+                                        <div class="text-warning fs-5 mb-3">
+                                            ★ ★ ★ ★ ☆
+                                        </div>
+
+                                        <p class="mb-3 pFont small">
+                                            EP Investors has completely changed the way I invest.
+                                            The recommendations are accurate, and the risk management is solid!
+                                        </p>
+
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                                A
+                                            </div>
+                                            <h2 class="fw-semibold mb-0 pFont fs-6">Amit S</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 4 -->
+                                <div class="col-md-6">
+                                    <div class="card border h-100 p-3 rounded-0">
+                                        <div class="text-warning fs-5 mb-3">
+                                            ★ ★ ★ ★ ☆
+                                        </div>
+
+                                        <p class="mb-3 pFont small">
+                                            Consistent profits with minimal effort.
+                                            The 80% accuracy claim is real!
+                                        </p>
+
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                                R
+                                            </div>
+                                            <h2 class="fw-semibold mb-0 fs-6 pFont">Rahul K.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What the press has been saying -->
         <section class="text-white" style="background:#02181A;">
             <div class="container">
                 <div class="px-3 py-5 border-start border-end border-light">
@@ -981,7 +1107,7 @@ require __DIR__ . './includes/header.php';
                             <div class="image-box position-relative overflow-hidden">
 
                                 <img
-                                    src="./imgs/services/s1.jpeg"
+                                    src="./imgs/Press1.png"
                                     class="img-fluid w-100"
                                     alt="Business"
                                     loading="lazy"
@@ -989,9 +1115,13 @@ require __DIR__ . './includes/header.php';
 
                                 <div class="image-content position-absolute bottom-0 start-0 p-3 bg-white text-dark">
 
-                                    <h2 class="mb-1 titleFont fs-2 fw-bold">
+                                    <!-- <h2 class="mb-1 titleFont fs-2 fw-bold">
                                         Factset
-                                    </h2>
+                                    </h2> -->
+                                    <img src="imgs/logo/Factest.png"
+                                        class="img-fluid mb-3"
+                                        style="height: 40px; width:auto"
+                                        alt="User">
 
                                     <p class="sub-title pFont mb-3 fs-6">
                                         A carefully curated list of 18-20 high-potential stocks,
@@ -1015,7 +1145,7 @@ require __DIR__ . './includes/header.php';
                             <div class="image-box position-relative overflow-hidden">
 
                                 <img
-                                    src="./imgs/services/s2.jpeg"
+                                    src="./imgs/Press2.png"
                                     class="img-fluid w-100"
                                     alt="Business"
                                     loading="lazy"
@@ -1023,9 +1153,14 @@ require __DIR__ . './includes/header.php';
 
                                 <div class="image-content position-absolute bottom-0 start-0 p-3 bg-white text-dark">
 
-                                    <h2 class="mb-1 titleFont fs-2 fw-bold">
+                                    <!-- <h2 class="mb-1 titleFont fs-2 fw-bold">
                                         Investing.com
-                                    </h2>
+                                    </h2> -->
+
+                                    <img src="imgs/logo/Investing.png"
+                                        class="img-fluid mb-3"
+                                        style="height: 40px; width:auto"
+                                        alt="User">
 
                                     <p class="sub-title pFont mb-3 fs-6">
                                         One high-growth stock every month for mid-term
@@ -1048,7 +1183,7 @@ require __DIR__ . './includes/header.php';
                             <div class="image-box position-relative overflow-hidden">
 
                                 <img
-                                    src="./imgs/services/s3.jpeg"
+                                    src="./imgs/Press3.png"
                                     class="img-fluid w-100"
                                     alt="Business"
                                     loading="lazy"
@@ -1056,9 +1191,13 @@ require __DIR__ . './includes/header.php';
 
                                 <div class="image-content position-absolute bottom-0 start-0 p-3 bg-white text-dark">
 
-                                    <h2 class="mb-1 titleFont fs-2 fw-bold">
+                                    <!-- <h2 class="mb-1 titleFont fs-2 fw-bold">
                                         Thomson Reuters
-                                    </h2>
+                                    </h2> -->
+                                    <img src="imgs/logo/Thomson.png"
+                                        class="img-fluid mb-3"
+                                        style="height: 40px; width:auto"
+                                        alt="User">
 
                                     <p class="sub-title pFont mb-3 fs-6">
                                         WealthX is a comprehensive equity investing service
@@ -1091,6 +1230,7 @@ require __DIR__ . './includes/header.php';
 
         </section>
 
+        <!-- FAQ -->
         <section>
             <div class="container">
                 <div class="px-3 py-5 border border-start border-end border-light">
