@@ -190,7 +190,7 @@ $solidHeader = $solidHeader ?? true;
                             <div class="d-flex flex-column flex-xl-row align-items-xl-center ms-xl-auto">
                                 <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
-                                    href="#about">
+                                    href="<?= $base ?>about-us.php">
                                     <small>About</small>
                                 </a>
                                 <a

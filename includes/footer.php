@@ -66,7 +66,7 @@
                                     <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>about" class="text-decoration-none text-white">About Us</a>
+                                    <a href="<?= $base ?>about-us.php" class="text-decoration-none text-white">About Us</a>
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>career" class="text-decoration-none text-white">Careers</a>
