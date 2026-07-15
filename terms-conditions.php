@@ -12,7 +12,7 @@ require __DIR__ . '/includes/header.php';
         </div>
     </div>
     <div class="container">
-        <article class="col-md-12 mx-auto px-3 py-md-5 lh-lg legal-content">
+        <article class="col-md-12 mx-auto px-3 py-5 legal-content">
             <h1 class="display-5 titleFont fw-semibold mb-4">Terms and Conditions</h1>
 
             <h2 class="fs-4 titleFont fw-bold mt-4">Acceptance of Terms</h2>

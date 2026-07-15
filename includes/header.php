@@ -163,7 +163,7 @@ $solidHeader = $solidHeader ?? true;
                             <div class="d-flex flex-column flex-xl-row align-items-xl-center">
                                 <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
-                                    href="<?= $base ?>">
+                                    href="<?= $base ?>index.php">
                                     <small>Home</small>
                                 </a>
 
