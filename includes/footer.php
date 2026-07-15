@@ -63,7 +63,7 @@
                                 </div>
 
                                 <div class="col-7 col-md-auto text-start text-md-end">
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Home</a>
+                                    <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>about" class="text-decoration-none text-white">About Us</a>
@@ -72,7 +72,7 @@
                                     <a href="<?= $base ?>career" class="text-decoration-none text-white">Careers</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>contact" class="text-decoration-none text-white">Contact Us</a>
+                                    <a href="<?= $base ?>contact-us.php" class="text-decoration-none text-white">Contact Us</a>
                                 </div>
 
                             </div>
@@ -120,19 +120,16 @@
                                     <a href="<?= $base ?>terms-conditions.php" class="text-decoration-none text-white">Terms and Conditions</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Grievance Redressal</a>
+                                    <a href="<?= $base ?>documents/EP_Grievance_Redressal_Escalation_Matrix.pdf" class="text-decoration-none text-white" target="_blank">Grievance Redressal / Escalation Matrix</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Escalation Matrix</a>
+                                    <a href="<?= $base ?>privacy-policy.php" class="text-decoration-none text-white">Privacy Policy</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Privacy Policy</a>
+                                    <a href="<?= $base ?>disclosures.php" class="text-decoration-none text-white">Disclosure</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Disclosure</a>
-                                    <span class="mx-1">/</span>
-
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Investor Charter</a>
+                                    <a href="<?= $base ?>documents/INVESTOR_CHARTER_EP.pdf" class="text-decoration-none text-white" target="_blank">Investor Charter</a>
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>" class="text-decoration-none text-white">Investor Grievance</a>
