@@ -159,7 +159,7 @@ require __DIR__ . '/../includes/header.php';
                                     <option>Multibagger</option>
                                     <option>WealthX</option>
                                 </select>
-                                <label for="subject">Choose Subject</label>
+                                <label for="subject">Choose Subject*</label>
                             </div>
 
                             <div class="form-floating mb-4">
@@ -168,7 +168,7 @@ require __DIR__ . '/../includes/header.php';
                                     id="message"
                                     placeholder="Type Message"
                                     style="height:120px"></textarea>
-                                <label for="message">Type Message</label>
+                                <label for="message">Type Message*</label>
                             </div>
 
                             <button
