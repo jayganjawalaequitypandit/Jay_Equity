@@ -37,7 +37,7 @@
 
                         <div class="col-md-12 position-relative">
                             <div class="position-absolute top-0 start-75 ms-3 translate-start">
-                                <button class="btn btn-sm btn-light rounded-0 px-5 py-2 mt-md-5 pFont">
+                                <button class="btn btn-sm btn-light rounded-0 px-5 py-2 mt-md-5 pFont" onclick="window.location.href='<?= $base ?>contact-us.php';">
                                     Contact Us
                                 </button>
                             </div>

@@ -279,7 +279,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos="fade-up"
                         data-aos-delay="100">
                         <div class="h-100 p-3 border border-light">
-                            <img src="../imgs/Vector4.svg" class="mb-3" alt="">
+                            <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
                                 1 High Growth Stock Per Month
                             </h3>
@@ -294,7 +294,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos="fade-up"
                         data-aos-delay="200">
                         <div class="h-100 p-3 border border-light">
-                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
                                 A Detailed Research Report
                             </h3>
@@ -309,7 +309,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos="fade-up"
                         data-aos-delay="300">
                         <div class="h-100 p-3 border border-light">
-                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
                                 Timely Entry & Exit Guidance
                             </h3>
@@ -324,7 +324,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos="fade-up"
                         data-aos-delay="400">
                         <div class="h-100 p-3 border border-light">
-                            <img src="../imgs/Vector4.svg" class="mb-3" alt="">
+                            <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
                                 Quarterly Review & Updates
                             </h3>
@@ -339,7 +339,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos="fade-up"
                         data-aos-delay="500">
                         <div class="h-100 p-3 border border-light">
-                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
                                 Real Time <br> Dashboard
                             </h3>
@@ -354,7 +354,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos="fade-up"
                         data-aos-delay="600">
                         <div class="h-100 p-3 border border-light">
-                            <img src="../imgs/Vector5.svg" class="mb-3" alt="">
+                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
                                 Priority <br> Support
                             </h3>
@@ -461,7 +461,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
                 <img
-                    src="../imgs/Polygon1.svg"
+                    src="<?= $base ?>imgs/Polygon1.svg"
                     class="position-absolute top-0 end-0"
                     alt="">
             </div>
@@ -514,18 +514,18 @@ require __DIR__ . '/../includes/header.php';
 
                                 <!-- Always Visible -->
                                 <img
-                                    src="../imgs/Vector8.svg"
+                                    src="<?= $base ?>imgs/Vector8.svg"
                                     class="main-img img-fluid"
                                     alt="">
 
                                 <!-- Show on Hover -->
                                 <img
-                                    src="../imgs/Portfolio3.svg"
+                                    src="<?= $base ?>imgs/Portfolio3.svg"
                                     class="extra-img img-fluid"
                                     alt="">
 
                                 <img
-                                    src="../imgs/Portfolio4.svg"
+                                    src="<?= $base ?>imgs/Portfolio4.svg"
                                     class="extra-img img-fluid"
                                     alt="">
                             </div>
@@ -553,18 +553,18 @@ require __DIR__ . '/../includes/header.php';
 
                                 <!-- Always Visible -->
                                 <img
-                                    src="../imgs/Vector9.svg"
+                                    src="<?= $base ?>imgs/Vector9.svg"
                                     class="main-img img-fluid"
                                     alt="">
 
                                 <!-- Show on Hover -->
                                 <img
-                                    src="../imgs/Portfolio5.svg"
+                                    src="<?= $base ?>imgs/Portfolio5.svg"
                                     class="extra-img img-fluid"
                                     alt="">
 
                                 <img
-                                    src="../imgs/Portfolio6.svg"
+                                    src="<?= $base ?>imgs/Portfolio6.svg"
                                     class="extra-img img-fluid"
                                     alt="">
                             </div>
@@ -592,18 +592,18 @@ require __DIR__ . '/../includes/header.php';
 
                                 <!-- Always Visible -->
                                 <img
-                                    src="../imgs/Vector10.svg"
+                                    src="<?= $base ?>imgs/Vector10.svg"
                                     class="main-img img-fluid"
                                     alt="">
 
                                 <!-- Show on Hover -->
                                 <img
-                                    src="../imgs/Portfolio7.svg"
+                                    src="<?= $base ?>imgs/Portfolio7.svg"
                                     class="extra-img img-fluid"
                                     alt="">
 
                                 <img
-                                    src="../imgs/Portfolio8.svg"
+                                    src="<?= $base ?>imgs/Portfolio8.svg"
                                     class="extra-img img-fluid"
                                     alt="">
                             </div>
@@ -697,7 +697,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
 
-                            <img src="../imgs/Vector11.svg" alt="">
+                            <img src="<?= $base ?>imgs/Vector11.svg" alt="">
 
                             <h2 class="fw-semibold mt-2 titleFont">
                                 Risk Profiling
@@ -727,7 +727,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
 
-                            <img src="../imgs/Vector12.svg" alt="">
+                            <img src="<?= $base ?>imgs/Vector12.svg" alt="">
 
                             <h2 class="fw-semibold titleFont mt-2">
                                 Documentation
@@ -757,7 +757,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
 
-                            <img src="../imgs/Vector13.svg" alt="">
+                            <img src="<?= $base ?>imgs/Vector13.svg" alt="">
 
                             <h2 class="fw-semibold titleFont mt-2">
                                 Service Activation
@@ -792,12 +792,12 @@ require __DIR__ . '/../includes/header.php';
                 <div class="col-md-6">
                     <h3 class="fs-3 pFont fw-semibold" data-aos="fade-up">Who are we?</h3>
                     <img
-                        src="../imgs/Vector14.svg"
+                        src="<?= $base ?>imgs/Vector14.svg"
                         class="img-fluid mt-3"
                         alt="background" />
                     <div class="d-flex mt-4">
                         <img
-                            src="../imgs/avatars.svg"
+                            src="<?= $base ?>imgs/avatars.svg"
                             class="img-fluid"
                             alt="background" />
                         <div class="flex-column">
@@ -812,7 +812,7 @@ require __DIR__ . '/../includes/header.php';
                 <div class="col-md-6">
                     <p class="mb-0 small pFont" data-aos="fade-up">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
                     <img
-                        src="../imgs/ep.svg"
+                        src="<?= $base ?>imgs/ep.svg"
                         class="img-fluid mt-3"
                         alt="background" />
                 </div>
@@ -830,7 +830,7 @@ require __DIR__ . '/../includes/header.php';
                     <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
                     <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
                     <img
-                        src="../imgs/Faq1.svg"
+                        src="<?= $base ?>imgs/Faq1.svg"
                         class="img-fluid"
                         alt="background">
                 </div>
@@ -978,7 +978,7 @@ require __DIR__ . '/../includes/header.php';
                                     <?php foreach ($awards as $award): ?>
 
                                         <img
-                                            src="../imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                            src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
                                             class="img-fluid"
                                             alt="<?= htmlspecialchars($award['title']) ?>">
 
@@ -998,7 +998,7 @@ require __DIR__ . '/../includes/header.php';
                             <?php foreach ($awards as $award): ?>
 
                                 <img
-                                    src="../imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                    src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
                                     class="img-fluid flex-shrink-0"
                                     alt="<?= htmlspecialchars($award['title']) ?>">
 
