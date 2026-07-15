@@ -117,7 +117,7 @@
                                 </div>
 
                                 <div class="col-7 col-md-end text-start text-md-end">
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Terms and Conditions</a>
+                                    <a href="<?= $base ?>terms-conditions.php" class="text-decoration-none text-white">Terms and Conditions</a>
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>" class="text-decoration-none text-white">Grievance Redressal</a>
