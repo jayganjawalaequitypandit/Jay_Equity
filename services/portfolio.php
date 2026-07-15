@@ -305,9 +305,10 @@ require __DIR__ . '/../includes/header.php';
                             </p>
 
                             <!-- Button -->
-                            <button type="button" class="btn btn-light px-4 py-2 rounded-0" data-aos="fade-up"
+                            <button class="btn btn-light rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" data-aos="fade-up"
                                 data-aos-delay="200">
-                                Explore Benefits →
+                                Explore Benefits
+                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </button>
                             <p class="mb-0 mt-3 pFont" data-aos="fade-up"
                                 data-aos-delay="250">Minimum Investment: <span style="color: #00DF9C;">₹2 Lacs</span></p>
@@ -379,7 +380,7 @@ require __DIR__ . '/../includes/header.php';
                             <h2 class="display-5 titleFont fw-semibold d-inline-block"
                                 data-aos="fade-up"
                                 data-aos-delay="100">
-                                What you get
+                                What You'll Get
                             </h2>
                             <p class="fs-6 pFont" data-aos="fade-up"
                                 data-aos-delay="250">A complete wealth management ecosystem — research, alerts, analytics, and expert support.</p>
@@ -388,7 +389,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
 
-                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
+                        <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector4.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h2>
@@ -398,7 +399,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
+                        <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector5.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Timely Entry & Exit Guidance</h2>
@@ -408,7 +409,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
+                        <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector6.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Quarterly Review & Updates</h2>
@@ -418,7 +419,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
+                        <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector5.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Real Time Dashboard</h2>
@@ -428,7 +429,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-10 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
+                        <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="../imgs/Vector6.svg" class="mb-3" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Priority Support</h2>
@@ -441,7 +442,7 @@ require __DIR__ . '/../includes/header.php';
                     <div class="text-start px-3 mt-5" data-aos="fade-up"
                         data-aos-delay="100">
                         <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
-                            Get Started →
+                            Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
                     </div>
                 </div>
@@ -544,9 +545,9 @@ require __DIR__ . '/../includes/header.php';
                             data-aos-delay="100">
 
                         <a href="<?= $base ?>contact-us.php"
-                            class="btn btn-light rounded-0 mt-5" data-aos="fade-up"
+                            class="btn btn-light rounded-0 mt-5 px-4 py-2 pFont" data-aos="fade-up"
                             data-aos-delay="100">
-                            Get Started →
+                            Get Started <i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </a>
 
                     </div>
@@ -895,7 +896,7 @@ require __DIR__ . '/../includes/header.php';
                 <div class="text-start px-3 py-5" data-aos="fade-up"
                     data-aos-delay="100">
                     <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
-                        Get Started →
+                        Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                     </button>
                 </div>
             </div>
@@ -1087,9 +1088,10 @@ require __DIR__ . '/../includes/header.php';
                                     data-aos-delay="100">Registered Users</p>
                             </div>
                         </div>
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
+                        <button class="btn btn-dark rounded-0 pFont px-4 py-2 mt-md-3 d-inline-flex align-items-center" style="background-color: #02181A;" data-aos="fade-up"
                             data-aos-delay="100">
-                            Get Started →
+                            Get Started
+                            <i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
                     </div>
                     <div class="col-md-6">
@@ -1174,7 +1176,7 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
-    <!-- Form -->
+    <!-- Award -->
     <section>
         <div class="container">
             <div class="py-5 px-3 border-start border-end border-light">
@@ -1279,7 +1281,7 @@ require __DIR__ . '/../includes/header.php';
                         </marquee>
                         <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
                             data-aos-delay="100">
-                            Get Started →
+                            Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
                     </div>
                     <!-- RIGHT SIDE -->
