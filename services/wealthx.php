@@ -505,6 +505,25 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
 
+    <!-- What you get -->
+    <!-- <section>
+        <div class="container-fluid">
+            <div class="border-start border-end border-light">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <img
+                            src="<?= $base ?>imgs/services/welthx_6.png"
+                            class="img-fluid w-100"
+                            alt="Portfolio"
+                            loading="lazy"
+                            decoding="async">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
     <!-- Get Started -->
     <section class="text-white" style="background:#02181A;">
         <div class="container">
