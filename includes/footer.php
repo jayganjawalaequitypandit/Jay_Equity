@@ -69,7 +69,7 @@
                                     <a href="<?= $base ?>about-us.php" class="text-decoration-none text-white">About Us</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>career" class="text-decoration-none text-white">Careers</a>
+                                    <a href="<?= $base ?>careers.php" class="text-decoration-none text-white">Careers</a>
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>contact-us.php" class="text-decoration-none text-white">Contact Us</a>
