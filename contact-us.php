@@ -99,13 +99,178 @@ require __DIR__ . '/includes/header.php';
 
 </section>
 
+<!-- Office Locations -->
 <section>
     <div class="container">
-        <div class="border border-light border-bottom">
+        <div class="px-3 py-5 border border-top-0  border-light">
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-10">
+                    <div class="text-start text-md-center">
+                        <h2 class="display-6 titleFont fw-semibold">Our Offices</h2>
+                        <p class="fs-6 pFont mb-0"> Visit our nearest office or contact us anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-top-0 border-light">
+            <style>
+                .office-card {
+                    transition: background-color 0.3s ease, color 0.3s ease;
+                    cursor: pointer;
+                }
+
+                .office-card:hover {
+                    background: #02181A !important;
+                    color: #fff !important;
+                }
+
+                .office-card:hover i,
+                .office-card:hover h5,
+                .office-card:hover p,
+                .office-card:hover a {
+                    color: #fff !important;
+                }
+
+                .office-card i,
+                .office-card h5,
+                .office-card p,
+                .office-card a {
+                    transition: color 0.3s ease;
+                }
+            </style>
+
+            <div class="row g-0">
+
+                <!-- Mumbai -->
+                <div class="col-md-3">
+                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
+
+                            <h5 class="mb-3">Mumbai</h5>
+
+                            <p class="small mb-0">
+                                Innov8 Ackruti Star,<br>
+                                3rd Floor, 301, Ackruti Star<br>
+                                Central Road, Marol MIDC, Andheri<br>
+                                East, Mumbai – 400093.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rajasthan -->
+                <div class="col-md-3">
+                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
+
+                            <h5 class="mb-3">Rajasthan</h5>
+
+                            <p class="small mb-0">
+                                A-488 Vidhyut Nagar<br>
+                                Ajmer Road<br>
+                                Jaipur - 302019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gujarat -->
+                <div class="col-md-3">
+                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
+
+                            <h5 class="mb-3">Gujarat</h5>
+
+                            <p class="small mb-0">
+                                209-The Galleria<br>
+                                Near Sanjeev Kumar Auditorium<br>
+                                Pal, Adajan<br>
+                                Surat - 395009
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-md-3">
+                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <i class="fa-solid fa-headset fs-2 mb-3"></i>
+
+                            <h5 class="mb-3">Contact Us</h5>
+
+                            <p class="mb-2">
+                                <a href="mailto:support@equitypandit.com"
+                                    class="text-decoration-none text-dark">
+                                    <i class="fa-solid fa-envelope me-1"></i>
+                                    support@equitypandit.com
+                                </a>
+                            </p>
+
+                            <p class="mb-0">
+                                <a href="tel:+918000816688"
+                                    class="text-decoration-none text-dark">
+                                    <i class="fa-solid fa-phone me-1"></i>
+                                    +91 8000816688
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Google Map -->
+<section>
+    <div class="container">
+        <div class="px-3 py-5 border border-top-0 border-light">
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-10">
+                    <div class="text-start text-md-center">
+                        <h2 class="display-6 titleFont fw-semibold">Find Us</h2>
+                        <p class="fs-6 pFont mb-0"> Visit our office and connect with us in person, or use Google Maps for quick and easy directions to our location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-top-0 border-light">
+            <div class="ratio ratio-21x9  overflow-hidden shadow-sm">
+                <iframe
+                    src="https://www.google.com/maps?q=209%20The%20Galleria%20Pal%20Surat&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="border border-end-0 border-start-0 bordeer-light">
+        <div class="container">
+            <div class="px-3 py-5 border-top-0 border-bottom-0  border border-light">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Form -->
+<section>
+    <div class="container">
+        <div class="border border-light border-top-0 border-bottom-0">
             <div class="row align-items-stretch  ">
 
                 <!-- Left Image -->
-                <div class="col-12 col-md-5 order-2 order-md-1">
+                <div class="col-12 col-md-6 order-2 order-md-1">
                     <div class="h-100">
                         <img
                             src="<?= $base ?>imgs/contact.png"
@@ -115,7 +280,7 @@ require __DIR__ . '/includes/header.php';
                 </div>
 
                 <!-- Right Form -->
-                <div class="col-12 col-md-5 order-1 order-md-2 mx-auto px-4 py-4 px-md-0 py-md-5">
+                <div class="col-12 col-md-6 order-1 order-md-2  px-4 py-4 ">
                     <div class="h-100 d-flex flex-column justify-content-center">
 
                         <h3 class="mb-4 titleFont text-center text-md-start">
@@ -187,150 +352,13 @@ require __DIR__ . '/includes/header.php';
             </div>
         </div>
     </div>
+
 </section>
 
-
-<!-- Office Locations -->
 <section>
-    <div class="container">
-        <div class="px-3 py-5 border border-top-0  border-light">
-            <div class="row g-3 justify-content-center">
-                <div class="col-md-10">
-                    <div class="text-start text-md-center">
-                        <h2 class="display-6 titleFont fw-semibold">Our Offices</h2>
-                        <p class="fs-6 pFont mb-0"> Visit our nearest office or contact us anytime.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="border border-top-0 border-light">
-            <style>
-                .office-card {
-                    transition: background-color 0.3s ease, color 0.3s ease;
-                    cursor: pointer;
-                }
+    <div class="border border-end-0 border-top-0 border-start-0 bordeer-light">
+        <div class="container">
 
-                .office-card:hover {
-                    background: #02181A !important;
-                    color: #fff !important;
-                }
-
-                .office-card:hover i,
-                .office-card:hover h5,
-                .office-card:hover p,
-                .office-card:hover a {
-                    color: #fff !important;
-                }
-
-                .office-card i,
-                .office-card h5,
-                .office-card p,
-                .office-card a {
-                    transition: color 0.3s ease;
-                }
-            </style>
-
-            <div class="row g-0">
-
-                <!-- Gujarat -->
-                <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
-
-                            <h5 class="mb-3">Gujarat</h5>
-
-                            <p class="small mb-0">
-                                209-The Galleria<br>
-                                Near Sanjeev Kumar Auditorium<br>
-                                Pal, Adajan<br>
-                                Surat - 395009
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Rajasthan -->
-                <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
-
-                            <h5 class="mb-3">Rajasthan</h5>
-
-                            <p class="small mb-0">
-                                A-488 Vidhyut Nagar<br>
-                                Ajmer Road<br>
-                                Jaipur - 302019
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Email -->
-                <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <i class="fa-solid fa-envelope fs-2 mb-3"></i>
-
-                            <h5 class="mb-3">Email</h5>
-
-                            <p class="mb-0">
-                                <a href="mailto:support@equitypandit.com"
-                                    class="text-decoration-none text-dark">
-                                    support@equitypandit.com
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Phone -->
-                <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <i class="fa-solid fa-phone fs-2 mb-3"></i>
-
-                            <h5 class="mb-3">Call Us</h5>
-
-                            <p class="mb-0">
-                                <a href="tel:+918000816688"
-                                    class="text-decoration-none text-dark">
-                                    +91 8000816688
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<!-- Google Map -->
-
-<section>
-    <div class="container">
-        <div class="px-3 py-5 border border-top-0 border-light">
-            <div class="row g-3 justify-content-center">
-                <div class="col-md-10">
-                    <div class="text-start text-md-center">
-                        <h2 class="display-6 titleFont fw-semibold">Find Us</h2>
-                        <p class="fs-6 pFont mb-0"> Visit our office and connect with us in person, or use Google Maps for quick and easy directions to our location.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="border border-top-0 border-light">
-            <div class="ratio ratio-21x9  overflow-hidden shadow-sm">
-                <iframe
-                    src="https://www.google.com/maps?q=209%20The%20Galleria%20Pal%20Surat&output=embed"
-                    loading="lazy"
-                    allowfullscreen>
-                </iframe>
-            </div>
         </div>
     </div>
 </section>
@@ -339,7 +367,7 @@ require __DIR__ . '/includes/header.php';
 <section>
     <div class="container">
         <div class="px-4 py-5 border border-top-0 border-start border-end border-light">
-            <div class="row g-4 align-items-center">
+            <div class="row g-4 align-items-center mt-3 mb-3">
 
                 <!-- Left Side -->
                 <div class="col-md-6">
@@ -351,10 +379,9 @@ require __DIR__ . '/includes/header.php';
                     </p>
 
                     <img
-                        src="<?= $base ?>imgs/faq2.svg"
+                        src="<?= $base ?>imgs/faq2.jpg"
                         class="img-fluid"
-                        alt="background"
-                        style="width:90%; max-width:90%;">
+                        alt="background">
                 </div>
 
                 <!-- Right Side -->
@@ -514,5 +541,6 @@ require __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+
 
 <?php require __DIR__ . '/includes/footer.php'; ?>
