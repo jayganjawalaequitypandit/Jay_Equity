@@ -918,7 +918,7 @@ require __DIR__ . './includes/header.php';
                             ];
                             ?>
 
-                            <marquee
+                            <!-- <marquee
                                 behavior="scroll"
                                 direction="left"
                                 scrollamount="12"
@@ -951,7 +951,84 @@ require __DIR__ . './includes/header.php';
                                     <?php endfor; ?>
                                 </div>
 
-                            </marquee>
+                            </marquee> -->
+
+                            <style>
+                                .award-slider {
+                                    overflow: hidden;
+                                    width: 100%;
+                                    position: relative;
+                                }
+
+                                .award-track {
+                                    display: flex;
+                                    width: max-content;
+                                    animation: scrollAwards 20s linear infinite;
+                                }
+
+                                .award-slider:hover .award-track {
+                                    animation-play-state: paused;
+                                }
+
+                                .award-item {
+                                    flex: 0 0 auto;
+                                    padding: 0 10px;
+                                }
+
+                                .award-item img {
+                                    /* height: 100px; */
+                                    width: auto;
+                                    display: block;
+                                }
+
+                                @keyframes scrollAwards {
+                                    from {
+                                        transform: translateX(0);
+                                    }
+
+                                    to {
+                                        transform: translateX(-50%);
+                                    }
+                                }
+
+                                @media (max-width:768px) {
+                                    .award-item {
+                                        padding: 0 10px;
+                                    }
+
+                                    .award-track {
+                                        animation-duration: 28s;
+                                    }
+                                }
+                            </style>
+
+                            <div class="award-slider">
+
+                                <div class="award-track">
+
+                                    <!-- First Set -->
+                                    <?php foreach ($awards as $award): ?>
+                                        <div class="award-item">
+                                            <img
+                                                src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                                alt="<?= htmlspecialchars($award['title']) ?>"
+                                                class="img-fluid">
+                                        </div>
+                                    <?php endforeach; ?>
+
+                                    <!-- Duplicate Set for Infinite Loop -->
+                                    <?php foreach ($awards as $award): ?>
+                                        <div class="award-item">
+                                            <img
+                                                src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                                alt="<?= htmlspecialchars($award['title']) ?>"
+                                                class="img-fluid">
+                                        </div>
+                                    <?php endforeach; ?>
+
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
