@@ -1245,40 +1245,82 @@ require __DIR__ . '/../includes/header.php';
                         ];
                         ?>
 
-                        <marquee
-                            behavior="scroll"
-                            direction="left"
-                            scrollamount="12"
-                            onmouseover="this.stop();"
-                            onmouseout="this.start();"
-                            data-aos="fade-up"
-                            data-aos-delay="100">
+                        <style>
+                            .award-slider {
+                                overflow: hidden;
+                                width: 100%;
+                                position: relative;
+                            }
 
-                            <div class="d-inline-flex gap-3">
-                                <?php for ($i = 0; $i < 10; $i++): ?>
-                                    <?php foreach ($awards as $award): ?>
+                            .award-track {
+                                display: flex;
+                                width: max-content;
+                                animation: scrollAwards 20s linear infinite;
+                            }
+
+                            .award-slider:hover .award-track {
+                                animation-play-state: paused;
+                            }
+
+                            .award-item {
+                                flex: 0 0 auto;
+                                padding: 0 10px;
+                            }
+
+                            .award-item img {
+                                /* height: 100px; */
+                                width: auto;
+                                display: block;
+                            }
+
+                            @keyframes scrollAwards {
+                                from {
+                                    transform: translateX(0);
+                                }
+
+                                to {
+                                    transform: translateX(-50%);
+                                }
+                            }
+
+                            @media (max-width:768px) {
+                                .award-item {
+                                    padding: 0 10px;
+                                }
+
+                                .award-track {
+                                    animation-duration: 28s;
+                                }
+                            }
+                        </style>
+
+                        <div class="award-slider">
+
+                            <div class="award-track">
+
+                                <!-- First Set -->
+                                <?php foreach ($awards as $award): ?>
+                                    <div class="award-item">
                                         <img
                                             src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                            class="img-fluid"
-                                            alt="<?= htmlspecialchars($award['title']) ?>">
+                                            alt="<?= htmlspecialchars($award['title']) ?>"
+                                            class="img-fluid">
+                                    </div>
+                                <?php endforeach; ?>
 
-                                        <div class="card-body text-center d-none">
-                                            <span class="small text-body-secondary">
-                                                (<?= htmlspecialchars($award['year']) ?>)
-                                            </span>
+                                <!-- Duplicate Set for Infinite Loop -->
+                                <?php foreach ($awards as $award): ?>
+                                    <div class="award-item">
+                                        <img
+                                            src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                            alt="<?= htmlspecialchars($award['title']) ?>"
+                                            class="img-fluid">
+                                    </div>
+                                <?php endforeach; ?>
 
-                                            <h2 class="h6 fw-bold mt-2 titleFont">
-                                                <?= htmlspecialchars($award['title']) ?>
-                                            </h2>
-
-                                            <p class="small text-secondary mb-0">
-                                                <?= htmlspecialchars($award['award']) ?>
-                                            </p>
-                                        </div>
-                                    <?php endforeach; ?>
-                                <?php endfor; ?>
                             </div>
-                        </marquee>
+
+                        </div>
                         <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
                             data-aos-delay="100">
                             Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
