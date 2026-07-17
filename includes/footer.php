@@ -90,16 +90,13 @@
                                 </div>
 
                                 <div class="col-7 col-md-auto text-start text-md-end">
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Plan &amp; Pricing</a>
+                                    <a href="<?= $base ?>services/services.php" class="text-decoration-none text-white">For an Individuals</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Investing &amp; Trading</a>
+                                    <a href="<?= $base ?>services/services.php" class="text-decoration-none text-white">For HNI’s and Ultra HNI’s</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">HNI Services</a>
-                                    <span class="mx-1">/</span>
-
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Institutional Investors</a>
+                                    <a href="<?= $base ?>services/services.php" class="text-decoration-none text-white">For Family Offices & Institutions</a>
                                 </div>
 
                             </div>
@@ -124,7 +121,7 @@
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>privacy-policy.php" class="text-decoration-none text-white">Privacy Policy</a>
-                                    <span class="mx-1">/</span>
+                                    <span class="mx-1 d-md-none">/</span>
 
                                     <a href="<?= $base ?>disclosures.php" class="text-decoration-none text-white">Disclosure</a>
                                     <span class="mx-1">/</span>

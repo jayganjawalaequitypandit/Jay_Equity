@@ -16,7 +16,7 @@ require __DIR__ . '/../includes/header.php';
         name="viewport"
         content="width=device-width, initial-scale=1">
 
-    <title>EquityPandit Responsive Navbar</title>
+    <title>WealthX</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://www.equitypandit.com/etheme/vendor/fortawesome/font-awesome/css/all.min.css"> -->
@@ -87,8 +87,8 @@ require __DIR__ . '/../includes/header.php';
     <section class="position-relative">
         <style>
             /* Desktop */
-            .portfolio-card {
-                margin-top: -120px;
+            .welthx-card {
+                margin-top: -180px;
             }
 
             .form-card {
@@ -97,22 +97,22 @@ require __DIR__ . '/../includes/header.php';
 
             /* Tablet */
             @media (max-width: 991.98px) {
-                .portfolio-card {
+                .welthx-card {
                     margin-top: -80px;
                 }
             }
 
             /* Mobile */
             @media (max-width: 767.98px) {
-                .portfolio-card {
+                .welthx-card {
                     margin-top: -40px;
                 }
             }
 
 
-            .portfolio-banner {
+            .welthx-banner {
                 width: 100%;
-                height: 420px;
+                height: auto; /* 420px */
                 object-fit: cover;
                 object-position: center;
                 display: block;
@@ -120,20 +120,20 @@ require __DIR__ . '/../includes/header.php';
 
             /* Tablet */
             @media (max-width:991.98px) {
-                .portfolio-banner {
+                .welthx-banner {
                     height: 350px;
                 }
             }
 
             /* Mobile */
             @media (max-width:767.98px) {
-                .portfolio-banner {
+                .welthx-banner {
                     height: 260px;
                     object-fit: cover;
                     object-position: center;
                 }
 
-                .portfolio-card {
+                .welthx-card {
                     margin-top: -60px;
                 }
 
@@ -147,7 +147,7 @@ require __DIR__ . '/../includes/header.php';
         <div class="container-fluid p-0 position-relative">
             <img
                 src="<?= $base ?>imgs/services/welthx_bg.jpg"
-                class="portfolio-banner"
+                class="welthx-banner"
                 alt="Portfolio"
                 loading="lazy"
                 decoding="async">
@@ -166,9 +166,9 @@ require __DIR__ . '/../includes/header.php';
         </div>
 
         <!-- Content Box -->
-        <div class="container position-relative portfolio-card">
+        <div class="container position-relative welthx-card">
             <div class="border-start border-end border-light">
-                <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
+                <div class="text-white p-3 p-md-4" style="background-color:#02181A;">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="d-md-none mb-3">
@@ -191,7 +191,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <!-- RIGHT SIDE -->
-                        <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
+                        <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5">
 
                             <!-- Form Box -->
                             <div class="bg-white text-body p-3 form-card">
@@ -391,7 +391,7 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
 
-                        <a href="<?= $base ?>contact-us.php"
+                        <a href="#"
                             class="btn rounded-0 text-white mt-3 px-4 py-2 pFont" style="background-color: #02181A;">
                             Learn How It Works <i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </a>
@@ -698,7 +698,7 @@ require __DIR__ . '/../includes/header.php';
                                 <p class="pFont fw-medium fs-5">Registered Users</p>
                             </div>
                         </div>
-                        <button class="btn btn-dark rounded-0 pFont px-4 py-2 mt-md-3 d-inline-flex align-items-center" style="background-color: #02181A;">
+                        <button class="btn btn-dark rounded-0 pFont px-4 py-2 mt-md-3 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='#';">
                             Get Started
                             <i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
@@ -923,7 +923,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
 
                         </div>
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;">
+                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" onclick="window.location.href='#';">
                             Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
                     </div>

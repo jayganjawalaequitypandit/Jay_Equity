@@ -15,7 +15,7 @@ require __DIR__ . '/includes/header.php';
     name="viewport"
     content="width=device-width, initial-scale=1">
 
-  <title>EquityPandit Responsive Navbar</title>
+  <title>About Us</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://www.equitypandit.com/etheme/vendor/fortawesome/font-awesome/css/all.min.css"> -->
@@ -279,7 +279,7 @@ require __DIR__ . '/includes/header.php';
                 class="img-fluid mt-3"
                 alt="background">
             </div>
-            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;">
+            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>contact-us.php';">
               Contact Now
               <i class="fa-solid fa-arrow-right-long ms-2"></i>
             </button>
@@ -528,7 +528,7 @@ require __DIR__ . '/includes/header.php';
 
             </div>
             <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
-              data-aos-delay="100">
+              data-aos-delay="100" onclick="window.location.href='#';">
               Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
             </button>
           </div>

@@ -233,7 +233,7 @@ require __DIR__ . '/../includes/header.php';
 
             .portfolio-banner {
                 width: 100%;
-                height: 420px;
+                height: auto; /* 420px */
                 object-fit: cover;
                 object-position: center;
                 display: block;
@@ -442,7 +442,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                     <div class="text-start px-3 mt-5" data-aos="fade-up"
                         data-aos-delay="100">
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+                        <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;" onclick="window.location.href='#';">
                             Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
                     </div>
@@ -545,7 +545,7 @@ require __DIR__ . '/../includes/header.php';
                             alt="background" data-aos="fade-up"
                             data-aos-delay="100">
 
-                        <a href="<?= $base ?>contact-us.php"
+                        <a href="#"
                             class="btn btn-light rounded-0 mt-5 px-4 py-2 pFont" data-aos="fade-up"
                             data-aos-delay="100">
                             Get Started <i class="fa-solid fa-arrow-right-long ms-2"></i>
@@ -896,7 +896,7 @@ require __DIR__ . '/../includes/header.php';
                 </div>
                 <div class="text-start px-3 py-5" data-aos="fade-up"
                     data-aos-delay="100">
-                    <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
+                    <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;" onclick="window.location.href='#';">
                         Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                     </button>
                 </div>
@@ -1090,7 +1090,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </div>
                         <button class="btn btn-dark rounded-0 pFont px-4 py-2 mt-md-3 d-inline-flex align-items-center" style="background-color: #02181A;" data-aos="fade-up"
-                            data-aos-delay="100">
+                            data-aos-delay="100" onclick="window.location.href='#';">
                             Get Started
                             <i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
@@ -1323,7 +1323,7 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                         <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
-                            data-aos-delay="100">
+                            data-aos-delay="100" onclick="window.location.href='#';">
                             Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
                     </div>

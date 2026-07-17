@@ -692,7 +692,7 @@ require __DIR__ . './includes/header.php';
                                 <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">National & International Awards</h2>
                                 <p class="fs-6 pFont mb-0">EquityPandit has consistently recognized by<br class="d-xl-block d-none" /> leading industry institution for innovation, research<br class="d-xl-block d-none" /> quality and investor education initiatives.</p>
                             </div>
-                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;">
+                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='#';">
                                 Let's Get Started
                                 <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </button>
@@ -1049,7 +1049,7 @@ require __DIR__ . './includes/header.php';
                                     class="img-fluid mt-3"
                                     alt="background">
                             </div>
-                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;">
+                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>contact-us.php';">
                                 Contact Now
                                 <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </button>
