@@ -132,10 +132,10 @@
                                     <a href="<?= $base ?>documents/INVESTOR_CHARTER_EP.pdf" class="text-decoration-none text-white" target="_blank">Investor Charter</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Investor Grievance</a>
+                                    <a href="<?= $base ?>grievance-mechanism.php" class="text-decoration-none text-white">Investor Grievance</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>" class="text-decoration-none text-white">Compliance Audit</a>
+                                    <a href="<?= $base ?>compliance-audit.php" class="text-decoration-none text-white">Compliance Audit</a>
                                 </div>
 
                             </div>

@@ -1154,7 +1154,7 @@ require __DIR__ . './includes/header.php';
         </section>
 
         <!-- What the press has been saying -->
-        <section class="text-white" style="background:#02181A;">
+        <section class="text-white bg-danger">
             <div class="container">
                 <div class="px-3 py-5 border-start border-end border-light">
                     <div class="row g-3 justify-content-center">
