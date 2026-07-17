@@ -11,7 +11,7 @@ require __DIR__ . '/includes/header.php';
     <style>
         .contact-banner {
             width: 100%;
-            height: 500px;
+            height: auto;
             object-fit: cover;
             object-position: center;
             display: block;
