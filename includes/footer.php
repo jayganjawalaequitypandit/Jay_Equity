@@ -24,14 +24,19 @@
 
                             <div class="d-md-flex pFont">
                                 <div class="me-3">
-                                    <i class="fa-solid fa-phone me-1 text-success"></i>
+                                    <i class="fa-solid fa-phone me-1" style="color:#00DF9C"></i>
                                     +91 8000 816 688
                                 </div>
 
                                 <div>
-                                    <i class="fa-solid fa-envelope me-1 text-success"></i>
+                                    <i class="fa-solid fa-envelope me-1" style="color:#00DF9C"></i>
                                     support@equitypandit.com
                                 </div>
+                            </div>
+                            <div class="mt-3">
+                                <i class="fa-brands fa-twitter fa-lg me-1" style="color:#00DF9C"></i>
+                                <i class="fa-brands fa-instagram fa-lg me-1" style="color:#00DF9C"></i>
+                                <i class="fa-brands fa-facebook fa-lg" style="color:#00DF9C"></i>
                             </div>
                         </div>
 
@@ -246,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section class="border-top border-bottom border-light">
+        <section class="border-top border-bottom border-light text-white">
             <div class="container">
                 <div class="position-relative">
                     <img
@@ -255,9 +260,92 @@
                         style="right:-22px; top:0px;"
                         alt="">
                     <div class="border-start border-end border-light p-2">
-                        <i class="fa-brands fa-twitter fa-lg me-1 mb-5" style="color:#00DF9C"></i>
-                        <i class="fa-brands fa-instagram fa-lg me-1" style="color:#00DF9C"></i>
-                        <i class="fa-brands fa-facebook fa-lg" style="color:#00DF9C"></i>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="fw-bold pFont">
+                                    SEBI Registered Investment Advisor Details:
+                                </p>
+
+                                <p>
+                                    Registered Name: Equitypandit Financial Services Private Limited
+                                    <br>
+                                    Type of registration: Non-Individual
+                                    <br>
+                                    Registration No.: INA000006688
+                                    <br>
+                                    Validity: Perpetual
+                                    <br>
+                                    BSE Enlistment No.: 1684
+                                    <br>
+                                    CIN: U67120RJ2013PTC041600
+                                </p>
+
+                                <p class="mb-0">
+                                    Registered Address: 209 – The Galleria, Near Sanjeev Kumar Auditorium,
+                                    Pal, Adajan, Surat, Gujarat – 395009
+                                </p>
+                            </div>
+
+                            <div class="col-md-8 mt-md-0 mt-3">
+                                <p>
+                                    Principal Officer: Kamlesh Sachar |
+                                    Email: <a class="text-decoration-none" href="mailto:po@equitypandit.com">po@equitypandit.com</a> |
+                                    Contact No.: <a class="text-decoration-none" href="tel:+918000816688">+91 8000816688</a> |
+                                    SEBI LO.: Ground Floor, Jeevan Nidhi 2 LIC Building,
+                                    Ambedkar Circle, Bhawani Singh Rd, Jaipur, Rajasthan 302005
+                                </p>
+
+                                <p class="mt-3 d-none">
+                                    Disclaimer: There is no guarantee of profits or no exceptions from losses.
+                                    The investment advice provided is solely the personal views of the research
+                                    team. Equitypandit will not accept any liability for loss or damage as a
+                                    result of reliance on the information contained within this website
+                                    including data, quotes, charts and buy/sell signals. Please be fully
+                                    informed regarding the risks and costs associated with trading the
+                                    financial markets, it is one of the riskiest investment forms possible.
+                                    Therefore, Equitypandit doesn’t bear any responsibility for any trading
+                                    losses you might incur as a result of using this data.
+                                    *KYC is mandatory for all subscriptions.
+                                </p>
+
+                                <p class="fw-bold">Disclaimers:</p>
+
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Registration granted by SEBI, membership of BASL and certification
+                                            from NISM in no way guarantee performance of the intermediary or
+                                            provide any assurance of returns to investors.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            The securities quoted, if any, are for illustration only and are
+                                            not recommendatory.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Investments in securities market are subject to market risks.
+                                            Read all the related documents carefully before investing.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="text-center p-2">
+                            <small>
+                                © Copyright 2026<br class="d-md-none" />
+                                <a
+                                    href="https://equitypandit.in"
+                                    tabIndex={0}
+                                    class="text-decoration-none fw-semibold"
+                                    aria-label="Equitypandit Financial Services Private Limited">
+                                    Equitypandit Financial Services Private Limited. </a> All Rights Reserved
+                            </small>
+                        </div>
                     </div>
                 </div>
             </div>

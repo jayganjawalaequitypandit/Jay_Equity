@@ -1,4 +1,5 @@
 <?php
+session_start();
 $pageTitle = 'Contact Us Page';
 $base = '';
 $solidHeader = true;
@@ -261,7 +262,7 @@ require __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<section>
+<!-- <section>
     <div class="border border-end-0 border-start-0 bordeer-light">
         <div class="container">
             <div class="px-3 py-5 border-top-0 border-bottom-0  border border-light">
@@ -269,7 +270,7 @@ require __DIR__ . '/includes/header.php';
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <!-- Form -->
@@ -296,14 +297,16 @@ require __DIR__ . '/includes/header.php';
                             Send Us A Message
                         </h3>
 
-                        <form>
+                        <form action="contact-submit.php" method="POST">
 
                             <div class="form-floating mb-3">
                                 <input
                                     type="text"
                                     class="form-control border-0 border-bottom rounded-0 shadow-none"
                                     id="name"
-                                    placeholder="Your Name">
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required>
                                 <label for="name">Your Name*</label>
                             </div>
 
@@ -312,7 +315,9 @@ require __DIR__ . '/includes/header.php';
                                     type="email"
                                     class="form-control border-0 border-bottom rounded-0 shadow-none"
                                     id="email"
-                                    placeholder="Email Address">
+                                    name="email"
+                                    placeholder="Email Address"
+                                    required>
                                 <label for="email">Email Address*</label>
                             </div>
 
@@ -321,18 +326,20 @@ require __DIR__ . '/includes/header.php';
                                     type="tel"
                                     class="form-control border-0 border-bottom rounded-0 shadow-none"
                                     id="phone"
-                                    placeholder="Phone Number">
+                                    name="phone"
+                                    placeholder="Phone Number"
+                                    required>
                                 <label for="phone">Phone Number*</label>
                             </div>
 
                             <div class="form-floating mb-3">
                                 <select
                                     class="form-select border-0 border-bottom rounded-0 shadow-none"
-                                    id="subject">
-                                    <option selected>Choose Subject</option>
-                                    <option>Portfolio</option>
-                                    <option>Multibagger</option>
-                                    <option>WealthX</option>
+                                    id="service" name="service" required>
+                                    <option selected>Choose Service</option>
+                                    <option value="Portfolio">Portfolio</option>
+                                    <option value="Multibagger">Multibagger</option>
+                                    <option value="WealthX">WealthX</option>
                                 </select>
                                 <label for="subject">Choose Subject*</label>
                             </div>
@@ -341,8 +348,10 @@ require __DIR__ . '/includes/header.php';
                                 <textarea
                                     class="form-control border-0 border-bottom rounded-0 shadow-none"
                                     id="message"
+                                    name="message"
                                     placeholder="Type Message"
-                                    style="height:120px"></textarea>
+                                    style="height:120px"
+                                    required></textarea>
                                 <label for="message">Type Message*</label>
                             </div>
 
@@ -550,6 +559,46 @@ require __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<?php if (isset($_SESSION['toast'])): ?>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index:9999;">
+
+        <div
+            id="liveToast"
+            class="toast align-items-center text-bg-<?= $_SESSION['toast']['type']; ?> border-0"
+            role="alert">
+
+            <div class="d-flex">
+
+                <div class="toast-body">
+                    <?= htmlspecialchars($_SESSION['toast']['message']); ?>
+                </div>
+
+                <button
+                    type="button"
+                    class="btn-close btn-close-white me-2 m-auto"
+                    data-bs-dismiss="toast">
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toast = new bootstrap.Toast(document.getElementById('liveToast'), {
+                delay: 4000
+            });
+            toast.show();
+        });
+    </script>
+
+    <?php unset($_SESSION['toast']); ?>
+
+<?php endif; ?>
 
 
 <?php require __DIR__ . '/includes/footer.php'; ?>
