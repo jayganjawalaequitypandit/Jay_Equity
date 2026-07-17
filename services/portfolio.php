@@ -289,7 +289,7 @@ require __DIR__ . '/../includes/header.php';
         <!-- Content Box -->
         <div class="container position-relative portfolio-card">
             <div class="border-start border-end border-light">
-                <div class="text-white p-3 p-md-5" style="background-color:#02181A;">
+                <div class="text-white p-3 p-md-4" style="background-color:#02181A;">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="d-md-none mb-3">
@@ -306,16 +306,17 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Button -->
                             <button class="btn btn-light rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" data-aos="fade-up"
-                                data-aos-delay="200">
+                                data-aos-delay="100">
                                 Explore Benefits
                                 <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </button>
                             <p class="mb-0 mt-3 pFont" data-aos="fade-up"
-                                data-aos-delay="250">Minimum Investment: <span style="color: #00DF9C;">₹2 Lacs</span></p>
+                                data-aos-delay="100">Minimum Investment: <span style="color: #00DF9C;">₹2 Lacs</span>
+                            </p>
                         </div>
 
                         <!-- RIGHT SIDE -->
-                        <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
+                        <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5">
 
                             <!-- Form Box -->
                             <div class="bg-white text-body p-3 form-card" data-aos="fade-left"
