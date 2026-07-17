@@ -11,8 +11,9 @@ require __DIR__ . '/includes/header.php';
     <style>
         .contact-banner {
             width: 100%;
-            height: 600px;
+            height: 500px;
             object-fit: cover;
+            object-position: center;
             display: block;
         }
 
@@ -67,10 +68,18 @@ require __DIR__ . '/includes/header.php';
     </style>
 
     <!-- Background Image -->
-    <img src="<?= $base ?>imgs/s3.png"
-        class="contact-banner"
-        alt="Contact Banner">
-
+    <div class="container-fluid p-0 position-relative">
+        <img
+            src="<?= $base ?>imgs/s3.png"
+            class="contact-banner"
+            alt="contact"
+            loading="lazy"
+            decoding="async">
+        <!-- Border aligned with container -->
+        <div class="container position-absolute top-0 start-50 translate-middle-x h-100">
+            <div class="border-start border-end border-light h-100"></div>
+        </div>
+    </div>
     <!-- Dark Overlay -->
     <div class="banner-overlay"></div>
 
@@ -84,11 +93,11 @@ require __DIR__ . '/includes/header.php';
             <!-- Center Text -->
             <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
 
-                <div class="contact-subtitle titleFont mb-3">
+                <div class="contact-subtitle titleFont mb-3 d-none">
                     • CONTACT
                 </div>
 
-                <h1 class="contact-title titleFont mb-0">
+                <h1 class="display-2 fw-bold text-white text-center titleFont mb-0">
                     Connect With Us
                 </h1>
 

@@ -77,12 +77,12 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- Hero -->
-<section class="position-relative" data-aos="fade-up">
+<section class="position-relative">
 
     <style>
         /* Desktop */
         .multibagger-card {
-            margin-top: -80px;
+            margin-top: -180px;
             position: relative;
             z-index: 2;
         }
@@ -93,7 +93,7 @@ require __DIR__ . '/../includes/header.php';
 
         .multibagger-banner {
             width: 100%;
-            height: 420px;
+            height: auto;
             object-fit: cover;
             object-position: left;
             display: block;
@@ -179,17 +179,17 @@ require __DIR__ . '/../includes/header.php';
                                 Multibagger
                             </span>
                         </div>
-                        <h1 class="display-6 fw-semibold mb-3 titleFont">
+                        <h1 class="display-6 fw-semibold mb-3 titleFont" data-aos="fade-right">
                             Invest Early, Before The Stock Opportunity Becomes A Success Story.
                         </h1>
-                        <p class="text-white-50 mb-3 pFont">
+                        <p class="text-white-50 mb-3 pFont" data-aos="fade-right">
                             Mid-term Investing, Proven Results, Real Wealth.
                         </p>
 
                         <button class="btn btn-light px-4 py-2 rounded-0">
                             Explore Benefits →
                         </button>
-                        <p class="mt-3 mb-0 pFont">
+                        <p class="mt-3 mb-0 pFont" data-aos="fade-up" data-aos-delay="250">
                             Minimum Investment:
                             <span style="color:#00DF9C">
                                 ₹20,000 per stock
@@ -198,8 +198,9 @@ require __DIR__ . '/../includes/header.php';
                     </div>
 
                     <!-- FORM -->
-                    <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
-                        <div class="bg-white text-body p-4 form-card shadow">
+                    <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5" data-aos="fade-left"
+                        data-aos-delay="150">
+                        <div class="bg-white text-body p-3 form-card shadow">
                             <p class="mb-1 fs-6 fw-medium pFont">
                                 Know more about
                             </p>
@@ -261,12 +262,13 @@ require __DIR__ . '/../includes/header.php';
             <!-- Heading -->
             <div class="row g-0">
                 <div class="col-md-12">
-                    <div class="pb-md-4 px-3 text-start text-md-center"
-                        data-aos="fade-up">
-                        <h2 class="display-5 titleFont fw-semibold d-inline-block">
+                    <div class="pb-md-4 px-3 text-start text-md-center">
+                        <h2 class="display-5 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                            data-aos-delay="100">
                             What You'll Get
                         </h2>
-                        <p class="fs-6 pFont">
+                        <p class="fs-6 pFont" data-aos="fade-up"
+                            data-aos-delay="100">
                             Everything you need to execute trades with precision and confidence.
                         </p>
                     </div>
@@ -276,8 +278,8 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Card 1 -->
                     <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-up"
-                        data-aos-delay="100">
+                        data-aos="fade-right"
+                        data-aos-delay="200">
                         <div class="h-100 p-3 border border-light">
                             <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
@@ -291,7 +293,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Card 2 -->
                     <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-up"
+                        data-aos="fade-right"
                         data-aos-delay="200">
                         <div class="h-100 p-3 border border-light">
                             <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
@@ -306,8 +308,8 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Card 3 -->
                     <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-up"
-                        data-aos-delay="300">
+                        data-aos="fade-right"
+                        data-aos-delay="200">
                         <div class="h-100 p-3 border border-light">
                             <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
@@ -321,8 +323,8 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Card 4 -->
                     <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-up"
-                        data-aos-delay="400">
+                        data-aos="fade-right"
+                        data-aos-delay="200">
                         <div class="h-100 p-3 border border-light">
                             <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
@@ -336,8 +338,8 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Card 5 -->
                     <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-up"
-                        data-aos-delay="500">
+                        data-aos="fade-right"
+                        data-aos-delay="200">
                         <div class="h-100 p-3 border border-light">
                             <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
@@ -351,8 +353,8 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Card 6 -->
                     <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-up"
-                        data-aos-delay="600">
+                        data-aos="fade-right"
+                        data-aos-delay="200">
                         <div class="h-100 p-3 border border-light">
                             <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
                             <h3 class="fs-3 titleFont fw-semibold">
@@ -368,13 +370,11 @@ require __DIR__ . '/../includes/header.php';
             </div>
 
             <!-- Button -->
-            <div class="py-5 pb-0"
-                data-aos="zoom-in"
-                data-aos-delay="700">
-                <button class="btn text-white rounded-0 px-4 py-2 ms-3 pFont"
-                    style="background-color:#02181A;">
-                    Get Started →
-                </button>
+            <div class="text-start px-3 mt-5" data-aos="fade-up"
+                data-aos-delay="100">
+                <a href="#" class="btn rounded-0 px-4 text-white py-2 " style="background-color:#02181A">
+                    Get Started <i class="fa fa-arrow-right ms-2"></i>
+                </a>
             </div>
 
         </div>
@@ -382,7 +382,7 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- Who Should Avail-->
-<section class="" data-aos="fade-up">
+<section>
     <div class="container">
 
         <div class="border border-light border-bottom">
@@ -392,17 +392,20 @@ require __DIR__ . '/../includes/header.php';
                 <div class="col-md-6 order-2 order-md-1">
                     <div class="p-3">
 
-                        <h2 class="display-6 titleFont fw-semibold mb-4">
+                        <h2 class="display-6 titleFont fw-semibold mb-4" data-aos="fade-up"
+                            data-aos-delay="100">
                             Who Should Avail?
                         </h2>
 
-                        <p class="mb-4 PFont">
+                        <p class="mb-4 PFont" data-aos="fade-up"
+                            data-aos-delay="100">
                             Whether You're Starting Your Journey Or Advancing Your <br>
                             Career, Explore The Right Opportunities To Grow And <br>
                             Succeed.
                         </p>
 
-                        <ul class="list-unstyled mb-4">
+                        <ul class="list-unstyled mb-4" data-aos="fade-right"
+                            data-aos-delay="100">
 
                             <li class="border-start border-2 border-dark ps-3 mb-3">
                                 Active Investor, Business Professionals,
@@ -423,7 +426,7 @@ require __DIR__ . '/../includes/header.php';
 
                         </ul>
 
-                        <a href="#" class="btn btn-dark rounded-0 px-4 py-2 mt-3">
+                        <a href="#" class="btn btn-dark rounded-0 px-4 py-2 mt-3" style="background-color:#02181A">
                             Get Started <i class="fa fa-arrow-right ms-2"></i>
                         </a>
 
@@ -448,15 +451,17 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- How we identify -->
-<section class="" data-aos="fade-up">
+<section>
     <div class="container">
         <div class="position-relative">
             <div class="px-3 py-5 border-start border-end border-light">
                 <div class="row g-3 justify-content-center">
                     <div class="col-md-10">
                         <div class="text-start text-md-center">
-                            <h2 class="display-6 titleFont fw-semibold">How We Identify Multibagger Opportunities?</h2>
-                            <p class="fs-6 pFont mb-0">Our research team evaluates Multibagger stocks using a structured process that <br class="d-none d-md-block"> includes fundamental analysis, market conditions and technical analysis.</p>
+                            <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                                data-aos-delay="100">How We Identify Multibagger Opportunities?</h2>
+                            <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                                data-aos-delay="100">Our research team evaluates Multibagger stocks using a structured process that <br class="d-none d-md-block"> includes fundamental analysis, market conditions and technical analysis.</p>
                         </div>
                     </div>
                 </div>
@@ -505,7 +510,8 @@ require __DIR__ . '/../includes/header.php';
         </style>
         <div class="border border-start border-end border-light">
             <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
-                <div class="col-md-4 col-11 flex-shrink-0">
+                <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right"
+                    data-aos-delay="100">
                     <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
@@ -544,7 +550,8 @@ require __DIR__ . '/../includes/header.php';
 
                     </div>
                 </div>
-                <div class="col-md-4 col-11 flex-shrink-0">
+                <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right"
+                    data-aos-delay="100">
                     <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
@@ -583,7 +590,8 @@ require __DIR__ . '/../includes/header.php';
 
                     </div>
                 </div>
-                <div class="col-md-4 col-11 flex-shrink-0">
+                <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right"
+                    data-aos-delay="100">
                     <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
 
                         <div class="image-wrapper">
@@ -623,24 +631,27 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
             </div>
-            <div class="text-start px-3 py-5">
-                <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;">
-                    Get Started →
-                </button>
+            <div class="text-start px-3 py-5" data-aos="fade-right"
+                data-aos-delay="100">
+                <a href="#" class="btn btn-dark rounded-0 px-4 py-2 " style="background-color:#02181A">
+                    Get Started <i class="fa fa-arrow-right ms-2"></i>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Get Started -->
-<section class="text-white" style="background:#02181A;" data-aos="fade-up">
+<section class="text-white" style="background:#02181A;">
     <div class="container">
         <div class="px-3 py-5 border-start border-end border-light">
             <div class="row g-3 justify-content-center">
                 <div class="col-md-10">
                     <div class="text-start text-md-center">
-                        <h2 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h2>
-                        <p class="fs-6 pFont mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                            data-aos-delay="100">Get started in 3 simple steps for Wealth Creation</h2>
+                        <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                            data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                     </div>
                 </div>
             </div>
@@ -683,7 +694,8 @@ require __DIR__ . '/../includes/header.php';
             <div class="row g-3">
 
                 <!-- Card 1 -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up"
+                    data-aos-delay="150">
                     <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
 
                         <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
@@ -713,7 +725,8 @@ require __DIR__ . '/../includes/header.php';
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up"
+                    data-aos-delay="150">
                     <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
 
                         <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
@@ -743,7 +756,8 @@ require __DIR__ . '/../includes/header.php';
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up"
+                    data-aos-delay="150">
                     <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
 
                         <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
@@ -790,31 +804,40 @@ require __DIR__ . '/../includes/header.php';
         <div class="px-3 py-5 border-start border-end border-light">
             <div class="row g-3 py-4">
                 <div class="col-md-6">
-                    <h3 class="fs-3 pFont fw-semibold" data-aos="fade-up">Who are we?</h3>
+                    <h3 class="fs-3 pFont fw-semibold" data-aos="fade-up"
+                        data-aos-delay="100">Who are we?</h3>
                     <img
                         src="<?= $base ?>imgs/Vector14.svg"
                         class="img-fluid mt-3"
-                        alt="background" />
+                        alt="background"
+                        data-aos="fade-up"
+                        data-aos-delay="100" />
                     <div class="d-flex mt-4">
                         <img
                             src="<?= $base ?>imgs/avatars.svg"
                             class="img-fluid"
-                            alt="background" />
+                            alt="background" data-aos="fade-up"
+                            data-aos-delay="100" />
                         <div class="flex-column">
-                            <p class="mb-0 pFont fw-medium fs-5">Chosen by 1M+</p>
-                            <p class="pFont fw-medium fs-5">Registered Users</p>
+                            <p class="mb-0 pFont fw-medium fs-5" data-aos="fade-up"
+                                data-aos-delay="100">Chosen by 1M+</p>
+                            <p class="pFont fw-medium fs-5" data-aos="fade-up"
+                                data-aos-delay="100">Registered Users</p>
                         </div>
                     </div>
-                    <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;">
-                        Get Started →
-                    </button>
+                    <a href="#" class="btn btn-dark rounded-0 px-4 py-2 mt-3" style="background-color:#02181A">
+                        Get Started <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
                 <div class="col-md-6">
-                    <p class="mb-0 small pFont" data-aos="fade-up">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
+                    <p class="mb-0 small pFont" data-aos="fade-up"
+                        data-aos-delay="100">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
                     <img
                         src="<?= $base ?>imgs/ep.svg"
                         class="img-fluid mt-3"
-                        alt="background" />
+                        alt="background"
+                        data-aos="fade-up"
+                        data-aos-delay="100" />
                 </div>
             </div>
         </div>
@@ -827,15 +850,20 @@ require __DIR__ . '/../includes/header.php';
         <div class="px-3 py-5 border border-start border-end border-light">
             <div class="row g-3 py-md-5">
                 <div class="col-md-6">
-                    <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
-                    <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
+                    <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                        data-aos-delay="100">Frequently Asked Questions</h2>
+                    <p class="fs-6 pFont mb-3" data-aos="fade-up"
+                        data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
                     <img
                         src="<?= $base ?>imgs/Faq1.svg"
                         class="img-fluid"
-                        alt="background">
+                        alt="background"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
                 </div>
                 <div class="col-md-6">
-                    <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
+                    <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
+                        data-aos-delay="100">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
@@ -886,24 +914,15 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- Award -->
-<section class="pb-2" data-aos="fade-up">
+<section>
     <div class="container">
-        <div class="border-start border-end border-light">
-
-            <div class="row g-2">
-
-                <div class="col-12 p-4">
-
-                    <h3 class="display-6 titleFont fw-semibold">
-                        Put Your Money To Work
-                        <br class="d-xl-block d-md-none d-none" />
-                        With Our Research, That Suits Your Style.
-                    </h3>
-
-                    <p class="pFont fs-6 fw-medium mt-3 mb-3">
-                        Writerap loved from thousands customers worldwide and get trusted from big companies.
-                    </p>
-
+        <div class="py-5 px-3 border-start border-end border-light">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                        data-aos-delay="100">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h2>
+                    <p class="pFont fs-6 mt-3 mb-3" data-aos="fade-up"
+                        data-aos-delay="100">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
                     <?php
                     $awards = [
                         [
@@ -963,90 +982,110 @@ require __DIR__ . '/../includes/header.php';
                     ];
                     ?>
 
+                    <style>
+                        .award-slider {
+                            overflow: hidden;
+                            width: 100%;
+                            position: relative;
+                        }
 
-                    <!-- Desktop Auto Scroll -->
-                    <div class="d-none d-md-block">
+                        .award-track {
+                            display: flex;
+                            width: max-content;
+                            animation: scrollAwards 20s linear infinite;
+                        }
 
-                        <marquee
-                            behavior="scroll"
-                            direction="left"
-                            scrollamount="12">
+                        .award-slider:hover .award-track {
+                            animation-play-state: paused;
+                        }
 
-                            <div class="d-inline-flex gap-3">
+                        .award-item {
+                            flex: 0 0 auto;
+                            padding: 0 10px;
+                        }
 
-                                <?php for ($i = 0; $i < 10; $i++): ?>
-                                    <?php foreach ($awards as $award): ?>
+                        .award-item img {
+                            /* height: 100px; */
+                            width: auto;
+                            display: block;
+                        }
 
-                                        <img
-                                            src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                            class="img-fluid"
-                                            alt="<?= htmlspecialchars($award['title']) ?>">
+                        @keyframes scrollAwards {
+                            from {
+                                transform: translateX(0);
+                            }
 
-                                    <?php endforeach; ?>
-                                <?php endfor; ?>
+                            to {
+                                transform: translateX(-50%);
+                            }
+                        }
 
-                            </div>
-                        </marquee>
-                    </div>
+                        @media (max-width:768px) {
+                            .award-item {
+                                padding: 0 10px;
+                            }
 
+                            .award-track {
+                                animation-duration: 28s;
+                            }
+                        }
+                    </style>
 
-                    <!-- Mobile Manual Scroll -->
-                    <div class="d-block d-md-none overflow-auto awards-scroll">
+                    <div class="award-slider">
 
-                        <div class="d-flex gap-3">
+                        <div class="award-track">
 
+                            <!-- First Set -->
                             <?php foreach ($awards as $award): ?>
-
-                                <img
-                                    src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                    class="img-fluid flex-shrink-0"
-                                    alt="<?= htmlspecialchars($award['title']) ?>">
-
+                                <div class="award-item">
+                                    <img
+                                        src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                        alt="<?= htmlspecialchars($award['title']) ?>"
+                                        class="img-fluid">
+                                </div>
                             <?php endforeach; ?>
+
+                            <!-- Duplicate Set for Infinite Loop -->
+                            <?php foreach ($awards as $award): ?>
+                                <div class="award-item">
+                                    <img
+                                        src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                        alt="<?= htmlspecialchars($award['title']) ?>"
+                                        class="img-fluid">
+                                </div>
+                            <?php endforeach; ?>
+
                         </div>
+
                     </div>
-                    <div class="mt-2 mb-2">
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;">
-                            Get Started →
-                        </button>
-                    </div>
+
+                    <a href="#" class="btn btn-dark rounded-0 px-4 py-2 mt-3" style="background-color:#02181A">
+                        Get Started <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
-
-                <style>
-                    .awards-scroll {
-                        overflow-x: auto;
-                        scrollbar-width: none;
-                        -webkit-overflow-scrolling: touch;
-                    }
-
-                    .awards-scroll::-webkit-scrollbar {
-                        display: none;
-                    }
-                </style>
-
                 <!-- RIGHT SIDE -->
-                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mb-1 d-none">
-                    <div class="position-relative p-5 overflow-hidden"
-                        style="max-width:430px;">
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end d-none">
+                    <div class="position-relative w-100 p-5 overflow-hidden"
+                        style="max-width:450px; background-color:#02181A;box-sizing:border-box;">
                         <!-- Background Image -->
-                        <img
-                            src="<?= $base ?>imgs/form_Frame.svg"
-                            alt="background"
-                            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+                        <!-- <img
+                                src="<?= $base ?>imgs/Form_Frame.svg"
+                                alt="background"
+                                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"> -->
 
 
                         <!-- Form Box -->
-                        <div class="bg-white p-3 position-relative">
-                            <div class="text-center mb-4">
+                        <div class="bg-white p-3">
+                            <div class="text-center mb-3">
                                 <img src="<?= $base ?>imgs/Form_logo.svg" width="55" alt="form icon">
                             </div>
 
-                            <small class="text-muted">
+                            <p class="pFont mb-1 fs-6 fw-medium">
                                 Know more about
-                            </small>
+                            </p>
 
-                            <h4 class="fw-bold mb-4">
-                                Multibaggers Service
+                            <h4 class="fw-semibold mb-3 titleFont">
+                                Portfolio Service
                             </h4>
 
                             <div class="form-floating mb-3">
@@ -1076,11 +1115,11 @@ require __DIR__ . '/../includes/header.php';
                                 <label for="mobile">Enter Your Mobile*</label>
                             </div>
 
-                            <button class="btn rounded-0 w-100 text-white" style="background-color: #02181A;">
+                            <button class="btn rounded-0 text-white w-100" style="background-color: #02181A;">
                                 Sign in
                             </button>
 
-                            <p class="small text-muted mt-3 mb-0 pFont">
+                            <p class="small fw-medium mt-3 mb-0">
                                 By submitting, you agree to our Terms & Conditions
                             </p>
                         </div>
@@ -1090,7 +1129,6 @@ require __DIR__ . '/../includes/header.php';
                 </div>
 
             </div>
-
         </div>
     </div>
 </section>
