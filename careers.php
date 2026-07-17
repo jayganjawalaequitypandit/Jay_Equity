@@ -11,7 +11,7 @@ require __DIR__ . '/includes/header.php';
     <style>
         .contact-banner {
             width: 100%;
-            height: 600px;
+            height: 500px;
             object-fit: cover;
             display: block;
         }
@@ -88,7 +88,7 @@ require __DIR__ . '/includes/header.php';
                     • CAREERS
                 </div>
 
-                <h1 class="contact-title titleFont mb-0">
+                <h1 class="display-2 fw-bold text-white text-center titleFont mb-0">
                     Build Your Career With Us
                 </h1>
 
