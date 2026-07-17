@@ -104,7 +104,7 @@ require __DIR__ . '/../includes/header.php';
 
             </div>
 
-            <div class="row g-3 pFont">
+            <div class="row g-3 pFont ">
 
                 <!-- Service 1 -->
                 <div class="col-md-4">
@@ -337,13 +337,11 @@ require __DIR__ . '/../includes/header.php';
 
             </div>
 
-
-
             <!-- Heading 2 -->
             <div class="text-center mb-3 mt-5">
 
                 <h1 class="display-6 fw-semibold titleFont">
-                   For HNI’s and Ultra HNI’s
+                    For HNI’s and Ultra HNI’s
                 </h1>
 
                 <!-- <p class="text-secondary pFont mb-0">
@@ -352,7 +350,7 @@ require __DIR__ . '/../includes/header.php';
 
             </div>
 
-            <div class="row g-3 pFont">
+            <div class="row g-3 pFont ">
 
                 <!-- Service 1 -->
                 <div class="col-md-4 d-none">
@@ -581,6 +579,214 @@ require __DIR__ . '/../includes/header.php';
 
                     </div>
 
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-4">
+
+                    <div class="card h-100 border-2 rounded-0"
+                        style="border-color:#DC3545;">
+
+                        <div class="card-header border-0 p-3"
+                            style="background:#F1EAFF;">
+
+                            <h4 class="fw-bold mb-1">
+                                WealthX plus
+                            </h4>
+
+                            <p class="small text-secondary mb-0">
+                                Personalized wealth management services
+                            </p>
+
+                        </div>
+
+                        <div class="card-body p-3 d-flex flex-column">
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+
+                                <h6 class="fw-bold mb-0">
+                                    Key Features
+                                </h6>
+
+                                <a href="#" class="small text-decoration-none">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                            <h5 class="fw-semibold mb-3">
+                                Wealth Planning
+                            </h5>
+
+                            <p class="text-secondary">
+                                Personalized strategies designed to build and preserve wealth over the long term.
+                            </p>
+
+                            <ul class="ps-3 mb-4">
+                                <li class="mb-2">Financial Planning</li>
+                                <li class="mb-2">Goal-based Investing</li>
+                                <li class="mb-2">Tax Planning</li>
+                                <li class="mb-2">Dedicated Relationship Manager</li>
+                            </ul>
+
+                            <div class="mt-auto">
+
+                                <a href="#"
+                                    class="btn btn-dark w-100 py-2">
+                                    View Details & Pricing
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer bg-white text-center py-3">
+
+                            <small>
+                                For Any Query Contact
+
+                                <a href="tel:+918000816688"
+                                    class="text-decoration-none">
+                                    +91 8000 816 688
+                                </a>
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Heading 3 -->
+            <div class="text-center mb-3 mt-5">
+
+                <h1 class="display-6 fw-semibold titleFont">
+                    Family Offices & Institutional
+                </h1>
+
+                <!-- <p class="text-secondary pFont mb-0">
+                    Choose the investment solution that best suits your financial goals.
+                </p> -->
+
+            </div>
+
+            <div class="row g-3 pFont ">
+
+
+                <!-- Service 3 -->
+                <div class="col-md-4">
+
+                    <div class="card h-100 border-2 rounded-0 overflow-hidden">
+
+                        <img src="../imgs/fai.jpg"
+                            alt="Family Offices & Institutional"
+                            class="card-img-top rounded-0"
+                            style="height:250px; object-fit:cover;">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <ul class="ps-3">
+                                <li class="mb-2">Customized Equity Advisory</li>
+                                <li class="mb-2">Institutional Portfolio Management</li>
+                                <li class="mb-2">Research-Driven Investment Strategies</li>
+                                <li class="mb-2">Risk & Asset Allocation Planning</li>
+                                <li class="mb-2">Long-Term Wealth Preservation</li>
+                                <li class="mb-2">Dedicated Advisory Support</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="card-footer bg-white text-center py-3 d-none">
+
+                            <small>
+                                For Any Query Contact
+
+                                <a href="tel:+918000816688"
+                                    class="text-decoration-none">
+                                    +91 8000 816 688
+                                </a>
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="card  h-100 rounded-0">
+                        <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+
+                            <h3 class="mb-4 titleFont text-center text-md-start">
+                                Send Us A Message
+                            </h3>
+
+                            <form>
+
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                        id="name"
+                                        placeholder="Your Name">
+                                    <label for="name">Your Name*</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="email"
+                                        class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                        id="email"
+                                        placeholder="Email Address">
+                                    <label for="email">Email Address*</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="tel"
+                                        class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                        id="phone"
+                                        placeholder="Phone Number">
+                                    <label for="phone">Phone Number*</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <select
+                                        class="form-select border-0 border-bottom rounded-0 shadow-none"
+                                        id="subject">
+                                        <option selected>Choose Subject</option>
+                                        <option>Portfolio</option>
+                                        <option>Multibagger</option>
+                                        <option>WealthX</option>
+                                    </select>
+                                    <label for="subject">Choose Subject*</label>
+                                </div>
+
+                                <div class="form-floating mb-4 d-none">
+                                    <textarea
+                                        class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                        id="message"
+                                        placeholder="Type Message"
+                                        style="height:120px"></textarea>
+                                    <label for="message">Type Message*</label>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="btn rounded-0 w-100 text-white py-2"
+                                    style="background:#02181A;">
+                                    Send Message
+                                </button>
+
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
