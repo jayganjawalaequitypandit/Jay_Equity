@@ -17,7 +17,7 @@ require __DIR__ . '/includes/header.php';
             <h2 class="display-6 fw-semibold titleFont">Compliance Audit</h2>
             <p class="mb-0 fs-6 pFont">
                 A workplace designed to support your growth, nurture your wellbeing,
-                and <br class="d-none d-md-block"> empower you to connect, thrive, and achieve success.
+                and empower you to connect, thrive, and achieve success.
             </p>
         </div>
 
