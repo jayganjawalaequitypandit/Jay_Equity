@@ -710,7 +710,6 @@ require __DIR__ . '/../includes/header.php';
                         <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
 
                             <img src="<?= $base ?>imgs/Vector11.svg" alt="">
-
                             <h2 class="fw-semibold mt-2 titleFont">
                                 Risk Profiling
                             </h2>
