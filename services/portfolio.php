@@ -233,7 +233,8 @@ require __DIR__ . '/../includes/header.php';
 
             .portfolio-banner {
                 width: 100%;
-                height: auto; /* 420px */
+                height: auto;
+                /* 420px */
                 object-fit: cover;
                 object-position: center;
                 display: block;
@@ -371,10 +372,71 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
+    <!-- Stratagic -->
+    <section>
+        <div class="container">
+            <div class="py-5 border-start border-end border-bottom border-light">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-6 px-3">
+                        <h2 class="display-5 titleFont fw-semibold" data-aos="fade-up"
+                            data-aos-delay="100">Strategic Construct</h2>
+                        <p class="mb-0 pFont fs-6 mt-3" data-aos="fade-up" data-aos-delay="100">A complete wealth management ecosystem — research, alerts, analytics, and expert support.</p>
+
+                        <ul class="Pfont mt-3 mb-0 d-flex flex-column gap-2">
+                            <li data-aos="fade-up" data-aos-delay="100">Recommended investment horizon: <b>3+ years.</b></li>
+                            <li data-aos="fade-up" data-aos-delay="100">Market cap mix: <b>16%</b> Large Cap, <b>42%</b> Mid Cap, <b>41%</b> Small Cap.</li>
+                            <li data-aos="fade-up" data-aos-delay="100">Portfolio includes <b>18+</b> curated equity stocks.</li>
+                            <li data-aos="fade-up" data-aos-delay="100">Designed for <b>long-term</b> wealth creation.</li>
+                            <li data-aos="fade-up" data-aos-delay="100">Maximum <b>10%</b> allocation per stock.</li>
+                            <li data-aos="fade-up" data-aos-delay="100">Maximum <b>35%</b> allocation per sector.</li>
+                        </ul>
+
+                        <!-- <div class="card p-2 rounded-0 mt-4 border-0 border-start border-1" style="--bs-border-color:#02181A;">
+                            <h2 class="fs-6 pFont fw-semibold">Investment Horizon</h2>
+                            <p class="small pFont mb-0">Recommended Holding Period: 3 Years+</p>
+                        </div>
+                        <div class="card p-2 rounded-0 mt-2 border-0 border-start border-1" style="--bs-border-color:#02181A;">
+                            <h2 class="fs-6 pFont fw-semibold">Market Cap Mix</h2>
+                            <p class="small pFont mb-0">16% Large Cap | 42% Mid Cap | 41% Small Cap</p>
+                        </div>
+                        <div class="card p-2 rounded-0 mt-2 border-0 border-start border-1" style="--bs-border-color:#02181A;">
+                            <h2 class="fs-6 pFont fw-semibold">Stock Universe</h2>
+                            <p class="small pFont mb-0">18+ Curated Equity Picks</p>
+                        </div>
+                        <div class="card p-2 rounded-0 mt-2 border-0 border-start border-1" style="--bs-border-color:#02181A;">
+                            <h2 class="fs-6 pFont fw-semibold">Ideal For</h2>
+                            <p class="small pFont mb-0">Investors focused on building wealth over the long term.</p>
+                        </div>
+                        <div class="card p-2 rounded-0 mt-2 border-0 border-start border-1" style="--bs-border-color:#02181A;">
+                            <h2 class="fs-6 pFont fw-semibold">Stock Allocation Limit</h2>
+                            <p class="small pFont mb-0">Up to 10% exposure per stock on initial allocation.</p>
+                        </div>
+                        <div class="card p-2 rounded-0 mt-2 border-0 border-start border-1" style="--bs-border-color:#02181A;">
+                            <h2 class="fs-6 pFont fw-semibold">Sector Exposure Limit</h2>
+                            <p class="small pFont mb-0">Up to 35% portfolio allocation per sector.</p>
+                        </div> -->
+                        <button class="btn btn-dark rounded-0 pFont px-4 py-2 mt-3 d-inline-flex align-items-center" style="background-color: #02181A;" data-aos="fade-up"
+                            data-aos-delay="100" onclick="window.location.href='#';">
+                            Get Started
+                            <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <img
+                            src="<?= $base ?>imgs/services/Strategic.jpg"
+                            class="img-fluid w-100"
+                            alt="background" data-aos="fade-up"
+                            data-aos-delay="100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- What you get -->
     <section>
         <div class="container">
-            <div class="py-5 border-start border-end border-light">
+            <div class="pt-5 border-bottom border-start border-end border-light">
                 <div class="row g-0">
                     <div class="col-md-12">
                         <div class="pb-md-4 px-3 text-start text-md-center">
@@ -383,12 +445,12 @@ require __DIR__ . '/../includes/header.php';
                                 data-aos-delay="100">
                                 What You'll Get
                             </h2>
-                            <p class="fs-6 pFont" data-aos="fade-up"
+                            <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
                                 data-aos-delay="250">A complete wealth management ecosystem — research, alerts, analytics, and expert support.</p>
                         </div>
                     </div>
 
-                    <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
+                    <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto mt-3">
 
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
@@ -423,7 +485,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
-                                <h2 class="fs-3 titleFont fw-semibold">Real Time Dashboard</h2>
+                                <h2 class="fs-3 titleFont fw-semibold">Real Time <br />Dashboard</h2>
                                 <p class="mb-0 pFont">
                                     Monitor your portfolio performance with live market data
                                 </p>
@@ -433,18 +495,124 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
                                 <img src="<?= $base ?>imgs/Vector6.svg" class="mb-3" alt="">
-                                <h2 class="fs-3 titleFont fw-semibold">Priority Support</h2>
+                                <h2 class="fs-3 titleFont fw-semibold">Priority <br />Support</h2>
                                 <p class="mb-0 pFont">
                                     Dedicated support team ensuring faster responses and solutions
                                 </p>
                             </div>
                         </div>
+                        <div class="col-md-4 col-11 flex-shrink-0 d-md-block d-none" data-aos="fade-right" data-aos-delay="100">
+                            <img
+                                src="<?= $base ?>imgs/services/portfolio1.jpg"
+                                class="img-fluid mt-3 mt-md-0 w-100"
+                                style="cursor:pointer;"
+                                alt="background" onclick="window.location.href='#';" />
+                        </div>
                     </div>
-                    <div class="text-start px-3 mt-5" data-aos="fade-up"
+                    <div class="text-start px-3 mt-5 d-none" data-aos="fade-up"
                         data-aos-delay="100">
                         <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;" onclick="window.location.href='#';">
                             Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How will provide our service -->
+    <section>
+        <div class="container">
+            <div class="px-3 py-5 border-start border-end border-light">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="text-start text-md-center">
+                            <h2 class="display-5 titleFont fw-semibold d-inline-block"
+                                data-aos="fade-up"
+                                data-aos-delay="100">
+                                How Will Provide our services
+                            </h2>
+                            <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
+                                data-aos-delay="100">A complete wealth management ecosystem — research, alerts, analytics, and expert support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 py-md-0 border-start border-end border-top border-light">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-6 px-3">
+                        <div class="d-flex">
+                            <img
+                                src="<?= $base ?>imgs/services/portfolio1.svg"
+                                class="img-fluid"
+                                alt="background" data-aos="fade-up"
+                                data-aos-delay="100" />
+                            <div class="flex-column gap-1 ms-3">
+                                <h2 class="fs-5 fw-semibold titleFont" data-aos="fade-up"
+                                    data-aos-delay="100">Short-Term Stock Recommendations</h2>
+                                <p class="small mb-0 pFont" data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    Carefully selected stocks with a 15-20 day holding period.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <img
+                                src="<?= $base ?>imgs/services/portfolio2.svg"
+                                class="img-fluid"
+                                alt="background" data-aos="fade-up"
+                                data-aos-delay="100" />
+                            <div class="flex-column gap-1 ms-3">
+                                <h2 class="fs-5 fw-semibold titleFont" data-aos="fade-up"
+                                    data-aos-delay="100">Clear Entry, Target & Stop-Loss</h2>
+                                <p class="small mb-0 pFont" data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    No guesswork, every position carries a clear 10% target stop-loss.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <img
+                                src="<?= $base ?>imgs/services/portfolio3.svg"
+                                class="img-fluid"
+                                alt="background" data-aos="fade-up"
+                                data-aos-delay="100" />
+                            <div class="flex-column gap-1 ms-3">
+                                <h2 class="fs-5 fw-semibold titleFont" data-aos="fade-up"
+                                    data-aos-delay="100">Expert Analysis</h2>
+                                <p class="small mb-0 pFont" data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    Where price trends meet solid business fundamentals.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <img
+                                src="<?= $base ?>imgs/services/portfolio4.svg"
+                                class="img-fluid"
+                                alt="background" data-aos="fade-up"
+                                data-aos-delay="100" />
+                            <div class="flex-column gap-1 ms-3">
+                                <h2 class="fs-5 fw-semibold titleFont" data-aos="fade-up"
+                                    data-aos-delay="100">Timely Alert</h2>
+                                <p class="small mb-0 pFont" data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    Smart stock picks designed to help you stay ahead of the market.
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-4" style="background-color: #02181A;" onclick="window.location.href='#';" data-aos="fade-up"
+                            data-aos-delay="100">
+                            Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <img
+                            src="<?= $base ?>imgs/services/portfolio2.jpg"
+                            class="img-fluid w-100"
+                            alt="background" data-aos="fade-up"
+                            data-aos-delay="100" />
                     </div>
                 </div>
             </div>
@@ -499,7 +667,7 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- Focused On Sustainable Wealth Creation. -->
-    <section class="py-5 text-white" style="background:#02181A;">
+    <section class="text-white" style="background:#02181A;">
         <style>
             .hide-scrollbar {
                 -ms-overflow-style: none;
@@ -709,8 +877,11 @@ require __DIR__ . '/../includes/header.php';
                             <div class="text-start text-md-center">
                                 <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
                                     data-aos-delay="100">How We Identify Portfolio Opportunities?</h2>
-                                <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                                <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
                                     data-aos-delay="100">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-xl-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
+                                <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" onclick="window.location.href='#';" data-aos="fade-up" data-aos-delay="100">
+                                    Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -894,11 +1065,137 @@ require __DIR__ . '/../includes/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="text-start px-3 py-5" data-aos="fade-up"
+                <div class="text-start px-3 py-5 d-none" data-aos="fade-up"
                     data-aos-delay="100">
                     <button class="btn text-white rounded-0 px-4 py-2 pFont" style="background-color: #02181A;" onclick="window.location.href='#';">
                         Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what Our Client Say -->
+    <section>
+        <div class="container">
+            <div class="border-start border-end border-light">
+                <div class="row g-3">
+                    <div class="col-md-6 p-md-4 pt-5 px-4">
+                        <div class="pt-md-5 py-0 pb-0">
+                            <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                                data-aos-delay="100">Some valuable feedback from our students</h2>
+                            <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
+                                data-aos-delay="100">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how.</p>
+                            <img
+                                src="<?= $base ?>imgs/Google.svg"
+                                class="img-fluid mt-3"
+                                alt="background" data-aos="fade-up"
+                                data-aos-delay="100">
+                        </div>
+                        <button class="btn text-white rounded-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>pages/contact-us.php';" data-aos="fade-up"
+                            data-aos-delay="100">
+                            Contact Now
+                            <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-md-6 pb-md-0 pb-5">
+                        <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
+
+                            <!-- Card 1 -->
+                            <div class="col-md-6 col-11 flex-shrink-0">
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                    data-aos-delay="100">
+                                    <div class="text-warning fs-5 mb-3">
+                                        ★ ★ ★ ★ ☆
+                                    </div>
+
+                                    <p class="mb-3 pFont small">
+                                        EP Investors has completely changed the way I invest.
+                                        The recommendations are accurate, and the risk management is solid!
+                                    </p>
+
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                            style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                            A
+                                        </div>
+                                        <h2 class="fw-semibold mb-0 fs-6 pFont">Amit S</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-md-6 col-11 flex-shrink-0">
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                    data-aos-delay="100">
+                                    <div class="text-warning fs-5 mb-3">
+                                        ★ ★ ★ ★ ☆
+                                    </div>
+
+                                    <p class="mb-3 pFont small">
+                                        Timely alerts and expert analysis make trading effortless.
+                                        Highly recommended for short-term investors!
+                                    </p>
+
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                            style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                            P
+                                        </div>
+                                        <h2 class="fw-semibold mb-0 fs-6 pFont">Priya M.</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-md-6 col-11 flex-shrink-0">
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                    data-aos-delay="100">
+                                    <div class="text-warning fs-5 mb-3">
+                                        ★ ★ ★ ★ ☆
+                                    </div>
+
+                                    <p class="mb-3 pFont small">
+                                        EP Investors has completely changed the way I invest.
+                                        The recommendations are accurate, and the risk management is solid!
+                                    </p>
+
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                            style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                            A
+                                        </div>
+                                        <h2 class="fw-semibold mb-0 pFont fs-6">Amit S</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="col-md-6 col-11 flex-shrink-0">
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                    data-aos-delay="100">
+                                    <div class="text-warning fs-5 mb-3">
+                                        ★ ★ ★ ★ ☆
+                                    </div>
+
+                                    <p class="mb-3 pFont small">
+                                        Consistent profits with minimal effort.
+                                        The 80% accuracy claim is real!
+                                    </p>
+
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                            style="width:40px;height:40px; background:#02181A; color:#00DF9C">
+                                            R
+                                        </div>
+                                        <h2 class="fw-semibold mb-0 fs-6 pFont">Rahul K.</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -914,7 +1211,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="text-start text-md-center">
                             <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
                                 data-aos-delay="100">Get started in 3 simple steps for Wealth Creation</h2>
-                            <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                            <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
                                 data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                         </div>
                     </div>
@@ -968,7 +1265,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <img
                                 src="<?= $base ?>imgs/risk1.jpg"
-                                class="process-img h-100 object-fit-cover"
+                                class="process-img w-100 h-100 object-fit-cover"
                                 alt="">
 
                             <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
@@ -999,7 +1296,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <img
                                 src="<?= $base ?>imgs/risk2.jpg"
-                                class="process-img h-100 object-fit-cover"
+                                class="process-img w-100 h-100 object-fit-cover"
                                 alt="">
 
                             <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
@@ -1064,7 +1361,7 @@ require __DIR__ . '/../includes/header.php';
 
 
     <!-- Founded -->
-    <section>
+    <section class="d-none">
         <div class="container">
             <div class="px-3 py-5 border-start border-end border-light">
                 <div class="row g-3 py-4">
@@ -1178,7 +1475,7 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- Award -->
-    <section>
+    <section class="d-none">
         <div class="container">
             <div class="py-5 px-3 border-start border-end border-light">
                 <div class="row g-0">
