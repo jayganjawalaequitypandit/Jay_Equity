@@ -1,8 +1,8 @@
 <?php
 $pageTitle   = 'About Us page';
-$base        = '';
+$base        = '../';
 $solidHeader = true;
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 
 
@@ -146,23 +146,23 @@ require __DIR__ . '/includes/header.php';
         <div class="d-flex align-items-center justify-content-start justify-content-md-center overflow-auto hide-scrollbar">
 
           <div class="p-2">
-            <img src="./imgs/logo/Bussiness_Standard.png" alt="Business Standard" style="height:60px;">
+            <img src="<?= $base ?>imgs/logo/Bussiness_Standard.png" alt="Business Standard" style="height:60px;">
           </div>
 
           <div class="p-2">
-            <img src="./imgs/logo/Dailyhunt.png" alt="Dailyhunt" style="height:60px;">
+            <img src="<?= $base ?>imgs/logo/Dailyhunt.png" alt="Dailyhunt" style="height:60px;">
           </div>
 
           <div class="p-2">
-            <img src="./imgs/logo/Yahoo.png" alt="Yahoo" style="height:60px;">
+            <img src="<?= $base ?>imgs/logo/Yahoo.png" alt="Yahoo" style="height:60px;">
           </div>
 
           <div class="p-2">
-            <img src="./imgs/logo/Bloomberg.png" alt="Bloomberg" style="height:60px;">
+            <img src="<?= $base ?>imgs/logo/Bloomberg.png" alt="Bloomberg" style="height:60px;">
           </div>
 
           <div class="p-2">
-            <img src="./imgs/logo/The Week.png" alt="The Week" style="height:60px;">
+            <img src="<?= $base ?>imgs/logo/The Week.png" alt="The Week" style="height:60px;">
           </div>
 
         </div>
@@ -537,7 +537,7 @@ require __DIR__ . '/includes/header.php';
     </div>
   </section>
 
-  <?php require __DIR__ . '/includes/footer.php'; ?>
+  <?php require __DIR__ . '/../includes/footer.php'; ?>
 </body>
 
 </html>
