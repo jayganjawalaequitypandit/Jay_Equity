@@ -112,7 +112,8 @@ require __DIR__ . '/../includes/header.php';
 
             .welthx-banner {
                 width: 100%;
-                height: auto; /* 420px */
+                height: auto;
+                /* 420px */
                 object-fit: cover;
                 object-position: center;
                 display: block;
@@ -175,11 +176,11 @@ require __DIR__ . '/../includes/header.php';
                                 <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none" style="color:#00DF9C" href="">WealthX</a>
                             </div>
                             <h1 class="display-5 fw-semibold mb-3 titleFont">
-                                Your Wealth Deserves To Work Smarter.
+                                Your Wealth DeservesTo Work Smarter.
                             </h1>
 
                             <p class="text-white-50 mb-3 pFont">
-                                WealthX is a multi-asset investment advisory service built to capture every market opportunity - combining expert research, disciplined allocation, and active portfolio management.
+                                WealthX is a multi-asset investment advisory service built to captureevery market opportunity - combining expert research, disciplinedallocation, and active portfolio management.
                             </p>
 
                             <!-- Button -->
@@ -253,12 +254,12 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-0">
                     <div class="col-md-6 d-flex align-items-center">
                         <h2 class="display-5 titleFont fw-semibold d-inline-block">
-                            Built For Every <br />Market Condition
+                            Built For Every<br />Market Condition
                         </h2>
                     </div>
                     <div class="col-md-6 mt-2 mt-md-0">
                         <p class="fs-6 pFont">WealthX is a comprehensive multi-asset investment advisory service designed to capture every market opportunity for the super compounding of your wealth.</p>
-                        <p class="fs-6 pFont mb-0">By combining expert research, disciplined portfolio construction, and  active capital allocation, WealthX delivers institutional-quality investment
+                        <p class="fs-6 pFont mb-0">By combining expert research, disciplined portfolio construction, and active capital allocation, WealthX delivers institutional-quality investment
                             strategy — made accessible to individual investors.</p>
                     </div>
                 </div>
@@ -332,8 +333,8 @@ require __DIR__ . '/../includes/header.php';
 
             }
         </style>
-        <div class="container">
 
+        <div class="container">
             <div class="row g-0 border border-light">
 
                 <!-- LEFT SIDE -->
@@ -392,7 +393,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <a href="#"
-                            class="btn rounded-0 text-white mt-3 px-4 py-2 pFont" style="background-color: #02181A;">
+                            class="btn rounded-0 text-white mt-3 px-4 py-2 mb-3 pFont" style="background-color: #02181A;">
                             Learn How It Works <i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </a>
 
@@ -504,24 +505,333 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
+    <!-- Services -->
+    <section class="position-relative overflow-hidden">
 
-    <!-- What you get -->
-    <!-- <section>
-        <div class="container-fluid">
-            <div class="border-start border-end border-light">
-                <div class="row g-0">
-                    <div class="col-md-12">
-                        <img
-                            src="<?= $base ?>imgs/services/welthx_6.png"
-                            class="img-fluid w-100"
-                            alt="Portfolio"
-                            loading="lazy"
-                            decoding="async">
+        <!-- Background Image -->
+        <img
+            src="<?= $base ?>imgs/services/welthx_6.png"
+            class="position-absolute top-0 start-0 w-100 h-100"
+            alt="Portfolio"
+            loading="lazy"
+            decoding="async"
+            style="object-fit:cover;">
+
+
+        <!-- Dark Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
+
+        <!-- Container Borders -->
+        <div class="container position-absolute top-0 start-50 translate-middle-x h-100 d-none d-md-block">
+            <div class="border-start border-end border-light h-100"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="position-relative py-5">
+            <div class="container py-md-5">
+                <div class="row align-items-center g-4">
+                    <!-- Left Content -->
+                    <div class="col-md-4 col-12 text-white">
+                        <h1 class="display-6 mb-4 titleFont">
+                            Every market. Every opportunity.
+                        </h1>
+                        <p class="fs-5 pFont">
+                            A complete wealth management ecosystem -
+                            research, alerts, analytics, and expert support.
+                        </p>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="col-md-8 col-12">
+                        <div class="row g-3">
+                            <!-- Card 1 -->
+                            <div class=" col-md-4 col-12">
+                                <div class="bg-dark bg-opacity-75 text-white p-4 h-100">
+                                    <h4 class="mb-3 titleFont">
+                                        Equity Portfolio
+                                    </h4>
+                                    <p class="small pFont">
+                                        A curated basket of fundamentally strong stocks.
+                                        Deep analysis of business quality, earnings growth,
+                                        and management track record. Rebalanced quarterly.
+                                    </p>
+                                    <ul class="small ps-3 mb-0">
+                                        <li>Fundamentally Strong Stocks</li>
+                                        <li>In-depth Research & Analysis</li>
+                                        <li>Quarterly Rebalancing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-md-4 col-12">
+                                <div class="bg-secondary bg-opacity-75 text-white p-4 h-100">
+                                    <h4 class="mb-3 titleFont">
+                                        Multibaggers
+                                    </h4>
+                                    <p class="small pFont">
+                                        One high-growth opportunity every month.
+                                        Quality businesses with strong structural trends
+                                        and mid-term return potential.
+                                    </p>
+                                    <ul class="small ps-3 mb-0">
+                                        <li>High-Growth Stock Every Month</li>
+                                        <li>Quality Businesses, Strong Trends</li>
+                                        <li>Research Backed</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-md-4 col-12">
+                                <div class="bg-dark bg-opacity-50 text-white p-4 h-100">
+                                    <h4 class="mb-3 titleFont">
+                                        ETFs
+                                    </h4>
+                                    <p class="small pFont">
+                                        Strategic allocations to commodity, index,
+                                        and debt ETFs. Broad macro coverage across
+                                        sectors and geographies.
+                                    </p>
+                                    <ul class="small ps-3 mb-0">
+                                        <li>Global Diversification</li>
+                                        <li>Commodity, Index & Debt ETFs</li>
+                                        <li>Reduce Risk, Enhance Returns</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+
+    </section>
+
+
+    <!-- Generate Wealth -->
+    <section>
+        <div class="container">
+            <div class="border border-light border-top-0 border-bottom-0">
+                <div class="row align-items-stretch  ">
+
+                    <!-- Left Side -->
+                    <div class="col-12 col-md-6 ">
+                        <div class="h-100">
+                            <img
+                                src="<?= $base ?>imgs/services/welthx_7.jpg"
+                                alt="Contact"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="col-12 col-md-6 p-4 p-md-5">
+                        <h2 class="display-6 titleFont mb-4">
+                            Not Built To Generate <br class="d-none d-md-block">
+                            Excitement. Built To Generate
+                            Wealth.
+                        </h2>
+
+                        <div class="d-inline-block p-4 mb-4" style="background:#213738;">
+                            <p class="fst-italic mb-0 fs-5" style="color:#00DF9C;">
+                                "The Goal Is Not To Predict The Future - It Is
+                                To Be Positioned For Every Version Of It."
+                            </p>
+                        </div>
+
+                        <div class="mb-5 d-flex flex-wrap gap-2 pFont">
+                            <span>| Rising Markets |</span>
+                            <span>| Volatile Periods |</span>
+                            <span>| Market Catalysts |</span>
+                            <span>| Through It All |</span>
+                        </div>
+
+                        <a href="contact.php"
+                            class="btn text-white rounded-0 py-2"
+                            style="background:#02181A;">
+                            Schedule a Consultation
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="border border-light">
+                <div class="hover-wrapper d-md-flex">
+
+                    <!-- Card 1 -->
+                    <div class="hover-card p-4 d-flex flex-column">
+                        <div>
+                            <img src="../imgs/Vector15.svg" alt="Rising Markets" width="40" height="40">
+                        </div>
+
+                        <div class="mt-5">
+                            <h2 class="titleFont mb-0">
+                                Rising<br>Markets
+                            </h2>
+                        </div>
+
+                        <div class="hover-content mt-4">
+                            <hr>
+                            <p class="pFont mb-0">
+                                Captured Through Equities And Monthly
+                                High-Conviction Multibagger Picks.
+                            </p>
+                        </div>
+
+                        <div class="mt-auto pt-4\ fw-semibold">
+                            <i class="fa-solid fa-circle me-2 small"></i>Explore More
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="hover-card p-4 d-flex flex-column">
+                        <div>
+                            <img src="../imgs/Vector16.svg" alt="Volatile Periods" width="40" height="40">
+                        </div>
+
+                        <div class="mt-5">
+                            <h2 class="titleFont mb-0">
+                                Volatile<br>Periods
+                            </h2>
+                        </div>
+
+                        <div class="hover-content mt-4">
+                            <hr>
+                            <p class="pFont mb-0">
+                                Cushioned Through ETF Diversification Across
+                                Uncorrelated Asset Classes.
+                            </p>
+                        </div>
+
+                        <div class="mt-auto  fw-semibold">
+                            <i class="fa-solid fa-circle me-2 small"></i> Explore More
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="hover-card p-4 d-flex flex-column">
+                        <div>
+                            <img src="../imgs/Vector17.svg" alt="Market Catalysts" width="40" height="40">
+                        </div>
+
+                        <div class="mt-5">
+                            <h2 class="titleFont mb-0">
+                                Market<br>Catalysts
+                            </h2>
+                        </div>
+
+                        <div class="hover-content mt-4">
+                            <hr>
+                            <p class="pFont mb-0">
+                                Strategic Allocation Adjustments During Key
+                                Market Events And Opportunities.
+                            </p>
+                        </div>
+
+                        <div class="mt-auto fw-semibold">
+                            <i class="fa-solid fa-circle me-2 small"></i> Explore More
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="hover-card p-4 d-flex flex-column">
+                        <div>
+                            <img src="../imgs/Vector18.svg" alt="Through It All " width="40" height="40">
+                        </div>
+
+                        <div class="mt-5">
+                            <h2 class="titleFont mb-0">
+                                Through<br>It All
+                            </h2>
+                        </div>
+
+                        <div class="hover-content mt-4">
+                            <hr>
+                            <p class="pFont mb-0">
+                                Built To Navigate Multiple Market Cycles While
+                                Focusing On Long-Term Wealth Creation.
+                            </p>
+                        </div>
+                        <div class="mt-auto fw-semibold">
+                            <i class="fa-solid fa-circle me-2 small"></i> Explore More
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .hover-wrapper {
+            min-height: 400px;
+        }
+
+        .hover-card {
+            flex: 1;
+            min-height: 400px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all .45s ease;
+            border-right: 1px solid #dee2e6;
+        }
+
+        .hover-card:last-child {
+            border-right: 0;
+        }
+
+        .hover-card .hover-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .4s ease;
+        }
+
+        .hover-card:hover {
+            flex: 2.5;
+            background: #02181A;
+            color: #fff;
+        }
+
+        .hover-card:hover .hover-content {
+            opacity: 1;
+            max-height: 200px;
+        }
+
+        .hover-card hr {
+            border-color: rgba(255, 255, 255, .25);
+        }
+
+        @media (max-width: 767.98px) {
+
+            .hover-wrapper {
+                display: block !important;
+                min-height: auto;
+            }
+
+            .hover-card {
+                min-height: auto;
+                border-right: 0;
+                border-bottom: 1px solid #dee2e6;
+            }
+
+            .hover-card .hover-content {
+                opacity: 1;
+                max-height: 300px;
+            }
+
+            .hover-card:hover {
+                flex: 1;
+            }
+        }
+    </style>
 
 
     <!-- Get Started -->
