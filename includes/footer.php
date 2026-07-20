@@ -259,8 +259,8 @@
                         class="position-absolute d-md-block d-none"
                         style="right:-22px; top:0px;"
                         alt="">
-                    <div class="border-start border-end border-light p-2">
-                        <div class="row">
+                    <div class="border-start border-end border-light p-3">
+                        <div class="row small">
                             <div class="col-md-4">
                                 <p class="fw-bold pFont">
                                     SEBI Registered Investment Advisor Details:
@@ -289,8 +289,8 @@
                             <div class="col-md-8 mt-md-0 mt-3">
                                 <p>
                                     Principal Officer: Kamlesh Sachar |
-                                    Email: <a class="text-decoration-none" href="mailto:po@equitypandit.com">po@equitypandit.com</a> |
-                                    Contact No.: <a class="text-decoration-none" href="tel:+918000816688">+91 8000816688</a> |
+                                    Email: <a class="text-decoration-none" href="mailto:po@equitypandit.com" style="color:#00DF9C">po@equitypandit.com</a> |
+                                    Contact No.: <a class="text-decoration-none" href="tel:+918000816688" style="color:#00DF9C">+91 8000816688</a> |
                                     SEBI LO.: Ground Floor, Jeevan Nidhi 2 LIC Building,
                                     Ambedkar Circle, Bhawani Singh Rd, Jaipur, Rajasthan 302005
                                 </p>
@@ -342,7 +342,8 @@
                                     href="https://equitypandit.in"
                                     tabIndex={0}
                                     class="text-decoration-none fw-semibold"
-                                    aria-label="Equitypandit Financial Services Private Limited">
+                                    aria-label="Equitypandit Financial Services Private Limited"
+                                    style="color:#00DF9C">
                                     Equitypandit Financial Services Private Limited. </a> All Rights Reserved
                             </small>
                         </div>
