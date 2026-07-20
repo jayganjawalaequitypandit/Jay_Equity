@@ -435,7 +435,7 @@ require __DIR__ . './includes/header.php';
             <style>
                 .features-wrapper {
                     display: flex;
-                    border: 1px solid var(--bs-border-color);
+                    /* border: 1px solid var(--bs-border-color); */
                 }
 
                 .feature-card {
@@ -445,7 +445,7 @@ require __DIR__ . './includes/header.php';
                     overflow: hidden;
                     transition: flex .45s ease;
                     cursor: pointer;
-                    background: #fff;
+                    /* background: #fff; */
                 }
 
                 .features-wrapper:hover .feature-card {
@@ -568,10 +568,10 @@ require __DIR__ . './includes/header.php';
                         </div>
                         <div class="container px-0">
 
-                            <div class="features-wrapper">
+                            <div class="features-wrapper border border-light">
 
                                 <!-- Card 1 -->
-                                <div class="feature-card border-end">
+                                <div class="feature-card border-end border-light">
 
                                     <div class="feature-content position-absolute top-0 start-0 p-3 z-2">
                                         <div class="d-md-block d-flex align-items-center">
@@ -597,7 +597,7 @@ require __DIR__ . './includes/header.php';
                                 </div>
 
                                 <!-- Card 2 -->
-                                <div class="feature-card border-end">
+                                <div class="feature-card border-end border-light">
 
                                     <div class="feature-content position-absolute top-0 start-0 p-3 z-2">
                                         <div class="d-md-block d-flex align-items-center">
@@ -623,7 +623,7 @@ require __DIR__ . './includes/header.php';
                                 </div>
 
                                 <!-- Card 3 -->
-                                <div class="feature-card border-end">
+                                <div class="feature-card border-end border-light">
 
                                     <div class="feature-content position-absolute top-0 start-0 p-3 z-2">
                                         <div class="d-md-block d-flex align-items-center">

@@ -188,11 +188,11 @@ $solidHeader = $solidHeader ?? true;
 
                             <!-- Right menu -->
                             <div class="d-flex flex-column flex-xl-row align-items-xl-center ms-xl-auto">
-                                <a
+                                <!-- <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
                                     href="<?= $base ?>about-us.php">
                                     <small>About</small>
-                                </a>
+                                </a> -->
                                 <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
                                     href="<?= $base ?>contact-us.php">
@@ -204,12 +204,89 @@ $solidHeader = $solidHeader ?? true;
                                     <small>Login</small>
                                 </a>
                                 <!-- CTA -->
-                                <div class="d-grid d-xl-block ms-xl-3 mt-3 mt-xl-0 pb-3 pb-xl-0">
+                                <div class="d-flex align-items-center gap-2 ms-xl-3 mt-3 mt-xl-0 pb-3 pb-xl-0">
+
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn btn-outline-light border-0"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            aria-label="Accessibility Tools">
+                                            <i class="fa-brands fa-accessible-icon fa-lg"></i>
+                                        </button>
+
+                                        <div id="accessibilityMenu" class="dropdown-menu dropdown-menu-end p-3 shadow border-0"
+                                            style="min-width:320px;border-radius:12px;">
+
+                                            <h5 class="text-center fw-bold mb-3">Accessibility Tools</h5>
+
+                                            <div class="mb-3">
+                                                <small class="fw-semibold">Theme</small>
+
+                                                <div class="d-flex gap-2 mt-2">
+                                                    <button id="lightThemeBtn" class="btn btn-outline-dark flex-fill">
+                                                        <i class="fa fa-sun"></i><br>
+                                                        <small>Light</small>
+                                                    </button>
+
+                                                    <button id="darkThemeBtn" class="btn btn-outline-dark flex-fill">
+                                                        <i class="fa-solid fa-circle-half-stroke"></i><br>
+                                                        <small>Dark</small>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <small class="fw-semibold">Text Size</small>
+
+                                                <div class="d-flex gap-2 mt-2">
+                                                    <button id="normalFontBtn" class="btn btn-outline-dark flex-fill">
+                                                        A<br><small>Normal</small>
+                                                    </button>
+
+                                                    <button id="increaseFontBtn" class="btn btn-outline-dark flex-fill">
+                                                        A+<br><small>Increase</small>
+                                                    </button>
+
+                                                    <button id="decreaseFontBtn" class="btn btn-outline-dark flex-fill">
+                                                        A-<br><small>Decrease</small>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <small class="fw-semibold">Other Controls</small>
+
+                                                <div class="d-flex gap-2 mt-2">
+
+                                                    <button id="hideImagesBtn" class="btn btn-outline-dark flex-fill">
+                                                        <i class="fa-solid fa-eye-slash"></i><br>
+                                                        <small>Hide Images</small>
+                                                    </button>
+
+                                                    <button id="bigCursorBtn" class="btn btn-outline-dark flex-fill">
+                                                        <i class="fa-solid fa-computer-mouse"></i><br>
+                                                        <small>Big Cursor</small>
+                                                    </button>
+
+                                                    <button id="pauseAnimationBtn" class="btn btn-outline-dark flex-fill">
+                                                        <i class="fa-solid fa-pause"></i><br>
+                                                        <small>Pause Animations</small>
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                     <a
                                         class="btn btn-outline-light rounded-0 text-nowrap w-auto"
                                         href="#get-started">
                                         Get Started
                                     </a>
+
                                 </div>
 
                             </div>
@@ -223,8 +300,8 @@ $solidHeader = $solidHeader ?? true;
 
     <!-- Bootstrap JavaScript -->
     <!-- <script defer
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script> -->
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        </script> -->
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -283,4 +360,200 @@ $solidHeader = $solidHeader ?? true;
         });
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const lightBtn = document.getElementById('lightThemeBtn');
+            const darkBtn = document.getElementById('darkThemeBtn');
+            const normalBtn = document.getElementById('normalFontBtn');
+            const increaseBtn = document.getElementById('increaseFontBtn');
+            const decreaseBtn = document.getElementById('decreaseFontBtn');
+
+            const hideImagesBtn = document.getElementById('hideImagesBtn');
+            const bigCursorBtn = document.getElementById('bigCursorBtn');
+            const pauseAnimationBtn = document.getElementById('pauseAnimationBtn');
+
+            const dropdown = document.querySelector('.dropdown-menu');
+
+            // ------------------------
+            // Theme
+            // ------------------------
+
+            function setActive(group, activeBtn) {
+                group.forEach(btn => btn.classList.remove("active"));
+                activeBtn.classList.add("active");
+            }
+
+            const themeButtons = [lightBtn, darkBtn];
+
+            function applyTheme(theme) {
+
+                if (theme === "dark") {
+
+                    document.body.classList.add("bg-black", "text-white");
+
+                    dropdown.style.background = "#1f1f1f";
+                    dropdown.style.color = "#fff";
+
+                    dropdown.querySelectorAll(".btn").forEach(btn => {
+                        btn.classList.remove("btn-outline-dark");
+                        btn.classList.add("btn-outline-light");
+                    });
+
+                    setActive(themeButtons, darkBtn);
+
+                } else {
+
+                    document.body.classList.remove("bg-black", "text-white");
+
+                    dropdown.style.background = "#fff";
+                    dropdown.style.color = "#000";
+
+                    dropdown.querySelectorAll(".btn").forEach(btn => {
+                        btn.classList.remove("btn-outline-light");
+                        btn.classList.add("btn-outline-dark");
+                    });
+
+                    setActive(themeButtons, lightBtn);
+                }
+
+                localStorage.setItem("theme", theme);
+            }
+
+            lightBtn.addEventListener("click", () => applyTheme("light"));
+            darkBtn.addEventListener("click", () => applyTheme("dark"));
+
+            // ------------------------
+            // Font Size
+            // ------------------------
+
+            const fontButtons = [normalBtn, increaseBtn, decreaseBtn];
+
+            normalBtn.addEventListener("click", () => {
+                document.documentElement.style.fontSize = "16px";
+                localStorage.setItem("fontSize", "16px");
+                setActive(fontButtons, normalBtn);
+            });
+
+            increaseBtn.addEventListener("click", () => {
+                document.documentElement.style.fontSize = "18px";
+                localStorage.setItem("fontSize", "18px");
+                setActive(fontButtons, increaseBtn);
+            });
+
+            decreaseBtn.addEventListener("click", () => {
+                document.documentElement.style.fontSize = "14px";
+                localStorage.setItem("fontSize", "14px");
+                setActive(fontButtons, decreaseBtn);
+            });
+
+            // ------------------------
+            // Hide Images
+            // ------------------------
+
+            function updateToggleButton(button, enabled) {
+                button.classList.toggle("active", enabled);
+            }
+
+            function toggleImages() {
+
+                const hidden = document.body.dataset.hideImages === "true";
+                const enabled = !hidden;
+
+                document.querySelectorAll("img").forEach(img => {
+                    img.style.visibility = enabled ? "hidden" : "visible";
+                });
+
+                document.body.dataset.hideImages = enabled;
+                localStorage.setItem("hideImages", enabled);
+
+                updateToggleButton(hideImagesBtn, enabled);
+            }
+
+            hideImagesBtn.addEventListener("click", toggleImages);
+
+            // ------------------------
+            // Big Cursor
+            // ------------------------
+
+            function toggleCursor() {
+
+                const enabled = document.body.dataset.bigCursor === "true";
+                const newState = !enabled;
+
+                if (newState) {
+                    document.body.style.cursor =
+                        'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2748%27 height=%2748%27 viewBox=%270 0 24 24%27 fill=%27black%27%3E%3Cpath d=%27M3 2L18 17H11L13 22L10 23L8 18H3V2Z%27/%3E%3C/svg%3E") 0 0, auto';
+                } else {
+                    document.body.style.cursor = "default";
+                }
+
+                document.body.dataset.bigCursor = newState;
+                localStorage.setItem("bigCursor", newState);
+
+                updateToggleButton(bigCursorBtn, newState);
+            }
+
+            bigCursorBtn.addEventListener("click", toggleCursor);
+
+            // ------------------------
+            // Pause Animations
+            // ------------------------
+
+            function toggleAnimations() {
+
+                const paused = document.body.dataset.pauseAnimations === "true";
+                const newState = !paused;
+
+                document.querySelectorAll("*").forEach(el => {
+
+                    if (newState) {
+                        el.style.animationPlayState = "paused";
+                        el.style.transition = "none";
+                    } else {
+                        el.style.animationPlayState = "";
+                        el.style.transition = "";
+                    }
+
+                });
+
+                document.body.dataset.pauseAnimations = newState;
+                localStorage.setItem("pauseAnimations", newState);
+
+                updateToggleButton(pauseAnimationBtn, newState);
+            }
+
+            pauseAnimationBtn.addEventListener("click", toggleAnimations);
+
+            // ------------------------
+            // Restore Settings
+            // ------------------------
+
+            applyTheme(localStorage.getItem("theme") || "light");
+
+            const savedFont = localStorage.getItem("fontSize") || "16px";
+            document.documentElement.style.fontSize = savedFont;
+
+            if (savedFont === "16px") {
+                setActive(fontButtons, normalBtn);
+            } else if (savedFont === "18px") {
+                setActive(fontButtons, increaseBtn);
+            } else if (savedFont === "14px") {
+                setActive(fontButtons, decreaseBtn);
+            }
+
+            if (localStorage.getItem("hideImages") === "true") {
+                toggleImages();
+            }
+
+            if (localStorage.getItem("bigCursor") === "true") {
+                toggleCursor();
+            }
+
+            if (localStorage.getItem("pauseAnimations") === "true") {
+                toggleAnimations();
+            }
+
+        });
+    </script>
     <main>
