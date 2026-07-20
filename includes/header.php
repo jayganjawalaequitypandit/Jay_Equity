@@ -195,7 +195,7 @@ $solidHeader = $solidHeader ?? true;
                                 </a> -->
                                 <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
-                                    href="<?= $base ?>contact-us.php">
+                                    href="<?= $base ?>pages/contact-us.php">
                                     <small>Contact Us</small>
                                 </a>
                                 <a

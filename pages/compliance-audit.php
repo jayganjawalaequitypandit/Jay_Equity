@@ -1,8 +1,8 @@
 <?php
 $pageTitle   = 'Compliance Audit';
-$base        = '';
+$base        = '../';
 $solidHeader = true;
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 
 
@@ -112,5 +112,5 @@ require __DIR__ . '/includes/header.php';
     </section>
 
     <?php
-    require_once __DIR__ . "/includes/footer.php";
+    require_once __DIR__ . "/../includes/footer.php";
     ?>

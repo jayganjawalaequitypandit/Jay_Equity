@@ -1,8 +1,8 @@
 <?php
 $pageTitle   = 'Careers';
-$base        = '';
+$base        = '../';
 $solidHeader = true;
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Hero -->
@@ -1456,4 +1456,4 @@ require __DIR__ . '/includes/header.php';
 
 
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

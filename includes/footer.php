@@ -71,13 +71,13 @@
                                     <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>about-us.php" class="text-decoration-none text-white">About Us</a>
+                                    <a href="<?= $base ?>pages/about-us.php" class="text-decoration-none text-white">About Us</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>careers.php" class="text-decoration-none text-white">Careers</a>
+                                    <a href="<?= $base ?>pages/careers.php" class="text-decoration-none text-white">Careers</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>contact-us.php" class="text-decoration-none text-white">Contact Us</a>
+                                    <a href="<?= $base ?>pages/contact-us.php" class="text-decoration-none text-white">Contact Us</a>
                                 </div>
 
                             </div>
@@ -95,13 +95,13 @@
                                 </div>
 
                                 <div class="col-7 col-md-auto text-start text-md-end">
-                                    <a href="<?= $base ?>services/services.php" class="text-decoration-none text-white">For an Individuals</a>
+                                    <a href="<?= $base ?>pages/services.php" class="text-decoration-none text-white">For an Individuals</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>services/services.php" class="text-decoration-none text-white">For HNI’s and Ultra HNI’s</a>
+                                    <a href="<?= $base ?>pages/services.php" class="text-decoration-none text-white">For HNI’s and Ultra HNI’s</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>services/services.php" class="text-decoration-none text-white">For Family Offices & Institutions</a>
+                                    <a href="<?= $base ?>pages/services.php" class="text-decoration-none text-white">For Family Offices & Institutions</a>
                                 </div>
 
                             </div>
@@ -119,25 +119,25 @@
                                 </div>
 
                                 <div class="col-7 col-md-end text-start text-md-end">
-                                    <a href="<?= $base ?>terms-conditions.php" class="text-decoration-none text-white">Terms and Conditions</a>
+                                    <a href="<?= $base ?>pages/terms-conditions.php" class="text-decoration-none text-white">Terms and Conditions</a>
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>documents/EP_Grievance_Redressal_Escalation_Matrix.pdf" class="text-decoration-none text-white" target="_blank">Grievance Redressal / Escalation Matrix</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>privacy-policy.php" class="text-decoration-none text-white">Privacy Policy</a>
+                                    <a href="<?= $base ?>pages/privacy-policy.php" class="text-decoration-none text-white">Privacy Policy</a>
                                     <span class="mx-1 d-md-none">/</span>
 
-                                    <a href="<?= $base ?>disclosures.php" class="text-decoration-none text-white">Disclosure</a>
+                                    <a href="<?= $base ?>pages/disclosures.php" class="text-decoration-none text-white">Disclosure</a>
                                     <span class="mx-1">/</span>
 
                                     <a href="<?= $base ?>documents/INVESTOR_CHARTER_EP.pdf" class="text-decoration-none text-white" target="_blank">Investor Charter</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>grievance-mechanism.php" class="text-decoration-none text-white">Investor Grievance</a>
+                                    <a href="<?= $base ?>pages/grievance-mechanism.php" class="text-decoration-none text-white">Investor Grievance</a>
                                     <span class="mx-1">/</span>
 
-                                    <a href="<?= $base ?>compliance-audit.php" class="text-decoration-none text-white">Compliance Audit</a>
+                                    <a href="<?= $base ?>pages/compliance-audit.php" class="text-decoration-none text-white">Compliance Audit</a>
                                 </div>
 
                             </div>
