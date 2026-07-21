@@ -1061,7 +1061,7 @@ require __DIR__ . '/../includes/header.php';
                             alt="background" />
                         <div class="d-flex mt-4">
                             <img
-                                src="<?= $base ?>imgs/avatars.svg"
+                                src="<?= $base ?>imgs/avatars.jpg"
                                 class="img-fluid"
                                 alt="background" />
                             <div class="flex-column">
@@ -1096,7 +1096,7 @@ require __DIR__ . '/../includes/header.php';
                         <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
                         <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
                         <img
-                            src="<?= $base ?>imgs/Faq1.svg"
+                            src="<?= $base ?>imgs/Faq.jpg"
                             class="img-fluid"
                             alt="background">
                     </div>

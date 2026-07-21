@@ -1316,7 +1316,7 @@ require __DIR__ . './includes/header.php';
                             <h2 class="display-6 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Frequently Asked Questions</h2>
                             <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
                             <img
-                                src="./imgs/Faq1.svg"
+                                src="./imgs/Faq.jpg"
                                 class="img-fluid"
                                 alt="background">
                         </div>
