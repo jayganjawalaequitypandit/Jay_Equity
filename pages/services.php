@@ -681,7 +681,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <div class="card h-100 border-2 rounded-0 overflow-hidden">
 
-                        <img src="../imgs/fai.jpg"
+                        <img src="<?= $base ?>imgs/fai.jpg"
                             alt="Family Offices & Institutional"
                             class="card-img-top rounded-0"
                             style="height:250px; object-fit:cover;">
