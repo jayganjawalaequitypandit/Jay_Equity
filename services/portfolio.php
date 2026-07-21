@@ -962,12 +962,12 @@ require __DIR__ . '/../includes/header.php';
 
                                     <!-- Show on Hover -->
                                     <img
-                                        src="<?= $base ?>imgs/Portfolio3.svg"
+                                        src="<?= $base ?>imgs/Portfolio3.jpg"
                                         class="extra-img img-fluid"
                                         alt="">
 
                                     <img
-                                        src="<?= $base ?>imgs/Portfolio4.svg"
+                                        src="<?= $base ?>imgs/Portfolio4.jpg"
                                         class="extra-img img-fluid"
                                         alt="">
                                 </div>
@@ -1001,12 +1001,12 @@ require __DIR__ . '/../includes/header.php';
 
                                     <!-- Show on Hover -->
                                     <img
-                                        src="<?= $base ?>imgs/Portfolio5.svg"
+                                        src="<?= $base ?>imgs/Portfolio5.jpg"
                                         class="extra-img img-fluid"
                                         alt="">
 
                                     <img
-                                        src="<?= $base ?>imgs/Portfolio6.svg"
+                                        src="<?= $base ?>imgs/Portfolio6.jpg"
                                         class="extra-img img-fluid"
                                         alt="">
                                 </div>
@@ -1040,12 +1040,12 @@ require __DIR__ . '/../includes/header.php';
 
                                     <!-- Show on Hover -->
                                     <img
-                                        src="<?= $base ?>imgs/Portfolio7.svg"
+                                        src="<?= $base ?>imgs/Portfolio7.jpg"
                                         class="extra-img img-fluid"
                                         alt="">
 
                                     <img
-                                        src="<?= $base ?>imgs/Portfolio8.svg"
+                                        src="<?= $base ?>imgs/Portfolio8.jpg"
                                         class="extra-img img-fluid"
                                         alt="">
                                 </div>
