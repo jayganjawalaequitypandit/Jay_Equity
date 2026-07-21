@@ -269,13 +269,13 @@ require __DIR__ . '/../includes/header.php';
   <section>
     <div class="container">
       <div class="border-top border-start border-end border-light">
-        <div class="row g-0">
+        <div class="row g-3">
           <div class="col-md-6 p-md-4 pt-5 px-4">
             <div class="py-md-5 py-0 pb-0">
               <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">What Our Clients Say</h2>
               <p class="fs-6 pFont mb-0">Read what our satisfied clients have to say about their experience with our platform.</p>
               <img
-                src="./imgs/Google.svg"
+                src="<?= $base ?>imgs/Google.svg"
                 class="img-fluid mt-3"
                 alt="background">
             </div>
