@@ -200,7 +200,7 @@ require __DIR__ . '/../includes/header.php';
                     <!-- FORM -->
                     <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5" data-aos="fade-left"
                         data-aos-delay="150">
-                        <div class="bg-white text-body p-3 form-card shadow">
+                        <div class="bg-body text-body p-3 form-card shadow">
                             <p class="mb-1 fs-6 fw-medium pFont">
                                 Know more about
                             </p>
