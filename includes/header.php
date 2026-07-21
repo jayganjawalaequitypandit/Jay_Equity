@@ -394,11 +394,48 @@ $solidHeader = $solidHeader ?? true;
 
             const themeButtons = [lightBtn, darkBtn];
 
+            // function applyTheme(theme) {
+
+            //     if (theme === "dark") {
+
+            //         document.body.classList.add("bg-black", "text-white");
+
+            //         dropdown.style.background = "#1f1f1f";
+            //         dropdown.style.color = "#fff";
+
+            //         dropdown.querySelectorAll(".btn").forEach(btn => {
+            //             btn.classList.remove("btn-outline-dark");
+            //             btn.classList.add("btn-outline-light");
+            //         });
+
+            //         setActive(themeButtons, darkBtn);
+
+            //     } else {
+
+            //         document.body.classList.remove("bg-black", "text-white");
+
+            //         dropdown.style.background = "#fff";
+            //         dropdown.style.color = "#000";
+
+            //         dropdown.querySelectorAll(".btn").forEach(btn => {
+            //             btn.classList.remove("btn-outline-light");
+            //             btn.classList.add("btn-outline-dark");
+            //         });
+
+            //         setActive(themeButtons, lightBtn);
+            //     }
+
+            //     localStorage.setItem("theme", theme);
+            // }
+
             function applyTheme(theme) {
+
+                // Tell Bootstrap which theme to use
+                document.documentElement.setAttribute("data-bs-theme", theme);
 
                 if (theme === "dark") {
 
-                    document.body.classList.add("bg-black", "text-white");
+                    document.body.classList.add("bg-black");
 
                     dropdown.style.background = "#1f1f1f";
                     dropdown.style.color = "#fff";
@@ -408,11 +445,26 @@ $solidHeader = $solidHeader ?? true;
                         btn.classList.add("btn-outline-light");
                     });
 
+                    document.querySelectorAll(".accordion-item").forEach(item => {
+                        item.classList.remove("bg-body");
+                        item.classList.add("bg-black", "text-white");
+                    });
+
+                    document.querySelectorAll(".accordion-button").forEach(btn => {
+                        btn.classList.remove("text-body");
+                        btn.classList.add("bg-black", "text-white");
+                    });
+
+                    document.querySelectorAll(".accordion-body").forEach(body => {
+                        body.classList.remove("text-body-secondary");
+                        body.classList.add("bg-black", "text-white");
+                    });
+
                     setActive(themeButtons, darkBtn);
 
                 } else {
 
-                    document.body.classList.remove("bg-black", "text-white");
+                    document.body.classList.remove("bg-black");
 
                     dropdown.style.background = "#fff";
                     dropdown.style.color = "#000";
@@ -420,6 +472,20 @@ $solidHeader = $solidHeader ?? true;
                     dropdown.querySelectorAll(".btn").forEach(btn => {
                         btn.classList.remove("btn-outline-light");
                         btn.classList.add("btn-outline-dark");
+                    });
+
+                    document.querySelectorAll(".accordion-item").forEach(item => {
+                        item.classList.remove("bg-black", "text-white");
+                    });
+
+                    document.querySelectorAll(".accordion-button").forEach(btn => {
+                        btn.classList.remove("bg-black", "text-white");
+                        btn.classList.add("text-body");
+                    });
+
+                    document.querySelectorAll(".accordion-body").forEach(body => {
+                        body.classList.remove("bg-black", "text-white");
+                        body.classList.add("text-body-secondary");
                     });
 
                     setActive(themeButtons, lightBtn);
@@ -563,16 +629,63 @@ $solidHeader = $solidHeader ?? true;
             }
 
 
-
             // ------------------------
             // Reset Accessibility
             // ------------------------
             const resetBtn = document.getElementById("resetAccessibilityBtn");
 
+            // function resetAccessibility() {
+
+            //     // Theme
+            //     document.body.classList.remove("bg-black", "text-white");
+            //     dropdown.style.background = "#fff";
+            //     dropdown.style.color = "#000";
+
+            //     dropdown.querySelectorAll(".btn").forEach(btn => {
+            //         btn.classList.remove("btn-outline-light");
+            //         btn.classList.add("btn-outline-dark");
+            //     });
+
+            //     setActive(themeButtons, lightBtn);
+
+            //     // Font Size
+            //     document.documentElement.style.fontSize = "16px";
+            //     setActive(fontButtons, normalBtn);
+
+            //     // Images
+            //     document.querySelectorAll("img").forEach(img => {
+            //         img.style.visibility = "visible";
+            //     });
+            //     document.body.dataset.hideImages = "false";
+            //     updateToggleButton(hideImagesBtn, false);
+
+            //     // Cursor
+            //     document.body.style.cursor = "default";
+            //     document.body.dataset.bigCursor = "false";
+            //     updateToggleButton(bigCursorBtn, false);
+
+            //     // Animations
+            //     document.querySelectorAll("*").forEach(el => {
+            //         el.style.animationPlayState = "";
+            //         el.style.transition = "";
+            //     });
+            //     document.body.dataset.pauseAnimations = "false";
+            //     updateToggleButton(pauseAnimationBtn, false);
+
+            //     // Remove saved settings
+            //     localStorage.removeItem("theme");
+            //     localStorage.removeItem("fontSize");
+            //     localStorage.removeItem("hideImages");
+            //     localStorage.removeItem("bigCursor");
+            //     localStorage.removeItem("pauseAnimations");
+            // }
+
             function resetAccessibility() {
 
-                // Theme
-                document.body.classList.remove("bg-black", "text-white");
+                // Theme - reset Bootstrap theme
+                document.documentElement.setAttribute("data-bs-theme", "light");
+                document.body.classList.remove("bg-black");
+
                 dropdown.style.background = "#fff";
                 dropdown.style.color = "#000";
 
