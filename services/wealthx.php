@@ -195,7 +195,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5">
 
                             <!-- Form Box -->
-                            <div class="bg-white text-body p-3 form-card">
+                            <div class="bg-body text-body p-3 form-card">
                                 <p class="pFont mb-1 fs-6 fw-medium">
                                     Know more about
                                 </p>

@@ -320,7 +320,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5">
 
                             <!-- Form Box -->
-                            <div class="bg-white text-body p-3 form-card" data-aos="fade-left"
+                            <div class="bg-body text-body p-3 form-card" data-aos="fade-left"
                                 data-aos-delay="150">
                                 <p class="pFont mb-1 fs-6 fw-medium">
                                     Know more about
@@ -1104,7 +1104,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 1 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1127,7 +1127,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 2 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1150,7 +1150,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 3 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1173,7 +1173,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 4 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
