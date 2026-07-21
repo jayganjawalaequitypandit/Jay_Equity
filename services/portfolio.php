@@ -708,7 +708,7 @@ require __DIR__ . '/../includes/header.php';
                             Deliver Long-Term Portfolio Growth.
                         </p>
                         <img
-                            src="<?= $base ?>imgs/Portfolio2.svg"
+                            src="<?= $base ?>imgs/services/Portfolio3.jpg"
                             class="img-fluid"
                             alt="background" data-aos="fade-up"
                             data-aos-delay="100">
@@ -1375,7 +1375,7 @@ require __DIR__ . '/../includes/header.php';
                             data-aos-delay="100" />
                         <div class="d-flex mt-4">
                             <img
-                                src="<?= $base ?>imgs/avatars.svg"
+                                src="<?= $base ?>imgs/avatars.jpg"
                                 class="img-fluid"
                                 alt="background" data-aos="fade-up"
                                 data-aos-delay="100" />
@@ -1417,7 +1417,7 @@ require __DIR__ . '/../includes/header.php';
                         <p class="fs-6 pFont mb-3" data-aos="fade-up"
                             data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
                         <img
-                            src="<?= $base ?>imgs/Faq1.svg"
+                            src="<?= $base ?>imgs/Faq.jpg"
                             class="img-fluid"
                             alt="background" data-aos="fade-up"
                             data-aos-delay="100">
