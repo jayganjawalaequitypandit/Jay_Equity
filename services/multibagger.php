@@ -704,7 +704,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <img
                             src="<?= $base ?>imgs/risk1.jpg"
-                            class="process-img h-100 object-fit-cover"
+                            class="process-img h-100 w-100 object-fit-cover"
                             alt="">
 
                         <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
@@ -734,7 +734,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <img
                             src="<?= $base ?>imgs/risk2.jpg"
-                            class="process-img h-100 object-fit-cover"
+                            class="process-img h-100 w-100 object-fit-cover"
                             alt="">
 
                         <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
@@ -765,7 +765,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <img
                             src="<?= $base ?>imgs/risk3.jpg"
-                            class="process-img h-100 object-fit-cover"
+                            class="process-img h-100 w-100 object-fit-cover"
                             alt="">
 
                         <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
