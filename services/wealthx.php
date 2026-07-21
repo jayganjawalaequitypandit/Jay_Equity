@@ -506,8 +506,13 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- Services -->
-    <section class="position-relative overflow-hidden">
 
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+
+    <section class="position-relative overflow-hidden">
         <!-- Background Image -->
         <img
             src="<?= $base ?>imgs/services/welthx_6.png"
@@ -516,7 +521,6 @@ require __DIR__ . '/../includes/header.php';
             loading="lazy"
             decoding="async"
             style="object-fit:cover;">
-
 
         <!-- Dark Overlay -->
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
@@ -541,11 +545,11 @@ require __DIR__ . '/../includes/header.php';
                         </p>
                     </div>
 
-                    <!-- Cards -->
+                    <!-- Cards Slider -->
                     <div class="col-md-8 col-12">
-                        <div class="row g-3">
+                        <div class="wealth-slider">
                             <!-- Card 1 -->
-                            <div class=" col-md-4 col-12">
+                            <div class="px-2">
                                 <div class="bg-dark bg-opacity-75 text-white p-4 h-100">
                                     <h4 class="mb-3 titleFont">
                                         Equity Portfolio
@@ -564,7 +568,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
 
                             <!-- Card 2 -->
-                            <div class="col-md-4 col-12">
+                            <div class="px-2">
                                 <div class="bg-secondary bg-opacity-75 text-white p-4 h-100">
                                     <h4 class="mb-3 titleFont">
                                         Multibaggers
@@ -583,7 +587,7 @@ require __DIR__ . '/../includes/header.php';
                             </div>
 
                             <!-- Card 3 -->
-                            <div class="col-md-4 col-12">
+                            <div class="px-2">
                                 <div class="bg-dark bg-opacity-50 text-white p-4 h-100">
                                     <h4 class="mb-3 titleFont">
                                         ETFs
@@ -605,9 +609,44 @@ require __DIR__ . '/../includes/header.php';
                 </div>
             </div>
         </div>
-
     </section>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.wealth-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                dots: true,
+                responsive: [
+
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 
     <!-- Generate Wealth -->
     <section>
