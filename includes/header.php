@@ -143,7 +143,7 @@ $solidHeader = $solidHeader ?? true;
                     </div>
 
                     <!-- Accessibility Tools dropdown (desktop + mobile) -->
-                    <div class="d-flex align-items-center ms-auto order-2 order-xl-4">
+                    <div class="d-flex align-items-center ms-auto order-2 order-xl-3">
 
                         <div class="dropdown">
                             <a
@@ -276,7 +276,7 @@ $solidHeader = $solidHeader ?? true;
                             <div class="d-flex flex-column flex-xl-row align-items-xl-center ms-xl-auto">
                                 <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
-                                    href="<?= $base ?>about-us.php">
+                                    href="<?= $base ?>pages/about-us.php">
                                     <small>About</small>
                                 </a>
                                 <a
@@ -368,6 +368,18 @@ $solidHeader = $solidHeader ?? true;
         });
     </script>
 
+
+    <script>
+        (() => {
+            const theme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-bs-theme", theme);
+
+            if (theme === "dark") {
+                document.documentElement.style.backgroundColor = "#000";
+            }
+        })();
+    </script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
@@ -437,7 +449,7 @@ $solidHeader = $solidHeader ?? true;
 
                     document.body.classList.add("bg-black");
 
-                    dropdown.style.background = "#1f1f1f";
+                    dropdown.style.background = "#000";
                     dropdown.style.color = "#fff";
 
                     dropdown.querySelectorAll(".btn").forEach(btn => {
@@ -489,6 +501,11 @@ $solidHeader = $solidHeader ?? true;
                     });
 
                     setActive(themeButtons, lightBtn);
+                }
+
+                if (document.body.dataset.bigCursor === "true") {
+                    toggleCursor();
+                    toggleCursor();
                 }
 
                 localStorage.setItem("theme", theme);
@@ -556,9 +573,16 @@ $solidHeader = $solidHeader ?? true;
                 const newState = !enabled;
 
                 if (newState) {
+
+                    const isDark = document.documentElement.getAttribute("data-bs-theme") === "dark";
+
+                    const fillColor = isDark ? "white" : "black";
+
                     document.body.style.cursor =
-                        'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2748%27 height=%2748%27 viewBox=%270 0 24 24%27 fill=%27black%27%3E%3Cpath d=%27M3 2L18 17H11L13 22L10 23L8 18H3V2Z%27/%3E%3C/svg%3E") 0 0, auto';
+                        `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='${fillColor}'%3E%3Cpath d='M3 2L18 17H11L13 22L10 23L8 18H3V2Z'/%3E%3C/svg%3E") 0 0, auto`;
+
                 } else {
+
                     document.body.style.cursor = "default";
                 }
 
