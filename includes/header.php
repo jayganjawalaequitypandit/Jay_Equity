@@ -113,24 +113,123 @@ $solidHeader = $solidHeader ?? true;
             <div class="container">
                 <div class="row row-cols-auto justify-content-between w-100 position-relative">
 
-                    <!-- Logo: mobile/tablet — normal flow, left aligned -->
-                    <a
-                        href="<?= $base ?>index.php"
-                        class="navbar-brand site-logo d-flex d-xl-none align-items-center py-0 me-0 text-white"
-                        aria-label="EquityPandit Investment Advisor">
-                        <span class="logo-full text-center">
-                            <img alt="EquityPandit" src="<?= $base ?>imgs/logo/logo.png" class="img-fluid ms-3" style="max-height: 35px;" />
-                        </span>
+                    <div class="d-flex align-items-center order-1">
+                        <!-- Mobile menu button -->
+                        <button
+                            class="navbar-toggler border-0 shadow-none ms-auto pe-0"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-theme="dark"
+                            data-bs-target="#mainMenu"
+                            aria-controls="mainMenu"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                        <span class="logo-short d-none fs-3 fw-semibold lh-1">
-                            <img alt="EquityPandit" src="<?= $base ?>imgs/logo/icon.png" class="img-fluid ms-3" style="max-height: 35px;" />
-                        </span>
-                    </a>
+                        <!-- Logo: mobile/tablet — normal flow, left aligned -->
+                        <a
+                            href="<?= $base ?>index.php"
+                            class="navbar-brand site-logo d-flex d-xl-none align-items-center py-0 me-0 text-white"
+                            aria-label="EquityPandit Investment Advisor">
+                            <span class="logo-full text-center">
+                                <img alt="EquityPandit" src="<?= $base ?>imgs/logo/logo.png" class="img-fluid ms-3" style="max-height: 35px;" />
+                            </span>
+
+                            <span class="logo-short d-none fs-3 fw-semibold lh-1">
+                                <img alt="EquityPandit" src="<?= $base ?>imgs/logo/icon.png" class="img-fluid ms-3" style="max-height: 35px;" />
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Accessibility Tools dropdown (desktop + mobile) -->
+                    <div class="d-flex align-items-center ms-auto order-2 order-xl-4">
+
+                        <div class="dropdown">
+                            <a
+                                class="text-decoration-none text-white"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                aria-label="Accessibility Tools">
+                                <i class="fa-brands fa-accessible-icon fa-lg"></i>
+                            </a>
+
+                            <div id="accessibilityMenu" class="dropdown-menu dropdown-menu-end p-3 shadow border-0">
+
+                                <h5 class="text-center fw-bold mb-3">Accessibility Tools</h5>
+
+                                <div class="text-end">
+                                    <button id="resetAccessibilityBtn" class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-rotate-left me-1"></i> Reset
+                                    </button>
+                                </div>
+
+                                <div class="mb-3">
+                                    <small class="fw-semibold">Theme</small>
+
+                                    <div class="d-flex gap-2 mt-2">
+                                        <button id="lightThemeBtn" class="btn btn-outline-dark flex-fill">
+                                            <i class="fa fa-sun"></i><br>
+                                            <small>Light</small>
+                                        </button>
+
+                                        <button id="darkThemeBtn" class="btn btn-outline-dark flex-fill">
+                                            <i class="fa-solid fa-circle-half-stroke"></i><br>
+                                            <small>Dark</small>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <small class="fw-semibold">Text Size</small>
+
+                                    <div class="d-flex gap-2 mt-2">
+                                        <button id="normalFontBtn" class="btn btn-outline-dark flex-fill">
+                                            A<br><small>Normal</small>
+                                        </button>
+
+                                        <button id="increaseFontBtn" class="btn btn-outline-dark flex-fill">
+                                            A+<br><small>Increase</small>
+                                        </button>
+
+                                        <button id="decreaseFontBtn" class="btn btn-outline-dark flex-fill">
+                                            A-<br><small>Decrease</small>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <small class="fw-semibold">Other Controls</small>
+
+                                    <div class="d-flex gap-2 mt-2">
+
+                                        <button id="hideImagesBtn" class="btn btn-outline-dark flex-fill">
+                                            <i class="fa-solid fa-eye-slash"></i><br>
+                                            <small>Hide Images</small>
+                                        </button>
+
+                                        <button id="bigCursorBtn" class="btn btn-outline-dark flex-fill">
+                                            <i class="fa-solid fa-computer-mouse"></i><br>
+                                            <small>Big Cursor</small>
+                                        </button>
+
+                                        <button id="pauseAnimationBtn" class="btn btn-outline-dark flex-fill">
+                                            <i class="fa-solid fa-pause"></i><br>
+                                            <small>Pause Animations</small>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Logo: desktop — absolutely centered via Bootstrap position utilities -->
                     <a
                         href="<?= $base ?>index.php"
-                        class="navbar-brand site-logo d-none d-xl-flex align-items-center text-white position-absolute top-50 start-50 translate-middle m-0 z-3"
+                        class="navbar-brand site-logo d-none d-xl-flex align-items-center text-white position-absolute top-50 start-50 translate-middle m-0 z-3 order-xl-2"
                         aria-label="EquityPandit Investment Advisor">
                         <span class="logo-full text-center">
                             <img alt="EquityPandit" src="<?= $base ?>imgs/logo/logo.png" class="img-fluid" style="max-height: 35px;" />
@@ -141,21 +240,8 @@ $solidHeader = $solidHeader ?? true;
                         </span>
                     </a>
 
-                    <!-- Mobile menu button -->
-                    <button
-                        class="navbar-toggler border-0 shadow-none ms-auto pe-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-theme="dark"
-                        data-bs-target="#mainMenu"
-                        aria-controls="mainMenu"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
                     <!-- One common menu for desktop and mobile -->
-                    <div class="collapse navbar-collapse" id="mainMenu">
+                    <div class="collapse navbar-collapse order-3 order-xl-1" id="mainMenu">
 
                         <div class="navbar-nav flex-xl-row align-items-xl-center w-100">
 
@@ -188,11 +274,11 @@ $solidHeader = $solidHeader ?? true;
 
                             <!-- Right menu -->
                             <div class="d-flex flex-column flex-xl-row align-items-xl-center ms-xl-auto">
-                                <!-- <a
+                                <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
                                     href="<?= $base ?>about-us.php">
                                     <small>About</small>
-                                </a> -->
+                                </a>
                                 <a
                                     class="nav-link menu-link text-white py-3 px-xl-4 py-xl-2 text-nowrap"
                                     href="<?= $base ?>pages/contact-us.php">
@@ -204,91 +290,13 @@ $solidHeader = $solidHeader ?? true;
                                     <small>Login</small>
                                 </a>
                                 <!-- CTA -->
-                                <div class="d-flex align-items-center gap-2 ms-xl-3 mt-3 mt-xl-0 pb-3 pb-xl-0">
-
-                                    <div class="dropdown">
-                                        <button
-                                            class="btn btn-outline-light border-0"
-                                            type="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false"
-                                            aria-label="Accessibility Tools">
-                                            <i class="fa-brands fa-accessible-icon fa-lg"></i>
-                                        </button>
-
-                                        <div id="accessibilityMenu" class="dropdown-menu dropdown-menu-end p-3 shadow border-0"
-                                            style="min-width:320px;border-radius:12px;">
-
-                                            <h5 class="text-center fw-bold mb-3">Accessibility Tools</h5>
-
-                                            <div class="mb-3">
-                                                <small class="fw-semibold">Theme</small>
-
-                                                <div class="d-flex gap-2 mt-2">
-                                                    <button id="lightThemeBtn" class="btn btn-outline-dark flex-fill">
-                                                        <i class="fa fa-sun"></i><br>
-                                                        <small>Light</small>
-                                                    </button>
-
-                                                    <button id="darkThemeBtn" class="btn btn-outline-dark flex-fill">
-                                                        <i class="fa-solid fa-circle-half-stroke"></i><br>
-                                                        <small>Dark</small>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <small class="fw-semibold">Text Size</small>
-
-                                                <div class="d-flex gap-2 mt-2">
-                                                    <button id="normalFontBtn" class="btn btn-outline-dark flex-fill">
-                                                        A<br><small>Normal</small>
-                                                    </button>
-
-                                                    <button id="increaseFontBtn" class="btn btn-outline-dark flex-fill">
-                                                        A+<br><small>Increase</small>
-                                                    </button>
-
-                                                    <button id="decreaseFontBtn" class="btn btn-outline-dark flex-fill">
-                                                        A-<br><small>Decrease</small>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <small class="fw-semibold">Other Controls</small>
-
-                                                <div class="d-flex gap-2 mt-2">
-
-                                                    <button id="hideImagesBtn" class="btn btn-outline-dark flex-fill">
-                                                        <i class="fa-solid fa-eye-slash"></i><br>
-                                                        <small>Hide Images</small>
-                                                    </button>
-
-                                                    <button id="bigCursorBtn" class="btn btn-outline-dark flex-fill">
-                                                        <i class="fa-solid fa-computer-mouse"></i><br>
-                                                        <small>Big Cursor</small>
-                                                    </button>
-
-                                                    <button id="pauseAnimationBtn" class="btn btn-outline-dark flex-fill">
-                                                        <i class="fa-solid fa-pause"></i><br>
-                                                        <small>Pause Animations</small>
-                                                    </button>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <a
-                                        class="btn btn-outline-light rounded-0 text-nowrap w-auto"
-                                        href="#get-started">
-                                        Get Started
-                                    </a>
-
-                                </div>
-
+                                <!-- <div class="d-flex align-items-center gap-2 ms-xl-3 mt-3 mt-xl-0 pb-3 pb-xl-0"> -->
+                                <a
+                                    class="btn btn-outline-light rounded-0 text-nowrap w-auto"
+                                    href="#get-started">
+                                    Get Started
+                                </a>
+                                <!-- </div> -->
                             </div>
 
                         </div>
@@ -553,6 +561,61 @@ $solidHeader = $solidHeader ?? true;
             if (localStorage.getItem("pauseAnimations") === "true") {
                 toggleAnimations();
             }
+
+
+
+            // ------------------------
+            // Reset Accessibility
+            // ------------------------
+            const resetBtn = document.getElementById("resetAccessibilityBtn");
+
+            function resetAccessibility() {
+
+                // Theme
+                document.body.classList.remove("bg-black", "text-white");
+                dropdown.style.background = "#fff";
+                dropdown.style.color = "#000";
+
+                dropdown.querySelectorAll(".btn").forEach(btn => {
+                    btn.classList.remove("btn-outline-light");
+                    btn.classList.add("btn-outline-dark");
+                });
+
+                setActive(themeButtons, lightBtn);
+
+                // Font Size
+                document.documentElement.style.fontSize = "16px";
+                setActive(fontButtons, normalBtn);
+
+                // Images
+                document.querySelectorAll("img").forEach(img => {
+                    img.style.visibility = "visible";
+                });
+                document.body.dataset.hideImages = "false";
+                updateToggleButton(hideImagesBtn, false);
+
+                // Cursor
+                document.body.style.cursor = "default";
+                document.body.dataset.bigCursor = "false";
+                updateToggleButton(bigCursorBtn, false);
+
+                // Animations
+                document.querySelectorAll("*").forEach(el => {
+                    el.style.animationPlayState = "";
+                    el.style.transition = "";
+                });
+                document.body.dataset.pauseAnimations = "false";
+                updateToggleButton(pauseAnimationBtn, false);
+
+                // Remove saved settings
+                localStorage.removeItem("theme");
+                localStorage.removeItem("fontSize");
+                localStorage.removeItem("hideImages");
+                localStorage.removeItem("bigCursor");
+                localStorage.removeItem("pauseAnimations");
+            }
+
+            resetBtn.addEventListener("click", resetAccessibility);
 
         });
     </script>
