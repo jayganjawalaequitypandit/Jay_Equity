@@ -661,18 +661,18 @@ require __DIR__ . '/../includes/header.php';
 
     </section>
 
-    <section>
+    <section class="">
         <div class="container">
             <div class="border border-light">
-                <div class="hover-wrapper d-md-flex">
+                <div class="d-md-flex" style="min-height:380px;">
 
                     <!-- Card 1 -->
-                    <div class="hover-card p-4 d-flex flex-column">
-                        <div>
-                            <img src="../imgs/Vector15.svg" alt="Rising Markets" width="40" height="40">
-                        </div>
+                    <div class="hover-card d-flex flex-column p-4 border-end"
+                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
 
-                        <div class="mt-5">
+                        <span class="icon icon-1"></span>
+
+                        <div class="mt-2">
                             <h2 class="titleFont mb-0">
                                 Rising<br>Markets
                             </h2>
@@ -681,23 +681,24 @@ require __DIR__ . '/../includes/header.php';
                         <div class="hover-content mt-4">
                             <hr>
                             <p class="pFont mb-0">
-                                Captured Through Equities And Monthly
-                                High-Conviction Multibagger Picks.
+                                Captured Through Equities And Monthly High-Conviction
+                                Multibagger Picks.
                             </p>
                         </div>
 
-                        <div class="mt-auto pt-4\ fw-semibold">
-                            <i class="fa-solid fa-circle me-2 small"></i>Explore More
+                        <div class="mt-auto fw-semibold">
+                            <i class="fa-solid fa-circle me-2 small"></i>
+                            Explore More
                         </div>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="hover-card p-4 d-flex flex-column">
-                        <div>
-                            <img src="../imgs/Vector16.svg" alt="Volatile Periods" width="40" height="40">
-                        </div>
+                    <div class="hover-card d-flex flex-column p-4 border-end"
+                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
 
-                        <div class="mt-5">
+                        <span class="icon icon-2"></span>
+
+                        <div class="mt-2">
                             <h2 class="titleFont mb-0">
                                 Volatile<br>Periods
                             </h2>
@@ -711,18 +712,19 @@ require __DIR__ . '/../includes/header.php';
                             </p>
                         </div>
 
-                        <div class="mt-auto  fw-semibold">
-                            <i class="fa-solid fa-circle me-2 small"></i> Explore More
+                        <div class="mt-auto fw-semibold">
+                            <i class="fa-solid fa-circle me-2 small"></i>
+                            Explore More
                         </div>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="hover-card p-4 d-flex flex-column">
-                        <div>
-                            <img src="../imgs/Vector17.svg" alt="Market Catalysts" width="40" height="40">
-                        </div>
+                    <div class="hover-card d-flex flex-column p-4 border-end"
+                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
 
-                        <div class="mt-5">
+                        <span class="icon icon-3"></span>
+
+                        <div class="mt-2">
                             <h2 class="titleFont mb-0">
                                 Market<br>Catalysts
                             </h2>
@@ -731,23 +733,24 @@ require __DIR__ . '/../includes/header.php';
                         <div class="hover-content mt-4">
                             <hr>
                             <p class="pFont mb-0">
-                                Strategic Allocation Adjustments During Key
-                                Market Events And Opportunities.
+                                Strategic Allocation Adjustments During Key Market
+                                Events And Opportunities.
                             </p>
                         </div>
 
                         <div class="mt-auto fw-semibold">
-                            <i class="fa-solid fa-circle me-2 small"></i> Explore More
+                            <i class="fa-solid fa-circle me-2 small"></i>
+                            Explore More
                         </div>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="hover-card p-4 d-flex flex-column">
-                        <div>
-                            <img src="../imgs/Vector18.svg" alt="Through It All " width="40" height="40">
-                        </div>
+                    <div class="hover-card d-flex flex-column p-4"
+                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
 
-                        <div class="mt-5">
+                        <span class="icon icon-4"></span>
+
+                        <div class="mt-2">
                             <h2 class="titleFont mb-0">
                                 Through<br>It All
                             </h2>
@@ -760,75 +763,94 @@ require __DIR__ . '/../includes/header.php';
                                 Focusing On Long-Term Wealth Creation.
                             </p>
                         </div>
+
                         <div class="mt-auto fw-semibold">
-                            <i class="fa-solid fa-circle me-2 small"></i> Explore More
+                            <i class="fa-solid fa-circle me-2 small"></i>
+                            Explore More
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
     <style>
-        .hover-wrapper {
-            min-height: 400px;
-        }
-
-        .hover-card {
-            flex: 1;
-            min-height: 400px;
-            cursor: pointer;
-            overflow: hidden;
-            transition: all .45s ease;
-            border-right: 1px solid #dee2e6;
-        }
-
-        .hover-card:last-child {
-            border-right: 0;
-        }
-
-        .hover-card .hover-content {
-            opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: all .4s ease;
-        }
-
         .hover-card:hover {
-            flex: 2.5;
+            flex: 2.5 !important;
             background: #02181A;
             color: #fff;
         }
 
+        .hover-content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all .4s ease;
+        }
+
         .hover-card:hover .hover-content {
-            opacity: 1;
             max-height: 200px;
+            opacity: 1;
         }
 
         .hover-card hr {
             border-color: rgba(255, 255, 255, .25);
         }
 
-        @media (max-width: 767.98px) {
+        /* Icons */
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background: #000;
+            transition: .3s;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            -webkit-mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: contain;
+        }
 
-            .hover-wrapper {
-                display: block !important;
-                min-height: auto;
-            }
+        .icon-1 {
+            -webkit-mask-image: url("../imgs/Vector15.svg");
+            mask-image: url("../imgs/Vector15.svg");
+        }
+
+        .icon-2 {
+            -webkit-mask-image: url("../imgs/Vector16.svg");
+            mask-image: url("../imgs/Vector16.svg");
+        }
+
+        .icon-3 {
+            -webkit-mask-image: url("../imgs/Vector17.svg");
+            mask-image: url("../imgs/Vector17.svg");
+        }
+
+        .icon-4 {
+            -webkit-mask-image: url("../imgs/Vector18.svg");
+            mask-image: url("../imgs/Vector18.svg");
+        }
+
+        .hover-card:hover .icon {
+            background: #00DF9C;
+        }
+
+        @media (max-width:767.98px) {
 
             .hover-card {
-                min-height: auto;
-                border-right: 0;
+                border-right: 0 !important;
                 border-bottom: 1px solid #dee2e6;
             }
 
-            .hover-card .hover-content {
-                opacity: 1;
+            .hover-content {
                 max-height: 300px;
+                opacity: 1;
             }
 
             .hover-card:hover {
-                flex: 1;
+                flex: 1 !important;
             }
         }
     </style>
