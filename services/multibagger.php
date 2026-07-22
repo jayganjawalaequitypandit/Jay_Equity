@@ -813,7 +813,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos-delay="100" />
                     <div class="d-flex mt-4">
                         <img
-                            src="<?= $base ?>imgs/avatars.jpg"
+                            src="<?= $base ?>imgs/avatars.png"
                             class="img-fluid"
                             alt="background" data-aos="fade-up"
                             data-aos-delay="100" />
@@ -861,7 +861,7 @@ require __DIR__ . '/../includes/header.php';
                         data-aos-delay="100">
                 </div>
                 <div class="col-md-6">
-                    <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
+                    <div class="accordion accordion-flush bg-body rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
                         data-aos-delay="100">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>

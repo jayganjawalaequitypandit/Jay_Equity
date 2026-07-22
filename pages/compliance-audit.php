@@ -13,16 +13,14 @@ require __DIR__ . '/../includes/header.php';
     </div>
     <div class="container">
         <!-- Heading -->
-        <div class="border border-bottom-0 border-light px-3 py-5 text-center">
+        <div class="border-start border-end border-light px-3 py-5 text-center">
             <h2 class="display-6 fw-semibold titleFont">Compliance Audit</h2>
             <p class="mb-0 fs-6 pFont">
                 A workplace designed to support your growth, nurture your wellbeing,
                 and empower you to connect, thrive, and achieve success.
             </p>
-        </div>
 
-        <div class="border border-top-0 bordere-light p-3">
-            <div class="table-responsive">
+            <div class="table-responsive mt-5">
                 <table class="table table-bordered align-middle text-center">
                     <caption class="visually-hidden">
                         Compliance audit status and audit report links by financial year

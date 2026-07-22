@@ -13,7 +13,7 @@ require __DIR__ . '/../includes/header.php';
     </div>
     <div class="container">
         <div class="border-start border-end bordere-light">
-            <article class="col-md-12 mx-auto px-3 py-5 legal-content">
+            <article class="col-md-12 mx-auto px-3 py-5 legal-content text-body">
                 <h1 class="display-5 titleFont fw-semibold mb-4">Terms and Conditions</h1>
 
                 <h2 class="fs-4 titleFont fw-bold mt-4">Acceptance of Terms</h2>
@@ -117,14 +117,14 @@ require __DIR__ . '/../includes/header.php';
 
 <style>
     .legal-content {
-        color: #28383a;
+        /* color: #28383a; */
         text-align: justify
     }
 
-    .legal-content h2,
+    /* .legal-content h2,
     .legal-content h3 {
         color: #02181A;
-    }
+    } */
 
     .legal-content a {
         color: #00DF9C;

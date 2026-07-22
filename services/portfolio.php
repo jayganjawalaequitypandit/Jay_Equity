@@ -454,7 +454,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
-                                <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
+                                <img src="<?= $base ?>imgs/Vector4.svg" class="mb-5" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">A Detailed Research Report</h2>
                                 <p class="mb-0 pFont">
                                     Expert research highlighting key trends and opportunities
@@ -464,7 +464,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
-                                <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
+                                <img src="<?= $base ?>imgs/Vector5.svg" class="mb-5" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Timely Entry & Exit Guidance</h2>
                                 <p class="mb-0 pFont">
                                     Maximize returns with timely entry and exit strategies
@@ -474,7 +474,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
-                                <img src="<?= $base ?>imgs/Vector6.svg" class="mb-3" alt="">
+                                <img src="<?= $base ?>imgs/Vector6.svg" class="mb-5" alt="">
                                 <h2 class="fs-3 titleFont fw-semibold">Quarterly Review & Updates</h2>
                                 <p class="mb-0 pFont">
                                     Regular quarterly updates to refine strategy and improve performance
@@ -484,8 +484,8 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
-                                <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
-                                <h2 class="fs-3 titleFont fw-semibold">Real Time <br />Dashboard</h2>
+                                <img src="<?= $base ?>imgs/Vector5.svg" class="mb-5" alt="">
+                                <h2 class="fs-3 titleFont fw-semibold">Real Time Dashboard</h2>
                                 <p class="mb-0 pFont">
                                     Monitor your portfolio performance with live market data
                                 </p>
@@ -494,19 +494,21 @@ require __DIR__ . '/../includes/header.php';
 
                         <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                             <div class="h-100 p-3 border border-light">
-                                <img src="<?= $base ?>imgs/Vector6.svg" class="mb-3" alt="">
-                                <h2 class="fs-3 titleFont fw-semibold">Priority <br />Support</h2>
+                                <img src="<?= $base ?>imgs/Vector6.svg" class="mb-5" alt="">
+                                <h2 class="fs-3 titleFont fw-semibold">Priority Support</h2>
                                 <p class="mb-0 pFont">
                                     Dedicated support team ensuring faster responses and solutions
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-11 flex-shrink-0 d-md-block d-none" data-aos="fade-right" data-aos-delay="100">
-                            <img
-                                src="<?= $base ?>imgs/services/portfolio1.jpg"
-                                class="img-fluid mt-3 mt-md-0 w-100"
-                                style="cursor:pointer;"
-                                alt="background" onclick="window.location.href='#';" />
+                        <div class="col-md-4 d-md-block d-none" data-aos="fade-right" data-aos-delay="100">
+                            <div class="h-100 d-flex align-items-end justify-content-end" style="background-color: #02181A;">
+                                <img
+                                    src="<?= $base ?>imgs/services/portfolio4.png"
+                                    class="img-fluid h-auto"
+                                    style="cursor:pointer; width:90% !important;"
+                                    alt="background" onclick="window.location.href='#';" />
+                            </div>
                         </div>
                     </div>
                     <div class="text-start px-3 mt-5 d-none" data-aos="fade-up"
@@ -945,7 +947,7 @@ require __DIR__ . '/../includes/header.php';
                     }
                 }
             </style>
-            <div class="border border-start border-end border-light">
+            <div class="border-start border-end border-light">
                 <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
                     <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
                         <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
@@ -1078,21 +1080,21 @@ require __DIR__ . '/../includes/header.php';
     <!-- what Our Client Say -->
     <section>
         <div class="container">
-            <div class="border-start border-end border-light">
-                <div class="row g-3">
+            <div class="border-top border-start border-end border-light">
+                <div class="row g-3 align-items-center">
                     <div class="col-md-6 p-md-4 pt-5 px-4">
-                        <div class="pt-md-5 py-0 pb-0">
-                            <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
-                                data-aos-delay="100">Some valuable feedback from our students</h2>
-                            <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
-                                data-aos-delay="100">Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how.</p>
+                        <div class="py-md-5 py-0 pb-0">
+                            <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;" data-aos="fade-up"
+                                data-aos-delay="100">What Our Clients Say</h2>
+                            <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                                data-aos-delay="100">Read what our satisfied clients have to say about their experience with our platform.</p>
                             <img
                                 src="<?= $base ?>imgs/Google.svg"
                                 class="img-fluid mt-3"
                                 alt="background" data-aos="fade-up"
                                 data-aos-delay="100">
                         </div>
-                        <button class="btn text-white rounded-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>pages/contact-us.php';" data-aos="fade-up"
+                        <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>pages/contact-us.php';" data-aos="fade-up"
                             data-aos-delay="100">
                             Contact Now
                             <i class="fa-solid fa-arrow-right-long ms-2"></i>
@@ -1104,7 +1106,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 1 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1127,7 +1129,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 2 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1150,7 +1152,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 3 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1173,7 +1175,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 4 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="bg-body text-body border h-100 p-4 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1375,7 +1377,7 @@ require __DIR__ . '/../includes/header.php';
                             data-aos-delay="100" />
                         <div class="d-flex mt-4">
                             <img
-                                src="<?= $base ?>imgs/avatars.jpg"
+                                src="<?= $base ?>imgs/avatars.png"
                                 class="img-fluid"
                                 alt="background" data-aos="fade-up"
                                 data-aos-delay="100" />
@@ -1423,7 +1425,7 @@ require __DIR__ . '/../includes/header.php';
                             data-aos-delay="100">
                     </div>
                     <div class="col-md-6">
-                        <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
+                        <div class="accordion accordion-flush bg-body rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
                             data-aos-delay="200">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
