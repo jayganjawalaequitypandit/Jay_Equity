@@ -457,20 +457,20 @@ $solidHeader = $solidHeader ?? true;
                         btn.classList.add("btn-outline-light");
                     });
 
-                    document.querySelectorAll(".accordion-item").forEach(item => {
-                        item.classList.remove("bg-body");
-                        item.classList.add("bg-black", "text-white");
-                    });
+                    // document.querySelectorAll(".accordion-item").forEach(item => {
+                    //     item.classList.remove("bg-body");
+                    //     item.classList.add("bg-black", "text-white");
+                    // });
 
-                    document.querySelectorAll(".accordion-button").forEach(btn => {
-                        btn.classList.remove("text-body");
-                        btn.classList.add("bg-black", "text-white");
-                    });
+                    // document.querySelectorAll(".accordion-button").forEach(btn => {
+                    //     btn.classList.remove("text-body");
+                    //     btn.classList.add("bg-black", "text-white");
+                    // });
 
-                    document.querySelectorAll(".accordion-body").forEach(body => {
-                        body.classList.remove("text-body-secondary");
-                        body.classList.add("bg-black", "text-white");
-                    });
+                    // document.querySelectorAll(".accordion-body").forEach(body => {
+                    //     body.classList.remove("text-body-secondary");
+                    //     body.classList.add("bg-black", "text-white");
+                    // });
 
                     setActive(themeButtons, darkBtn);
 
@@ -486,19 +486,19 @@ $solidHeader = $solidHeader ?? true;
                         btn.classList.add("btn-outline-dark");
                     });
 
-                    document.querySelectorAll(".accordion-item").forEach(item => {
-                        item.classList.remove("bg-black", "text-white");
-                    });
+                    // document.querySelectorAll(".accordion-item").forEach(item => {
+                    //     item.classList.remove("bg-black", "text-white");
+                    // });
 
-                    document.querySelectorAll(".accordion-button").forEach(btn => {
-                        btn.classList.remove("bg-black", "text-white");
-                        btn.classList.add("text-body");
-                    });
+                    // document.querySelectorAll(".accordion-button").forEach(btn => {
+                    //     btn.classList.remove("bg-black", "text-white");
+                    //     btn.classList.add("text-body");
+                    // });
 
-                    document.querySelectorAll(".accordion-body").forEach(body => {
-                        body.classList.remove("bg-black", "text-white");
-                        body.classList.add("text-body-secondary");
-                    });
+                    // document.querySelectorAll(".accordion-body").forEach(body => {
+                    //     body.classList.remove("bg-black", "text-white");
+                    //     body.classList.add("text-body-secondary");
+                    // });
 
                     setActive(themeButtons, lightBtn);
                 }
@@ -743,6 +743,23 @@ $solidHeader = $solidHeader ?? true;
                 });
                 document.body.dataset.pauseAnimations = "false";
                 updateToggleButton(pauseAnimationBtn, false);
+
+                // // Restore Accordion
+                // document.querySelectorAll(".accordion-item").forEach(item => {
+                //     item.classList.remove("bg-black", "text-white");
+                //     item.classList.add("bg-body");
+                // });
+
+                // document.querySelectorAll(".accordion-button").forEach(btn => {
+                //     btn.classList.remove("bg-black", "text-white");
+                //     btn.classList.remove("collapsed"); // optional if state issues
+                //     btn.classList.add("text-body");
+                // });
+
+                // document.querySelectorAll(".accordion-body").forEach(body => {
+                //     body.classList.remove("bg-black", "text-white");
+                //     body.classList.add("text-body-secondary");
+                // });
 
                 // Remove saved settings
                 localStorage.removeItem("theme");

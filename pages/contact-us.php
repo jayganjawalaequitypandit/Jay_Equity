@@ -404,7 +404,7 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Right Side -->
                 <div class="col-md-6">
-                    <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
+                    <div class="accordion bg-body accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">

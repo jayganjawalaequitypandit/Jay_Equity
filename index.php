@@ -150,23 +150,23 @@ require __DIR__ . './includes/header.php';
                         </div> -->
 
                         <div class="p-2">
-                            <img src="./imgs/logo/Bussiness_Standard.png" alt="The Week" style="height:60px;">
+                            <img src="<?= $base ?>imgs/logo/Bussiness_Standard.png" alt="The Week" style="height:60px;">
                         </div>
 
                         <div class="p-2">
-                            <img src="./imgs/logo/Dailyhunt.png" alt="The Week" style="height:60px;">
+                            <img src="<?= $base ?>imgs/logo/Dailyhunt.png" alt="The Week" style="height:60px;">
                         </div>
 
                         <div class="p-2">
-                            <img src="./imgs/logo/Yahoo.png" alt="The Week" style="height:60px;">
+                            <img src="<?= $base ?>imgs/logo/Yahoo.png" alt="The Week" style="height:60px;">
                         </div>
 
                         <div class="p-2">
-                            <img src="./imgs/logo/Bloomberg.png" alt="The Week" style="height:60px;">
+                            <img src="<?= $base ?>imgs/logo/Bloomberg.png" alt="The Week" style="height:60px;">
                         </div>
 
                         <div class="p-2">
-                            <img src="./imgs/logo/The Week.png" alt="The Week" style="height:60px;">
+                            <img src="<?= $base ?>imgs/logo/The Week.png" alt="The Week" style="height:60px;">
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@ require __DIR__ . './includes/header.php';
                                 </p>
 
                                 <img
-                                    src="./imgs/Polygon2.svg"
+                                    src="<?= $base ?>imgs/Polygon2.svg"
                                     class="position-absolute bottom-0 end-0"
                                     alt="">
                             </div>
@@ -264,14 +264,14 @@ require __DIR__ . './includes/header.php';
                         <div class="col-md-12">
                             <div class="position-relative">
                                 <img
-                                    src="./imgs/Frame1.svg"
+                                    src="<?= $base ?>imgs/Frame1.svg"
                                     class="img-fluid"
                                     alt="Business"
                                     loading="lazy"
                                     decoding="async">
                                 <div class="text-end">
                                     <img
-                                        src="./imgs/Polygon1.svg"
+                                        src="<?= $base ?>imgs/Polygon1.svg"
                                         class="position-absolute top-0 end-0"
                                         alt="background">
                                 </div>
@@ -282,7 +282,7 @@ require __DIR__ . './includes/header.php';
                             </div>
                             <div class="text-end">
                                 <img
-                                    src="./imgs/Frame2.svg"
+                                    src="<?= $base ?>imgs/Frame2.svg"
                                     class="img-fluid"
                                     alt="Business" loading="lazy" decoding="async">
                             </div>
@@ -343,14 +343,14 @@ require __DIR__ . './includes/header.php';
                             </style>
                             <div class="image-box position-relative overflow-hidden">
                                 <img
-                                    src="./imgs/services/s1.jpeg"
+                                    src="<?= $base ?>imgs/services/s1.jpeg"
                                     class="img-fluid w-100"
                                     alt="Business" loading="lazy" decoding="async">
 
                                 <div class="image-content position-absolute bottom-0 start-0 w-75 p-3 text-light" data-bs-theme="dark" style="background-color: #02181A;">
                                     <img
                                         alt="EquityPandit"
-                                        src="./imgs/Vector1.svg"
+                                        src="<?= $base ?>imgs/Vector1.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
                                     <h2 class="mb-3 titleFont fs-4 fw-semibold">For an Individuals<br>&nbsp</h2>
@@ -372,17 +372,17 @@ require __DIR__ . './includes/header.php';
                         <div class="col-md-4 mt-3 mt-md-0">
                             <div class="image-box position-relative overflow-hidden">
                                 <img
-                                    src="./imgs/services/s2.jpeg"
+                                    src="<?= $base ?>imgs/services/s2.jpeg"
                                     class="img-fluid w-100"
                                     alt="Business" loading="lazy" decoding="async">
 
                                 <div class="image-content position-absolute bottom-0 start-0 w-75 p-3 text-light" data-bs-theme="dark" style="background-color: #02181A;">
                                     <img
                                         alt="EquityPandit"
-                                        src="./imgs/Vector2.svg"
+                                        src="<?= $base ?>imgs/Vector2.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For HNI’s and Ultra HNI’s</h2>
+                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For HNI’s and Ultra <br/>HNI’s</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         One high-growth stock every month for mid-term holding, focused on fundamentally strong businesses.
@@ -400,14 +400,14 @@ require __DIR__ . './includes/header.php';
                         <div class="col-md-4 mt-3 mt-md-0">
                             <div class="image-box position-relative overflow-hidden">
                                 <img
-                                    src="./imgs/services/s3.jpeg"
+                                    src="<?= $base ?>imgs/services/s3.jpeg"
                                     class="img-fluid w-100"
                                     alt="Business" loading="lazy" decoding="async">
 
                                 <div class="image-content position-absolute bottom-0 start-0 w-75 p-3 text-light" data-bs-theme="dark" style="background-color: #02181A;">
                                     <img
                                         alt="EquityPandit"
-                                        src="./imgs/Vector3.svg"
+                                        src="<?= $base ?>imgs/Vector3.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
                                     <h2 class="mb-3 titleFont fs-4 fw-semibold">For Family Offices & Institutions</h2>
@@ -575,7 +575,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-content position-absolute top-0 start-0 p-3 z-2">
                                         <div class="d-md-block d-flex align-items-center">
-                                            <img src="./imgs/Vector4.svg" class="mb-3" alt="">
+                                            <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
 
                                             <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Experience You Can Trust
@@ -589,7 +589,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-image position-absolute bottom-0 end-0">
                                         <img
-                                            src="./imgs/business-image-1.jpg"
+                                            src="<?= $base ?>imgs/business-image-1.jpg"
                                             class="w-100 h-100 object-fit-cover"
                                             alt="">
                                     </div>
@@ -601,7 +601,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-content position-absolute top-0 start-0 p-3 z-2">
                                         <div class="d-md-block d-flex align-items-center">
-                                            <img src="./imgs/Vector5.svg" class="mb-3" alt="">
+                                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
 
                                             <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Data-Driven Insights
@@ -615,7 +615,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-image position-absolute bottom-0 end-0">
                                         <img
-                                            src="./imgs/business-image-2.jpg"
+                                            src="<?= $base ?>imgs/business-image-2.jpg"
                                             class="w-100 h-100 object-fit-cover"
                                             alt="">
                                     </div>
@@ -627,7 +627,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-content position-absolute top-0 start-0 p-3 z-2">
                                         <div class="d-md-block d-flex align-items-center">
-                                            <img src="./imgs/Vector6.svg" class="mb-3" alt="">
+                                            <img src="<?= $base ?>imgs/Vector6.svg" class="mb-3" alt="">
 
                                             <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Client-Centered Approach
@@ -641,7 +641,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-image position-absolute bottom-0 end-0">
                                         <img
-                                            src="./imgs/business-image-3.jpg"
+                                            src="<?= $base ?>imgs/business-image-3.jpg"
                                             class="w-100 h-100 object-fit-cover"
                                             alt="">
                                     </div>
@@ -653,7 +653,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-content position-absolute top-0 start-0 p-3 z-2">
                                         <div class="d-md-block d-flex align-items-center">
-                                            <img src="./imgs/Vector7.svg" class="mb-3" alt="">
+                                            <img src="<?= $base ?>imgs/Vector7.svg" class="mb-3" alt="">
 
                                             <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
                                                 Dedicated Support Every Step
@@ -667,7 +667,7 @@ require __DIR__ . './includes/header.php';
 
                                     <div class="feature-image position-absolute bottom-0 end-0">
                                         <img
-                                            src="./imgs/business-image-4.jpg"
+                                            src="<?= $base ?>imgs/business-image-4.jpg"
                                             class="w-100 h-100 object-fit-cover"
                                             alt="">
                                     </div>
@@ -783,7 +783,7 @@ require __DIR__ . './includes/header.php';
                                                                 class="bg-white d-flex align-items-center justify-content-center p-4 b"
                                                                 style="height: 100px;">
                                                                 <img
-                                                                    src="./imgs/awards/<?= htmlspecialchars($award['image']) ?>"
+                                                                    src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
                                                                     class="img-fluid"
                                                                     alt="<?= htmlspecialchars($award['title']) ?>"
                                                                     loading="lazy"
@@ -1045,11 +1045,11 @@ require __DIR__ . './includes/header.php';
                                 <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">What Our Clients Say</h2>
                                 <p class="fs-6 pFont mb-0">Read what our satisfied clients have to say about their experience with our platform.</p>
                                 <img
-                                    src="./imgs/Google.svg"
+                                    src="<?= $base ?>imgs/Google.svg"
                                     class="img-fluid mt-3"
                                     alt="background">
                             </div>
-                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>contact-us.php';">
+                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>pages/contact-us.php';">
                                 Contact Now
                                 <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </button>
@@ -1154,9 +1154,9 @@ require __DIR__ . './includes/header.php';
         </section>
 
         <!-- What the press has been saying -->
-        <section class="text-white bg-danger">
+        <section class="text-white" style="background-color: #02181A;">
             <div class="container">
-                <div class="px-3 py-5 border-start border-end border-light">
+                <div class="px-3 py-5 border-start border-end border-light bg-danger">
                     <div class="row g-3 justify-content-center">
                         <div class="col-md-12">
                             <div class="text-start text-md-center">
@@ -1184,7 +1184,7 @@ require __DIR__ . './includes/header.php';
                             <div class="image-box position-relative overflow-hidden">
 
                                 <img
-                                    src="./imgs/Press1.png"
+                                    src="<?= $base ?>imgs/Press1.png"
                                     class="img-fluid w-100"
                                     alt="Business"
                                     loading="lazy"
@@ -1222,7 +1222,7 @@ require __DIR__ . './includes/header.php';
                             <div class="image-box position-relative overflow-hidden">
 
                                 <img
-                                    src="./imgs/Press2.png"
+                                    src="<?= $base ?>imgs/Press2.png"
                                     class="img-fluid w-100"
                                     alt="Business"
                                     loading="lazy"
@@ -1260,7 +1260,7 @@ require __DIR__ . './includes/header.php';
                             <div class="image-box position-relative overflow-hidden">
 
                                 <img
-                                    src="./imgs/Press3.png"
+                                    src="<?= $base ?>imgs/Press3.png"
                                     class="img-fluid w-100"
                                     alt="Business"
                                     loading="lazy"
@@ -1271,7 +1271,7 @@ require __DIR__ . './includes/header.php';
                                     <!-- <h2 class="mb-1 titleFont fs-2 fw-bold">
                                         Thomson Reuters
                                     </h2> -->
-                                    <img src="imgs/logo/Thomson.png"
+                                    <img src="imgs/logo/Thomson1.png"
                                         class="img-fluid mb-3"
                                         style="height: 40px; width:auto"
                                         alt="User">
@@ -1310,18 +1310,18 @@ require __DIR__ . './includes/header.php';
         <!-- FAQ -->
         <section>
             <div class="container">
-                <div class="px-3 py-5 border border-start border-end border-light">
+                <div class="px-3 py-5 border-start border-end border-light">
                     <div class="row g-3 py-md-5">
                         <div class="col-md-6">
                             <h2 class="display-6 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Frequently Asked Questions</h2>
                             <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
                             <img
-                                src="./imgs/Faq.jpg"
+                                src="<?= $base ?>imgs/Faq.jpg"
                                 class="img-fluid"
                                 alt="background">
                         </div>
                         <div class="col-md-6">
-                            <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
+                            <div class="accordion bg-body accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
