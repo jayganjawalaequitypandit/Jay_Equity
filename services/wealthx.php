@@ -84,173 +84,277 @@ require __DIR__ . '/../includes/header.php';
 
 <body class="">
     <!-- Intro -->
-    <section class="position-relative">
+    <section class="position-relative" style="background-color: #F7F5EF;">
+
+        <!-- Dark Background -->
+        <div class="container-fluid p-0">
+            <div class="container position-relative">
+
+                <!-- Border -->
+                <div class="border-start border-end border-light">
+                    <!-- Hero Content -->
+                    <div class="pt-5">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <!-- Breadcrumb -->
+                                        <div class="px-3">
+                                            <div class="mb-4 mt-5">
+                                                <a href="<?= $base ?>index.php"
+                                                    class="text-decoration-none text-black">
+                                                    Home
+                                                </a>
+                                                <span class="mx-1">&gt;</span>
+
+                                                <a href="#"
+                                                    class="text-decoration-none"
+                                                    style="color:#D6B770;">
+                                                    WealthX
+                                                </a>
+                                            </div>
+
+                                            <!-- Heading -->
+                                            <h1 class="titleFont display-6 fw-semibold mb-4">
+                                                Your Wealth Deserves
+                                                <br class="d-none d-md-block">
+                                                To Work Smarter.
+                                            </h1>
+
+                                            <!-- Description -->
+                                            <p class="pFont"> <small>
+                                                    WealthX is a multi-asset investment advisory service built to capture
+                                                    <br class=" d-none d-md-block">
+                                                    every market opportunity - combining expert research, disciplined
+                                                    <br class="d-none d-md-block">
+                                                    allocation, and active portfolio management.
+                                                </small>
+                                            </p>
+
+                                            <!-- Button -->
+                                            <button class="btn btn-dark rounded-0 px-4 py-2 mt-4" style="color:#D6B770;">
+                                                Explore Benefits
+                                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Image 1 -->
+                                    <div class="col-md-6 col-6 d-flex align-items-end justify-content-end d-none d-md-block">
+                                        <img src="<?= $base ?>imgs/services/w1.jpg"
+                                            class="h-auto img-fluid">
+                                    </div>
+
+                                    <!-- Image 2 -->
+                                    <div class="col-md-6 col-6 d-flex align-items-end justify-content-end d-none d-md-block">
+                                        <img src="<?= $base ?>imgs/services/w2.jpg"
+                                            class="h-auto img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Image 3 -->
+                            <div class="col-md-3 col-12 mt-3 mt-md-0 d-flex align-items-end justify-content-end">
+                                <img src="<?= $base ?>imgs/services/w3.gif"
+                                    class=" h-auto img-fluid">
+
+                            </div>
+                            <div class="col-md-3 col-6 mt-3 mt-md-0 d-flex align-items-end justify-content-end d-none d-md-inline-flex ">
+                                <!-- Image 4 -->
+                                <img src="<?= $base ?>imgs/services/w4.jpg"
+                                    class="h-auto img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section 2 -->
+    <section>
+        <div class="container">
+            <div class="border">
+                <!-- Top -->
+                <div class="px-3 py-5 border-start border-end border-light">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-md-3">
+                            <p class="fs-5 pFont mb-0">• About EquityPandit</p>
+                        </div>
+
+                        <div class="col-md-9">
+                            <h2 class="display-6 pFon fw-semibold">
+                                Accelerating Business Success Through Expert Strategy,
+                                Innovation, And Sustainable Long-Term Growth.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom -->
+                <div class="row g-0">
+
+                    <!-- Box 1 -->
+                    <div class="col-lg-4 border-top border-end p-4 d-flex flex-column">
+
+                        <div class="flex-grow-1">
+                            <img src="<?= $base ?>imgs/Avtar2.svg" class="img-fluid" alt="Avtar Image">
+                            <h6 class="fw-bold mt-1">1M+ REGISTERED USER</h6>
+                        </div>
+                        <!-- This paragraph fills the space -->
+                        <p class="small fw-semibold flex-grow-1 d-flex align-items-center">
+                            Over 21 years of industry expertise,
+                            delivering trusted solutions and measurable
+                            results across diverse markets.
+                        </p>
+
+                        <!-- Always stays at the bottom -->
+                        <div class="mt-auto">
+                            <h1 class="display-4 fw-bold mb-0">21+</h1>
+                            <p class="mb-0">Years Of Market Expertise</p>
+                        </div>
+
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="col-lg-4 border-top border-end p-4 d-flex flex-column">
+
+                        <!-- Top Text -->
+                        <p class="small text-muted">
+                            Recognized with 11+ national and international awards for excellence,
+                            innovation, and outstanding business achievements.
+                        </p>
+
+                        <!-- Center Image -->
+                        <div class="flex-grow-1 d-flex align-items-center justify-content-center my-3">
+                            <img src="<?= $base ?>imgs/services/w6.jpg"
+                                class="img-fluid"
+                                alt="Award Image">
+                        </div>
+
+                        <!-- Bottom Content -->
+                        <p class="mb-0">
+                            <i class="fa-solid fa-circle me-2 small" style="color:#D6B770;"></i><br>
+                            Ready To Accelerate Your Business Growth
+                        </p>
+
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="col-md-4 ">
+                        <img src=" <?= $base ?>imgs/w5.jpg"
+                            class="img-fluid h-auto">
+                        <div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section>
         <style>
-            /* Desktop */
-            .welthx-card {
-                margin-top: -180px;
+            /* Outer wrapper reserves ONE scroll runway sized to the
+           number of steps — this is what the sticky block pins against */
+            .target-scroll-wrapper {
+                position: relative;
+                height: 400vh;
+                /* 100vh per step × 4 steps */
             }
 
-            .form-card {
-                margin-top: -140px;
+            /* Pinned block — stays fixed in viewport for the entire
+           runway above, then releases exactly when the wrapper ends */
+            .target-sticky {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                overflow: hidden;
             }
 
-            /* Tablet */
-            @media (max-width: 991.98px) {
-                .welthx-card {
-                    margin-top: -80px;
+            .circle-wrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 400px;
+                height: 400px;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+            }
+
+            .circle-number {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+
+            #circleRotate {
+                transform-origin: center;
+                transition: transform .6s cubic-bezier(.4, 0, .2, 1);
+            }
+
+            /* Base fallback rule — actual color control happens via
+           inline style set in JS below, which always wins over
+           Bootstrap/theme color rules regardless of specificity */
+            .service-content h2 {
+                transition: color .4s ease;
+            }
+
+            .service-content-wrap {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition:
+                    max-height .5s ease,
+                    opacity .4s ease;
+            }
+
+            .service-item.active .service-content-wrap {
+                max-height: 300px;
+                opacity: 1;
+                transition-delay: 0s, .1s;
+            }
+
+            .service-content img {
+                max-width: 260px;
+            }
+
+            /* Mobile fallback — release the sticky pin and let the
+           accordion content stay open (Bootstrap's own breakpoint
+           utilities can't reach inside these custom classes) */
+            @media(max-width: 991px) {
+                .target-scroll-wrapper {
+                    height: auto;
                 }
-            }
 
-            /* Mobile */
-            @media (max-width: 767.98px) {
-                .welthx-card {
-                    margin-top: -40px;
-                }
-            }
-
-
-            .welthx-banner {
-                width: 100%;
-                height: auto;
-                /* 420px */
-                object-fit: cover;
-                object-position: center;
-                display: block;
-            }
-
-            /* Tablet */
-            @media (max-width:991.98px) {
-                .welthx-banner {
-                    height: 350px;
-                }
-            }
-
-            /* Mobile */
-            @media (max-width:767.98px) {
-                .welthx-banner {
-                    height: 260px;
-                    object-fit: cover;
-                    object-position: center;
+                .target-sticky {
+                    position: static;
+                    height: auto;
                 }
 
-                .welthx-card {
-                    margin-top: -60px;
-                }
-
-                .form-card {
-                    margin-top: 20px;
+                .service-content-wrap {
+                    max-height: none !important;
+                    opacity: 1 !important;
+                    overflow: visible;
                 }
             }
         </style>
 
-        <!-- Full Width Image -->
-        <div class="container-fluid p-0 position-relative">
-            <img
-                src="<?= $base ?>imgs/services/welthx_bg.jpg"
-                class="welthx-banner"
-                alt="Portfolio"
-                loading="lazy"
-                decoding="async">
-            <!-- Border aligned with container -->
-            <div class="container position-absolute top-0 start-50 translate-middle-x h-100">
-                <div class="border-start border-end border-light h-100"></div>
-            </div>
-            <!-- Content Layer -->
-            <div class="container mt-5 position-absolute top-0 start-50 translate-middle-x px-4 py-5">
-                <div class="d-md-inline d-none">
-                    <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
-                    <span class="text-white mx-1">&gt;</span>
-                    <a href="" class="text-decoration-none" style="color:#00DF9C">WealthX</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Content Box -->
-        <div class="container position-relative welthx-card">
-            <div class="border-start border-end border-light">
-                <div class="text-white p-3 p-md-4" style="background-color:#02181A;">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="d-md-none mb-3">
-                                <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none" style="color:#00DF9C" href="">WealthX</a>
-                            </div>
-                            <h1 class="display-5 fw-semibold mb-3 titleFont">
-                                Your Wealth DeservesTo Work Smarter.
-                            </h1>
-
-                            <p class="text-white-50 mb-3 pFont">
-                                WealthX is a multi-asset investment advisory service built to captureevery market opportunity - combining expert research, disciplinedallocation, and active portfolio management.
-                            </p>
-
-                            <!-- Button -->
-                            <button class="btn btn-light rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center">
-                                Explore Benefits
-                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </button>
-                            <p class="mb-0 mt-3 pFont">Minimum Investment: <span style="color: #00DF9C;">₹1. Crore</span></p>
-                        </div>
-
-                        <!-- RIGHT SIDE -->
-                        <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5">
-
-                            <!-- Form Box -->
-                            <div class="bg-body text-body p-3 form-card">
-                                <p class="pFont mb-1 fs-6 fw-medium">
-                                    Know more about
-                                </p>
-
-                                <h4 class="fw-semibold mb-3 titleFont">
-                                    WealthX Service
-                                </h4>
-
-                                <div class="form-floating mb-3">
-                                    <input
-                                        type="text"
-                                        class="form-control rounded-0"
-                                        id="name"
-                                        placeholder="Enter Your Name">
-                                    <label for="name">Enter Your Name*</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input
-                                        type="email"
-                                        class="form-control rounded-0"
-                                        id="email"
-                                        placeholder="Enter Your Email">
-                                    <label for="email">Enter Your Email*</label>
-                                </div>
-
-                                <div class="form-floating mb-4">
-                                    <input
-                                        type="text"
-                                        class="form-control rounded-0"
-                                        id="mobile"
-                                        placeholder="Enter Your Mobile">
-                                    <label for="mobile">Enter Your Mobile*</label>
-                                </div>
-
-                                <button class="btn rounded-0 text-white w-100" style="background-color: #02181A;">
-                                    Sign in
-                                </button>
-
-                                <p class="small fw-medium mt-3 mb-0">
-                                    By submitting, you agree to our Terms & Conditions
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- What you get -->
-    <section>
         <div class="container">
-            <div class="py-5 px-3 border-start border-end border-light">
+
+            <div class="py-5 px-3 border border-light">
                 <div class="row g-0">
                     <div class="col-md-6 d-flex align-items-center">
                         <h2 class="display-5 titleFont fw-semibold d-inline-block">
@@ -264,246 +368,178 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
             </div>
-        </div>
 
-        <style>
-            .hide-scrollbar {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
+            <div class="border-start border-end border-bottom border-light">
+                <div class="target-scroll-wrapper" id="targetWrapper">
+                    <div class="target-sticky d-flex align-items-center">
+                        <div class="row g-0 w-100 align-items-center gx-4 flex-md-nowrap">
 
-            .hide-scrollbar::-webkit-scrollbar {
-                display: none;
-            }
+                            <!-- LEFT SIDE -->
+                            <div class="col-12 col-md-5 d-flex flex-column position-relative">
+                                <div class="position-relative overflow-hidden flex-fill m-0 p-0">
+                                    <img class="w-100 h-auto d-block m-0 p-0"
+                                        src="<?= $base ?>imgs/services/welthx_1.jpg" alt="">
 
-            /* .sticky-section {
-                height: 100vh;
-            }
+                                    <div class="circle-wrapper">
+                                        <svg width="100%" height="100%" viewBox="0 0 300 300">
 
-            @media (max-width: 991.98px) {
-                .sticky-section {
-                    height: auto;
-                }
-            } */
+                                            <!-- Thin background circle -->
+                                            <circle
+                                                cx="150"
+                                                cy="150"
+                                                r="105"
+                                                fill="none"
+                                                stroke="rgba(255,255,255,0.45)"
+                                                stroke-width="1" />
 
-            .circle-wrapper {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 290px;
-                height: 290px;
-                transform: translate(-50%, -50%);
-                pointer-events: none;
-            }
+                                            <!-- Thin progress arc -->
+                                            <g id="circleRotate">
+                                                <path
+                                                    d="M150 45 A105 105 0 0 1 255 150"
+                                                    fill="none"
+                                                    stroke="#fff"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </g>
+                                        </svg>
 
-            .circle-number {
-                position: absolute;
-                top: 30%;
-                left: 33%;
-                color: #fff;
-                font-size: 15px;
-                font-weight: 600;
-                letter-spacing: 2px;
-            }
+                                        <div id="circleNumber" class="circle-number">
+                                            [ 01 ] / [ 04 ]
+                                        </div>
+                                    </div>
+                                </div>
 
-            #circleRotate {
-                transform-origin: center;
-                transition: transform .7s ease;
-            }
+                                <div class="col-12">
+                                    <a href="#"
+                                        class="btn rounded-0 text-white mt-3 px-4 py-2 mb-3 pFont"
+                                        style="background-color: #02181A;">
+                                        Learn How It Works
+                                        <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
 
-            .service-section img {
-                max-width: 240px;
-            }
+                            <div class="col-md-1"></div>
 
-            @media(max-width:991px) {
-                .circle-wrapper {
-                    width: 240px;
-                    height: 240px;
-                }
+                            <!-- RIGHT SIDE -->
+                            <div class="col-12 col-md-6">
+                                <div class="service-item active" data-index="0">
+                                    <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
+                                        <div class="service-number"><small>[01]</small></div>
+                                        <div class="service-content w-100">
+                                            <h2 class="fs-6 fw-semibold m-0">Expert Research</h2>
+                                            <div class="service-content-wrap">
+                                                <p class="pFont mt-2" style="max-width:450px;">Every position backed by rigorous fundamental analysis and live market intelligence.</p>
+                                                <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_2.jpg" alt="Expert Research">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                .circle-number {
-                    position: absolute;
-                    top: 30%;
-                    left: 30%;
-                    color: #fff;
-                    font-size: 15px;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                }
+                                <div class="service-item" data-index="1">
+                                    <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
+                                        <div class="service-number"><small>[02]</small></div>
+                                        <div class="service-content w-100">
+                                            <h2 class="fs-6 fw-semibold m-0">Disciplined Construction</h2>
+                                            <div class="service-content-wrap">
+                                                <p class="pFont mt-2" style="max-width:450px;">Portfolios built with clear allocation logic — not guesswork or short-term noise.</p>
+                                                <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_3.jpg" alt="Disciplined Construction">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            }
-        </style>
+                                <div class="service-item" data-index="2">
+                                    <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
+                                        <div class="service-number"><small>[03]</small></div>
+                                        <div class="service-content w-100">
+                                            <h2 class="fs-6 fw-semibold m-0">Dynamic Allocation</h2>
+                                            <div class="service-content-wrap">
+                                                <p class="pFont mt-2" style="max-width:450px;">Capital shifts toward stronger asset classes. Quarterly rebalancing. Event-based adjustments.</p>
+                                                <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_4.jpg" alt="Dynamic Allocation">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div class="container">
-            <div class="row g-0 border border-light">
-
-                <!-- LEFT SIDE -->
-                <div class="col-md-4 border-end-0 border-light">
-
-                    <div class="position-sticky top-0 sticky-section">
-                        <div class="position-relative">
-
-                            <img
-                                src="<?= $base ?>imgs/services/welthx_1.jpg"
-                                class="img-fluid w-100"
-                                alt="">
-
-                            <div class="circle-wrapper">
-
-                                <svg
-                                    width="100%"
-                                    height="100%"
-                                    viewBox="0 0 300 300">
-
-                                    <!-- circle -->
-
-                                    <circle
-                                        cx="150"
-                                        cy="150"
-                                        r="105"
-                                        fill="none"
-                                        stroke="rgba(255,255,255,.45)"
-                                        stroke-width="2" />
-
-                                    <!-- rotating arc -->
-
-                                    <g id="circleRotate">
-
-                                        <path
-                                            d="M150 45
-                                       A105 105 0 0 1 255 150"
-                                            fill="none"
-                                            stroke="#fff"
-                                            stroke-width="3" />
-
-                                    </g>
-
-                                </svg>
-
-                                <div
-                                    id="circleNumber"
-                                    class="circle-number">
-
-                                    [ 1 ] / [ 4 ]
-
+                                <div class="service-item" data-index="3">
+                                    <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
+                                        <div class="service-number"><small>[04]</small></div>
+                                        <div class="service-content w-100">
+                                            <h2 class="fs-6 fw-semibold m-0">Continuous Compounding</h2>
+                                            <div class="service-content-wrap">
+                                                <p class="pFont mt-2" style="max-width:450px;">When one asset class falls, others keep working. The portfolio never stops compounding.</p>
+                                                <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_5.jpg" alt="Continuous Compounding">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
-
                         </div>
-
-                        <a href="#"
-                            class="btn rounded-0 text-white mt-3 px-4 py-2 mb-3 pFont" style="background-color: #02181A;">
-                            Learn How It Works <i class="fa-solid fa-arrow-right-long ms-2"></i>
-                        </a>
-
                     </div>
-
                 </div>
-
-                <!-- RIGHT SIDE -->
-                <div class="col-md-8">
-
-                    <div
-                        data-bs-spy="scroll"
-                        data-bs-target="#wealth-nav"
-                        data-bs-smooth-scroll="true"
-                        tabindex="0">
-                        <!-- class="overflow-auto hide-scrollbar"
-                        style="height:100vh;" -->
-
-                        <!-- Section 1 -->
-                        <section id="expert" class="service-section p-3 border-bottom border-light" data-index="1">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="d-flex gap-3">
-                                        <h2 class="fs-5 fw-semibold titleFont flex-shrink-0 mb-0">[ 1 ]</h2>
-                                        <div class="flex-column">
-                                            <h2 class="fs-5 fw-semibold titleFont ">Expert Research</h2>
-                                            <p class="fs-6 pFont mt-3">
-                                                Every position backed by rigorous fundamental analysis and live market intelligence.
-                                            </p>
-                                            <img
-                                                src="<?= $base ?>imgs/services/welthx_2.jpg"
-                                                class="img-fluid"
-                                                alt="background">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- Section 2 -->
-                        <section id="disciplined" class="service-section p-3 border-bottom border-light" data-index="2">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="d-flex gap-3">
-                                        <h2 class="fs-5 fw-semibold titleFont flex-shrink-0 mb-0">[ 2 ]</h2>
-                                        <div class="flex-column">
-                                            <h2 class="fs-5 fw-semibold titleFont ">Disciplined Construction</h2>
-                                            <p class="fs-6 pFont mt-3">
-                                                Portfolios built with clear allocation logic — not guesswork or short-term noise.
-                                            </p>
-                                            <img
-                                                src="<?= $base ?>imgs/services/welthx_3.jpg"
-                                                class="img-fluid"
-                                                alt="background">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- Section 3 -->
-                        <section id="dynamic" class="service-section p-3 border-bottom border-light" data-index="3">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="d-flex gap-3">
-                                        <h2 class="fs-5 fw-semibold titleFont flex-shrink-0 mb-0">[ 3 ]</h2>
-                                        <div class="flex-column">
-                                            <h2 class="fs-5 fw-semibold titleFont ">Dynamic Allocation</h2>
-                                            <p class="fs-6 pFont mt-3">
-                                                Capital shifts toward stronger asset classes. Quarterly rebalancing. Event-based adjustments.
-                                            </p>
-                                            <img
-                                                src="<?= $base ?>imgs/services/welthx_4.jpg"
-                                                class="img-fluid"
-                                                alt="background">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- Section 4 -->
-                        <section id="continuous" class="service-section p-3 border-bottom border-light" data-index="4">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="d-flex gap-3">
-                                        <h2 class="fs-5 fw-semibold titleFont flex-shrink-0 mb-0">[ 4 ]</h2>
-                                        <div class="flex-column">
-                                            <h2 class="fs-5 fw-semibold titleFont ">Continuous Compounding</h2>
-                                            <p class="fs-6 pFont mt-3">
-                                                When one asset class falls, others keep working. The portfolio never stops compounding.
-                                            </p>
-                                            <img
-                                                src="<?= $base ?>imgs/services/welthx_5.jpg"
-                                                class="img-fluid"
-                                                alt="background">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                    </div>
-
-                </div>
-
             </div>
-
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const wrapper = document.getElementById("targetWrapper");
+            const items = document.querySelectorAll(".service-item");
+            const circle = document.getElementById("circleRotate");
+            const number = document.getElementById("circleNumber");
+            const total = items.length;
+
+            function paintHeadings() {
+                items.forEach(item => {
+                    const heading = item.querySelector(".service-content h2");
+                    if (!heading) return;
+                    heading.classList.toggle("is-active", item.classList.contains("active"));
+                    heading.classList.toggle("is-inactive", !item.classList.contains("active"));
+                });
+            }
+
+            let current = 0;
+            let ticking = false;
+
+            function updateActive() {
+                ticking = false;
+                const rect = wrapper.getBoundingClientRect();
+                const scrollableDistance = wrapper.offsetHeight - window.innerHeight;
+                if (scrollableDistance <= 0) return;
+
+                let progress = -rect.top / scrollableDistance;
+                progress = Math.min(Math.max(progress, 0), 0.999);
+                const index = Math.floor(progress * total);
+
+                if (index === current) return;
+                current = index;
+
+                items.forEach(item => item.classList.remove("active"));
+                items[index].classList.add("active");
+                paintHeadings();
+
+                const label = String(index + 1).padStart(2, "0");
+                if (number) number.innerHTML = `[ ${label} ] / [ 0${total} ]`;
+                if (circle) circle.style.transform = `rotate(${index * (360 / total)}deg)`;
+            }
+
+            function onScroll() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateActive);
+                    ticking = true;
+                }
+            }
+
+            window.addEventListener("scroll", onScroll, {
+                passive: true
+            });
+            window.addEventListener("load", updateActive);
+            updateActive();
+            paintHeadings();
+        });
+    </script>
 
     <!-- Services -->
 
@@ -1061,7 +1097,7 @@ require __DIR__ . '/../includes/header.php';
                             alt="background" />
                         <div class="d-flex mt-4">
                             <img
-                                src="<?= $base ?>imgs/avatars.png"
+                                src="<?= $base ?>imgs/avatars.jpg"
                                 class="img-fluid"
                                 alt="background" />
                             <div class="flex-column">
@@ -1101,7 +1137,7 @@ require __DIR__ . '/../includes/header.php';
                             alt="background">
                     </div>
                     <div class="col-md-6">
-                        <div class="accordion accordion-flush bg-body rounded-0 overflow-hidden" id="midcapFAQ">
+                        <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
@@ -1409,7 +1445,7 @@ require __DIR__ . '/../includes/header.php';
     </script>
 
     <!-- Circle moving section -->
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
 
             const sections = document.querySelectorAll(".service-section");
@@ -1444,7 +1480,7 @@ require __DIR__ . '/../includes/header.php';
             sections.forEach(section => observer.observe(section));
 
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
