@@ -234,7 +234,7 @@ require __DIR__ . '/../includes/header.php';
     </style>
 
     <!-- SECTION 1: For an Individuals -->
-    <section id="for-individuals">
+    <section id="individuals">
         <div class="container">
             <div class="border border-bottom-0 border-light py-5">
 
@@ -418,7 +418,7 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- SECTION 2: For HNI's and Ultra HNI's -->
-    <section id="for-hni">
+    <section id="hni">
         <div class="container">
             <div class="border border-top-0 border-bottom-0 border-light py-5">
 
@@ -605,7 +605,7 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- SECTION 3: For Family Offices & Institutions -->
-    <section id="for-institutions">
+    <section id="institutions">
         <div class="container">
             <div class="border border-top-0 border-bottom-0 border-light py-5">
 
