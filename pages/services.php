@@ -186,68 +186,63 @@ require __DIR__ . '/../includes/header.php';
 
     </section>
 
-    <section>
-        <div class="container ">
-            <div class="border border-light py-5">
+    <style>
+        /* Shared styles for all three service sections */
+        .image-box {
+            min-height: 460px;
+        }
 
-                <!-- Service 1 -->
-                <!-- Heading -->
+        .image-content {
+            background: linear-gradient(180deg, rgba(2, 24, 26, 0) 30%, rgba(2, 24, 26, .92) 100%);
+            transition: all .4s ease;
+        }
+
+        .image-content .sub-title,
+        .image-content .explore-btn {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transform: translateY(20px);
+            transition: all .6s ease;
+            margin: 0 !important;
+            display: block;
+        }
+
+        .image-box:hover .sub-title,
+        .image-box:hover .explore-btn,
+        .image-box.active .sub-title,
+        .image-box.active .explore-btn {
+            max-height: 300px;
+            opacity: 1;
+            transform: translateY(0);
+            margin-top: 12px !important;
+        }
+
+        .logo {
+            max-height: 50px;
+            transition: transform .8s ease;
+        }
+
+        .image-box:hover .logo,
+        .image-box.active .logo {
+            transform: rotate(360deg);
+        }
+
+        .text-muted-green {
+            color: #5b6b64;
+        }
+    </style>
+
+    <!-- SECTION 1: For an Individuals -->
+    <section id="for-individuals">
+        <div class="container">
+            <div class="border border-bottom-0 border-light py-5">
+
                 <div class="mb-3 px-3">
                     <h1 class="display-6 fw-semibold titleFont">
                         For an Individuals
                     </h1>
                 </div>
-
-                <style>
-                    /* Only the bits Bootstrap can't express as utilities */
-
-                    .image-box {
-                        min-height: 460px;
-
-                        /* Bootstrap has no arbitrary min-height utility */
-                    }
-
-                    .image-content {
-                        background: linear-gradient(180deg, rgba(2, 24, 26, 0) 30%, rgba(2, 24, 26, .92) 100%);
-                        transition: all .4s ease;
-                    }
-
-                    .image-content .sub-title,
-                    .image-content .explore-btn {
-                        max-height: 0;
-                        opacity: 0;
-                        overflow: hidden;
-                        transform: translateY(20px);
-                        transition: all .6s ease;
-                        margin: 0 !important;
-                        display: block;
-                    }
-
-                    .image-box:hover .sub-title,
-                    .image-box:hover .explore-btn,
-                    .image-box.active .sub-title,
-                    .image-box.active .explore-btn {
-                        max-height: 300px;
-                        opacity: 1;
-                        transform: translateY(0);
-                        margin-top: 12px !important;
-                    }
-
-                    .logo {
-                        max-height: 50px;
-                        transition: transform .8s ease;
-                    }
-
-                    .image-box:hover .logo,
-                    .image-box.active .logo {
-                        transform: rotate(360deg);
-                    }
-
-                    /* Bootstrap's text-muted is too light for this design's secondary text */
-                    .text-muted-green {
-                        color: #5b6b64;
-                    }
-                </style>
 
                 <div class="row g-0">
                     <!-- Image panel -->
@@ -295,19 +290,19 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
+
                     <!-- Alpha India Portfolio -->
                     <div class="col-md-4">
                         <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
                             style="
-                                    background: linear-gradient(
-                                        135deg,
-                                        rgba(222,247,238,0.15) 0%,
-                                        rgba(222,247,238,0.30) 50%,
-                                        rgba(222,247,238,0.55) 100%
-                                    );
-                                    border:1px solid #D8E7E0;
-                                    /* box-shadow:0 8px 25px rgba(0,0,0,.04); */
-                                ">
+                            background: linear-gradient(
+                                135deg,
+                                rgba(222,247,238,0.15) 0%,
+                                rgba(222,247,238,0.30) 50%,
+                                rgba(222,247,238,0.55) 100%
+                            );
+                            border:1px solid #D8E7E0;
+                        ">
 
                             <h3 class="titleFont fw-semibold fs-4 mb-3">
                                 Alpha India Portfolio
@@ -325,31 +320,24 @@ require __DIR__ . '/../includes/header.php';
                             </div>
 
                             <ul class="list-unstyled mb-4">
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Diversified Portfolio comprising Largecap, Midcap &amp; Smallcap stocks</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Quarterly Re-balancing</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Personalized Dashboard with real-time updates</span>
                                 </li>
-
                             </ul>
 
                             <div class="mt-auto pt-3 border-top">
-
                                 <div class="text-muted-green small mb-3">
                                     Minimum Investment:
-                                    <strong class="text-success fw-semibold">
-                                        ₹2 Lacs
-                                    </strong>
+                                    <strong class="text-success fw-semibold">₹2 Lacs</strong>
                                 </div>
 
                                 <a href="../services/portfolio.php"
@@ -357,7 +345,6 @@ require __DIR__ . '/../includes/header.php';
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
-
                             </div>
 
                         </div>
@@ -367,15 +354,14 @@ require __DIR__ . '/../includes/header.php';
                     <div class="col-md-4">
                         <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
                             style="
-                                background: linear-gradient(
-                                    135deg,
-                                    rgba(222,247,238,0.15) 0%,
-                                    rgba(222,247,238,0.30) 50%,
-                                    rgba(222,247,238,0.55) 100%
-                                );
-                                border:1px solid #D8E7E0;
-                                /* box-shadow:0 8px 25px rgba(0,0,0,.04); */
-                            ">
+                            background: linear-gradient(
+                                135deg,
+                                rgba(222,247,238,0.15) 0%,
+                                rgba(222,247,238,0.30) 50%,
+                                rgba(222,247,238,0.55) 100%
+                            );
+                            border:1px solid #D8E7E0;
+                        ">
 
                             <h3 class="titleFont fw-semibold fs-4 mb-3">
                                 Multibagger
@@ -392,36 +378,28 @@ require __DIR__ . '/../includes/header.php';
                             </div>
 
                             <ul class="list-unstyled mb-4">
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>One High-Growth Stock Every Month</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Detailed Research Report</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Mid-term investment</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Live dashboard to track performance</span>
                                 </li>
-
                             </ul>
 
                             <div class="mt-auto pt-3 border-top">
-
                                 <div class="text-muted-green small mb-3">
                                     Minimum Investment:
-                                    <strong class="text-success fw-semibold">
-                                        ₹20,000 per stock
-                                    </strong>
+                                    <strong class="text-success fw-semibold">₹20,000 per stock</strong>
                                 </div>
 
                                 <a href="../services/multibagger.php"
@@ -429,71 +407,26 @@ require __DIR__ . '/../includes/header.php';
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
-
                             </div>
 
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Service 2 -->
-                <!-- Heading -->
-                <div class="mb-3 mt-5 px-3">
+    <!-- SECTION 2: For HNI's and Ultra HNI's -->
+    <section id="for-hni">
+        <div class="container">
+            <div class="border border-top-0 border-bottom-0 border-light py-5">
+
+                <div class="mb-3 px-3">
                     <h1 class="display-6 fw-semibold titleFont">
                         For HNI's and Ultra HNI's
                     </h1>
                 </div>
-                <style>
-                    /* Only the bits Bootstrap can't express as utilities */
-
-                    .image-box {
-                        min-height: 460px;
-
-                        /* Bootstrap has no arbitrary min-height utility */
-                    }
-
-                    .image-content {
-                        background: linear-gradient(180deg, rgba(2, 24, 26, 0) 30%, rgba(2, 24, 26, .92) 100%);
-                        transition: all .4s ease;
-                    }
-
-                    .image-content .sub-title,
-                    .image-content .explore-btn {
-                        max-height: 0;
-                        opacity: 0;
-                        overflow: hidden;
-                        transform: translateY(20px);
-                        transition: all .6s ease;
-                        margin: 0 !important;
-                        display: block;
-                    }
-
-                    .image-box:hover .sub-title,
-                    .image-box:hover .explore-btn,
-                    .image-box.active .sub-title,
-                    .image-box.active .explore-btn {
-                        max-height: 300px;
-                        opacity: 1;
-                        transform: translateY(0);
-                        margin-top: 12px !important;
-                    }
-
-                    .logo {
-                        max-height: 50px;
-                        transition: transform .8s ease;
-                    }
-
-                    .image-box:hover .logo,
-                    .image-box.active .logo {
-                        transform: rotate(360deg);
-                    }
-
-                    /* Bootstrap's text-muted is too light for this design's secondary text */
-                    .text-muted-green {
-                        color: #5b6b64;
-                    }
-                </style>
 
                 <div class="row g-0">
 
@@ -542,17 +475,18 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
+
                     <!-- WealthX -->
                     <div class="col-md-4">
                         <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
                             style="
-                                    background: linear-gradient(
-                                        135deg,
-                                        #FFFBEE 0%,
-                                        #FFFDF6 100%
-                                    );
-                                    border:1px solid #EDE7D5;
-                                ">
+                            background: linear-gradient(
+                                135deg,
+                                #FFFBEE 0%,
+                                #FFFDF6 100%
+                            );
+                            border:1px solid #EDE7D5;
+                        ">
                             <h3 class="titleFont fw-semibold fs-4 mb-3">
                                 WealthX
                             </h3>
@@ -569,36 +503,28 @@ require __DIR__ . '/../includes/header.php';
                             </div>
 
                             <ul class="list-unstyled mb-4">
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Curated Stocks Portfolio for long-term wealth creation</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Monthly Stock Ideas backed by research and market structure</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>ETF Recommendations to capture sectoral, thematic, and macro opportunities</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Opportunity-driven strategy to help you act, not react, as markets evolve</span>
                                 </li>
-
                             </ul>
 
                             <div class="mt-auto pt-3 border-top">
-
                                 <div class="text-muted-green small mb-3">
                                     Minimum Investment:
-                                    <strong class="text-success fw-semibold">
-                                        ₹1. Crore
-                                    </strong>
+                                    <strong class="text-success fw-semibold">₹1. Crore</strong>
                                 </div>
 
                                 <a href="../services/wealthx.php"
@@ -606,30 +532,29 @@ require __DIR__ . '/../includes/header.php';
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
-
                             </div>
 
                         </div>
                     </div>
 
-                    <!--WealthX+ -->
+                    <!-- WealthX+ -->
                     <div class="col-md-4">
                         <div class="h-100 p-4 p-lg-3 rounded-1 d-flex flex-column border-0"
                             style="
-        background: linear-gradient(
-            135deg,
-            #FFFBEE 0%,
-            #FFFDF6 100%
-        );
-        border:1px solid #EDE7D5;
-    ">
+                            background: linear-gradient(
+                                135deg,
+                                #FFFBEE 0%,
+                                #FFFDF6 100%
+                            );
+                            border:1px solid #EDE7D5;
+                        ">
 
                             <h3 class="titleFont fw-semibold fs-4 mb-3">
                                 WealthX+
                             </h3>
 
                             <p class="text-muted-green mb-4" style="font-size:.94rem; line-height:1.7;">
-                                Opportunities Don’t Wait. Neither Should You.<br>
+                                Opportunities Don't Wait. Neither Should You.<br>
                                 WealthX is a comprehensive equity investing service built
                                 to keep you aligned with opportunities across market cycles.
                             </p>
@@ -640,36 +565,28 @@ require __DIR__ . '/../includes/header.php';
                             </div>
 
                             <ul class="list-unstyled mb-4">
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Curated Stocks Portfolio for long-term wealth creation</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Monthly Stock Ideas backed by research and market structure</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>ETF Recommendations to capture sectoral, thematic, and macro opportunities</span>
                                 </li>
-
                                 <li class="d-flex align-items-start gap-2 mb-3">
                                     <i class="fa-solid fa-circle-check text-dark mt-1"></i>
                                     <span>Opportunity-driven strategy to help you act, not react, as markets evolve</span>
                                 </li>
-
                             </ul>
 
                             <div class="mt-auto pt-3 border-top">
-
                                 <div class="text-muted-green small mb-3">
                                     Minimum Investment:
-                                    <strong class="text-success fw-semibold">
-                                        ₹1. Crore
-                                    </strong>
+                                    <strong class="text-success fw-semibold">₹1. Crore</strong>
                                 </div>
 
                                 <a href="../services/wealthx.php"
@@ -677,74 +594,30 @@ require __DIR__ . '/../includes/header.php';
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
-
                             </div>
 
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Service 3 -->
-                <!-- Heading -->
-                <div class="mb-3 mt-5 px-3">
+    <!-- SECTION 3: For Family Offices & Institutions -->
+    <section id="for-institutions">
+        <div class="container">
+            <div class="border border-top-0 border-bottom-0 border-light py-5">
+
+                <div class="mb-3 px-3">
                     <h1 class="display-6 fw-semibold titleFont">
                         For Family Offices & Institutions
                     </h1>
                 </div>
-                <style>
-                    /* Only the bits Bootstrap can't express as utilities */
 
-                    .image-box {
-                        min-height: 460px;
-
-                        /* Bootstrap has no arbitrary min-height utility */
-                    }
-
-                    .image-content {
-                        background: linear-gradient(180deg, rgba(2, 24, 26, 0) 30%, rgba(2, 24, 26, .92) 100%);
-                        transition: all .4s ease;
-                    }
-
-                    .image-content .sub-title,
-                    .image-content .explore-btn {
-                        max-height: 0;
-                        opacity: 0;
-                        overflow: hidden;
-                        transform: translateY(20px);
-                        transition: all .6s ease;
-                        margin: 0 !important;
-                        display: block;
-                    }
-
-                    .image-box:hover .sub-title,
-                    .image-box:hover .explore-btn,
-                    .image-box.active .sub-title,
-                    .image-box.active .explore-btn {
-                        max-height: 300px;
-                        opacity: 1;
-                        transform: translateY(0);
-                        margin-top: 12px !important;
-                    }
-
-                    .logo {
-                        max-height: 50px;
-                        transition: transform .8s ease;
-                    }
-
-                    .image-box:hover .logo,
-                    .image-box.active .logo {
-                        transform: rotate(360deg);
-                    }
-
-                    /* Bootstrap's text-muted is too light for this design's secondary text */
-                    .text-muted-green {
-                        color: #5b6b64;
-                    }
-                </style>
                 <div class="row g-0">
 
-                    <!-- Card 1 (Keep Same) -->
+                    <!-- Card 1 -->
                     <div class="col-md-5">
                         <div class="image-box position-relative overflow-hidden h-100" style="cursor:pointer;">
 
@@ -769,8 +642,6 @@ require __DIR__ . '/../includes/header.php';
 
                                 <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
                                     WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
-
-
                                 </p>
 
                                 <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
@@ -791,23 +662,19 @@ require __DIR__ . '/../includes/header.php';
                         </div>
                     </div>
 
-                    <!-- Right Side -->
+                    <!-- Right Side: Contact Form -->
                     <div class="col-md-7">
                         <div class="row g-0 h-100">
-
-                            <!-- Card 2 -->
                             <div class="col-md-12">
                                 <div class="card h-100 rounded-0">
                                     <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-between">
 
                                         <div>
-
                                             <h3 class="mb-4 titleFont text-center text-md-start">
                                                 Send Us A Message
                                             </h3>
 
                                             <form>
-
                                                 <div class="form-floating mb-3">
                                                     <input type="text"
                                                         class="form-control border-0 border-bottom rounded-0 shadow-none"
@@ -842,9 +709,7 @@ require __DIR__ . '/../includes/header.php';
                                                     </select>
                                                     <label for="subject1">Choose Subject*</label>
                                                 </div>
-
                                             </form>
-
                                         </div>
 
                                         <button type="submit"
@@ -856,10 +721,9 @@ require __DIR__ . '/../includes/header.php';
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
+
                 </div>
             </div>
         </div>
