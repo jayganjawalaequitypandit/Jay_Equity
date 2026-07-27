@@ -105,18 +105,24 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Hero Content -->
                     <div class="pt-5">
 
-                        <div class="row">
+                        <div class="row g-3 align-items-stretch">
+
+                            <!-- Left Content -->
                             <div class="col-md-6">
-                                <div class="row g-3">
-                                    <div class="col-md-12">
-                                        <!-- Breadcrumb -->
+                                <div class="row g-3 h-100">
+
+                                    <!-- Text -->
+                                    <div class="col-12">
                                         <div class="px-3">
-                                            <div class="mb-4 mt-5">
+
+                                            <!-- Breadcrumb -->
+                                            <div class="mb-4">
                                                 <a href="<?= $base ?>index.php"
                                                     class="text-decoration-none text-body">
                                                     Home
                                                 </a>
-                                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+
+                                                <i class="fa-solid fa-chevron-right fa-sm mx-1"></i>
 
                                                 <a href="#"
                                                     class="text-decoration-none"
@@ -132,41 +138,44 @@ require __DIR__ . '/../includes/header.php';
                                             </h1>
 
                                             <!-- Description -->
-                                            <p class="pFont"> <small>
+                                            <p class="pFont mb-4">
+                                                <small>
                                                     WealthX is a multi-asset investment advisory service built to capture
-                                                    <br class=" d-none d-md-block">
-                                                    every market opportunity - combining expert research, disciplined
+                                                    <br class="d-none d-md-block">
+                                                    every market opportunity—combining expert research, disciplined
                                                     <br class="d-none d-md-block">
                                                     allocation, and active portfolio management.
                                                 </small>
                                             </p>
 
                                             <!-- Button -->
-                                            <button class="btn btn-dark rounded-0 px-4 py-2 mt-4" style="color:#D6B770;">
+                                            <button class="btn btn-dark rounded-0 px-4 py-2 mt-2"
+                                                style="color:#D6B770;">
                                                 Explore Benefits
                                                 <i class="fa-solid fa-arrow-right-long ms-2"></i>
                                             </button>
+
                                         </div>
                                     </div>
 
-                                    <!-- Image 1 -->
-                                    <div class="col-md-6 col-6 d-flex align-items-end justify-content-end d-none d-md-block">
+                                    <!-- Bottom Images  -->
+                                    <div class="col-md-6 d-none d-md-flex align-items-end ">
                                         <img src="<?= $base ?>imgs/services/w1.jpg"
-                                            class="h-auto img-fluid">
+                                            class="img-fluid w-100">
                                     </div>
 
-                                    <!-- Image 2 -->
-                                    <div class="col-md-6 col-6 d-flex align-items-end justify-content-end d-none d-md-block">
+                                    <div class="col-md-6 d-none d-md-flex align-items-end">
                                         <img src="<?= $base ?>imgs/services/w2.jpg"
-                                            class="h-auto img-fluid">
+                                            class="img-fluid w-100">
                                     </div>
+
                                 </div>
                             </div>
 
-                            <!-- Video 3 -->
-                            <div class="col-md-3 col-12 mt-3 mt-md-0 d-flex align-items-end justify-content-end">
+                            <!-- Video -->
+                            <div class="col-md-3 col-12 d-flex align-items-end  ">
                                 <video
-                                    class="h-auto img-fluid"
+                                    class="img-fluid w-100"
                                     autoplay
                                     muted
                                     loop
@@ -176,11 +185,12 @@ require __DIR__ . '/../includes/header.php';
                                 </video>
                             </div>
 
-                            <!-- Image 4 -->
-                            <div class="col-md-3 col-6 mt-3 mt-md-0 d-flex align-items-end justify-content-end d-none d-md-inline-flex ">
+                            <!-- Right Image -->
+                            <div class="col-md-3 d-none d-md-flex align-items-end">
                                 <img src="<?= $base ?>imgs/services/w4.jpg"
-                                    class="h-auto img-fluid">
+                                    class="img-fluid w-100">
                             </div>
+
                         </div>
 
                     </div>

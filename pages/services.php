@@ -297,7 +297,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                     <!-- Alpha India Portfolio -->
                     <div class="col-md-4">
-                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column"
+                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
                             style="
                                     background: linear-gradient(
                                         135deg,
@@ -352,7 +352,7 @@ require __DIR__ . '/../includes/header.php';
                                     </strong>
                                 </div>
 
-                                <a href="#"
+                                <a href="../services/portfolio.php"
                                     class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -365,7 +365,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Multibagger -->
                     <div class="col-md-4">
-                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column"
+                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
                             style="
                                 background: linear-gradient(
                                     135deg,
@@ -424,7 +424,7 @@ require __DIR__ . '/../includes/header.php';
                                     </strong>
                                 </div>
 
-                                <a href="#"
+                                <a href="../services/multibagger.php"
                                     class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -544,7 +544,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                     <!-- WealthX -->
                     <div class="col-md-4">
-                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column"
+                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
                             style="
                                     background: linear-gradient(
                                         135deg,
@@ -601,7 +601,7 @@ require __DIR__ . '/../includes/header.php';
                                     </strong>
                                 </div>
 
-                                <a href="#"
+                                <a href="../services/wealthx.php"
                                     class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -614,7 +614,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <!--WealthX+ -->
                     <div class="col-md-4">
-                        <div class="h-100 p-4 p-lg-3 rounded-1 d-flex flex-column"
+                        <div class="h-100 p-4 p-lg-3 rounded-1 d-flex flex-column border-0"
                             style="
         background: linear-gradient(
             135deg,
@@ -672,7 +672,7 @@ require __DIR__ . '/../includes/header.php';
                                     </strong>
                                 </div>
 
-                                <a href="#"
+                                <a href="../services/wealthx.php"
                                     class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
