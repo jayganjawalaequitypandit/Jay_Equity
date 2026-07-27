@@ -108,7 +108,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="row g-3 align-items-stretch">
 
                             <!-- Left Content -->
-                            <div class="col-md-6">
+                            <div class="col-md-6 ">
                                 <div class="row g-3 h-100">
 
                                     <!-- Text -->
@@ -138,14 +138,10 @@ require __DIR__ . '/../includes/header.php';
                                             </h1>
 
                                             <!-- Description -->
-                                            <p class="pFont mb-4">
-                                                <small>
-                                                    WealthX is a multi-asset investment advisory service built to capture
-                                                    <br class="d-none d-md-block">
-                                                    every market opportunity—combining expert research, disciplined
-                                                    <br class="d-none d-md-block">
-                                                    allocation, and active portfolio management.
-                                                </small>
+                                            <p class="pFont mb-4 fs-5">
+                                                WealthX is a multi-asset investment advisory service built to capture
+                                                every market opportunity-combining expert research, disciplined
+                                                allocation, and active portfolio management.
                                             </p>
 
                                             <!-- Button -->
@@ -159,7 +155,7 @@ require __DIR__ . '/../includes/header.php';
                                     </div>
 
                                     <!-- Bottom Images  -->
-                                    <div class="col-md-6 d-none d-md-flex align-items-end ">
+                                    <div class="col-md-6 d-none d-md-flex align-items-end  ">
                                         <img src="<?= $base ?>imgs/services/w1.jpg"
                                             class="img-fluid w-100">
                                     </div>
@@ -213,7 +209,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <div class="col-md-9">
-                            <h2 class="display-5 pFon fw-semibold scroll-reveal-text text-body-emphasis">
+                            <h2 class="display-4 pFont fw-semibold scroll-reveal-text text-body-emphasis">
                                 Accelerating business success through expert strategy,
                                 innovation, and sustainable long-term growth. 
                             </h2>
@@ -278,6 +274,16 @@ require __DIR__ . '/../includes/header.php';
                 </div>
 
                 <!-- Bottom -->
+                <style>
+                    .theme-icon {
+                        filter: brightness(0);
+                    }
+
+                    [data-bs-theme="dark"] .theme-icon {
+                        filter: brightness(0) invert(1);
+                    }
+                </style>
+
                 <div class="row g-0 align-items-stretch">
 
                     <!-- Box 1 -->
@@ -286,54 +292,47 @@ require __DIR__ . '/../includes/header.php';
 
                             <div class="flex-grow-1">
                                 <img src="<?= $base ?>imgs/Avtar2.svg" class="img-fluid" alt="Avatar Image">
-
                                 <h6 class="fw-semibold mt-2 text-body-emphasis">
                                     1M+ REGISTERED USER
                                 </h6>
                             </div>
 
-                            <p class="small flex-grow-1 d-flex align-items-center mt-5 mt-md-0">
-                                Over 21 years of industry expertise,
-                                delivering trusted solutions and measurable
-                                results across diverse markets.
+                            <p class="small flex-grow-1 fs-5 d-flex align-items-center mt-md-0">
+                                Over 21 years of industry expertise, delivering trusted solutions and
+                                measurable results across diverse markets.
                             </p>
 
-                            <div class="mt-5 mt-md-0">
-                                <h1 class="display-4 fw-medium mb-0 text-body-emphasis">
-                                    21+
-                                </h1>
-                                <p class="mb-0">Years Of Market Expertise</p>
+                            <div class="flex-grow-1 d-flex align-items-end justify-content-between">
+                                <div>
+                                    <h1 class="display-4 fw-medium text-body-emphasis">21+</h1>
+                                    <p class="mb-0">Years of Market Expertise</p>
+                                </div>
+                                <img src="<?= $base ?>imgs/services/w17.png"
+                                    alt="Icon" class="img-fluid align-self-end theme-icon" style="height: 140px;">
                             </div>
 
                         </div>
                     </div>
 
-
                     <!-- Box 2 -->
                     <div class="col-12 col-md-4 d-flex">
                         <div class="border-top border-end p-4 d-flex flex-column w-100 h-100">
 
-                            <p class="small text-muted">
+                            <p class="small fs-5">
                                 Recognized with 11+ national and international awards for excellence,
                                 innovation, and outstanding business achievements.
                             </p>
 
                             <div class="flex-grow-1 d-flex align-items-center justify-content-between">
-
                                 <div>
-                                    <h1 class="display-4 fw-medium text-body-emphasis">
-                                        11+
-                                    </h1>
+                                    <h1 class="display-4 fw-medium text-body-emphasis">11+</h1>
                                     <p class="mb-0">Registered Users</p>
                                 </div>
-
                                 <img src="<?= $base ?>imgs/services/w6.png"
-                                    class="img-fluid"
-                                    alt="Bar Chart Icon">
-
+                                    class="img-fluid theme-icon" alt="Bar Chart Icon" style="margin-top: -60px">
                             </div>
 
-                            <p class="mb-0 mt-auto">
+                            <p class="mb-0 mt-2 mt-md-0 fs-5">
                                 <i class="fa-solid fa-circle me-2 small" style="color:#D6B770;"></i>
                                 <br>
                                 Ready To Accelerate Your Business Growth
@@ -341,7 +340,6 @@ require __DIR__ . '/../includes/header.php';
 
                         </div>
                     </div>
-
 
                     <!-- Box 3 -->
                     <div class="col-12 col-md-4 d-flex">
@@ -455,15 +453,15 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
 
             <div class="py-5 px-3 border border-light">
-                <div class="row g-0 mt-5 mb-5">
-                    <div class="col-md-6 d-flex align-items-center">
+                <div class="row g-0 mt-5">
+                    <div class="col-md-5 d-flex align-items-center">
                         <h2 class="display-5 titleFont fw-semibold d-inline-block text-body-emphasis">
-                            Built For Every<br />Market Condition
+                            Built For Every <br class="d-none d-md-block">Market Condition
                         </h2>
                     </div>
-                    <div class="col-md-6 mt-2 mt-md-0">
-                        <p class="fs-6 pFont">WealthX is a comprehensive multi-asset investment advisory service designed to capture every market opportunity for the super compounding of your wealth.</p>
-                        <p class="fs-6 pFont mb-0">By combining expert research, disciplined portfolio construction, and active capital allocation, WealthX delivers institutional-quality investment
+                    <div class="col-md-7 mt-2 mt-md-0">
+                        <p class="fs-5 pFont">WealthX is a comprehensive multi-asset investment advisory service designed to capture every market opportunity for the super compounding of your wealth.</p>
+                        <p class="fs-5 pFont mb-0">By combining expert research, disciplined portfolio construction, and active capital allocation, WealthX delivers institutional-quality investment
                             strategy — made accessible to individual investors.</p>
                     </div>
                 </div>
@@ -525,11 +523,11 @@ require __DIR__ . '/../includes/header.php';
                             <div class="col-12 col-md-6">
                                 <div class="service-item active" data-index="0">
                                     <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
-                                        <div class="service-number"><small>[01]</small></div>
+                                        <div class="service-number"><span class="text-body-emphasis">[01]</span></div>
                                         <div class="service-content w-100">
-                                            <h2 class="fs-6 fw-semibold m-0">Expert Research</h2>
+                                            <h2 class="fs-5 fw-semibold m-0">Expert Research</h2>
                                             <div class="service-content-wrap">
-                                                <p class="pFont mt-2" style="max-width:450px;">Every position backed by rigorous fundamental analysis and live market intelligence.</p>
+                                                <p class="pFont mt-2 fs-6" style=" max-width:450px;">Every position backed by rigorous fundamental analysis and live market intelligence.</p>
                                                 <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_2.jpg" alt="Expert Research">
                                             </div>
                                         </div>
@@ -538,11 +536,11 @@ require __DIR__ . '/../includes/header.php';
 
                                 <div class="service-item" data-index="1">
                                     <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
-                                        <div class="service-number"><small>[02]</small></div>
+                                        <div class="service-number"><span class="text-body-emphasis">[02]</span></div>
                                         <div class="service-content w-100">
-                                            <h2 class="fs-6 fw-semibold m-0">Disciplined Construction</h2>
+                                            <h2 class="fs-5 fw-semibold m-0">Disciplined Construction</h2>
                                             <div class="service-content-wrap">
-                                                <p class="pFont mt-2" style="max-width:450px;">Portfolios built with clear allocation logic — not guesswork or short-term noise.</p>
+                                                <p class="pFont mt-2 fs-6" style="max-width:450px;">Portfolios built with clear allocation logic — not guesswork or short-term noise.</p>
                                                 <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_3.jpg" alt="Disciplined Construction">
                                             </div>
                                         </div>
@@ -551,11 +549,11 @@ require __DIR__ . '/../includes/header.php';
 
                                 <div class="service-item" data-index="2">
                                     <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
-                                        <div class="service-number"><small>[03]</small></div>
+                                        <div class="service-number"><span class="text-body-emphasis">[03]</span></div>
                                         <div class="service-content w-100">
-                                            <h2 class="fs-6 fw-semibold m-0">Dynamic Allocation</h2>
+                                            <h2 class="fs-5 fw-semibold m-0">Dynamic Allocation</h2>
                                             <div class="service-content-wrap">
-                                                <p class="pFont mt-2" style="max-width:450px;">Capital shifts toward stronger asset classes. Quarterly rebalancing. Event-based adjustments.</p>
+                                                <p class="pFont mt-2 fs-6" style="max-width:450px;">Capital shifts toward stronger asset classes. Quarterly rebalancing. Event-based adjustments.</p>
                                                 <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_4.jpg" alt="Dynamic Allocation">
                                             </div>
                                         </div>
@@ -564,11 +562,11 @@ require __DIR__ . '/../includes/header.php';
 
                                 <div class="service-item" data-index="3">
                                     <div class="service-header d-flex gap-3 align-items-start p-3 border-bottom">
-                                        <div class="service-number"><small>[04]</small></div>
+                                        <div class="service-number"><span class="text-body-emphasis">[04]</span></div>
                                         <div class="service-content w-100">
-                                            <h2 class="fs-6 fw-semibold m-0">Continuous Compounding</h2>
+                                            <h2 class="fs-5 fw-semibold m-0">Continuous Compounding</h2>
                                             <div class="service-content-wrap">
-                                                <p class="pFont mt-2" style="max-width:450px;">When one asset class falls, others keep working. The portfolio never stops compounding.</p>
+                                                <p class="pFont mt-2 fs-6" style="max-width:450px;">When one asset class falls, others keep working. The portfolio never stops compounding.</p>
                                                 <img class="img-fluid rounded" src="<?= $base ?>imgs/services/welthx_5.jpg" alt="Continuous Compounding">
                                             </div>
                                         </div>
@@ -612,10 +610,10 @@ require __DIR__ . '/../includes/header.php';
     <section class="bg-black text-white ">
         <div class="container">
             <div class="px-3 py-5 border border-light">
-                <div class="row g-3 mt-5 mb-5 mt-md-0 mt-md-0">
+                <div class="row g-3 mt-5  mt-md-0 mt-md-0">
                     <div class="col-md-6">
-                        <h2 class="display-6 titleFont fw-semibold">
-                            Every Market. <br>
+                        <h2 class="display-5 titleFont fw-semibold">
+                            Every Market.<br>
                             Every Opportunity.
                         </h2>
                     </div>
@@ -647,7 +645,7 @@ require __DIR__ . '/../includes/header.php';
                                         The Growth Core
                                     </small>
 
-                                    <p class="text-secondary fs-6 pFont ">
+                                    <p class="text-secondary fs-5 pFont ">
                                         A Curated Basket Of Fundamentally Strong Stocks.
                                         Deep Analysis Of Business Quality, Earnings Growth,
                                         And Management Track Record. Rebalanced Quarterly.
@@ -693,7 +691,7 @@ require __DIR__ . '/../includes/header.php';
                                         HIGH-CONVICTION PICKS
                                     </small>
 
-                                    <p class="text-secondary fs-6 pFont ">
+                                    <p class="text-secondary fs-5 pFont ">
                                         One high-growth opportunity every month. Quality businesses with
                                         strong structural trends and mid-term horizon. Carefully researched - not speculative.
                                     </p>
@@ -738,7 +736,7 @@ require __DIR__ . '/../includes/header.php';
                                         DIVERSIFIED EXPOSURE
                                     </small>
 
-                                    <p class="text-secondary fs-6 pFont ">
+                                    <p class="text-secondary fs-5 pFont ">
                                         Strategic allocations to commodity, index, and debt ETFs.
                                         Broad macro coverage across sectors and geographies
                                         that stock picking alone cannot reach.
@@ -853,7 +851,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Right Side -->
                     <div class="col-12 col-md-6 p-4 p-md-5">
-                        <h2 class="display-6 titleFont mb-4 text-body-emphasis">
+                        <h2 class="display-5 titleFont mb-4 text-body-emphasis">
                             Not Built To Generate <br class="d-none d-md-block">
                             Excitement. Built To Generate
                             Wealth.
@@ -1171,7 +1169,7 @@ require __DIR__ . '/../includes/header.php';
                         Compound with Confidence.
                     </h2>
 
-                    <p class="pFont mb-0 w-md-75" style="color:#02181A">
+                    <p class="pFont mb-0 w-md-75 fs-5 " style="color:#02181A">
                         WealthX is built for investors serious about long-term wealth.
                         Discipline, diversification, and expert guidance-in one coherent strategy.
                     </p>
@@ -1195,12 +1193,12 @@ require __DIR__ . '/../includes/header.php';
             <div class="border">
                 <!-- Top -->
                 <div class="px-3 py-5 border border-light">
-                    <div class="row g-3 justify-content-center mt-5 mb-5 mt-md-0 mb-md-0">
+                    <div class="row g-3 justify-content-center mt-5  mt-md-0 mb-md-0">
                         <div class="col-md-5">
-                            <h2 class="display-6 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
+                            <h2 class="display-5 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
                         </div>
                         <div class="col-md-7">
-                            <p class=" pFont">
+                            <p class=" pFont fs-5">
                                 A high-quality advisory relationship is defined by
                                 clarity and service-not claims of easy or guaranteed profits.
                             </p>
@@ -1212,7 +1210,7 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 1 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-3 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w13.svg" alt="Clear rationale" class="mb-5" style="width:80px;">
-                        <h6 class="titleFont mb-3 text-body-emphasis">Clear Rationale</h6>
+                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Clear Rationale</h2>
                         <p class="fs-5 pFont mb-0">
                             Advice accompanied by understandable research,
                             investment context and material risk factors.
@@ -1222,8 +1220,8 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 2 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-3 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w14.svg" alt="Timely Updates" class="mb-5" style="width:80px;">
-                        <h6 class="titleFont mb-3 text-body-emphasis">Timely Updates</h6>
-                        <p class="small pFont mb-0">
+                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Timely Updates</h2>
+                        <p class="small pFont mb-0 fs-5">
                             Relevant portfolio changes, alerts and research
                             developments communicated through official channels.
                         </p>
@@ -1232,8 +1230,8 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 3 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-4 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w15.svg" alt="Risk Transparency" class="mb-5" style="width:60px;">
-                        <h6 class="titleFont mb-3 text-body-emphasis">Risk Transparency</h6>
-                        <p class="small pFont mb-0">
+                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Risk Transparency</h2>
+                        <p class="small pFont mb-0 fs-5">
                             No guaranteed-return language, hidden certainty
                             or avoidance of the risks inherent in equity markets.
                         </p>
@@ -1242,8 +1240,8 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 4 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-bottom border-light p-4 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w16.svg" alt="Accessible Support" class="mb-5" style="width:80px;">
-                        <h6 class="titleFont mb-3 text-body-emphasis">Accessible Support</h6>
-                        <p class="small pFont mb-0">
+                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Accessible Support</h2>
+                        <p class="small pFont mb-0 fs-5">
                             Defined client-support, principal-officer and
                             grievance contacts for accountable communication.
                         </p>
