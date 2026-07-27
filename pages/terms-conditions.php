@@ -7,7 +7,7 @@ require __DIR__ . '/../includes/header.php';
 
 <section class="">
     <!-- Full Width Image -->
-    <div class="container-fluid p-0 position-relative">
+    <div class="container-fluid p-0 position-relative d-none">
         <div class="py-5 pb-4" style="background:#02181A;">
         </div>
     </div>
