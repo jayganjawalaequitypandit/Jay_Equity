@@ -278,10 +278,10 @@ require __DIR__ . '/../includes/header.php';
                 <div class="border-start border-end border-light h-100"></div>
             </div>
             <!-- Content Layer -->
-            <div class="container mt-5 position-absolute top-0 start-50 translate-middle-x px-4 py-5">
+            <div class="container mt-5 position-absolute top-0 start-50 translate-middle-x px-4">
                 <div class="d-md-inline d-none">
                     <a href="<?= $base ?>index.php" class="text-decoration-none text-white">Home</a>
-                    <span class="text-white mx-1">&gt;</span>
+                    <i class="fa-solid fa-chevron-right fa-sm text-white"></i>
                     <a href="" class="text-decoration-none" style="color:#00DF9C">Portfolio</a>
                 </div>
             </div>
@@ -294,13 +294,13 @@ require __DIR__ . '/../includes/header.php';
                     <div class="row">
                         <div class="col-md-7">
                             <div class="d-md-none mb-3">
-                                <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <span>></span> <a class="text-decoration-none" style="color:#00DF9C" href="">Poftfolio</a>
+                                <a class="text-decoration-none text-white" href="<?= $base ?>index.php">Home</a> <i class="fa-solid fa-chevron-right fa-sm text-white"></i> <a class="text-decoration-none" style="color:#00DF9C" href="">Poftfolio</a>
                             </div>
                             <h1 class="display-5 fw-semibold mb-3 titleFont" data-aos="fade-right">
                                 Perfect Portfolio for 2026 & Beyond
                             </h1>
 
-                            <p class="text-white-50 mb-3 pFont" data-aos="fade-right"
+                            <p class="text-white-50 mb-3 pFont fs-6" data-aos="fade-right"
                                 data-aos-delay="100">
                                 Selected stocks from high growth sectors.
                             </p>
@@ -320,7 +320,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5">
 
                             <!-- Form Box -->
-                            <div class="bg-body text-body p-3 form-card" data-aos="fade-left"
+                            <div class="bg-body text-body p-3 form-card" data-aos="fade-up"
                                 data-aos-delay="150">
                                 <p class="pFont mb-1 fs-6 fw-medium">
                                     Know more about
@@ -875,9 +875,9 @@ require __DIR__ . '/../includes/header.php';
             <div class="position-relative">
                 <div class="px-3 py-5 border-start border-end border-light">
                     <div class="row g-3 justify-content-center">
-                        <div class="col-md-10">
+                        <div class="col-md-12">
                             <div class="text-start text-md-center">
-                                <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                                <h2 class="display-5 titleFont fw-semibold" data-aos="fade-up"
                                     data-aos-delay="100">How We Identify Portfolio Opportunities?</h2>
                                 <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
                                     data-aos-delay="100">Our research team evaluates Portfolio stocks using a structured process that<br class="d-none d-xl-block" /> includes fundamental analysis, market conditions and technical analysis.</p>
@@ -1084,7 +1084,7 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-3 align-items-center">
                     <div class="col-md-6 p-md-4 pt-5 px-4">
                         <div class="py-md-5 py-0 pb-0">
-                            <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;" data-aos="fade-up"
+                            <h2 class="display-5 titleFont fw-semibold d-inline-block" data-aos="fade-up"
                                 data-aos-delay="100">What Our Clients Say</h2>
                             <p class="fs-6 pFont mb-0" data-aos="fade-up"
                                 data-aos-delay="100">Read what our satisfied clients have to say about their experience with our platform.</p>
@@ -1106,7 +1106,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 1 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1129,7 +1129,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 2 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1152,7 +1152,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 3 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1175,7 +1175,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Card 4 -->
                             <div class="col-md-6 col-11 flex-shrink-0">
-                                <div class="card border h-100 p-3 rounded-0" data-aos="fade-right"
+                                <div class="card border h-100 p-4 rounded-0" data-aos="fade-right"
                                     data-aos-delay="100">
                                     <div class="text-warning fs-5 mb-3">
                                         ★ ★ ★ ★ ☆
@@ -1209,9 +1209,9 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
             <div class="px-3 py-5 border-start border-end border-light">
                 <div class="row g-3 justify-content-center">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <div class="text-start text-md-center">
-                            <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                            <h2 class="display-5 titleFont fw-semibold" data-aos="fade-up"
                                 data-aos-delay="100">Get started in 3 simple steps for Wealth Creation</h2>
                             <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
                                 data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
@@ -1220,7 +1220,7 @@ require __DIR__ . '/../includes/header.php';
                 </div>
             </div>
         </div>
-        <div class="border border-light" style="background:#02181A;">
+        <div class="border-top border-bottom border-light" style="background:#02181A;">
             <div class="container">
                 <style>
                     .process-content {
@@ -1414,7 +1414,7 @@ require __DIR__ . '/../includes/header.php';
             <div class="px-3 py-5 border border-start border-end border-light">
                 <div class="row g-3 py-md-5">
                     <div class="col-md-6">
-                        <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                        <h2 class="display-5 titleFont fw-semibold d-inline-block" data-aos="fade-up"
                             data-aos-delay="100">Frequently Asked Questions</h2>
                         <p class="fs-6 pFont mb-3" data-aos="fade-up"
                             data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
@@ -1425,6 +1425,13 @@ require __DIR__ . '/../includes/header.php';
                             data-aos-delay="100">
                     </div>
                     <div class="col-md-6">
+                        <style>
+                            .accordion-button,
+                            .accordion-button:focus {
+                                box-shadow: none;
+                                border: 0;
+                            }
+                        </style>
                         <div class="accordion accordion-flush bg-body rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
                             data-aos-delay="200">
                             <div class="accordion-item">

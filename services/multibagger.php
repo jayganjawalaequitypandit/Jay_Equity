@@ -7,75 +7,6 @@ require __DIR__ . '/../includes/header.php';
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-<!-- Hero + lead form -->
-<section>
-    <div class="container d-none">
-        <div class="px-3 py-5 border-start border-end border-light">
-            <div class="row g-4 justify-content-between align-items-center">
-                <div class="col-md-7">
-                    <p class="text-success fw-semibold text-uppercase mb-2 Pfont">EP - Multibagger</p>
-                    <h1 class="display-4 titleFont fw-semibold">Invest early, before the stock opportunity becomes a
-                        success story.</h1>
-                    <p class="fs-5 titleFont">Mid-term Investing, Proven Results, Real Wealth.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="p-5 my-md-5 text-light bg-dark">
-                        <h2 class="fs-3 titleFont fw-semibold mb-4">Get The Multibagger</h2>
-                        <!-- Markup only — wire up a backend / mail handler before going live -->
-                        <form action="#" method="post">
-                            <div class="mb-3">
-                                <input type="text" class="form-control rounded-0" name="name" placeholder="Your Name"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control rounded-0" name="email" placeholder="Your Email"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control rounded-0" name="mobile" placeholder="Your Mobile"
-                                    required>
-                            </div>
-                            <button type="submit" class="btn btn-success rounded-0 w-100">Get The Multibagger</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trust strip -->
-            <div class="row g-3 mt-4 text-center">
-                <div class="col-6 col-md-3">
-                    <div class="h-100 p-3 border border-light">
-                        <i class="fa fa-shield-halved fs-3 text-success mb-2"></i>
-                        <p class="fw-bold mb-0">SEBI Registered Investment Advisor</p>
-                        <small class="text-body-secondary">Reg. No.: INA000006688</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="h-100 p-3 border border-light">
-                        <i class="fa fa-users fs-3 text-success mb-2"></i>
-                        <p class="fw-bold mb-0">Your Trusted Partner</p>
-                        <small class="text-body-secondary">Chosen by 1M+ Registered Users</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="h-100 p-3 border border-light">
-                        <i class="fa fa-award fs-3 text-success mb-2"></i>
-                        <p class="fw-bold mb-0">Recognized For Excellence</p>
-                        <small class="text-body-secondary">11+ National &amp; International Awards</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="h-100 p-3 border border-light">
-                        <i class="fa fa-calendar-check fs-3 text-success mb-2"></i>
-                        <p class="fw-bold mb-0">20+ Years</p>
-                        <small class="text-body-secondary">Experience</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Hero -->
 <section class="position-relative">
 
@@ -143,7 +74,7 @@ require __DIR__ . '/../includes/header.php';
         </div>
 
         <!-- Desktop Breadcrumb -->
-        <div class="container position-absolute start-50 translate-middle-x px-4 py-5 d-none d-md-block"
+        <div class="container position-absolute start-50 translate-middle-x px-4 d-none d-md-block"
             style="top:40px;">
 
             <a href="<?= $base ?>index.php"
@@ -151,7 +82,7 @@ require __DIR__ . '/../includes/header.php';
                 Home
             </a>
 
-            <span class="text-white mx-1">></span>
+            <i class="fa-solid fa-chevron-right fa-sm text-white"></i>
             <span>
                 <a href="<?= $base ?>services/multibagger.php"
                     class="text-decoration-none" style="color:#00DF9C">
@@ -174,12 +105,12 @@ require __DIR__ . '/../includes/header.php';
                                 class="text-decoration-none text-white">
                                 Home
                             </a>
-                            <span>></span>
+                            <i class="fa-solid fa-chevron-right fa-sm text-white"></i>
                             <span style="color:#00DF9C">
                                 Multibagger
                             </span>
                         </div>
-                        <h1 class="display-6 fw-semibold mb-3 titleFont" data-aos="fade-right">
+                        <h1 class="display-5 fw-semibold mb-3 titleFont" data-aos="fade-right">
                             Invest Early, Before The Stock Opportunity Becomes A Success Story.
                         </h1>
                         <p class="text-white-50 mb-3 pFont" data-aos="fade-right">
@@ -198,7 +129,7 @@ require __DIR__ . '/../includes/header.php';
                     </div>
 
                     <!-- FORM -->
-                    <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5" data-aos="fade-left"
+                    <div class="col-md-5 d-flex justify-content-center justify-content-md-end mb-0 mb-md-5" data-aos="fade-up"
                         data-aos-delay="150">
                         <div class="bg-body text-body p-3 form-card shadow">
                             <p class="mb-1 fs-6 fw-medium pFont">
@@ -254,388 +185,483 @@ require __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
-<!-- What You'll Get -->
+<!-- Who Should Avail-->
 <section>
     <div class="container">
-        <div class="py-5 border-start border-end border-light">
+        <div class="py-5 px-3 border-start border-end border-bottom border-light">
+            <div class="row g-3 align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <h2 class="display-5 titleFont fw-semibold" data-aos="fade-up"
+                        data-aos-delay="100">Long-term Investing, Proven Results, Real Wealth...
+                    </h2>
+                    <p class="mb-0 pFont fs-6 mt-3" data-aos="fade-up" data-aos-delay="100">EP Multibaggers is designed for those who believe in wealth creation over time, this service identifies hidden gems in the market, stocks with the potential to grow multifold in value.</p>
 
-            <!-- Heading -->
-            <div class="row g-0">
-                <div class="col-md-12">
-                    <div class="pb-md-4 px-3 text-start text-md-center">
-                        <h2 class="display-5 titleFont fw-semibold d-inline-block" data-aos="fade-up"
-                            data-aos-delay="100">
-                            What You'll Get
-                        </h2>
-                        <p class="fs-6 pFont" data-aos="fade-up"
-                            data-aos-delay="100">
-                            Everything you need to execute trades with precision and confidence.
-                        </p>
+                    <p class="pFont mb-0 mt-5 fw-semibold fs-6" data-aos="fade-up" data-aos-delay="100">EP Multibaggers Service focused on</p>
+
+                    <div class="d-flex align-items-center mt-3" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-circle-check me-2" style="color: #007873;"></i>
+                        <p class="small pFont mb-0">Systematic capital allocation</p>
                     </div>
+                    <div class="d-flex align-items-center mt-3" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-circle-check me-2" style="color: #007873;"></i>
+                        <p class="small pFont mb-0">Fundamental consistency</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-circle-check me-2" style="color: #007873;"></i>
+                        <p class="small pFont mb-0">Disciplined exits when growth weakens</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-circle-check me-2" style="color: #007873;"></i>
+                        <p class="small pFont mb-0">Recommended Holding Period: 3 Years+</p>
+                    </div>
+                    <button class="btn text-white rounded-0 pFont px-4 py-2 mt-md-5 mt-3 d-inline-flex align-items-center" style="background-color: #02181A;" data-aos="fade-up"
+                        data-aos-delay="100" onclick="window.location.href='#';">
+                        Get Started
+                        <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                    </button>
                 </div>
-
-                <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto hide-scrollbar">
-
-                    <!-- Card 1 -->
-                    <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-right"
-                        data-aos-delay="200">
-                        <div class="h-100 p-3 border border-light">
-                            <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">
-                                1 High Growth Stock Per Month
-                            </h3>
-                            <p class="mb-0 pFont">
-                                Discover carefully selected high growth stock every month.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-right"
-                        data-aos-delay="200">
-                        <div class="h-100 p-3 border border-light">
-                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">
-                                A Detailed Research Report
-                            </h3>
-                            <p class="mb-0 pFont">
-                                Expert research highlighting key trends and opportunities.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-right"
-                        data-aos-delay="200">
-                        <div class="h-100 p-3 border border-light">
-                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">
-                                Timely Entry & Exit Guidance
-                            </h3>
-                            <p class="mb-0 pFont">
-                                Maximize returns with timely entry and exit strategies.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-right"
-                        data-aos-delay="200">
-                        <div class="h-100 p-3 border border-light">
-                            <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">
-                                Quarterly Review & Updates
-                            </h3>
-                            <p class="mb-0 pFont">
-                                Regular quarterly updates to refine strategy and improve performance.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-right"
-                        data-aos-delay="200">
-                        <div class="h-100 p-3 border border-light">
-                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">
-                                Real Time <br> Dashboard
-                            </h3>
-                            <p class="mb-0 pFont">
-                                Monitor your portfolio performance with live market data.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="col-md-4 col-10 flex-shrink-0"
-                        data-aos="fade-right"
-                        data-aos-delay="200">
-                        <div class="h-100 p-3 border border-light">
-                            <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
-                            <h3 class="fs-3 titleFont fw-semibold">
-                                Priority <br> Support
-                            </h3>
-                            <p class="mb-0 pFont">
-                                Dedicated support team ensuring faster responses and solutions.
-                            </p>
-                        </div>
-                    </div>
-
+                <div class="col-md-6">
+                    <img
+                        src="<?= $base ?>imgs/services/Strategic.jpg"
+                        class="img-fluid w-100"
+                        alt="background" data-aos="fade-up"
+                        data-aos-delay="100" />
                 </div>
             </div>
-
-            <!-- Button -->
-            <div class="text-start px-3 mt-5" data-aos="fade-up"
-                data-aos-delay="100">
-                <a href="#" class="btn rounded-0 px-4 text-white py-2 " style="background-color:#02181A">
-                    Get Started <i class="fa fa-arrow-right ms-2"></i>
-                </a>
-            </div>
-
         </div>
     </div>
 </section>
 
-<!-- Who Should Avail-->
-<section>
+
+<!-- What You'll Get -->
+<section class="research-section">
+    <style>
+        .research-section {
+            position: relative;
+            background: #02181A;
+            overflow: hidden;
+        }
+
+        .research-section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("<?= $base ?>imgs/services/multibagger8.png") right center no-repeat;
+            background-size: cover;
+            /* opacity: .45; */
+            /* Increase/decrease visibility */
+            z-index: 0;
+            background-attachment: fixed;
+        }
+
+        .research-section>.container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
     <div class="container">
-
-        <div class="border border-light border-bottom">
-            <div class="row align-items-center">
-
-                <!-- Left Content -->
-                <div class="col-md-6 order-2 order-md-1">
-                    <div class="p-3">
-
-                        <h2 class="display-6 titleFont fw-semibold mb-4" data-aos="fade-up"
+        <div class="px-3 py-5 py-md-0 pt-md-5 border-start border-end border-light">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="text-white">
+                        <h2 class="display-5 titleFont fw-semibold d-inline-block"
+                            data-aos="fade-up"
                             data-aos-delay="100">
-                            Who Should Avail?
+                            What You’ll Get
                         </h2>
-
-                        <p class="mb-4 PFont" data-aos="fade-up"
+                        <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
                             data-aos-delay="100">
-                            Whether You're Starting Your Journey Or Advancing Your <br>
-                            Career, Explore The Right Opportunities To Grow And <br>
-                            Succeed.
+                            A complete wealth management ecosystem — research, alerts, analytics, and expert support.
                         </p>
-
-                        <ul class="list-unstyled mb-4" data-aos="fade-right"
-                            data-aos-delay="100">
-
-                            <li class="border-start border-2 border-dark ps-3 mb-3">
-                                Active Investor, Business Professionals,
-                                Salaried / <br> Retired Person
-                            </li>
-
-                            <li class="border-start border-2 border-dark ps-3 mb-3">
-                                Who Can Invest Min. ₹25,000 Or More <br> Per Stock
-                            </li>
-
-                            <li class="border-start border-2 border-dark ps-3 mb-3">
-                                Who Can Look For Mid To Long Term <br> Investment
-                            </li>
-
-                            <li class="border-start border-2 border-dark ps-3">
-                                Who Can Invest Regularly
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="btn btn-dark rounded-0 px-4 py-2 mt-3" style="background-color:#02181A">
-                            Get Started <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-
                     </div>
                 </div>
+                <div class="col-md-6 text-end d-none d-md-block">
 
-                <!-- Right Image -->
-                <div class="col-md-6 order-1 order-md-2">
-                    <img src="<?= $base ?>imgs/services/Avail.jpg"
-                        class="img-fluid w-100 mt-5 mb-1 mb-md-5 pt-3 pb-0 pb-md-3"
-                        alt="Who Should Avail">
+                    <style>
+                        .ep-badge {
+                            width: 180px;
+                            aspect-ratio: 1 / 1;
+                            display: inline-block;
+                            overflow: visible;
+                        }
+
+                        .outer-ring {
+                            position: absolute;
+                            inset: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            animation: ringRotate 12s linear infinite;
+                            transform-origin: center center;
+                        }
+
+                        .ep-logo {
+                            position: absolute;
+                            width: 60%;
+                            aspect-ratio: 1;
+                            object-fit: contain;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 2;
+                        }
+
+                        @keyframes ringRotate {
+                            from {
+                                transform: rotate(0deg);
+                            }
+
+                            to {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    </style>
+
+                    <div class="ep-badge position-relative">
+
+                        <img
+                            src="<?= $base ?>imgs/services/multibagger10.png"
+                            class="outer-ring"
+                            alt="SEBI Registered Investment Advisor">
+
+                        <img
+                            src="<?= $base ?>imgs/services/multibagger1.png"
+                            class="ep-logo"
+                            alt="EP">
+
+                    </div>
+
                 </div>
-
-            </div>
-
-            <div class="text-end">
-                <img src="<?= $base ?>imgs/Polygon5.svg" alt="">
             </div>
         </div>
+        <div class="border-start border-end border-light">
+            <div class="row g-3 align-items-start">
+                <div class="col-md-5 text-md-start text-center">
+                    <img
+                        src="<?= $base ?>imgs/services/multibagger2.jpg"
+                        class="img-fluid"
+                        alt="background" data-aos="fade-up"
+                        data-aos-delay="100" />
+                    <button class="btn rounded-0 pFont px-4 py-2 mt-3 mb-md-5 d-inline-flex align-items-center" style="border: 1px solid #00DF9C; color:#00DF9C" data-aos="fade-up"
+                        data-aos-delay="100" onclick="window.location.href='#';">
+                        Get Started
+                        <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                    </button>
+                </div>
+                <div class="col-md-7">
+                    <style>
+                        /* Remove Bootstrap arrow */
+                        /* Remove Bootstrap arrow */
+                        .research-accordion .accordion-button::after {
+                            filter: brightness(0) invert(1);
+                        }
 
+                        /* Remove border & shadow */
+                        .research-accordion .accordion-button,
+                        .research-accordion .accordion-button:focus {
+                            box-shadow: none;
+                            border: 0;
+                        }
+
+                        /* Default (Closed) */
+                        .research-accordion .accordion-item {
+                            background: transparent;
+                            transition: .3s ease;
+                        }
+
+                        .research-accordion .accordion-button {
+                            background: transparent;
+                            color: #fff;
+                        }
+
+                        /* Open State */
+                        .research-accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+                            background: #03262A;
+                        }
+
+                        .research-accordion .accordion-button:not(.collapsed) {
+                            background: transparent !important;
+                            color: #fff;
+                        }
+
+                        .research-accordion .accordion-body {
+                            background: transparent;
+                            color: #fff;
+                        }
+                    </style>
+                    <div class="research-accordion">
+                        <div class="accordion pe-md-3" id="researchAccordion" data-aos="fade-up"
+                            data-aos-delay="100">
+
+                            <!-- 1 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header">
+
+                                    <button class="accordion-button bg-transparent text-white shadow-none"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne">
+
+                                        <div class="d-flex align-items-center">
+                                            <img
+                                                src="<?= $base ?>imgs/services/multibagger3.png"
+                                                class="img-fluid me-3"
+                                                alt="background" />
+                                            <div class="flex-grow-1 text-start">
+                                                <h2 class="titleFont fw-semibold fs-5">
+                                                    1 High Growth Stock per Month
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </button>
+
+                                </h2>
+
+                                <div id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#researchAccordion">
+
+                                    <p class="accordion-body mb-0 text-light pFont">
+                                        Discover carefully selected high growth stock every month
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="accordion-item border-0 mb-3">
+
+                                <h2 class="accordion-header">
+
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo">
+
+                                        <div class="d-flex align-items-center">
+                                            <img
+                                                src="<?= $base ?>imgs/services/multibagger3.png"
+                                                class="img-fluid me-3"
+                                                alt="background" />
+                                            <div class="flex-grow-1 text-start">
+                                                <h2 class="titleFont fw-semibold fs-5">
+                                                    A Detailed Research Report
+                                                </h2>
+                                            </div>
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#researchAccordion">
+                                    <p class="accordion-body mb-0 text-light pFont">
+                                        Expert Research Highlighting Key Trends And Opportunities
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="accordion-item border-0 mb-3">
+
+                                <h2 class="accordion-header">
+
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree">
+
+                                        <div class="d-flex align-items-center">
+                                            <img
+                                                src="<?= $base ?>imgs/services/multibagger3.png"
+                                                class="img-fluid me-3"
+                                                alt="background" />
+                                            <div class="flex-grow-1 text-start">
+                                                <h2 class="titleFont fw-semibold fs-5">
+                                                    Timely Entry & Exit Guidance
+                                                </h2>
+                                            </div>
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#researchAccordion">
+                                    <p class="accordion-body mb-0 text-light pFont">
+                                        Maximize returns with timely entry and exit strategies
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="accordion-item border-0 mb-3">
+
+                                <h2 class="accordion-header">
+
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour">
+
+                                        <div class="d-flex align-items-center">
+                                            <img
+                                                src="<?= $base ?>imgs/services/multibagger3.png"
+                                                class="img-fluid me-3"
+                                                alt="background" />
+                                            <div class="flex-grow-1 text-start">
+                                                <h2 class="titleFont fw-semibold fs-5">
+                                                    Quarterly Review & Updates
+                                                </h2>
+                                            </div>
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div id="collapseFour"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#researchAccordion">
+                                    <p class="accordion-body mb-0 text-light pFont">
+                                        Regular quarterly updates to refine strategy and improve performance
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 5 -->
+                            <div class="accordion-item border-0 mb-3">
+
+                                <h2 class="accordion-header">
+
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive">
+
+                                        <div class="d-flex align-items-center">
+                                            <img
+                                                src="<?= $base ?>imgs/services/multibagger3.png"
+                                                class="img-fluid me-3"
+                                                alt="background" />
+                                            <div class="flex-grow-1 text-start">
+                                                <h2 class="titleFont fw-semibold fs-5">
+                                                    Real Time Dashboard
+                                                </h2>
+                                            </div>
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div id="collapseFive"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#researchAccordion">
+                                    <p class="accordion-body mb-0 text-light pFont">
+                                        Monitor your portfolio performance with live market data
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 6 -->
+                            <div class="accordion-item border-0 mb-3">
+
+                                <h2 class="accordion-header">
+
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix">
+
+                                        <div class="d-flex align-items-center">
+                                            <img
+                                                src="<?= $base ?>imgs/services/multibagger3.png"
+                                                class="img-fluid me-3"
+                                                alt="background" />
+                                            <div class="flex-grow-1 text-start">
+                                                <h2 class="titleFont fw-semibold fs-5">
+                                                    Priority Support
+                                                </h2>
+                                            </div>
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div id="collapseSix"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#researchAccordion">
+                                    <p class="accordion-body mb-0 text-light pFont">
+                                        Dedicated support team ensuring faster responses and solutions
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- How we identify -->
-<section>
+<section class="">
     <div class="container">
-        <div class="position-relative">
-            <div class="px-3 py-5 border-start border-end border-light">
-                <div class="row g-3 justify-content-center">
-                    <div class="col-md-10">
-                        <div class="text-start text-md-center">
-                            <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
-                                data-aos-delay="100">How We Identify Multibagger Opportunities?</h2>
-                            <p class="fs-6 pFont mb-0" data-aos="fade-up"
-                                data-aos-delay="100">Our research team evaluates Multibagger stocks using a structured process that <br class="d-none d-md-block"> includes fundamental analysis, market conditions and technical analysis.</p>
+        <div class="px-3 py-5 border-start border-end border-light">
+            <div class="row g-3">
+                <div class="col-md-7">
+                    <h2 class="display-5 titleFont fw-semibold" data-aos="fade-up"
+                        data-aos-delay="100">How We Identify Multibagger Opportunities?</h2>
+                    <!-- <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
+                        data-aos-delay="100">Our research team evaluates Multibagger stocks using a structured process that includes fundamental analysis, market conditions and technical analysis.
+                    </p> -->
+                    <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
+                        data-aos-delay="100">Finding multibagger stocks is not about excitement. It is about discipline, timing, and patience. We follow a 3 layer selection process.
+                    </p>
+                    <div class="d-flex mt-4 gap-4 pFont" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <h2 class="display-5 mb-3 fw-semibold justify-content-end" style="color: #007873;">01.</h2>
+                        <div class="flex-column">
+                            <h2 class="fs-4 fw-semibold">Sector Analysis & Market Performance</h2>
+                            <p class="mb-0 mt-1 small">Strong companies perform best within strong, stable sectors.</p>
                         </div>
                     </div>
-                </div>
-                <img
-                    src="<?= $base ?>imgs/Polygon1.svg"
-                    class="position-absolute top-0 end-0"
-                    alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <style>
-            .image-wrapper {
-                overflow: hidden;
-            }
-
-            .image-group {
-                display: flex;
-                align-items: center;
-            }
-
-            .main-img {
-                width: 80px;
-                height: 80px;
-                object-fit: cover;
-                flex-shrink: 0;
-            }
-
-            .extra-img {
-                width: 0;
-                height: 80px;
-                opacity: 0;
-                margin-left: 0;
-                object-fit: cover;
-                overflow: hidden;
-                transition: all .4s ease;
-                flex-shrink: 0;
-            }
-
-            .strength-card:hover .extra-img,
-            .strength-card.active .extra-img {
-                width: 80px;
-                opacity: 1;
-                margin-left: 0;
-            }
-        </style>
-        <div class="border border-start border-end border-light">
-            <div class="row g-0 flex-nowrap flex-md-wrap overflow-auto">
-                <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right"
-                    data-aos-delay="100">
-                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
-
-                        <div class="image-wrapper">
-
-                            <div class="image-group">
-
-                                <!-- Always Visible -->
-                                <img
-                                    src="<?= $base ?>imgs/Vector8.svg"
-                                    class="main-img img-fluid"
-                                    alt="">
-
-                                <!-- Show on Hover -->
-                                <img
-                                    src="<?= $base ?>imgs/Portfolio3.jpg"
-                                    class="extra-img img-fluid"
-                                    alt="">
-
-                                <img
-                                    src="<?= $base ?>imgs/Portfolio4.jpg"
-                                    class="extra-img img-fluid"
-                                    alt="">
-                            </div>
+                    <div class="d-flex mt-4 gap-3 pFont" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <h2 class="display-5 mb-3 fw-semibold" style="color: #007873;">02.</h2>
+                        <div class="flex-column">
+                            <h2 class="fs-4 fw-semibold">Business Strength Analysis</h2>
+                            <p class="mb-0 mt-1 small">Sustainable earnings growth guides every investment decision.</p>
                         </div>
-
-                        <h2 class="fs-4 titleFont fw-semibold mt-5">
-                            Business Strength
-                        </h2>
-
-                        <ul class="Pfont mt-3 d-flex flex-column gap-1">
-                            <li>Consistent sales and profit growth.</li>
-                            <li>Strong operating cash flows.</li>
-                            <li>Controlled and manageable debt.</li>
-                            <li>Promoters with long-term vision.</li>
-                        </ul>
-
                     </div>
-                </div>
-                <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right"
-                    data-aos-delay="100">
-                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
-
-                        <div class="image-wrapper">
-
-                            <div class="image-group">
-
-                                <!-- Always Visible -->
-                                <img
-                                    src="<?= $base ?>imgs/Vector9.svg"
-                                    class="main-img img-fluid"
-                                    alt="">
-
-                                <!-- Show on Hover -->
-                                <img
-                                    src="<?= $base ?>imgs/Portfolio5.jpg"
-                                    class="extra-img img-fluid"
-                                    alt="">
-
-                                <img
-                                    src="<?= $base ?>imgs/Portfolio6.jpg"
-                                    class="extra-img img-fluid"
-                                    alt="">
-                            </div>
+                    <div class="d-flex mt-4 gap-3 pFont" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <h2 class="display-5 mb-3 fw-semibold" style="color: #007873;">03.</h2>
+                        <div class="flex-column">
+                            <h2 class="fs-4 fw-semibold">Finding a Right Time for Entry</h2>
+                            <p class="mb-0 mt-1 small">Strong companies weaken when price exceeds value.</p>
                         </div>
-
-                        <h2 class="fs-4 titleFont fw-semibold mt-5">
-                            Sector & Market Position
-                        </h2>
-
-                        <ul class="Pfont mt-3 d-flex flex-column gap-1">
-                            <li>Sector growth cycles.</li>
-                            <li>Capital flow trends.</li>
-                            <li>Controlled and manageable debt.</li>
-                            <li>Promoters with long-term vision.</li>
-                        </ul>
-
                     </div>
+                    <button class="btn text-white rounded-0 pFont px-4 py-2 mt-3 d-inline-flex align-items-center" style="background-color: #02181A;" data-aos="fade-up"
+                        data-aos-delay="100" onclick="window.location.href='#';">
+                        Get Started
+                        <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                    </button>
                 </div>
-                <div class="col-md-4 col-11 flex-shrink-0" data-aos="fade-right"
-                    data-aos-delay="100">
-                    <div class="strength-card h-100 p-3 border border-light" style="cursor: pointer;">
-
-                        <div class="image-wrapper">
-
-                            <div class="image-group">
-
-                                <!-- Always Visible -->
-                                <img
-                                    src="<?= $base ?>imgs/Vector10.svg"
-                                    class="main-img img-fluid"
-                                    alt="">
-
-                                <!-- Show on Hover -->
-                                <img
-                                    src="<?= $base ?>imgs/Portfolio7.jpg"
-                                    class="extra-img img-fluid"
-                                    alt="">
-
-                                <img
-                                    src="<?= $base ?>imgs/Portfolio8.jpg"
-                                    class="extra-img img-fluid"
-                                    alt="">
-                            </div>
-                        </div>
-
-                        <h2 class="fs-4 titleFont fw-semibold mt-5">
-                            Right Timing
-                        </h2>
-
-                        <ul class="Pfont mt-3 d-flex flex-column gap-1">
-                            <li>Strong institutional funds flow.</li>
-                            <li>Identify accumulation zones.</li>
-                            <li>Confirm trend strength.</li>
-                            <li>Volume analysis to control risk.</li>
-                        </ul>
-
-                    </div>
+                <div class="col-md-5">
+                    <img
+                        src="<?= $base ?>imgs/services/multibagger4.jpg"
+                        class="img-fluid"
+                        alt="background" data-aos="fade-up"
+                        data-aos-delay="100" />
                 </div>
-            </div>
-            <div class="text-start px-3 py-5" data-aos="fade-right"
-                data-aos-delay="100">
-                <a href="#" class="btn btn-dark rounded-0 px-4 py-2 " style="background-color:#02181A">
-                    Get Started <i class="fa fa-arrow-right ms-2"></i>
-                </a>
             </div>
         </div>
     </div>
@@ -646,145 +672,174 @@ require __DIR__ . '/../includes/header.php';
     <div class="container">
         <div class="px-3 py-5 border-start border-end border-light">
             <div class="row g-3 justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <div class="text-start text-md-center">
-                        <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
+                        <h2 class="display-5 titleFont fw-semibold" data-aos="fade-up"
                             data-aos-delay="100">Get started in 3 simple steps for Wealth Creation</h2>
-                        <p class="fs-6 pFont mb-0" data-aos="fade-up"
+                        <p class="fs-6 pFont mb-0 mt-3" data-aos="fade-up"
                             data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="border border-light" style="background:#02181A;">
+    <div class="border-top border-bottom border-light" style="background:#02181A;">
         <div class="container">
-            <style>
-                .process-content {
-                    height: 140px;
-                    transition: height .45s ease;
-                }
+            <div class="border-start border-end border-light" style="background:#02181A;">
 
-                .process-img {
-                    transition: transform .45s ease;
-                }
+                <style>
+                    .process-img {
+                        transition: transform .5s ease;
+                    }
 
-                .process-desc {
-                    opacity: 0;
-                    transform: translateY(15px);
-                    transition: opacity .3s ease, transform .3s ease;
-                }
+                    .process-overlay {
+                        background: linear-gradient(to top, rgba(0, 0, 0, .65), transparent);
+                        opacity: 0;
+                        transition: opacity .4s ease;
+                    }
 
-                .process-card:hover .process-img,
-                .process-card.active .process-img {
-                    transform: translateY(-70px);
-                }
+                    .process-desc,
+                    .process-btn {
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: all .35s ease;
+                    }
 
-                .process-card:hover .process-content,
-                .process-card.active .process-content {
-                    height: 190px;
-                }
+                    .process-card:hover .process-img,
+                    .process-card.active .process-img {
+                        transform: scale(1.08);
+                    }
 
-                .process-card:hover .process-desc,
-                .process-card.active .process-desc {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            </style>
-            <div class="row g-3">
+                    .process-card:hover .process-overlay,
+                    .process-card.active .process-overlay,
+                    .process-card:hover .process-desc,
+                    .process-card.active .process-desc,
+                    .process-card:hover .process-btn,
+                    .process-card.active .process-btn {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                </style>
+                <div class="row g-3">
 
-                <!-- Card 1 -->
-                <div class="col-md-4" data-aos="fade-up"
-                    data-aos-delay="150">
-                    <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
+                    <!-- Card 1 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
 
-                        <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
-                            1
-                        </span>
+                        <div class="process-card">
 
-                        <img
-                            src="<?= $base ?>imgs/risk1.jpg"
-                            class="process-img h-100 w-100 object-fit-cover"
-                            alt="">
+                            <div class="position-relative overflow-hidden">
 
-                        <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
 
-                            <img src="<?= $base ?>imgs/Vector11.svg" alt="">
-                            <h2 class="fw-semibold mt-2 titleFont">
-                                Risk Profiling
-                            </h2>
+                                <img
+                                    src="<?= $base ?>imgs/services/multibagger5.jpg"
+                                    class="img-fluid process-img"
+                                    alt="background" data-aos="fade-up"
+                                    data-aos-delay="100" />
 
-                            <p class="process-desc PFont mt-3 mb-0">
-                                To check the capability & willingness to take a risk.
-                            </p>
+                                <!-- Hover Content -->
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 process-overlay">
 
-                        </div>
+                                    <p class="text-white fs-6 process-desc">
+                                        To check the capability & willingness to take a risk.
+                                    </p>
 
-                    </div>
-                </div>
+                                    <a href="#" class="btn rounded-0 process-btn w-25" style="background-color: #00DF9C; color:#02181A">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
 
-                <!-- Card 2 -->
-                <div class="col-md-4" data-aos="fade-up"
-                    data-aos-delay="150">
-                    <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
+                                </div>
 
-                        <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
-                            2
-                        </span>
+                            </div>
 
-                        <img
-                            src="<?= $base ?>imgs/risk2.jpg"
-                            class="process-img h-100 w-100 object-fit-cover"
-                            alt="">
-
-                        <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
-
-                            <img src="<?= $base ?>imgs/Vector12.svg" alt="">
-
-                            <h2 class="fw-semibold titleFont mt-2">
-                                Documentation
-                            </h2>
-
-                            <p class="process-desc PFont mt-3 mb-0">
-                                Sign an agreement & complete thepayment to begin the journey.
-                            </p>
+                            <!-- Bottom Title -->
+                            <div class="d-flex align-items-center px-3 py-3 gap-3">
+                                <h2 class="fs-2 fw-semibold" style="color: #00DF9C;">01.</h2>
+                                <h2 class="fs-2 fw-semibold titleFont">Risk Profiling</h2>
+                            </div>
 
                         </div>
 
                     </div>
-                </div>
 
-                <!-- Card 3 -->
-                <div class="col-md-4" data-aos="fade-up"
-                    data-aos-delay="150">
-                    <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
+                    <!-- Card 2 -->
+                    <div class="col-md-4" data-aos="fade-up"
+                        data-aos-delay="200">
 
-                        <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
-                            3
-                        </span>
+                        <div class="process-card">
 
-                        <img
-                            src="<?= $base ?>imgs/risk3.jpg"
-                            class="process-img h-100 w-100 object-fit-cover"
-                            alt="">
+                            <div class="position-relative overflow-hidden">
 
-                        <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
+                                <img
+                                    src="<?= $base ?>imgs/services/multibagger6.jpg"
+                                    class="img-fluid process-img"
+                                    alt="background" data-aos="fade-up"
+                                    data-aos-delay="100" />
 
-                            <img src="<?= $base ?>imgs/Vector13.svg" alt="">
+                                <!-- Hover Content -->
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 process-overlay">
 
-                            <h2 class="fw-semibold titleFont mt-2">
-                                Service Activation
-                            </h2>
+                                    <p class="text-white fs-6 process-desc">
+                                        Sign an agreement & complete thepayment to begin the journey.
+                                    </p>
 
-                            <p class="process-desc PFont mt-3 mb-0">
-                                Complete the KYC to activateyour service.
-                            </p>
+                                    <a href="#" class="btn rounded-0 process-btn w-25" style="background-color: #00DF9C; color:#02181A">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Bottom Title -->
+                            <div class="d-flex align-items-center px-3 py-3 gap-3">
+                                <h2 class="fs-2 fw-semibold" style="color: #00DF9C;">02.</h2>
+                                <h2 class="fs-2 fw-semibold titleFont">Documentation</h2>
+                            </div>
 
                         </div>
 
                     </div>
-                </div>
 
+                    <!-- Card 3 -->
+                    <div class="col-md-4" data-aos="fade-up"
+                        data-aos-delay="250">
+
+                        <div class="process-card">
+
+                            <div class="position-relative overflow-hidden">
+
+                                <img
+                                    src="<?= $base ?>imgs/services/multibagger7.jpg"
+                                    class="img-fluid process-img"
+                                    alt="background" data-aos="fade-up"
+                                    data-aos-delay="100" />
+
+                                <!-- Hover Content -->
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 process-overlay">
+
+                                    <p class="text-white fs-6 process-desc">
+                                        Complete the KYC to activateyour service.
+                                    </p>
+
+                                    <a href="#" class="btn rounded-0 process-btn w-25" style="background-color: #00DF9C; color:#02181A">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Bottom Title -->
+                            <div class="d-flex align-items-center px-3 py-3 gap-3">
+                                <h2 class="fs-2 fw-semibold" style="color: #00DF9C;">03.</h2>
+                                <h2 class="fs-2 fw-semibold titleFont">Service Activation</h2>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -797,8 +852,164 @@ require __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
-<!-- Founded -->
+
+<!-- what Our Client Say -->
 <section>
+    <div class="container">
+        <div class="py-5 border-top border-bottom border-start border-end border-light">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <div class="px-3">
+                        <h2 class="display-5 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                            data-aos-delay="100">See how we've helped our clients succeed
+                        </h2>
+                        <div id="reviewCarousel" class="carousel carousel-dark slide mt-3" data-bs-ride="carousel" data-aos="fade-right" data-aos-delay="100">
+
+                            <div class="carousel-inner">
+
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active">
+                                    <div class="row g-3">
+
+                                        <!-- Card 1 -->
+                                        <div class="col-md-6">
+                                            <div class="card border h-100 p-4 rounded-0">
+                                                <div class="text-warning fs-5 mb-3">
+                                                    ★ ★ ★ ★ ☆
+                                                </div>
+
+                                                <p class="mb-3 pFont small">
+                                                    EP Investors has completely changed the way I invest.
+                                                    The recommendations are accurate, and the risk management is solid!
+                                                </p>
+
+                                                <div class="d-flex align-items-center mt-auto">
+                                                    <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                        style="width:40px;height:40px;background:#02181A;color:#00DF9C">
+                                                        A
+                                                    </div>
+                                                    <h2 class="fw-semibold mb-0 fs-6 pFont">Amit S</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 2 -->
+                                        <div class="col-md-6">
+                                            <div class="card border h-100 p-4 rounded-0">
+                                                <div class="text-warning fs-5 mb-3">
+                                                    ★ ★ ★ ★ ☆
+                                                </div>
+
+                                                <p class="mb-3 pFont small">
+                                                    Timely alerts and expert analysis make trading effortless.
+                                                    Highly recommended for short-term investors!
+                                                </p>
+
+                                                <div class="d-flex align-items-center mt-auto">
+                                                    <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                        style="width:40px;height:40px;background:#02181A;color:#00DF9C">
+                                                        P
+                                                    </div>
+                                                    <h2 class="fw-semibold mb-0 fs-6 pFont">Priya M.</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <div class="row g-3">
+
+                                        <!-- Card 3 -->
+                                        <div class="col-md-6">
+                                            <div class="card border h-100 p-4 rounded-0">
+                                                <div class="text-warning fs-5 mb-3">
+                                                    ★ ★ ★ ★ ☆
+                                                </div>
+
+                                                <p class="mb-3 pFont small">
+                                                    EP Investors has completely changed the way I invest.
+                                                    The recommendations are accurate, and the risk management is solid!
+                                                </p>
+
+                                                <div class="d-flex align-items-center mt-auto">
+                                                    <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                        style="width:40px;height:40px;background:#02181A;color:#00DF9C">
+                                                        A
+                                                    </div>
+                                                    <h2 class="fw-semibold mb-0 fs-6 pFont">Amit S</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 4 -->
+                                        <div class="col-md-6">
+                                            <div class="card border h-100 p-4 rounded-0">
+                                                <div class="text-warning fs-5 mb-3">
+                                                    ★ ★ ★ ★ ☆
+                                                </div>
+
+                                                <p class="mb-3 pFont small">
+                                                    Consistent profits with minimal effort.
+                                                    The 80% accuracy claim is real!
+                                                </p>
+
+                                                <div class="d-flex align-items-center mt-auto">
+                                                    <div class="rounded-circle fw-bold d-flex justify-content-center align-items-center me-3"
+                                                        style="width:40px;height:40px;background:#02181A;color:#00DF9C">
+                                                        R
+                                                    </div>
+                                                    <h2 class="fw-semibold mb-0 fs-6 pFont">Rahul K.</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Indicators -->
+                            <div class="carousel-indicators position-static mt-4">
+
+                                <button type="button"
+                                    data-bs-target="#reviewCarousel"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+
+                                <button type="button"
+                                    data-bs-target="#reviewCarousel"
+                                    data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+
+                            </div>
+
+                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>pages/contact-us.php';" data-aos="fade-up"
+                                data-aos-delay="100">
+                                Contact Now
+                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img
+                        src="<?= $base ?>imgs/services/multibagger9.jpg"
+                        class="img-fluid w-100"
+                        alt="background" data-aos="fade-up"
+                        data-aos-delay="100" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Founded -->
+<section class="d-none">
     <div class="container">
         <div class="px-3 py-5 border-start border-end border-light">
             <div class="row g-3 py-4">
@@ -844,25 +1055,27 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- FAQ -->
-<section data-aos="fade-up">
+<section>
     <div class="container">
-        <div class="px-3 py-5 border border-start border-end border-light">
+        <div class="px-3 py-5 border-start border-end border-light">
             <div class="row g-3 py-md-5">
                 <div class="col-md-6">
-                    <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
-                        data-aos-delay="100">Frequently Asked Questions</h2>
-                    <p class="fs-6 pFont mb-3" data-aos="fade-up"
-                        data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
+                    <h2 class="display-6 titleFont fw-semibold">Frequently Asked Questions</h2>
+                    <p class="fs-6 pFont mb-0 mt-3">Visit our FAQ section for answers to common queries.</p>
                     <img
                         src="<?= $base ?>imgs/Faq.jpg"
-                        class="img-fluid"
-                        alt="background"
-                        data-aos="fade-up"
-                        data-aos-delay="100">
+                        class="img-fluid mt-3"
+                        alt="background">
                 </div>
                 <div class="col-md-6">
-                    <div class="accordion accordion-flush bg-body rounded-0 overflow-hidden" id="midcapFAQ" data-aos="fade-up"
-                        data-aos-delay="100">
+                    <style>
+                        .accordion-button,
+                        .accordion-button:focus {
+                            box-shadow: none;
+                            border: 0;
+                        }
+                    </style>
+                    <div class="accordion bg-body accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
@@ -913,7 +1126,7 @@ require __DIR__ . '/../includes/header.php';
 </section>
 
 <!-- Award -->
-<section>
+<section class="d-none">
     <div class="container">
         <div class="py-5 px-3 border-start border-end border-light">
             <div class="row g-0">
@@ -1131,7 +1344,6 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </div>
 </section>
-
 
 <!-- About -->
 <section class="d-none">

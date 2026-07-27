@@ -113,11 +113,11 @@ require __DIR__ . './includes/header.php';
                                         <!-- <h1 class="display-5 fw-semibold titleFont mb-4">
                                             Long-Term Wealth Built On Discipline Not Noise
                                         </h1> -->
-                                        <h1 class="display-3 fw-semibold titleFont mb-4">
+                                        <h1 class="display-4 fw-semibold titleFont mb-4">
                                             Clarity. <br class="d-xl-none" />Conviction. <br class="d-xl-none" />Compounding.
                                         </h1>
 
-                                        <p class="fs-6 pFont mb-3" style="color:#FFFFFFBF;">
+                                        <p class="fs-5 pFont mb-3" style="color:#FFFFFFBF;">
                                             Since 2005, EquityPandit has helped Indian investors navigate market cycles through
                                             research-driven equity strategies focused on consistency, risk control, and
                                             long-term value creation.
@@ -276,9 +276,9 @@ require __DIR__ . './includes/header.php';
                                         alt="background">
                                 </div>
                             </div>
-                            <div class="py-3 py-md-0 px-3 text-center">
-                                <h2 class="display-3 titleFont fw-semibold d-inline-block">Start Your Wealth Creation Journey</h2>
-                                <p class="fs-6 pFont mb-0">Put your money to work with our research, that suits your style.</p>
+                            <div class="py-3 py-md-4 px-3 text-center">
+                                <h2 class="display-3 titleFont fw-semibold">Start Your Wealth Creation Journey</h2>
+                                <p class="fs-6 pFont mb-0 mt-3">Put your money to work with our research, that suits your style.</p>
                             </div>
                             <div class="text-end">
                                 <img
@@ -287,11 +287,27 @@ require __DIR__ . './includes/header.php';
                                     alt="Business" loading="lazy" decoding="async">
                             </div>
                         </div>
+                    </div>
+                    <div class="row g-3">
                         <div class="col-md-4">
                             <style>
                                 .image-box {
                                     cursor: pointer;
+                                    height: 450px;
                                 }
+
+                                .image-box>img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    display: block;
+                                    transition: transform .7s ease;
+                                }
+
+                                /* .image-box:hover>img {
+                                    transform: scale(1.04);
+                                } */
 
                                 .image-content .sub-title {
                                     max-height: 0;
@@ -343,7 +359,7 @@ require __DIR__ . './includes/header.php';
                             </style>
                             <div class="image-box position-relative overflow-hidden">
                                 <img
-                                    src="<?= $base ?>imgs/services/s1.jpeg"
+                                    src="<?= $base ?>imgs/services/service1.png"
                                     class="img-fluid w-100"
                                     alt="Business" loading="lazy" decoding="async">
 
@@ -353,15 +369,16 @@ require __DIR__ . './includes/header.php';
                                         src="<?= $base ?>imgs/Vector1.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For an Individuals<br>&nbsp</h2>
+                                    <!-- <h2 class="mb-3 titleFont fs-3 fw-semibold">For an Individuals<br>&nbsp</h2> -->
+                                    <h2 class="mb-3 titleFont fs-3 fw-semibold">For an <br />Individuals</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         A carefully curated list of 18-20 high-potential stocks, backed by 20+ years of market expertise, designed to create long-term wealth.
                                     </p>
 
                                     <p class="sub-title pFont small" style="color: #FFFFFFBF;">
-                                        <i class="fa-solid fa-circle-check me-1 mt-1"></i> High-Conviction Stocks for 2026<br />
-                                        <i class="fa-solid fa-circle-check me-1 mt-1"></i> Diversified Portfolio
+                                        <i class="fa-solid fa-circle-check me-1 mt-1"></i>High-Conviction Stocks 2026<br />
+                                        <i class="fa-solid fa-circle-check me-1 mt-1"></i>Diversified Portfolio
                                     </p>
 
                                     <a href="#" class="text-light border-bottom border-2 border-success text-decoration-none small pFont">Explore Strategies <i class="fa-solid fa-right-long"></i></a>
@@ -369,10 +386,10 @@ require __DIR__ . './includes/header.php';
                             </div>
 
                         </div>
-                        <div class="col-md-4 mt-3 mt-md-0">
+                        <div class="col-md-4">
                             <div class="image-box position-relative overflow-hidden">
                                 <img
-                                    src="<?= $base ?>imgs/services/s2.jpeg"
+                                    src="<?= $base ?>imgs/services/service2.png"
                                     class="img-fluid w-100"
                                     alt="Business" loading="lazy" decoding="async">
 
@@ -382,7 +399,7 @@ require __DIR__ . './includes/header.php';
                                         src="<?= $base ?>imgs/Vector2.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For HNI’s and Ultra <br/>HNI’s</h2>
+                                    <h2 class="mb-3 titleFont fs-3 fw-semibold">For HNI’s and Ultra HNI’s</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         One high-growth stock every month for mid-term holding, focused on fundamentally strong businesses.
@@ -397,10 +414,10 @@ require __DIR__ . './includes/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mt-3 mt-md-0">
+                        <div class="col-md-4">
                             <div class="image-box position-relative overflow-hidden">
                                 <img
-                                    src="<?= $base ?>imgs/services/s3.jpeg"
+                                    src="<?= $base ?>imgs/services/service3.png"
                                     class="img-fluid w-100"
                                     alt="Business" loading="lazy" decoding="async">
 
@@ -410,7 +427,7 @@ require __DIR__ . './includes/header.php';
                                         src="<?= $base ?>imgs/Vector3.svg"
                                         class="img-fluid my-3 logo"
                                         style="max-height: 50px;" />
-                                    <h2 class="mb-3 titleFont fs-4 fw-semibold">For Family Offices & Institutions</h2>
+                                    <h2 class="mb-3 titleFont fs-3 fw-semibold">For Family Offices & Institutions</h2>
 
                                     <p class="sub-title pFont mb-3 small" style="color: #FFFFFFBF;">
                                         WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
@@ -432,7 +449,7 @@ require __DIR__ . './includes/header.php';
 
         <!-- Why Choose Us? -->
         <section>
-            <style>
+            <!-- <style>
                 .features-wrapper {
                     display: flex;
                     /* border: 1px solid var(--bs-border-color); */
@@ -556,14 +573,138 @@ require __DIR__ . './includes/header.php';
                         transform: none;
                     }
                 }
+            </style> -->
+            <style>
+                .features-wrapper {
+                    display: flex;
+                    /* border: 1px solid var(--bs-border-color); */
+                }
+
+                .feature-card {
+                    flex: 1;
+                    min-height: 400px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: flex .45s ease;
+                    cursor: pointer;
+                }
+
+                .features-wrapper:hover .feature-card {
+                    flex: .9;
+                }
+
+                .features-wrapper:hover .feature-card:hover {
+                    flex: 2.2;
+                }
+
+                .feature-content p {
+                    opacity: 0;
+                    max-width: 235px;
+                    transform: translateY(12px);
+                    transition: .35s ease;
+                }
+
+                .feature-card:hover .feature-content p {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                .feature-image {
+                    width: 70%;
+                    height: 40%;
+                    transition: width .45s ease, height .45s ease;
+                }
+
+                .feature-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform .45s ease;
+                }
+
+                .feature-card:hover .feature-image {
+                    width: 50%;
+                    height: 50%;
+                }
+
+                .feature-card:hover .feature-image img {
+                    transform: scale(1.05);
+                }
+
+                @media (max-width: 991.98px) {
+
+                    .features-wrapper {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        overflow-x: auto;
+                        overflow-y: hidden;
+                        scroll-snap-type: x proximity;
+                        -webkit-overflow-scrolling: touch;
+
+                        -ms-overflow-style: none;
+                        scrollbar-width: none;
+                    }
+
+                    .features-wrapper::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .feature-card {
+                        flex: 0 0 90%;
+                        width: 90%;
+                        min-height: 400px;
+                        position: relative;
+                        /* border-right: 1px solid var(--bs-border-color) !important;
+                        border-bottom: 0 !important; */
+                        scroll-snap-align: start;
+                    }
+
+                    .feature-content p {
+                        opacity: 1;
+                        max-width: 100%;
+                        transform: none;
+                    }
+
+                    .feature-image {
+                        width: 100%;
+                        height: 50%;
+                    }
+
+                    .features-wrapper:hover .feature-card,
+                    .features-wrapper:hover .feature-card:hover {
+                        flex: 0 0 90%;
+                    }
+
+                    .feature-card:hover .feature-image {
+                        width: 70%;
+                        height: 40%;
+                    }
+
+                    .feature-card:hover .feature-image img {
+                        transform: none;
+                    }
+
+                    .feature-card:hover .feature-content p {
+                        opacity: 1;
+                        transform: none;
+                    }
+                }
+
+                @media (min-width: 992px) {
+
+                    .features-wrapper {
+                        overflow: hidden;
+                    }
+
+                }
             </style>
             <div class="container">
                 <div class="border border-start border-end border-light">
                     <div class="row g-0">
                         <div class="col-md-12">
                             <div class="text-md-center text-start py-5 px-3">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block">Why Choose Us?</h2>
-                                <p class="fs-6 pFont mb-0">For nearly two decades, we’ve built a legacy of trust, transparency, and results. When you work with us, you gain more than just an investment plan—you gain a long-term partner committed to your financial success. Here’s why thousands of clients trust us to manage their investments:</p>
+                                <h2 class="display-5 titleFont fw-semibold">Why Choose Us?</h2>
+                                <p class="fs-6 pFont mb-0 mt-3">For nearly two decades, we’ve built a legacy of trust, transparency, and results. When you work with us, you gain more than just an investment plan—you gain a long-term partner committed to your financial success. Here’s why thousands of clients trust us to manage their investments:</p>
                             </div>
                         </div>
                         <div class="container px-0">
@@ -577,7 +718,7 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="<?= $base ?>imgs/Vector4.svg" class="mb-3" alt="">
 
-                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-3 ms-md-0 ms-2">
                                                 Experience You Can Trust
                                             </h2>
                                         </div>
@@ -603,7 +744,7 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="<?= $base ?>imgs/Vector5.svg" class="mb-3" alt="">
 
-                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-3 ms-md-0 ms-2">
                                                 Data-Driven Insights
                                             </h2>
                                         </div>
@@ -629,7 +770,7 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="<?= $base ?>imgs/Vector6.svg" class="mb-3" alt="">
 
-                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-3 ms-md-0 ms-2">
                                                 Client-Centered Approach
                                             </h2>
                                         </div>
@@ -655,7 +796,7 @@ require __DIR__ . './includes/header.php';
                                         <div class="d-md-block d-flex align-items-center">
                                             <img src="<?= $base ?>imgs/Vector7.svg" class="mb-3" alt="">
 
-                                            <h2 class="titleFont fw-semibold mb-3 fs-4 ms-md-0 ms-2">
+                                            <h2 class="titleFont fw-semibold mb-3 fs-3 ms-md-0 ms-2">
                                                 Dedicated Support Every Step
                                             </h2>
                                         </div>
@@ -687,15 +828,15 @@ require __DIR__ . './includes/header.php';
             <div class="container">
                 <div class="px-3 py-5 border-start border-end border-light">
                     <div class="row g-3 align-items-center">
-                        <div class="col-md-6">
-                            <div class="py-md-5 py-0 pb-0">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">National & International Awards</h2>
-                                <p class="fs-6 pFont mb-0">EquityPandit has consistently recognized by<br class="d-xl-block d-none" /> leading industry institution for innovation, research<br class="d-xl-block d-none" /> quality and investor education initiatives.</p>
+                        <div class="col-md-12">
+                            <div class="pb-md-5 py-0 pb-0 text-md-center text-start">
+                                <h2 class="display-5 titleFont fw-semibold">National & International Awards</h2>
+                                <p class="fs-6 pFont mb-0 mt-3">EquityPandit has consistently recognized by leading industry institution for innovation, research quality and investor education initiatives.</p>
+                                <button class="btn text-white rounded-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='#';">
+                                    Let's Get Started
+                                    <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                </button>
                             </div>
-                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='#';">
-                                Let's Get Started
-                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </button>
                         </div>
                         <div class="col-md-6 d-none">
                             <?php
@@ -858,7 +999,7 @@ require __DIR__ . './includes/header.php';
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12 mt-5 mt-md-0">
                             <?php
                             $awards = [
                                 [
@@ -1042,17 +1183,17 @@ require __DIR__ . './includes/header.php';
                     <div class="row g-3 align-items-center">
                         <div class="col-md-6 p-md-4 pt-5 px-4">
                             <div class="py-md-5 py-0 pb-0">
-                                <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">What Our Clients Say</h2>
-                                <p class="fs-6 pFont mb-0">Read what our satisfied clients have to say about their experience with our platform.</p>
+                                <h2 class="display-5 titleFont fw-semibold">What Our Clients Say</h2>
+                                <p class="fs-6 pFont mb-0 mt-3">Read what our satisfied clients have to say about their experience with our platform.</p>
                                 <img
                                     src="<?= $base ?>imgs/Google.svg"
                                     class="img-fluid mt-3"
-                                    alt="background">
+                                    alt="background"><br />
+                                <button class="btn text-white rounded-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>pages/contact-us.php';">
+                                    Contact Now
+                                    <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                </button>
                             </div>
-                            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>pages/contact-us.php';">
-                                Contact Now
-                                <i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </button>
                         </div>
 
                         <div class="col-md-6 pb-md-0 pb-5">
@@ -1060,7 +1201,7 @@ require __DIR__ . './includes/header.php';
 
                                 <!-- Card 1 -->
                                 <div class="col-md-6 col-11 flex-shrink-0">
-                                    <div class="card border h-100 p-3 rounded-0">
+                                    <div class="card border h-100 p-4 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
                                         </div>
@@ -1082,7 +1223,7 @@ require __DIR__ . './includes/header.php';
 
                                 <!-- Card 2 -->
                                 <div class="col-md-6 col-11 flex-shrink-0">
-                                    <div class="card border h-100 p-3 rounded-0">
+                                    <div class="card border h-100 p-4 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
                                         </div>
@@ -1104,7 +1245,7 @@ require __DIR__ . './includes/header.php';
 
                                 <!-- Card 3 -->
                                 <div class="col-md-6 col-11 flex-shrink-0">
-                                    <div class="card border h-100 p-3 rounded-0">
+                                    <div class="card border h-100 p-4 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
                                         </div>
@@ -1126,7 +1267,7 @@ require __DIR__ . './includes/header.php';
 
                                 <!-- Card 4 -->
                                 <div class="col-md-6 col-11 flex-shrink-0">
-                                    <div class="card border h-100 p-3 rounded-0">
+                                    <div class="card border h-100 p-4 rounded-0">
                                         <div class="text-warning fs-5 mb-3">
                                             ★ ★ ★ ★ ☆
                                         </div>
@@ -1156,15 +1297,15 @@ require __DIR__ . './includes/header.php';
         <!-- What the press has been saying -->
         <section class="text-white" style="background-color: #02181A;">
             <div class="container">
-                <div class="px-3 py-5 border-start border-end border-light bg-danger">
+                <div class="px-3 py-5 border-start border-end border-light">
                     <div class="row g-3 justify-content-center">
                         <div class="col-md-12">
                             <div class="text-start text-md-center">
-                                <h2 class="display-5 titleFont fw-semibold" style="line-height: 1.5;">
+                                <h2 class="display-5 titleFont fw-semibold">
                                     What the press has been saying
                                 </h2>
 
-                                <p class="fs-6 pFont mb-0">
+                                <p class="fs-6 pFont mb-0 mt-3">
                                     EquityPandit Is A Contributor To The World's Biggest Financial Portals.
                                 </p>
                             </div>
@@ -1174,7 +1315,7 @@ require __DIR__ . './includes/header.php';
             </div>
 
             <!-- Cards -->
-            <div class="border border-light" style="background:#02181A;">
+            <div class="border-top border-bottom border-light" style="background:#02181A;">
                 <div class="container">
 
                     <div class="row g-3">
@@ -1313,14 +1454,21 @@ require __DIR__ . './includes/header.php';
                 <div class="px-3 py-5 border-start border-end border-light">
                     <div class="row g-3 py-md-5">
                         <div class="col-md-6">
-                            <h2 class="display-6 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">Frequently Asked Questions</h2>
-                            <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
+                            <h2 class="display-5 titleFont fw-semibold">Frequently Asked Questions</h2>
+                            <p class="fs-6 pFont mb-0 mt-3">Visit our FAQ section for answers to common queries.</p>
                             <img
                                 src="<?= $base ?>imgs/Faq.jpg"
-                                class="img-fluid"
+                                class="img-fluid mt-3 w-100"
                                 alt="background">
                         </div>
                         <div class="col-md-6">
+                            <style>
+                                .accordion-button,
+                                .accordion-button:focus {
+                                    box-shadow: none;
+                                    border: 0;
+                                }
+                            </style>
                             <div class="accordion bg-body accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
@@ -1544,7 +1692,6 @@ require __DIR__ . './includes/header.php';
 
         });
     </script>
-
 </body>
 
 </html>

@@ -384,7 +384,7 @@ require __DIR__ . '/../includes/header.php';
 <!-- FAQ -->
 <section>
     <div class="container">
-        <div class="px-4 py-5 border border-top-0 border-start border-end border-light">
+        <div class="px-3 py-5 border border-top-0 border-start border-end border-light">
             <div class="row g-4 align-items-center mt-3 mb-3">
 
                 <!-- Left Side -->
@@ -397,7 +397,7 @@ require __DIR__ . '/../includes/header.php';
                     </p>
 
                     <img
-                        src="<?= $base ?>imgs/faq2.jpg"
+                        src="<?= $base ?>imgs/Faq.jpg"
                         class="img-fluid"
                         alt="background">
                 </div>
