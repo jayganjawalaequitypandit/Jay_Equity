@@ -327,10 +327,10 @@ $solidHeader = $solidHeader ?? true;
 
                 // Solid black bar once scrolled OR while the mobile menu is open
                 // (so the links stay readable over a transparent header).
-                // navbar.classList.toggle('bg-black', isScrolled || menuOpen);
-                // navbar.classList.toggle('shadow', isScrolled);
+                navbar.classList.toggle('bg-black', isScrolled || menuOpen);
+                navbar.classList.toggle('shadow', isScrolled);
 
-                navbar.classList.add('bg-black');
+
 
                 // Tighten the header on scroll using Bootstrap padding utilities.
                 navInner.classList.toggle('py-3', !isScrolled);
