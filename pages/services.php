@@ -188,11 +188,11 @@ require __DIR__ . '/../includes/header.php';
 
     <section>
         <div class="container ">
-            <div class="border border-light py-5 px-3">
+            <div class="border border-light py-5">
 
                 <!-- Service 1 -->
                 <!-- Heading -->
-                <div class="mb-3">
+                <div class="mb-3 px-3">
                     <h1 class="display-6 fw-semibold titleFont">
                         For an Individuals
                     </h1>
@@ -439,7 +439,7 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Service 2 -->
                 <!-- Heading -->
-                <div class="mb-3 mt-5">
+                <div class="mb-3 mt-5 px-3">
                     <h1 class="display-6 fw-semibold titleFont">
                         For HNI's and Ultra HNI's
                     </h1>
@@ -687,7 +687,7 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Service 3 -->
                 <!-- Heading -->
-                <div class="mb-3 mt-5">
+                <div class="mb-3 mt-5 px-3">
                     <h1 class="display-6 fw-semibold titleFont">
                         For Family Offices & Institutions
                     </h1>
