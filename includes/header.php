@@ -108,7 +108,7 @@ $solidHeader = $solidHeader ?? true;
 <body data-solid-header="<?= $solidHeader ? 'true' : 'false' ?>">
 
     <!-- Header -->
-    <header id="siteHeader" class="fixed-top border-bottom border-light">
+    <header id="siteHeader" class="sticky-top">
         <nav class="navbar navbar-expand-xl py-0">
             <div class="container">
                 <div class="row row-cols-auto justify-content-between w-100 position-relative">
@@ -327,8 +327,10 @@ $solidHeader = $solidHeader ?? true;
 
                 // Solid black bar once scrolled OR while the mobile menu is open
                 // (so the links stay readable over a transparent header).
-                navbar.classList.toggle('bg-black', isScrolled || menuOpen);
-                navbar.classList.toggle('shadow', isScrolled);
+                // navbar.classList.toggle('bg-black', isScrolled || menuOpen);
+                // navbar.classList.toggle('shadow', isScrolled);
+
+                navbar.classList.add('bg-black');
 
                 // Tighten the header on scroll using Bootstrap padding utilities.
                 navInner.classList.toggle('py-3', !isScrolled);
