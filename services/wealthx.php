@@ -82,9 +82,19 @@ require __DIR__ . '/../includes/header.php';
     </style>
 </head>
 
-<body class="">
+<body>
     <!-- Intro -->
-    <section class="position-relative" style="background-color: #F7F5EF;">
+    <section class="position-relative wealth-section">
+        <style>
+            .wealth-section {
+                background-color: #F7F5EF;
+            }
+
+            /* Bootstrap 5.3 dark mode */
+            [data-bs-theme="dark"] .wealth-section {
+                background-color: #000 !important;
+            }
+        </style>
 
         <!-- Dark Background -->
         <div class="container-fluid p-0">
@@ -103,10 +113,10 @@ require __DIR__ . '/../includes/header.php';
                                         <div class="px-3">
                                             <div class="mb-4 mt-5">
                                                 <a href="<?= $base ?>index.php"
-                                                    class="text-decoration-none text-black">
+                                                    class="text-decoration-none text-body">
                                                     Home
                                                 </a>
-                                                <span class="mx-1">&gt;</span>
+                                                <i class="fa-solid fa-chevron-right fa-sm"></i>
 
                                                 <a href="#"
                                                     class="text-decoration-none"
@@ -116,9 +126,8 @@ require __DIR__ . '/../includes/header.php';
                                             </div>
 
                                             <!-- Heading -->
-                                            <h1 class="titleFont display-6 fw-semibold mb-4">
+                                            <h1 class="titleFont display-4 fw-semibold mb-4 text-body-emphasis">
                                                 Your Wealth Deserves
-                                                <br class="d-none d-md-block">
                                                 To Work Smarter.
                                             </h1>
 
@@ -154,14 +163,21 @@ require __DIR__ . '/../includes/header.php';
                                 </div>
                             </div>
 
-                            <!-- Image 3 -->
+                            <!-- Video 3 -->
                             <div class="col-md-3 col-12 mt-3 mt-md-0 d-flex align-items-end justify-content-end">
-                                <img src="<?= $base ?>imgs/services/w3.gif"
-                                    class=" h-auto img-fluid">
-
+                                <video
+                                    class="h-auto img-fluid"
+                                    autoplay
+                                    muted
+                                    loop
+                                    playsinline>
+                                    <source src="<?= $base ?>imgs/services/w3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
+
+                            <!-- Image 4 -->
                             <div class="col-md-3 col-6 mt-3 mt-md-0 d-flex align-items-end justify-content-end d-none d-md-inline-flex ">
-                                <!-- Image 4 -->
                                 <img src="<?= $base ?>imgs/services/w4.jpg"
                                     class="h-auto img-fluid">
                             </div>
@@ -181,79 +197,152 @@ require __DIR__ . '/../includes/header.php';
             <div class="border">
                 <!-- Top -->
                 <div class="px-3 py-5 border-start border-end border-light">
-                    <div class="row g-3 justify-content-center">
+                    <div class="row g-3 justify-content-center mt-5 mb-5 mt-md-0 mb-md-0">
                         <div class="col-md-3">
                             <p class="fs-5 pFont mb-0">• About EquityPandit</p>
                         </div>
 
                         <div class="col-md-9">
-                            <h2 class="display-6 pFon fw-semibold">
-                                Accelerating Business Success Through Expert Strategy,
-                                Innovation, And Sustainable Long-Term Growth.
+                            <h2 class="display-5 pFon fw-semibold scroll-reveal-text text-body-emphasis">
+                                Accelerating business success through expert strategy,
+                                innovation, and sustainable long-term growth. 
                             </h2>
+                            <style>
+                                .scroll-reveal-text span {
+                                    color: #d0d0d0;
+                                    /* muted/gray default */
+                                    transition: color 0.2s ease;
+                                }
+
+                                .scroll-reveal-text span.active {
+                                    color: #1a1a1a;
+                                    /* dark/revealed */
+                                }
+                            </style>
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function() {
+                                    // 1. Split every .scroll-reveal-text heading into word-spans
+                                    const headings = document.querySelectorAll(".scroll-reveal-text");
+
+                                    headings.forEach((heading) => {
+                                        const words = heading.textContent.trim().split(/\s+/);
+                                        heading.innerHTML = words
+                                            .map((word) => `<span>${word}</span>`)
+                                            .join(" ");
+                                    });
+
+                                    const allWords = document.querySelectorAll(".scroll-reveal-text span");
+
+                                    // 2. On scroll, calculate progress of each heading through the viewport
+                                    function updateReveal() {
+                                        headings.forEach((heading) => {
+                                            const rect = heading.getBoundingClientRect();
+                                            const windowHeight = window.innerHeight;
+
+                                            // Progress: 0 when heading top enters bottom of viewport,
+                                            // 1 when heading bottom reaches top third of viewport
+                                            const start = windowHeight * 0.9; // when reveal starts
+                                            const end = windowHeight * 0.4; // when reveal completes
+
+                                            const total = start - end;
+                                            const scrolled = start - rect.top;
+                                            let progress = scrolled / total;
+                                            progress = Math.max(0, Math.min(1, progress));
+
+                                            const words = heading.querySelectorAll("span");
+                                            const activeCount = Math.floor(progress * words.length);
+
+                                            words.forEach((word, i) => {
+                                                word.classList.toggle("active", i < activeCount);
+                                            });
+                                        });
+                                    }
+
+                                    window.addEventListener("scroll", updateReveal);
+                                    window.addEventListener("resize", updateReveal);
+                                    updateReveal(); // run once on load
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
 
                 <!-- Bottom -->
-                <div class="row g-0">
+                <div class="row g-0 align-items-stretch">
 
                     <!-- Box 1 -->
-                    <div class="col-lg-4 border-top border-end p-4 d-flex flex-column">
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="border-top border-end p-4 d-flex flex-column w-100 h-100">
 
-                        <div class="flex-grow-1">
-                            <img src="<?= $base ?>imgs/Avtar2.svg" class="img-fluid" alt="Avtar Image">
-                            <h6 class="fw-bold mt-1">1M+ REGISTERED USER</h6>
+                            <div class="flex-grow-1">
+                                <img src="<?= $base ?>imgs/Avtar2.svg" class="img-fluid" alt="Avatar Image">
+
+                                <h6 class="fw-semibold mt-2 text-body-emphasis">
+                                    1M+ REGISTERED USER
+                                </h6>
+                            </div>
+
+                            <p class="small flex-grow-1 d-flex align-items-center mt-5 mt-md-0">
+                                Over 21 years of industry expertise,
+                                delivering trusted solutions and measurable
+                                results across diverse markets.
+                            </p>
+
+                            <div class="mt-5 mt-md-0">
+                                <h1 class="display-4 fw-medium mb-0 text-body-emphasis">
+                                    21+
+                                </h1>
+                                <p class="mb-0">Years Of Market Expertise</p>
+                            </div>
+
                         </div>
-                        <!-- This paragraph fills the space -->
-                        <p class="small fw-semibold flex-grow-1 d-flex align-items-center">
-                            Over 21 years of industry expertise,
-                            delivering trusted solutions and measurable
-                            results across diverse markets.
-                        </p>
-
-                        <!-- Always stays at the bottom -->
-                        <div class="mt-auto">
-                            <h1 class="display-4 fw-bold mb-0">21+</h1>
-                            <p class="mb-0">Years Of Market Expertise</p>
-                        </div>
-
                     </div>
+
+
                     <!-- Box 2 -->
-                    <div class="col-lg-4 border-top border-end p-4 d-flex flex-column">
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="border-top border-end p-4 d-flex flex-column w-100 h-100">
 
-                        <!-- Top Text -->
-                        <p class="small text-muted">
-                            Recognized with 11+ national and international awards for excellence,
-                            innovation, and outstanding business achievements.
-                        </p>
+                            <p class="small text-muted">
+                                Recognized with 11+ national and international awards for excellence,
+                                innovation, and outstanding business achievements.
+                            </p>
 
-                        <!-- Center Image -->
-                        <div class="flex-grow-1 d-flex align-items-center justify-content-center my-3">
-                            <img src="<?= $base ?>imgs/services/w6.jpg"
-                                class="img-fluid"
-                                alt="Award Image">
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+
+                                <div>
+                                    <h1 class="display-4 fw-medium text-body-emphasis">
+                                        11+
+                                    </h1>
+                                    <p class="mb-0">Registered Users</p>
+                                </div>
+
+                                <img src="<?= $base ?>imgs/services/w6.png"
+                                    class="img-fluid"
+                                    alt="Bar Chart Icon">
+
+                            </div>
+
+                            <p class="mb-0 mt-auto">
+                                <i class="fa-solid fa-circle me-2 small" style="color:#D6B770;"></i>
+                                <br>
+                                Ready To Accelerate Your Business Growth
+                            </p>
+
                         </div>
-
-                        <!-- Bottom Content -->
-                        <p class="mb-0">
-                            <i class="fa-solid fa-circle me-2 small" style="color:#D6B770;"></i><br>
-                            Ready To Accelerate Your Business Growth
-                        </p>
-
                     </div>
+
+
                     <!-- Box 3 -->
-                    <div class="col-md-4 ">
-                        <img src=" <?= $base ?>imgs/w5.jpg"
-                            class="img-fluid h-auto">
-                        <div>
-
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="w-100 h-100">
+                            <img src="<?= $base ?>imgs/w5.jpg"
+                                class="img-fluid w-100 h-100 object-fit-cover"
+                                alt="Image">
                         </div>
-
                     </div>
 
                 </div>
-
             </div>
 
         </div>
@@ -263,7 +352,7 @@ require __DIR__ . '/../includes/header.php';
     <section>
         <style>
             /* Outer wrapper reserves ONE scroll runway sized to the
-           number of steps — this is what the sticky block pins against */
+       number of steps — this is what the sticky block pins against */
             .target-scroll-wrapper {
                 position: relative;
                 height: 400vh;
@@ -271,7 +360,7 @@ require __DIR__ . '/../includes/header.php';
             }
 
             /* Pinned block — stays fixed in viewport for the entire
-           runway above, then releases exactly when the wrapper ends */
+       runway above, then releases exactly when the wrapper ends */
             .target-sticky {
                 position: sticky;
                 top: 0;
@@ -306,8 +395,8 @@ require __DIR__ . '/../includes/header.php';
             }
 
             /* Base fallback rule — actual color control happens via
-           inline style set in JS below, which always wins over
-           Bootstrap/theme color rules regardless of specificity */
+       inline style set in JS below, which always wins over
+       Bootstrap/theme color rules regardless of specificity */
             .service-content h2 {
                 transition: color .4s ease;
             }
@@ -331,9 +420,8 @@ require __DIR__ . '/../includes/header.php';
                 max-width: 260px;
             }
 
-            /* Mobile fallback — release the sticky pin and let the
-           accordion content stay open (Bootstrap's own breakpoint
-           utilities can't reach inside these custom classes) */
+            /* Mobile fallback — release the sticky pin; content opens
+       via tap (accordion), left image/circle column is hidden */
             @media(max-width: 991px) {
                 .target-scroll-wrapper {
                     height: auto;
@@ -345,9 +433,11 @@ require __DIR__ . '/../includes/header.php';
                 }
 
                 .service-content-wrap {
-                    max-height: none !important;
-                    opacity: 1 !important;
-                    overflow: visible;
+                    overflow: hidden;
+                }
+
+                .service-header {
+                    cursor: pointer;
                 }
             }
         </style>
@@ -355,9 +445,9 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
 
             <div class="py-5 px-3 border border-light">
-                <div class="row g-0">
+                <div class="row g-0 mt-5 mb-5">
                     <div class="col-md-6 d-flex align-items-center">
-                        <h2 class="display-5 titleFont fw-semibold d-inline-block">
+                        <h2 class="display-5 titleFont fw-semibold d-inline-block text-body-emphasis">
                             Built For Every<br />Market Condition
                         </h2>
                     </div>
@@ -374,8 +464,8 @@ require __DIR__ . '/../includes/header.php';
                     <div class="target-sticky d-flex align-items-center">
                         <div class="row g-0 w-100 align-items-center gx-4 flex-md-nowrap">
 
-                            <!-- LEFT SIDE -->
-                            <div class="col-12 col-md-5 d-flex flex-column position-relative">
+                            <!-- LEFT SIDE (hidden on mobile) -->
+                            <div class="col-12 col-md-5 d-none d-md-flex flex-column position-relative">
                                 <div class="position-relative overflow-hidden flex-fill m-0 p-0">
                                     <img class="w-100 h-auto d-block m-0 p-0"
                                         src="<?= $base ?>imgs/services/welthx_1.jpg" alt="">
@@ -411,7 +501,7 @@ require __DIR__ . '/../includes/header.php';
 
                                 <div class="col-12">
                                     <a href="#"
-                                        class="btn rounded-0 text-white mt-3 px-4 py-2 mb-3 pFont"
+                                        class="btn rounded-0 text-white mt-3 ms-3 px-4 py-2 mb-3 pFont"
                                         style="background-color: #02181A;">
                                         Learn How It Works
                                         <i class="fa-solid fa-arrow-right-long ms-2"></i>
@@ -419,7 +509,7 @@ require __DIR__ . '/../includes/header.php';
                                 </div>
                             </div>
 
-                            <div class="col-md-1"></div>
+                            <div class="col-md-1 d-none d-md-block"></div>
 
                             <!-- RIGHT SIDE -->
                             <div class="col-12 col-md-6">
@@ -475,6 +565,199 @@ require __DIR__ . '/../includes/header.php';
                                     </div>
                                 </div>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Mobile-only accordion: tap a service-header to open its content,
+            // closing the others. Runs independently of the desktop scroll-driven
+            // script that already toggles .active based on scroll position.
+            (function() {
+                var mq = window.matchMedia('(max-width: 991px)');
+
+                document.querySelectorAll('.service-item .service-header').forEach(function(header) {
+                    header.addEventListener('click', function() {
+                        if (!mq.matches) return; // let desktop scroll-JS handle it above 991px
+
+                        var item = header.closest('.service-item');
+                        var isActive = item.classList.contains('active');
+
+                        document.querySelectorAll('.service-item').forEach(function(el) {
+                            el.classList.remove('active');
+                        });
+
+                        if (!isActive) {
+                            item.classList.add('active');
+                        }
+                    });
+                });
+            })();
+        </script>
+    </section>
+    <!-- section 4 -->
+    <section class="bg-black text-white ">
+        <div class="container">
+            <div class="px-3 py-5 border border-light">
+                <div class="row g-3 mt-5 mb-5 mt-md-0 mt-md-0">
+                    <div class="col-md-6">
+                        <h2 class="display-6 titleFont fw-semibold">
+                            Every Market. <br>
+                            Every Opportunity.
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="fs-5 pFont">
+                            A complete wealth management ecosystem - research,
+                            alerts, analytics, and expert support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black text-white">
+        <div class="container">
+            <div class="border border-top-0 border-light">
+                <div class="row align-items-center g-0">
+
+                    <!-- Equity portfolio -->
+                    <div class="border-bottom border-light ">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <!-- Left -->
+                                <div class="col-md-6 col-12 p-4 p-md-5">
+                                    <h3 class="display-6 titleFont fw-semibold">Equity Portfolio</h3>
+
+                                    <small class="text-uppercase  d-block mb-4" style="color:#D8BB63">
+                                        The Growth Core
+                                    </small>
+
+                                    <p class="text-secondary fs-6 pFont ">
+                                        A Curated Basket Of Fundamentally Strong Stocks.
+                                        Deep Analysis Of Business Quality, Earnings Growth,
+                                        And Management Track Record. Rebalanced Quarterly.
+                                    </p>
+
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
+                                            <small> Fundamentally Strong Stocks</small>
+                                        </span>
+
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w12.svg " class="img-fluid me-2" alt="">
+                                            <small> In-Depth Research & Analysis</small>
+                                        </span>
+
+                                        <span class="border border-secondary  px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
+                                            <small> Quarterly Rebalancing</small>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Right -->
+                                <div class="col-md-6 col-12 text-end">
+                                    <img src="<?= $base ?>imgs/services/w8.jpg"
+                                        class="img-fluid h-auto"
+                                        alt="Equity Portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multibaggers -->
+                    <div class="border-bottom border-light ">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <!-- Left -->
+                                <div class="col-md-6 col-12 p-4 p-md-5">
+                                    <h3 class="display-6 titleFont fw-semibold">Multibaggers</h3>
+
+                                    <small class="text-uppercase  d-block mb-4" style="color:#539AFF">
+                                        HIGH-CONVICTION PICKS
+                                    </small>
+
+                                    <p class="text-secondary fs-6 pFont ">
+                                        One high-growth opportunity every month. Quality businesses with
+                                        strong structural trends and mid-term horizon. Carefully researched - not speculative.
+                                    </p>
+
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
+                                            <small> 1 High-Growth Stock Every Month</small>
+                                        </span>
+
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w12.svg " class="img-fluid me-2" alt="">
+                                            <small> Research-Backed, Not Speculative</small>
+                                        </span>
+
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
+                                            <small> Quality Businesses, Strong Trends</small>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Right -->
+                                <div class="col-md-6 col-12 text-end">
+                                    <img src="<?= $base ?>imgs/services/w9.jpg"
+                                        class="img-fluid h-auto"
+                                        alt="Multibagger">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ETFs -->
+                    <div class="border-bottom border-light ">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <!-- Left -->
+                                <div class="col-md-6 col-12 p-4 p-md-5">
+                                    <h3 class="display-6 titleFont fw-semibold">ETFs</h3>
+
+                                    <small class="text-uppercase  d-block mb-4" style="color:#5BFFB4">
+                                        DIVERSIFIED EXPOSURE
+                                    </small>
+
+                                    <p class="text-secondary fs-6 pFont ">
+                                        Strategic allocations to commodity, index, and debt ETFs.
+                                        Broad macro coverage across sectors and geographies
+                                        that stock picking alone cannot reach.
+                                    </p>
+
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
+                                            <small> Global & Sector Diversification</small>
+                                        </span>
+
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w12.svg " class="img-fluid me-2" alt="">
+                                            <small> Commodity, Index & Debt ETFS</small>
+                                        </span>
+
+                                        <span class="border border-secondary px-1 py-2 small">
+                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
+                                            <small>Reduce Risk, Enhance Returns</small>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Right -->
+                                <div class="col-md-6 col-12 text-end">
+                                    <img src="<?= $base ?>imgs/services/w10.jpg"
+                                        class="img-fluid h-auto"
+                                        alt="ETF">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -541,148 +824,6 @@ require __DIR__ . '/../includes/header.php';
         });
     </script>
 
-    <!-- Services -->
-
-    <!-- Slick CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-
-
-    <section class="position-relative overflow-hidden">
-        <!-- Background Image -->
-        <img
-            src="<?= $base ?>imgs/services/welthx_6.png"
-            class="position-absolute top-0 start-0 w-100 h-100"
-            alt="Portfolio"
-            loading="lazy"
-            decoding="async"
-            style="object-fit:cover;">
-
-        <!-- Dark Overlay -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
-
-        <!-- Container Borders -->
-        <div class="container position-absolute top-0 start-50 translate-middle-x h-100 d-none d-md-block">
-            <div class="border-start border-end border-light h-100"></div>
-        </div>
-
-        <!-- Content -->
-        <div class="position-relative py-5">
-            <div class="container py-md-5">
-                <div class="row align-items-center g-4">
-                    <!-- Left Content -->
-                    <div class="col-md-4 col-12 text-white">
-                        <h1 class="display-6 mb-4 titleFont">
-                            Every market. Every opportunity.
-                        </h1>
-                        <p class="fs-5 pFont">
-                            A complete wealth management ecosystem -
-                            research, alerts, analytics, and expert support.
-                        </p>
-                    </div>
-
-                    <!-- Cards Slider -->
-                    <div class="col-md-8 col-12">
-                        <div class="wealth-slider">
-                            <!-- Card 1 -->
-                            <div class="px-2">
-                                <div class="bg-dark bg-opacity-75 text-white p-4 h-100">
-                                    <h4 class="mb-3 titleFont">
-                                        Equity Portfolio
-                                    </h4>
-                                    <p class="small pFont">
-                                        A curated basket of fundamentally strong stocks.
-                                        Deep analysis of business quality, earnings growth,
-                                        and management track record. Rebalanced quarterly.
-                                    </p>
-                                    <ul class="small ps-3 mb-0">
-                                        <li>Fundamentally Strong Stocks</li>
-                                        <li>In-depth Research & Analysis</li>
-                                        <li>Quarterly Rebalancing</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Card 2 -->
-                            <div class="px-2">
-                                <div class="bg-secondary bg-opacity-75 text-white p-4 h-100">
-                                    <h4 class="mb-3 titleFont">
-                                        Multibaggers
-                                    </h4>
-                                    <p class="small pFont">
-                                        One high-growth opportunity every month.
-                                        Quality businesses with strong structural trends
-                                        and mid-term return potential.
-                                    </p>
-                                    <ul class="small ps-3 mb-0">
-                                        <li>High-Growth Stock Every Month</li>
-                                        <li>Quality Businesses, Strong Trends</li>
-                                        <li>Research Backed</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Card 3 -->
-                            <div class="px-2">
-                                <div class="bg-dark bg-opacity-50 text-white p-4 h-100">
-                                    <h4 class="mb-3 titleFont">
-                                        ETFs
-                                    </h4>
-                                    <p class="small pFont">
-                                        Strategic allocations to commodity, index,
-                                        and debt ETFs. Broad macro coverage across
-                                        sectors and geographies.
-                                    </p>
-                                    <ul class="small ps-3 mb-0">
-                                        <li>Global Diversification</li>
-                                        <li>Commodity, Index & Debt ETFs</li>
-                                        <li>Reduce Risk, Enhance Returns</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- Slick JS -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-
-            $('.wealth-slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                arrows: true,
-                dots: true,
-                responsive: [
-
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
 
     <!-- Generate Wealth -->
     <section>
@@ -702,14 +843,14 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Right Side -->
                     <div class="col-12 col-md-6 p-4 p-md-5">
-                        <h2 class="display-6 titleFont mb-4">
+                        <h2 class="display-6 titleFont mb-4 text-body-emphasis">
                             Not Built To Generate <br class="d-none d-md-block">
                             Excitement. Built To Generate
                             Wealth.
                         </h2>
 
-                        <div class="d-inline-block p-4 mb-4" style="background:#213738;">
-                            <p class="fst-italic mb-0 fs-5" style="color:#00DF9C;">
+                        <div class="d-inline-block p-3 mb-4" style="background:#02181A;">
+                            <p class="titleFont mb-0 fs-5" style="color:#D6B770;">
                                 "The Goal Is Not To Predict The Future - It Is
                                 To Be Positioned For Every Version Of It."
                             </p>
@@ -724,7 +865,7 @@ require __DIR__ . '/../includes/header.php';
 
                         <a href="contact.php"
                             class="btn text-white rounded-0 py-2"
-                            style="background:#02181A;">
+                            style="background:#D6B770">
                             Schedule a Consultation
                             <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
@@ -736,20 +877,132 @@ require __DIR__ . '/../includes/header.php';
 
     </section>
 
-    <section class="">
+
+    <!-- Section 5 -->
+    <section>
+        <style>
+            /* Desktop */
+            .hover-card:hover {
+                flex: 2.5 !important;
+                background: #02181A;
+                color: #fff;
+            }
+
+            .hover-content {
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+                transition: all .45s ease;
+            }
+
+            .hover-card:hover .hover-content {
+                max-height: 220px;
+                opacity: 1;
+            }
+
+            .hover-card hr {
+                border-color: rgba(255, 255, 255, .2);
+            }
+
+            .icon {
+                width: 42px;
+                height: 42px;
+                display: inline-block;
+                background: #000;
+                transition: .3s;
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-position: center;
+                -webkit-mask-size: contain;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                mask-size: contain;
+            }
+
+            .icon-1 {
+                -webkit-mask-image: url("../imgs/Vector15.svg");
+                mask-image: url("../imgs/Vector15.svg");
+            }
+
+            .icon-2 {
+                -webkit-mask-image: url("../imgs/Vector16.svg");
+                mask-image: url("../imgs/Vector16.svg");
+            }
+
+            .icon-3 {
+                -webkit-mask-image: url("../imgs/Vector17.svg");
+                mask-image: url("../imgs/Vector17.svg");
+            }
+
+            .icon-4 {
+                -webkit-mask-image: url("../imgs/Vector18.svg");
+                mask-image: url("../imgs/Vector18.svg");
+            }
+
+            .hover-card:hover .icon {
+                background: #D6B770;
+            }
+
+            /* Mobile */
+            @media (max-width:767.98px) {
+
+                .card-scroll-row {
+                    display: flex !important;
+                    flex-wrap: nowrap !important;
+                    overflow-x: auto !important;
+                    overflow-y: hidden !important;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                }
+
+                .card-scroll-row::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .hover-card {
+                    flex: 0 0 80% !important;
+                    background: #02181A;
+                    color: #fff;
+                    border-right: 0 !important;
+                    border-bottom: 0 !important;
+                    min-height: 260px;
+                }
+
+                .hover-content {
+                    max-height: 300px;
+                    opacity: 1;
+                    overflow: visible;
+                    margin-top: 1.25rem !important;
+                }
+
+                .hover-card hr {
+                    border-color: rgba(255, 255, 255, .2);
+                }
+
+                .icon {
+                    background: #D6B770;
+                }
+
+                .hover-card:hover {
+                    flex: 0 0 80% !important;
+                    background: #02181A;
+                    color: #fff;
+                }
+            }
+        </style>
+
         <div class="container">
             <div class="border border-light">
-                <div class="d-md-flex" style="min-height:380px;">
+                <div class="d-flex card-scroll-row" style="min-height:380px;">
 
                     <!-- Card 1 -->
-                    <div class="hover-card d-flex flex-column p-4 border-end"
-                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
+                    <div class="hover-card d-flex flex-column p-3 border border-light"
+                        style="flex:1;transition:.45s;cursor:pointer;overflow:hidden;">
 
                         <span class="icon icon-1"></span>
 
-                        <div class="mt-2">
+                        <div class="mt-3">
                             <h2 class="titleFont mb-0">
-                                Rising<br>Markets
+                                Rising Markets
                             </h2>
                         </div>
 
@@ -761,21 +1014,22 @@ require __DIR__ . '/../includes/header.php';
                             </p>
                         </div>
 
-                        <div class="mt-auto fw-semibold">
+                        <div class="mt-auto fw-semibold pt-3">
                             <i class="fa-solid fa-circle me-2 small"></i>
                             Explore More
                         </div>
+
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="hover-card d-flex flex-column p-4 border-end"
-                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
+                    <div class="hover-card d-flex flex-column p-3 border border-light"
+                        style="flex:1;transition:.45s;cursor:pointer;overflow:hidden;">
 
                         <span class="icon icon-2"></span>
 
-                        <div class="mt-2">
+                        <div class="mt-3">
                             <h2 class="titleFont mb-0">
-                                Volatile<br>Periods
+                                Volatile Periods
                             </h2>
                         </div>
 
@@ -787,21 +1041,22 @@ require __DIR__ . '/../includes/header.php';
                             </p>
                         </div>
 
-                        <div class="mt-auto fw-semibold">
+                        <div class="mt-auto fw-semibold pt-3">
                             <i class="fa-solid fa-circle me-2 small"></i>
                             Explore More
                         </div>
+
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="hover-card d-flex flex-column p-4 border-end"
-                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
+                    <div class="hover-card d-flex flex-column p-3 border border-light"
+                        style="flex:1;transition:.45s;cursor:pointer;overflow:hidden;">
 
                         <span class="icon icon-3"></span>
 
-                        <div class="mt-2">
+                        <div class="mt-3">
                             <h2 class="titleFont mb-0">
-                                Market<br>Catalysts
+                                Market Catalysts
                             </h2>
                         </div>
 
@@ -813,21 +1068,22 @@ require __DIR__ . '/../includes/header.php';
                             </p>
                         </div>
 
-                        <div class="mt-auto fw-semibold">
+                        <div class="mt-auto fw-semibold pt-3">
                             <i class="fa-solid fa-circle me-2 small"></i>
                             Explore More
                         </div>
+
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="hover-card d-flex flex-column p-4"
-                        style="flex:1; transition:.45s; cursor:pointer; overflow:hidden;">
+                    <div class="hover-card d-flex flex-column p-3 border border-light"
+                        style="flex:1;transition:.45s;cursor:pointer;overflow:hidden;">
 
                         <span class="icon icon-4"></span>
 
-                        <div class="mt-2">
+                        <div class="mt-3">
                             <h2 class="titleFont mb-0">
-                                Through<br>It All
+                                Through It All
                             </h2>
                         </div>
 
@@ -839,305 +1095,228 @@ require __DIR__ . '/../includes/header.php';
                             </p>
                         </div>
 
-                        <div class="mt-auto fw-semibold">
+                        <div class="mt-auto fw-semibold pt-3">
                             <i class="fa-solid fa-circle me-2 small"></i>
                             Explore More
                         </div>
+
                     </div>
 
                 </div>
+
             </div>
+
         </div>
     </section>
 
     <style>
-        .hover-card:hover {
-            flex: 2.5 !important;
+        .cta-gold-section {
+            position: relative;
+            overflow: hidden;
+            background: #D6B770;
+            color: #02181A;
+        }
+
+        .cta-gold-section::after {
+            content: "";
+            position: absolute;
+            top: -180px;
+            right: -120px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .22);
+            box-shadow:
+                0 0 0 80px rgba(255, 255, 255, .12),
+                0 0 0 150px rgba(255, 255, 255, .06);
+            z-index: 0;
+        }
+
+        .cta-gold-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-ep-outline {
+            border: 1px solid #02181A;
+            color: #02181A;
+            background: transparent;
+            transition: .3s;
+        }
+
+        .btn-ep-outline:hover {
             background: #02181A;
             color: #fff;
         }
-
-        .hover-content {
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-            transition: all .4s ease;
-        }
-
-        .hover-card:hover .hover-content {
-            max-height: 200px;
-            opacity: 1;
-        }
-
-        .hover-card hr {
-            border-color: rgba(255, 255, 255, .25);
-        }
-
-        /* Icons */
-        .icon {
-            width: 40px;
-            height: 40px;
-            display: inline-block;
-            background: #000;
-            transition: .3s;
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-position: center;
-            -webkit-mask-size: contain;
-            mask-repeat: no-repeat;
-            mask-position: center;
-            mask-size: contain;
-        }
-
-        .icon-1 {
-            -webkit-mask-image: url("../imgs/Vector15.svg");
-            mask-image: url("../imgs/Vector15.svg");
-        }
-
-        .icon-2 {
-            -webkit-mask-image: url("../imgs/Vector16.svg");
-            mask-image: url("../imgs/Vector16.svg");
-        }
-
-        .icon-3 {
-            -webkit-mask-image: url("../imgs/Vector17.svg");
-            mask-image: url("../imgs/Vector17.svg");
-        }
-
-        .icon-4 {
-            -webkit-mask-image: url("../imgs/Vector18.svg");
-            mask-image: url("../imgs/Vector18.svg");
-        }
-
-        .hover-card:hover .icon {
-            background: #00DF9C;
-        }
-
-        @media (max-width:767.98px) {
-
-            .hover-card {
-                border-right: 0 !important;
-                border-bottom: 1px solid #dee2e6;
-            }
-
-            .hover-content {
-                max-height: 300px;
-                opacity: 1;
-            }
-
-            .hover-card:hover {
-                flex: 1 !important;
-            }
-        }
     </style>
 
+    <section class="cta-gold-section py-5">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center gy-4">
 
-    <!-- Get Started -->
-    <section class="text-white" style="background:#02181A;">
+                <!-- Left Content -->
+                <div class="col-md-8 text-center text-md-start">
+                    <h2 class="titleFont fw-semibold display-5 mb-3 " style="color:#02181A;">
+                        Invest with Intelligence.<br>
+                        Compound with Confidence.
+                    </h2>
+
+                    <p class="pFont mb-0 w-md-75" style="color:#02181A">
+                        WealthX is built for investors serious about long-term wealth.
+                        Discipline, diversification, and expert guidance-in one coherent strategy.
+                    </p>
+                </div>
+
+                <!-- Right Button -->
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+                    <a href="../pages/contact-us.php"
+                        class="btn py-2 rounded-0 btn-ep-outline ">
+                        Schedule a Consultation
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Should Expect -->
+    <section>
         <div class="container">
-            <div class="px-3 py-5 border-start border-end border-light">
-                <div class="row g-3 justify-content-center">
-                    <div class="col-md-10">
-                        <div class="text-start text-md-center">
-                            <h2 class="display-6 titleFont fw-semibold">Get started in 3 simple steps for Wealth Creation</h2>
-                            <p class="fs-6 pFont mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            <div class="border">
+                <!-- Top -->
+                <div class="px-3 py-5 border border-light">
+                    <div class="row g-3 justify-content-center mt-5 mb-5 mt-md-0 mb-md-0">
+                        <div class="col-md-5">
+                            <h2 class="display-6 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
+                        </div>
+                        <div class="col-md-7">
+                            <p class=" pFont">
+                                A high-quality advisory relationship is defined by
+                                clarity and service-not claims of easy or guaranteed profits.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="border border-light" style="background:#02181A;">
-            <div class="container">
-                <style>
-                    .process-content {
-                        height: 140px;
-                        transition: height .45s ease;
-                    }
-
-                    .process-img {
-                        transition: transform .45s ease;
-                    }
-
-                    .process-desc {
-                        opacity: 0;
-                        transform: translateY(15px);
-                        transition: opacity .3s ease, transform .3s ease;
-                    }
-
-                    .process-card:hover .process-img,
-                    .process-card.active .process-img {
-                        transform: translateY(-70px);
-                    }
-
-                    .process-card:hover .process-content,
-                    .process-card.active .process-content {
-                        height: 190px;
-                    }
-
-                    .process-card:hover .process-desc,
-                    .process-card.active .process-desc {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                </style>
-                <div class="row g-3">
-
+                <!-- Bottom -->
+                <div class="row g-0 service-row">
                     <!-- Card 1 -->
-                    <div class="col-md-4">
-                        <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
-
-                            <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
-                                1
-                            </span>
-
-                            <img
-                                src="<?= $base ?>imgs/risk1.jpg"
-                                class="process-img h-100 object-fit-cover"
-                                alt="">
-
-                            <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
-
-                                <img src="<?= $base ?>imgs/Vector11.svg" alt="">
-
-                                <h2 class="fw-semibold mt-2 titleFont">
-                                    Risk Profiling
-                                </h2>
-
-                                <p class="process-desc Pfont mt-3 mb-0">
-                                    To check the capability & willingness to take a risk.
-                                </p>
-
-                            </div>
-
-                        </div>
+                    <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-3 d-flex flex-column service-card">
+                        <img src="<?= $base ?>imgs/services/w13.svg" alt="Clear rationale" class="mb-5" style="width:80px;">
+                        <h6 class="titleFont mb-3 text-body-emphasis">Clear Rationale</h6>
+                        <p class="fs-5 pFont mb-0">
+                            Advice accompanied by understandable research,
+                            investment context and material risk factors.
+                        </p>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="col-md-4">
-                        <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
-
-                            <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
-                                2
-                            </span>
-
-                            <img
-                                src="<?= $base ?>imgs/risk2.jpg"
-                                class="process-img h-100 object-fit-cover"
-                                alt="">
-
-                            <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
-
-                                <img src="<?= $base ?>imgs/Vector12.svg" alt="">
-
-                                <h2 class="fw-semibold titleFont mt-2">
-                                    Documentation
-                                </h2>
-
-                                <p class="process-desc Pfont mt-3 mb-0">
-                                    Sign an agreement & complete thepayment to begin the journey.
-                                </p>
-
-                            </div>
-
-                        </div>
+                    <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-3 d-flex flex-column service-card">
+                        <img src="<?= $base ?>imgs/services/w14.svg" alt="Timely Updates" class="mb-5" style="width:80px;">
+                        <h6 class="titleFont mb-3 text-body-emphasis">Timely Updates</h6>
+                        <p class="small pFont mb-0">
+                            Relevant portfolio changes, alerts and research
+                            developments communicated through official channels.
+                        </p>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="col-md-4">
-                        <div class="process-card h-100 position-relative overflow-hidden bg-white" style=" cursor:pointer;">
-
-                            <span class="position-absolute ms-3 top-0 start-0 text-white fs-1 fw-light z-3">
-                                3
-                            </span>
-
-                            <img
-                                src="<?= $base ?>imgs/risk3.jpg"
-                                class="process-img h-100 object-fit-cover"
-                                alt="">
-
-                            <div class="process-content position-absolute bottom-0 start-0 w-100 bg-white p-3 text-black">
-
-                                <img src="<?= $base ?>imgs/Vector13.svg" alt="">
-
-                                <h2 class="fw-semibold titleFont mt-2">
-                                    Service Activation
-                                </h2>
-
-                                <p class="process-desc Pfont mt-3 mb-0">
-                                    Complete the KYC to activateyour service.
-                                </p>
-
-                            </div>
-
-                        </div>
+                    <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-4 d-flex flex-column service-card">
+                        <img src="<?= $base ?>imgs/services/w15.svg" alt="Risk Transparency" class="mb-5" style="width:60px;">
+                        <h6 class="titleFont mb-3 text-body-emphasis">Risk Transparency</h6>
+                        <p class="small pFont mb-0">
+                            No guaranteed-return language, hidden certainty
+                            or avoidance of the risks inherent in equity markets.
+                        </p>
                     </div>
 
-                </div>
-            </div>
-        </div>
-        <!-- white-space -->
-        <div style="background:#02181A;">
-            <div class="container">
-                <div class="border border-bottom-0 border-top-0 border-light py-4">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Founded -->
-    <section>
-        <div class="container">
-            <div class="px-3 py-5 border-start border-end border-light">
-                <div class="row g-3 py-4">
-                    <div class="col-md-6">
-                        <h2 class="fs-3 pFont fw-semibold">Who are we?</h2>
-                        <img
-                            src="<?= $base ?>imgs/Vector14.svg"
-                            class="img-fluid mt-3"
-                            alt="background" />
-                        <div class="d-flex mt-4">
-                            <img
-                                src="<?= $base ?>imgs/avatars.jpg"
-                                class="img-fluid"
-                                alt="background" />
-                            <div class="flex-column">
-                                <p class="mb-0 pFont fw-medium fs-5">Chosen by 1M+</p>
-                                <p class="pFont fw-medium fs-5">Registered Users</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-dark rounded-0 pFont px-4 py-2 mt-md-3 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='#';">
-                            Get Started
-                            <i class="fa-solid fa-arrow-right-long ms-2"></i>
-                        </button>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="mb-0 small pFont">Founded in 2005, EquityPandit has spent 20+ years delivering transparent, disciplined, and personalized investment advice. Today, we serve Retail Investors, HNIs, UHNIs, and Institutions through a trusted community of 10,00,000+ registered users across 33+ countries, powered by 350+ research algorithms and a commitment to responsible advisory practices.</p>
-                        <img
-                            src="<?= $base ?>imgs/ep.svg"
-                            class="img-fluid mt-3"
-                            alt="background" />
+                    <!-- Card 4 -->
+                    <div class="col-md-3 col-8 flex-shrink-0 border-bottom border-light p-4 d-flex flex-column service-card">
+                        <img src="<?= $base ?>imgs/services/w16.svg" alt="Accessible Support" class="mb-5" style="width:80px;">
+                        <h6 class="titleFont mb-3 text-body-emphasis">Accessible Support</h6>
+                        <p class="small pFont mb-0">
+                            Defined client-support, principal-officer and
+                            grievance contacts for accountable communication.
+                        </p>
                     </div>
                 </div>
+                <style>
+                    .service-card {
+                        transition: background-color .3s ease;
+                    }
+
+                    .service-card img {
+                        transition: filter .3s ease;
+                    }
+
+                    /* Desktop Hover */
+                    @media (min-width:768px) {
+                        .service-card:hover {
+                            background: #02181A;
+                        }
+
+                        .service-card:hover h6,
+                        .service-card:hover p {
+                            color: #fff !important;
+                        }
+
+                        .service-card:hover img {
+                            filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(550%) hue-rotate(355deg) brightness(90%) contrast(85%);
+                        }
+                    }
+
+                    /* Mobile */
+                    @media (max-width:767.98px) {
+                        .service-card {
+                            background: #02181A;
+                        }
+
+                        .service-card h6,
+                        .service-card p {
+                            color: #fff !important;
+                        }
+
+                        .service-card img {
+                            filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(550%) hue-rotate(355deg) brightness(90%) contrast(85%);
+                        }
+
+                        /* Horizontal scroll, no visible scrollbar */
+                        div.row.service-row {
+                            flex-wrap: nowrap !important;
+                            overflow-x: auto !important;
+                            overflow-y: hidden !important;
+                            scrollbar-width: none;
+                            -ms-overflow-style: none;
+                        }
+
+                        div.row.service-row::-webkit-scrollbar {
+                            display: none;
+                        }
+                    }
+                </style>
             </div>
         </div>
     </section>
-
 
     <!-- FAQ -->
     <section>
         <div class="container">
-            <div class="px-3 py-5 border border-start border-end border-light">
+            <div class="px-3 py-5 border border-top-0 border-light">
                 <div class="row g-3 py-md-5">
                     <div class="col-md-6">
-                        <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
-                        <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
+                        <h2 class="display-6 titleFont fw-semibold d-inline-block text-body-emphasis"
+                            data-aos-delay="100">Frequently Asked Questions</h2>
+                        <p class="fs-6 pFont mb-3"
+                            data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
                         <img
                             src="<?= $base ?>imgs/Faq.jpg"
                             class="img-fluid"
-                            alt="background">
+                            alt="background"
+
+                            data-aos-delay="100">
                     </div>
                     <div class="col-md-6">
-                        <div class="accordion accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
+                        <div class="accordion accordion-flush bg-body rounded-0 overflow-hidden" id="midcapFAQ"
+                            data-aos-delay="100">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
@@ -1187,222 +1366,6 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
-    <!-- Award -->
-    <section>
-        <div class="container">
-            <div class="py-5 px-3 border-start border-end border-light">
-                <div class="row g-0">
-                    <div class="col-md-12">
-                        <h2 class="display-6 titleFont fw-semibold">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h2>
-                        <p class="pFont fs-6 mt-3 mb-3">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
-                        <?php
-                        $awards = [
-                            [
-                                'image' => 'Award1.png',
-                                'title' => 'CEO Magazine',
-                                'award' => 'Best Leadership Award',
-                                'year'  => '2025'
-                            ],
-                            [
-                                'image' => 'Award2.png',
-                                'title' => 'Economic Times',
-                                'award' => 'Business Excellence Award',
-                                'year'  => '2025'
-                            ],
-                            [
-                                'image' => 'Award3.png',
-                                'title' => 'News24',
-                                'award' => 'Industry Recognition',
-                                'year'  => '2024'
-                            ],
-                            [
-                                'image' => 'Award4.png',
-                                'title' => 'The Economic World',
-                                'award' => 'Emerging Brand Award',
-                                'year'  => '2024'
-                            ],
-                            [
-                                'image' => 'Award5.png',
-                                'title' => 'Finext',
-                                'award' => 'Excelence in Finnance',
-                                'year'  => '2024'
-                            ],
-                            [
-                                'image' => 'Award6.png',
-                                'title' => 'India Today',
-                                'award' => 'Customer Choice Award',
-                                'year'  => '2023'
-                            ],
-                            [
-                                'image' => 'Award7.png',
-                                'title' => 'Forbes India',
-                                'award' => 'Innovation Excellence',
-                                'year'  => '2023'
-                            ],
-                            [
-                                'image' => 'Award8.png',
-                                'title' => 'Times Business',
-                                'award' => 'Trusted Brand Award',
-                                'year'  => '2023'
-                            ],
-                            [
-                                'image' => 'Award9.png',
-                                'title' => 'Global Business',
-                                'award' => 'Business Leader Award',
-                                'year'  => '2022'
-                            ],
-                        ];
-                        ?>
-
-                        <style>
-                            .award-slider {
-                                overflow: hidden;
-                                width: 100%;
-                                position: relative;
-                            }
-
-                            .award-track {
-                                display: flex;
-                                width: max-content;
-                                animation: scrollAwards 20s linear infinite;
-                            }
-
-                            .award-slider:hover .award-track {
-                                animation-play-state: paused;
-                            }
-
-                            .award-item {
-                                flex: 0 0 auto;
-                                padding: 0 10px;
-                            }
-
-                            .award-item img {
-                                /* height: 100px; */
-                                width: auto;
-                                display: block;
-                            }
-
-                            @keyframes scrollAwards {
-                                from {
-                                    transform: translateX(0);
-                                }
-
-                                to {
-                                    transform: translateX(-50%);
-                                }
-                            }
-
-                            @media (max-width:768px) {
-                                .award-item {
-                                    padding: 0 10px;
-                                }
-
-                                .award-track {
-                                    animation-duration: 28s;
-                                }
-                            }
-                        </style>
-
-                        <div class="award-slider">
-
-                            <div class="award-track">
-
-                                <!-- First Set -->
-                                <?php foreach ($awards as $award): ?>
-                                    <div class="award-item">
-                                        <img
-                                            src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                            alt="<?= htmlspecialchars($award['title']) ?>"
-                                            class="img-fluid">
-                                    </div>
-                                <?php endforeach; ?>
-
-                                <!-- Duplicate Set for Infinite Loop -->
-                                <?php foreach ($awards as $award): ?>
-                                    <div class="award-item">
-                                        <img
-                                            src="<?= $base ?>imgs/awards/<?= htmlspecialchars($award['image']) ?>"
-                                            alt="<?= htmlspecialchars($award['title']) ?>"
-                                            class="img-fluid">
-                                    </div>
-                                <?php endforeach; ?>
-
-                            </div>
-
-                        </div>
-                        <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" onclick="window.location.href='#';">
-                            Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                        </button>
-                    </div>
-                    <!-- RIGHT SIDE -->
-                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end d-none">
-                        <div class="position-relative w-100 p-5 overflow-hidden"
-                            style="max-width:450px; background-color:#02181A;box-sizing:border-box;">
-                            <!-- Background Image -->
-                            <!-- <img
-                                src="<?= $base ?>imgs/Form_Frame.svg"
-                                alt="background"
-                                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"> -->
-
-
-                            <!-- Form Box -->
-                            <div class="bg-white p-3">
-                                <div class="text-center mb-3">
-                                    <img src="<?= $base ?>imgs/Form_logo.svg" width="55" alt="form icon">
-                                </div>
-
-                                <p class="pFont mb-1 fs-6 fw-medium">
-                                    Know more about
-                                </p>
-
-                                <h4 class="fw-semibold mb-3 titleFont">
-                                    Portfolio Service
-                                </h4>
-
-                                <div class="form-floating mb-3">
-                                    <input
-                                        type="text"
-                                        class="form-control rounded-0"
-                                        id="name"
-                                        placeholder="Enter Your Name">
-                                    <label for="name">Enter Your Name*</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input
-                                        type="email"
-                                        class="form-control rounded-0"
-                                        id="email"
-                                        placeholder="Enter Your Email">
-                                    <label for="email">Enter Your Email*</label>
-                                </div>
-
-                                <div class="form-floating mb-4">
-                                    <input
-                                        type="text"
-                                        class="form-control rounded-0"
-                                        id="mobile"
-                                        placeholder="Enter Your Mobile">
-                                    <label for="mobile">Enter Your Mobile*</label>
-                                </div>
-
-                                <button class="btn rounded-0 text-white w-100" style="background-color: #02181A;">
-                                    Sign in
-                                </button>
-
-                                <p class="small fw-medium mt-3 mb-0">
-                                    By submitting, you agree to our Terms & Conditions
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
 
     <?php require __DIR__ . '/../includes/footer.php'; ?>
 
