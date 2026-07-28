@@ -243,7 +243,7 @@ require __DIR__ . '/../includes/header.php';
     </style>
 
     <!-- SECTION 1: For an Individuals -->
-    <section id="for-individuals">
+    <section id="individuals">
         <div class="container">
             <div class="border border-bottom-0 border-light py-5">
 
@@ -457,7 +457,7 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- SECTION 2: For HNI's and Ultra HNI's -->
-    <section id="for-hni">
+    <section id="hni">
         <div class="container">
             <div class="border border-top-0 border-bottom-0 border-light py-5">
 
@@ -697,61 +697,7 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- SECTION 3: For Family Offices & Institutions -->
-    <section id="for-institutions">
-        <style>
-            #for-institutions .image-box {
-                min-height: 550px;
-                background-size: cover;
-                background-position: center;
-            }
-
-            #for-institutions .form-card {
-                width: 100%;
-                max-width: 400px;
-                z-index: 10;
-                position: relative;
-                opacity: 1 !important;
-                visibility: visible !important;
-                display: block !important;
-                transform: none !important;
-            }
-
-            #for-institutions .col-md-5,
-            #for-institutions .col-md-2 {
-                position: relative;
-                z-index: 5;
-            }
-
-            /* Fallback CSS: center form-card column if Bootstrap flex utilities
-       aren't enough (e.g. custom grid overrides elsewhere) */
-            #for-institutions .form-col-center {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-            }
-
-            @media (max-width: 767px) {
-                #for-institutions .image-box {
-                    min-height: auto;
-                    /* remove the shared background — each column handles its own on mobile */
-                    background-image: none !important;
-                }
-
-                /* Left content keeps the background image on mobile */
-                #for-institutions .left-content-box {
-                    background-image: var(--mobile-bg-image);
-                    background-size: cover;
-                    background-position: center;
-                }
-
-                /* Form column gets a plain solid background on mobile */
-                /* #for-institutions .form-col-center {
-                    background-color: #02181A;
-                } */
-            }
-        </style>
-
+    <section id="institutions">
         <div class="container">
             <div class="border border-top-0 border-bottom-0 border-light py-0 py-md-5">
 
