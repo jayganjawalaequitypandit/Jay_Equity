@@ -132,7 +132,7 @@ require __DIR__ . '/../includes/header.php';
                                             </div>
 
                                             <!-- Heading -->
-                                            <h1 class="titleFont display-4 fw-semibold mb-4 text-body-emphasis">
+                                            <h1 class="titleFont 6 fw-semibold mb-4 text-body-emphasis">
                                                 Your Wealth Deserves
                                                 To Work Smarter.
                                             </h1>
@@ -209,20 +209,31 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <div class="col-md-9">
-                            <h2 class="display-4 pFont fw-semibold scroll-reveal-text text-body-emphasis">
+                            <h2 class="display-6 titleFont fst-italic fw-semibold scroll-reveal-text text-body-emphasis fst-italic">
                                 Accelerating business success through expert strategy,
                                 innovation, and sustainable long-term growth. 
                             </h2>
                             <style>
                                 .scroll-reveal-text span {
                                     color: #d0d0d0;
-                                    /* muted/gray default */
+                                    /* muted/gray default (light mode) */
                                     transition: color 0.2s ease;
                                 }
 
                                 .scroll-reveal-text span.active {
                                     color: #1a1a1a;
-                                    /* dark/revealed */
+                                    /* dark/revealed (light mode) */
+                                }
+
+                                /* Dark mode: swap the shades so the reveal direction stays consistent */
+                                [data-bs-theme="dark"] .scroll-reveal-text span {
+                                    color: #4d4d4d;
+                                    /* muted/dark-gray default against a dark background */
+                                }
+
+                                [data-bs-theme="dark"] .scroll-reveal-text span.active {
+                                    color: #f5f5f5;
+                                    /* bright/revealed against a dark background */
                                 }
                             </style>
                             <script>
@@ -287,28 +298,66 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-0 align-items-stretch">
 
                     <!-- Box 1 -->
+                    <style>
+                        .rolling-counter {
+                            display: inline-flex;
+                            align-items: baseline;
+                            line-height: 1;
+                            font: inherit;
+                        }
+
+                        .digit-box {
+                            position: relative;
+                            width: 0.65em;
+                            height: 1em;
+                            overflow: hidden;
+                            display: inline-block;
+                            line-height: 1;
+                        }
+
+                        .digit-track {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            transition: transform 4s cubic-bezier(.22, 1, .36, 1);
+                        }
+
+                        .digit {
+                            height: 1em;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font: inherit;
+                            line-height: 1;
+                        }
+                    </style>
+
                     <div class="col-12 col-md-4 d-flex">
                         <div class="border-top border-end p-4 d-flex flex-column w-100 h-100">
 
-                            <div class="flex-grow-1">
-                                <img src="<?= $base ?>imgs/Avtar2.svg" class="img-fluid" alt="Avatar Image">
-                                <h6 class="fw-semibold mt-2 text-body-emphasis">
-                                    1M+ REGISTERED USER
-                                </h6>
-                            </div>
-
-                            <p class="small flex-grow-1 fs-5 d-flex align-items-center mt-md-0">
+                            <p class="p flex-grow-1 fs-6 d-flex align-items-center mt-md-0">
                                 Over 21 years of industry expertise, delivering trusted solutions and
                                 measurable results across diverse markets.
                             </p>
 
-                            <div class="flex-grow-1 d-flex align-items-end justify-content-between">
+                            <div class="flex-grow-1 d-flex align-items-end justify-content-between mt-3">
                                 <div>
-                                    <h1 class="display-4 fw-medium text-body-emphasis">21+</h1>
-                                    <p class="mb-0">Years of Market Expertise</p>
+                                    <h1 class="display-4 fw-medium text-body-emphasis">
+                                        <span class="js-roll-counter" data-value="21"></span>+
+                                    </h1>
+                                    <p class="mb-0 fs-6">Years of Market Expertise</p>
                                 </div>
                                 <img src="<?= $base ?>imgs/services/w17.png"
                                     alt="Icon" class="img-fluid align-self-end theme-icon" style="height: 140px;">
+                            </div>
+
+                            <div class="flex-grow-1 ">
+                                <img src="<?= $base ?>imgs/Avtar2.svg" class="img-fluid mt-5" alt="Avatar Image">
+                                <h6 class="fw-semibold mt-2 text-body-emphasis">
+                                    1M+ REGISTERED USER
+                                </h6>
                             </div>
 
                         </div>
@@ -318,22 +367,26 @@ require __DIR__ . '/../includes/header.php';
                     <div class="col-12 col-md-4 d-flex">
                         <div class="border-top border-end p-4 d-flex flex-column w-100 h-100">
 
-                            <p class="small fs-5">
+                            <p class="p fs-6">
                                 Recognized with 11+ national and international awards for excellence,
                                 innovation, and outstanding business achievements.
                             </p>
 
-                            <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-between mt-3">
                                 <div>
-                                    <h1 class="display-4 fw-medium text-body-emphasis">11+</h1>
-                                    <p class="mb-0">Registered Users</p>
+                                    <h1 class="display-4 fw-medium text-body-emphasis">
+                                        <span class="js-roll-counter" data-value="11"></span>+
+                                    </h1>
+                                    <p class="mb-0 fs-6">Registered Users</p>
                                 </div>
                                 <img src="<?= $base ?>imgs/services/w6.png"
-                                    class="img-fluid theme-icon" alt="Bar Chart Icon" style="margin-top: -60px">
+                                    class="img-fluid theme-icon"
+                                    alt="Bar Chart Icon"
+                                    style="margin-top: -60px; width: 140px; height: auto;">
                             </div>
 
-                            <p class="mb-0 mt-2 mt-md-0 fs-5">
-                                <i class="fa-solid fa-circle me-2 small" style="color:#D6B770;"></i>
+                            <p class="mb-0 mt-5 fs-5 text-body-emphasis text-medium">
+                                <i class="fa-solid fa-circle me-2 p" style="color:#D6B770;"></i>
                                 <br>
                                 Ready To Accelerate Your Business Growth
                             </p>
@@ -341,12 +394,135 @@ require __DIR__ . '/../includes/header.php';
                         </div>
                     </div>
 
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+
+                            // Build a single digit's rolling track (0-9 stacked)
+                            // startAt: which digit (0-9) the track shows initially, before rolling
+                            function buildDigitBox(targetDigit, startAt) {
+                                const box = document.createElement('span');
+                                box.className = 'digit-box';
+
+                                const track = document.createElement('span');
+                                track.className = 'digit-track';
+                                track.style.transform = `translateY(-${startAt}em)`; // initial position
+
+                                for (let i = 0; i <= 9; i++) {
+                                    const d = document.createElement('span');
+                                    d.className = 'digit';
+                                    d.textContent = i;
+                                    track.appendChild(d);
+                                }
+
+                                box.appendChild(track);
+                                box.dataset.target = targetDigit;
+                                return box;
+                            }
+
+                            // Turn a span[data-value] into a rolling-counter of digit-boxes
+                            // digitIndex 0 (first digit) starts at 0, all other digits start at 9
+                            function buildRollingCounter(span) {
+                                const value = span.dataset.value;
+                                const wrapper = document.createElement('span');
+                                wrapper.className = 'rolling-counter';
+
+                                const digitsOnly = value.split('').filter(ch => /\d/.test(ch));
+                                let digitIndex = 0;
+
+                                value.split('').forEach(ch => {
+                                    if (/\d/.test(ch)) {
+                                        const startAt = (digitIndex === 0) ? 0 : 9;
+                                        wrapper.appendChild(buildDigitBox(ch, startAt));
+                                        digitIndex++;
+                                    } else {
+                                        const plain = document.createElement('span');
+                                        plain.textContent = ch;
+                                        wrapper.appendChild(plain);
+                                    }
+                                });
+
+                                span.replaceWith(wrapper);
+                                return wrapper;
+                            }
+
+                            // Trigger the roll: move each track to its target digit, staggered
+                            function rollCounter(wrapper) {
+                                const boxes = wrapper.querySelectorAll('.digit-box');
+                                boxes.forEach((box, index) => {
+                                    const target = box.dataset.target;
+                                    const track = box.querySelector('.digit-track');
+
+                                    const delay = index * 0.15; // stagger in seconds
+                                    track.style.transitionDelay = `${delay}s`;
+
+                                    void track.offsetHeight; // force reflow
+                                    track.style.transform = `translateY(-${target}em)`;
+                                });
+                            }
+
+                            const counters = Array.from(document.querySelectorAll('.js-roll-counter'))
+                                .map(buildRollingCounter);
+
+                            const observer = new IntersectionObserver((entries, obs) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        rollCounter(entry.target);
+                                        obs.unobserve(entry.target);
+                                    }
+                                });
+                            }, {
+                                threshold: 0.5
+                            });
+
+                            counters.forEach(wrapper => observer.observe(wrapper));
+                        });
+                    </script>
+
                     <!-- Box 3 -->
                     <div class="col-12 col-md-4 d-flex">
-                        <div class="w-100 h-100">
+                        <div class="w-100 h-100 position-relative growth-card overflow-hidden">
+
+                            <!-- Background image -->
                             <img src="<?= $base ?>imgs/w5.jpg"
-                                class="img-fluid w-100 h-100 object-fit-cover"
+                                class="img-fluid w-100 h-100 object-fit-cover position-absolute top-0 start-0"
                                 alt="Image">
+
+                            <!-- Gradient overlay -->
+                            <div class="position-absolute top-0 start-0 w-100 h-100 growth-overlay"></div>
+
+                            <!-- Text content -->
+                            <div class="position-relative p-4 d-flex flex-column h-100 text-dark">
+
+                                <div>
+                                    <h5 class="fw-semibold mb-1">
+                                        Strategic Business Growth
+                                    </h5>
+
+                                    <p class="d-block fw-semibold fs-6">
+                                        © 2026 Equitypandit Financial Services Private Limited
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-baseline mb-1 mt-4">
+                                    <span class="fw-medium me-1" style="font-size:60px;">
+                                        4.5
+                                    </span>
+
+                                    <span class="fs-3">
+                                        /5
+                                    </span>
+                                </div>
+                                <div class="text-warning mb-2 fs-4">
+                                    ★★★★★
+                                </div>
+                                <div class="mt-auto">
+                                    <p class="fw-semibold mb-0 fs-5">
+                                        Trusted By Businesses
+                                        Across The Globe.
+                                    </p>
+
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
@@ -455,14 +631,14 @@ require __DIR__ . '/../includes/header.php';
             <div class="py-5 px-3 border border-light">
                 <div class="row g-0 mt-5">
                     <div class="col-md-5 d-flex align-items-center">
-                        <h2 class="display-5 titleFont fw-semibold d-inline-block text-body-emphasis">
+                        <h2 class="6 titleFont fw-semibold d-inline-block text-body-emphasis">
                             Built For Every <br class="d-none d-md-block">Market Condition
                         </h2>
                     </div>
                     <div class="col-md-7 mt-2 mt-md-0">
                         <p class="fs-5 pFont">WealthX is a comprehensive multi-asset investment advisory service designed to capture every market opportunity for the super compounding of your wealth.</p>
                         <p class="fs-5 pFont mb-0">By combining expert research, disciplined portfolio construction, and active capital allocation, WealthX delivers institutional-quality investment
-                            strategy — made accessible to individual investors.</p>
+                            strategy - made accessible to individual investors.</p>
                     </div>
                 </div>
             </div>
@@ -508,12 +684,12 @@ require __DIR__ . '/../includes/header.php';
                                 </div>
 
                                 <div class="col-12">
-                                    <a href="#"
-                                        class="btn rounded-0 text-white mt-3 ms-3 px-4 py-2 mb-3 pFont"
-                                        style="background-color: #02181A;">
+                                    <!-- Button -->
+                                    <button class="btn btn-dark rounded-0 px-4 py-2 mt-3 ms-3"
+                                        style="color:#D6B770;">
                                         Learn How It Works
                                         <i class="fa-solid fa-arrow-right-long ms-2"></i>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -610,15 +786,16 @@ require __DIR__ . '/../includes/header.php';
     <section class="bg-black text-white ">
         <div class="container">
             <div class="px-3 py-5 border border-light">
-                <div class="row g-3 mt-5  mt-md-0 mt-md-0">
-                    <div class="col-md-6">
-                        <h2 class="display-5 titleFont fw-semibold">
-                            Every Market.<br>
+                <div class="row g-3 mt-5  mt-md-0 mt-md-0 justify-content-between">
+                    <div class="col-md-4">
+                        <h2 class="display-6 titleFont fw-semibold">
+                            Every Market.
                             Every Opportunity.
                         </h2>
                     </div>
+                    <!-- <div class="col-md-2"></div> -->
                     <div class="col-md-6">
-                        <p class="fs-5 pFont">
+                        <p class="fs-5 pFont ">
                             A complete wealth management ecosystem - research,
                             alerts, analytics, and expert support.
                         </p>
@@ -639,33 +816,39 @@ require __DIR__ . '/../includes/header.php';
                             <div class="row">
                                 <!-- Left -->
                                 <div class="col-md-6 col-12 p-4 p-md-5">
-                                    <h3 class="display-6 titleFont fw-semibold">Equity Portfolio</h3>
+                                    <h3 class="fs-2 titleFont fw-semibold">Equity Portfolio</h3>
 
-                                    <small class="text-uppercase  d-block mb-4" style="color:#D8BB63">
+                                    <p class="text-uppercase d-block mb-4" style="color:#D8BB63">
                                         The Growth Core
-                                    </small>
+                                    </p>
 
-                                    <p class="text-secondary fs-5 pFont ">
+                                    <p class="text-secondary fs-6 pFont ">
                                         A Curated Basket Of Fundamentally Strong Stocks.
                                         Deep Analysis Of Business Quality, Earnings Growth,
                                         And Management Track Record. Rebalanced Quarterly.
                                     </p>
 
                                     <div class="d-flex flex-wrap gap-3">
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
-                                            <small> Fundamentally Strong Stocks</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-regular fa-gem me-2"></i>
+                                                Fundamentally Strong Stocks
+                                            </p>
+                                        </div>
 
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w12.svg " class="img-fluid me-2" alt="">
-                                            <small> In-Depth Research & Analysis</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-arrow-up-right-dots me-2"></i>
+                                                In-depth Research & Analysis
+                                            </p>
+                                        </div>
 
-                                        <span class="border border-secondary  px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
-                                            <small> Quarterly Rebalancing</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-battery-three-quarters me-2"></i>
+                                                Quarterly Rebalancing
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -687,30 +870,36 @@ require __DIR__ . '/../includes/header.php';
                                 <div class="col-md-6 col-12 p-4 p-md-5">
                                     <h3 class="display-6 titleFont fw-semibold">Multibaggers</h3>
 
-                                    <small class="text-uppercase  d-block mb-4" style="color:#539AFF">
+                                    <p class="text-uppercase  d-block mb-4" style="color:#539AFF">
                                         HIGH-CONVICTION PICKS
-                                    </small>
+                                    </p>
 
-                                    <p class="text-secondary fs-5 pFont ">
+                                    <p class="text-secondary fs-6 pFont ">
                                         One high-growth opportunity every month. Quality businesses with
                                         strong structural trends and mid-term horizon. Carefully researched - not speculative.
                                     </p>
 
                                     <div class="d-flex flex-wrap gap-3">
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
-                                            <small> 1 High-Growth Stock Every Month</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-money-bill-trend-up me-2"></i>
+                                                1 High-Growth Stock Every Month
+                                            </p>
+                                        </div>
 
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w12.svg " class="img-fluid me-2" alt="">
-                                            <small> Research-Backed, Not Speculative</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-microscope me-2"></i>
+                                                Research-Backed, Not Speculative
+                                            </p>
+                                        </div>
 
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
-                                            <small> Quality Businesses, Strong Trends</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-arrow-trend-up me-2"></i>
+                                                Quality Businesses, Strong Trends
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -732,31 +921,37 @@ require __DIR__ . '/../includes/header.php';
                                 <div class="col-md-6 col-12 p-4 p-md-5">
                                     <h3 class="display-6 titleFont fw-semibold">ETFs</h3>
 
-                                    <small class="text-uppercase  d-block mb-4" style="color:#5BFFB4">
+                                    <p class="text-uppercase  d-block mb-4" style="color:#5BFFB4">
                                         DIVERSIFIED EXPOSURE
-                                    </small>
+                                    </p>
 
-                                    <p class="text-secondary fs-5 pFont ">
+                                    <p class="text-secondary fs-6 pFont ">
                                         Strategic allocations to commodity, index, and debt ETFs.
                                         Broad macro coverage across sectors and geographies
                                         that stock picking alone cannot reach.
                                     </p>
 
                                     <div class="d-flex flex-wrap gap-3">
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
-                                            <small> Global & Sector Diversification</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-globe me-2"></i>
+                                                Global & Sector Diversification
+                                            </p>
+                                        </div>
 
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w12.svg " class="img-fluid me-2" alt="">
-                                            <small> Commodity, Index & Debt ETFS</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-arrows-down-to-people me-2"></i>
+                                                Commodity, Index & Debt ETFS
+                                            </p>
+                                        </div>
 
-                                        <span class="border border-secondary px-1 py-2 small">
-                                            <img src="<?= $base ?>imgs/services/w11.svg " class="img-fluid me-2" alt="">
-                                            <small>Reduce Risk, Enhance Returns</small>
-                                        </span>
+                                        <div class="card border rounded-0 bg-black text-white border-secondary p-2 d-flex justify-content-center align-items-center">
+                                            <p class="pFont fs-6 mb-0 text-center">
+                                                <i class="fa-solid fa-person-walking-arrow-loop-left me-2"></i>
+                                                Reduce Risk, Enhance Returns
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -837,22 +1032,30 @@ require __DIR__ . '/../includes/header.php';
     <section>
         <div class="container">
             <div class="border border-light border-top-0 border-bottom-0">
-                <div class="row align-items-stretch  ">
+                <div class="row align-items-stretch">
 
-                    <!-- Left Side -->
-                    <div class="col-12 col-md-6 ">
-                        <div class="h-100">
-                            <img
-                                src="<?= $base ?>imgs/services/welthx_7.jpg"
-                                alt="Contact"
-                                class="img-fluid w-100 h-100 object-fit-cover">
-                        </div>
+                    <!-- Mobile Heading -->
+                    <div class="col-12 d-block d-md-none order-1 p-4 pb-0">
+                        <h2 class="titleFont mb-4 text-body-emphasis">
+                            Not Built To Generate
+                            Excitement. Built To Generate
+                            Wealth.
+                        </h2>
                     </div>
 
-                    <!-- Right Side -->
-                    <div class="col-12 col-md-6 p-4 p-md-5">
-                        <h2 class="display-5 titleFont mb-4 text-body-emphasis">
-                            Not Built To Generate <br class="d-none d-md-block">
+                    <!-- Left Image -->
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <img src="<?= $base ?>imgs/services/welthx_7.jpg"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                            alt="">
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="col-12 col-md-6 order-3 order-md-2 p-4 p-md-5">
+
+                        <!-- Desktop Heading -->
+                        <h2 class="titleFont mb-4 text-body-emphasis d-none d-md-block">
+                            Not Built To Generate
                             Excitement. Built To Generate
                             Wealth.
                         </h2>
@@ -871,14 +1074,12 @@ require __DIR__ . '/../includes/header.php';
                             <span>| Through It All |</span>
                         </div>
 
-                        <a href="contact.php"
-                            class="btn text-white rounded-0 py-2"
-                            style="background:#D6B770">
+                        <button class="btn btn-dark rounded-0 px-4 py-2 mt-2" style="color:#D6B770;">
                             Schedule a Consultation
-                            <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
+                        </button>
 
                     </div>
+
                 </div>
             </div>
         </div>
@@ -944,6 +1145,11 @@ require __DIR__ . '/../includes/header.php';
             .icon-4 {
                 -webkit-mask-image: url("../imgs/Vector18.svg");
                 mask-image: url("../imgs/Vector18.svg");
+            }
+
+            /* Dark mode default: white icon so it's visible against the dark card */
+            [data-bs-theme="dark"] .icon {
+                background: #fff;
             }
 
             .hover-card:hover .icon {
@@ -1023,7 +1229,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <div class="mt-auto fw-semibold pt-3">
-                            <i class="fa-solid fa-circle me-2 small"></i>
+                            <i class="fa-solid fa-circle me-2 p"></i>
                             Explore More
                         </div>
 
@@ -1050,7 +1256,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <div class="mt-auto fw-semibold pt-3">
-                            <i class="fa-solid fa-circle me-2 small"></i>
+                            <i class="fa-solid fa-circle me-2 p"></i>
                             Explore More
                         </div>
 
@@ -1077,7 +1283,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <div class="mt-auto fw-semibold pt-3">
-                            <i class="fa-solid fa-circle me-2 small"></i>
+                            <i class="fa-solid fa-circle me-2 p"></i>
                             Explore More
                         </div>
 
@@ -1104,7 +1310,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <div class="mt-auto fw-semibold pt-3">
-                            <i class="fa-solid fa-circle me-2 small"></i>
+                            <i class="fa-solid fa-circle me-2 p"></i>
                             Explore More
                         </div>
 
@@ -1164,7 +1370,7 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Left Content -->
                 <div class="col-md-8 text-center text-md-start">
-                    <h2 class="titleFont fw-semibold display-5 mb-3 " style="color:#02181A;">
+                    <h2 class="titleFont fw-semibold display-6 mb-3 " style="color:#02181A;">
                         Invest with Intelligence.<br>
                         Compound with Confidence.
                     </h2>
@@ -1195,7 +1401,7 @@ require __DIR__ . '/../includes/header.php';
                 <div class="px-3 py-5 border border-light">
                     <div class="row g-3 justify-content-center mt-5  mt-md-0 mb-md-0">
                         <div class="col-md-5">
-                            <h2 class="display-5 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
+                            <h2 class="6 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
                         </div>
                         <div class="col-md-7">
                             <p class=" pFont fs-5">
@@ -1210,8 +1416,8 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 1 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-3 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w13.svg" alt="Clear rationale" class="mb-5" style="width:80px;">
-                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Clear Rationale</h2>
-                        <p class="fs-5 pFont mb-0">
+                        <h2 class="titleFont mb-3 text-body-emphasis ">Clear Rationale</h2>
+                        <p class=" pFont mb-0">
                             Advice accompanied by understandable research,
                             investment context and material risk factors.
                         </p>
@@ -1220,8 +1426,8 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 2 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-3 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w14.svg" alt="Timely Updates" class="mb-5" style="width:80px;">
-                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Timely Updates</h2>
-                        <p class="small pFont mb-0 fs-5">
+                        <h2 class="titleFont mb-3 text-body-emphasis">Timely Updates</h2>
+                        <p class="p pFont mb-0">
                             Relevant portfolio changes, alerts and research
                             developments communicated through official channels.
                         </p>
@@ -1230,8 +1436,8 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 3 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-end border-bottom border-light p-4 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w15.svg" alt="Risk Transparency" class="mb-5" style="width:60px;">
-                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Risk Transparency</h2>
-                        <p class="small pFont mb-0 fs-5">
+                        <h2 class="titleFont mb-3 text-body-emphasis">Risk Transparency</h2>
+                        <p class="p pFont mb-0">
                             No guaranteed-return language, hidden certainty
                             or avoidance of the risks inherent in equity markets.
                         </p>
@@ -1240,8 +1446,8 @@ require __DIR__ . '/../includes/header.php';
                     <!-- Card 4 -->
                     <div class="col-md-3 col-8 flex-shrink-0 border-bottom border-light p-4 d-flex flex-column service-card">
                         <img src="<?= $base ?>imgs/services/w16.svg" alt="Accessible Support" class="mb-5" style="width:80px;">
-                        <h2 class="titleFont mb-3 text-body-emphasis fs-3">Accessible Support</h2>
-                        <p class="small pFont mb-0 fs-5">
+                        <h2 class="titleFont mb-3 text-body-emphasis ">Accessible Support</h2>
+                        <p class="p pFont mb-0 ">
                             Defined client-support, principal-officer and
                             grievance contacts for accountable communication.
                         </p>
@@ -1256,13 +1462,18 @@ require __DIR__ . '/../includes/header.php';
                         transition: filter .3s ease;
                     }
 
+                    /* Dark mode default: make icons white so they're visible against the dark bg */
+                    [data-bs-theme="dark"] .service-card img {
+                        filter: brightness(0) invert(1);
+                    }
+
                     /* Desktop Hover */
                     @media (min-width:768px) {
                         .service-card:hover {
                             background: #02181A;
                         }
 
-                        .service-card:hover h6,
+                        .service-card:hover h2,
                         .service-card:hover p {
                             color: #fff !important;
                         }
@@ -1278,7 +1489,7 @@ require __DIR__ . '/../includes/header.php';
                             background: #02181A;
                         }
 
-                        .service-card h6,
+                        .service-card h2,
                         .service-card p {
                             color: #fff !important;
                         }
@@ -1287,7 +1498,6 @@ require __DIR__ . '/../includes/header.php';
                             filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(550%) hue-rotate(355deg) brightness(90%) contrast(85%);
                         }
 
-                        /* Horizontal scroll, no visible scrollbar */
                         div.row.service-row {
                             flex-wrap: nowrap !important;
                             overflow-x: auto !important;
@@ -1313,7 +1523,7 @@ require __DIR__ . '/../includes/header.php';
                     <div class="col-md-6">
                         <h2 class="display-6 titleFont fw-semibold d-inline-block text-body-emphasis"
                             data-aos-delay="100">Frequently Asked Questions</h2>
-                        <p class="fs-6 pFont mb-3"
+                        <p class="fs-5 pFont mb-3"
                             data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
                         <img
                             src="<?= $base ?>imgs/Faq.jpg"

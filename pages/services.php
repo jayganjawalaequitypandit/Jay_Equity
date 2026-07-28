@@ -142,6 +142,16 @@ require __DIR__ . '/../includes/header.php';
                     letter-spacing: 2px;
                 }
             }
+
+            .hero-text {
+                top: 70%;
+            }
+
+            @media (max-width: 768px) {
+                .hero-text {
+                    top: 40%;
+                }
+            }
         </style>
 
         <!-- Background Image -->
@@ -168,11 +178,10 @@ require __DIR__ . '/../includes/header.php';
                 <div class="border-start border-end border-light h-100"></div>
 
                 <!-- Center Text (Lower Position) -->
-                <div class="position-absolute start-50 translate-middle text-center text-white w-100 px-3"
-                    style="top: 80%;">
+                <div class="position-absolute start-50 translate-middle-x text-center text-white w-100 px-3 hero-text">
 
-                    <h1 class="display-4 fw-bold text-white text-center titleFont mb-0">
-                        Start Your Eealth Creation Journey
+                    <h1 class="display-4 fw-bold text-white titleFont mb-0">
+                        Start Your wealth creation journey
                     </h1>
 
                     <div class="pFont fs-5 mb-3">
@@ -193,7 +202,7 @@ require __DIR__ . '/../includes/header.php';
         }
 
         .image-content {
-            background: linear-gradient(180deg, rgba(2, 24, 26, 0) 30%, rgba(2, 24, 26, .92) 100%);
+            background: transparent;
             transition: all .4s ease;
         }
 
@@ -246,7 +255,7 @@ require __DIR__ . '/../includes/header.php';
 
                 <div class="row g-0">
                     <!-- Image panel -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 border-bottom ">
                         <div class="image-box position-relative overflow-hidden h-100" style="cursor:pointer;">
 
                             <img
@@ -267,13 +276,13 @@ require __DIR__ . '/../includes/header.php';
                                     For Individuals
                                 </h2>
 
-                                <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
-                                    A carefully curated list of 18–20 high-potential stocks,
+                                <p class="sub-title pFont small mb-0">
+                                    A carefully curated list of 18-20 high-potential stocks,
                                     backed by 20+ years of market expertise, designed to create
                                     long-term wealth.
                                 </p>
 
-                                <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
+                                <p class="sub-title pFont small mb-0">
                                     <i class="fa-solid fa-circle-check me-2 text-success"></i>
                                     High-Conviction Stocks for 2026
                                     <br>
@@ -292,128 +301,158 @@ require __DIR__ . '/../includes/header.php';
                     </div>
 
                     <!-- Alpha India Portfolio -->
-                    <div class="col-md-4">
-                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
-                            style="
-                            background: linear-gradient(
-                                135deg,
-                                rgba(222,247,238,0.15) 0%,
-                                rgba(222,247,238,0.30) 50%,
-                                rgba(222,247,238,0.55) 100%
-                            );
-                            border:1px solid #D8E7E0;
-                        ">
+                    <div class="col-md-4 border-bottom">
+                        <div class="h-100 p-4 p-md-3  d-flex flex-column border-0 border-end theme-card">
+                            <style>
+                                :root {
+                                    --card-top: rgba(0, 0, 0, 0.90);
+                                    --card-bottom: rgba(110, 231, 183, 0.25);
+                                    --card-border: rgba(34, 197, 94, 0.20);
+                                }
 
-                            <h3 class="titleFont fw-semibold fs-4 mb-3">
+                                [data-bs-theme="light"] {
+                                    --card-top: rgba(255, 255, 255, 0.95);
+                                    --card-bottom: rgba(167, 243, 208, 0.45);
+                                    --card-border: rgba(34, 197, 94, 0.25);
+                                }
+
+                                [data-bs-theme="dark"] {
+                                    --card-top: rgba(0, 0, 0, 0.90);
+                                    --card-bottom: rgba(110, 231, 183, 0.25);
+                                    --card-border: rgba(34, 197, 94, 0.20);
+                                }
+
+                                .theme-card {
+                                    background: linear-gradient(0deg,
+                                            var(--card-top) 0%,
+                                            var(--card-bottom) 100%);
+                                    border: 1px solid var(--card-border);
+                                }
+                            </style>
+                            <h3 class="titleFont fw-semibold fs-4 mb-3 text-body-emphasis">
                                 Alpha India Portfolio
                             </h3>
 
-                            <p class="text-muted-green mb-4" style="font-size:.94rem; line-height:1.7;">
+                            <p class="text-muted-dark mb-4" ">
                                 A carefully curated list of 18-20 high-potential stocks,
                                 backed by 20+ years of market expertise, designed to create
                                 long-term wealth.
                             </p>
 
-                            <div class="text-uppercase fw-semibold small mb-3 text-muted-green"
-                                style="letter-spacing:.1em;font-size:.72rem;">
+                            <div class=" text-uppercase fw-semibold small mb-3 text-body-emphasis">
                                 What you get
-                            </div>
-
-                            <ul class="list-unstyled mb-4">
-                                <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
-                                    <span>Diversified Portfolio comprising Largecap, Midcap &amp; Smallcap stocks</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
-                                    <span>Quarterly Re-balancing</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
-                                    <span>Personalized Dashboard with real-time updates</span>
-                                </li>
-                            </ul>
-
-                            <div class="mt-auto pt-3 border-top">
-                                <div class="text-muted-green small mb-3">
-                                    Minimum Investment:
-                                    <strong class="text-success fw-semibold">₹2 Lacs</strong>
-                                </div>
-
-                                <a href="../services/portfolio.php"
-                                    class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
-                                    Explore Strategies
-                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <!-- Multibagger -->
-                    <div class="col-md-4">
-                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
-                            style="
-                            background: linear-gradient(
-                                135deg,
-                                rgba(222,247,238,0.15) 0%,
-                                rgba(222,247,238,0.30) 50%,
-                                rgba(222,247,238,0.55) 100%
-                            );
-                            border:1px solid #D8E7E0;
-                        ">
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-start gap-2 mb-3">
+                                <i class="fa-solid fa-circle-check text-body mt-1"></i>
+                                <span>Diversified Portfolio comprising Largecap, Midcap &amp; Smallcap stocks</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2 mb-3">
+                                <i class="fa-solid fa-circle-check text-body mt-1"></i>
+                                <span>Quarterly Re-balancing</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2 mb-3">
+                                <i class="fa-solid fa-circle-check text-body mt-1"></i>
+                                <span>Personalized Dashboard with real-time updates</span>
+                            </li>
+                        </ul>
 
-                            <h3 class="titleFont fw-semibold fs-4 mb-3">
-                                Multibagger
-                            </h3>
-
-                            <p class="text-muted-green mb-4" style="font-size:.94rem; line-height:1.7;">
-                                One high-growth stock every month for mid-term holding,
-                                focused on fundamentally strong businesses.
-                            </p>
-
-                            <div class="text-uppercase fw-semibold small mb-3 text-muted-green"
-                                style="letter-spacing:.1em;font-size:.72rem;">
-                                What you get
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="text-muted-secondary small mb-3">
+                                Minimum Investment:
+                                <strong class="text-body fw-semibold">₹2 Lacs</strong>
                             </div>
 
-                            <ul class="list-unstyled mb-4">
-                                <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
-                                    <span>One High-Growth Stock Every Month</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
-                                    <span>Detailed Research Report</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
-                                    <span>Mid-term investment</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
-                                    <span>Live dashboard to track performance</span>
-                                </li>
-                            </ul>
-
-                            <div class="mt-auto pt-3 border-top">
-                                <div class="text-muted-green small mb-3">
-                                    Minimum Investment:
-                                    <strong class="text-success fw-semibold">₹20,000 per stock</strong>
-                                </div>
-
-                                <a href="../services/multibagger.php"
-                                    class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
-                                    Explore Strategies
-                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-
+                            <a href="../services/portfolio.php"
+                                class="fw-semibold text-body-emphasis text-decoration-none d-inline-flex align-items-center gap-2">
+                                Explore Strategies
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
+                <!-- Multibagger -->
+                <div class="col-md-4 border-bottom">
+                    <div class="h-100 p-4 p-md-3 d-flex flex-column border-0 theme-card">
+                        <style>
+                            :root {
+                                --card-top: rgba(0, 0, 0, 0.90);
+                                --card-bottom: rgba(110, 231, 183, 0.25);
+                                --card-border: rgba(34, 197, 94, 0.20);
+                            }
+
+                            [data-bs-theme="light"] {
+                                --card-top: rgba(255, 255, 255, 0.95);
+                                --card-bottom: rgba(167, 243, 208, 0.45);
+                                --card-border: rgba(34, 197, 94, 0.25);
+                            }
+
+                            [data-bs-theme="dark"] {
+                                --card-top: rgba(0, 0, 0, 0.90);
+                                --card-bottom: rgba(110, 231, 183, 0.25);
+                                --card-border: rgba(34, 197, 94, 0.20);
+                            }
+
+                            .theme-card {
+                                background: linear-gradient(0deg,
+                                        var(--card-top) 0%,
+                                        var(--card-bottom) 100%);
+                                border: 1px solid var(--card-border);
+                            }
+                        </style>
+                        <h3 class="titleFont fw-semibold fs-4 mb-3 text-body-emphasis">
+                            Multibagger
+                        </h3>
+
+                        <p class="text-muted-dark mb-4">
+                            One high-growth stock every month for mid-term holding,
+                            focused on fundamentally strong businesses.
+                        </p>
+
+                        <div class="text-uppercase fw-semibold small mb-3 text-body-emphasis">
+                            What you get
+                        </div>
+
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-start gap-2 mb-3">
+                                <i class="fa-solid fa-circle-check text-body mt-1"></i>
+                                <span>One High-Growth Stock Every Month</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2 mb-3">
+                                <i class="fa-solid fa-circle-check text-body mt-1"></i>
+                                <span>Detailed Research Report</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2 mb-3">
+                                <i class="fa-solid fa-circle-check text-body mt-1"></i>
+                                <span>Mid-term investment</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2 mb-3">
+                                <i class="fa-solid fa-circle-check text-body mt-1"></i>
+                                <span>Live dashboard to track performance</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="text-muted-secondary small mb-3">
+                                Minimum Investment:
+                                <strong class="text-body fw-semibold">₹20,000 per stock</strong>
+                            </div>
+
+                            <a href="../services/multibagger.php"
+                                class="fw-semibold text-body-emphasis text-decoration-none d-inline-flex align-items-center gap-2">
+                                Explore Strategies
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+        </div>
         </div>
     </section>
 
@@ -431,7 +470,7 @@ require __DIR__ . '/../includes/header.php';
                 <div class="row g-0">
 
                     <!-- Image panel -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 border-bottom">
                         <div class="image-box position-relative overflow-hidden h-100" style="cursor:pointer;">
 
                             <img
@@ -453,12 +492,12 @@ require __DIR__ . '/../includes/header.php';
                                     HNI's
                                 </h2>
 
-                                <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
+                                <p class="sub-title pFont small mb-0">
                                     One high-growth stock every month for mid-term holding,
                                     focused on fundamentally strong businesses.
                                 </p>
 
-                                <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
+                                <p class="sub-title pFont small mb-0">
                                     <i class="fa-solid fa-circle-check me-2 text-success"></i>
                                     A detailed research report
                                     <br>
@@ -478,57 +517,84 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- WealthX -->
                     <div class="col-md-4">
-                        <div class="h-100 p-4 p-md-3 rounded-1 d-flex flex-column border-0"
-                            style="
-                            background: linear-gradient(
-                                135deg,
-                                #FFFBEE 0%,
-                                #FFFDF6 100%
-                            );
-                            border:1px solid #EDE7D5;
-                        ">
-                            <h3 class="titleFont fw-semibold fs-4 mb-3">
+                        <div class="h-100 p-4 p-md-3 d-flex flex-column border-0 border-end border-bottom theam1-card">
+                            <style>
+                                :root {
+                                    /* WealthX Card Colors */
+                                    --wealthx-card-top: rgba(0, 0, 0, 0.90);
+                                    --wealthx-card-mid: rgba(18, 18, 18, 1);
+                                    --wealthx-card-bottom: rgba(107, 90, 39, 0.35);
+                                    --wealthx-card-border: rgba(145, 120, 55, 0.25);
+                                }
+
+                                /* Light Theme */
+                                [data-bs-theme="light"] {
+                                    --wealthx-card-top: rgba(255, 255, 255, 0.96);
+                                    --wealthx-card-mid: rgba(195, 170, 95, 0.18);
+                                    --wealthx-card-bottom: rgba(195, 170, 95, 0.18);
+                                    --wealthx-card-border: rgba(145, 120, 55, 0.28);
+                                }
+
+                                /* Dark Theme */
+                                [data-bs-theme="dark"] {
+                                    --wealthx-card-top: #080808;
+                                    --wealthx-card-mid: #776937;
+                                    --wealthx-card-bottom: rgba(107, 90, 39, 0.75);
+                                    --wealthx-card-border: rgba(145, 120, 55, 0.22);
+                                }
+
+                                /* WealthX Card */
+                                .theam1-card {
+                                    background: linear-gradient(0deg,
+                                            var(--wealthx-card-top) 0%,
+                                            var(--wealthx-card-mid) 72%,
+                                            var(--wealthx-card-bottom) 100%);
+                                    border: 1px solid var(--wealthx-card-border);
+                                    transition: background .3s ease, border-color .3s ease;
+                                }
+                            </style>
+
+                            <h3 class="titleFont fw-semibold fs-4 mb-3 text-body-emphasis">
                                 WealthX
                             </h3>
 
-                            <p class="text-muted-green mb-4" style="font-size:.94rem; line-height:1.7;">
+                            <p class="text-body mb-4">
                                 Opportunities Don't Wait. Neither Should You.<br>
                                 WealthX is a comprehensive equity investing service built
                                 to keep you aligned with opportunities across market cycles.
                             </p>
 
-                            <div class="text-uppercase fw-semibold small mb-3 text-muted-green"
-                                style="letter-spacing:.1em;font-size:.72rem;">
+                            <div class="text-uppercase fw-semibold small mb-3 text-body-emphasis">
                                 What you get
                             </div>
 
                             <ul class="list-unstyled mb-4">
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>Curated Stocks Portfolio for long-term wealth creation</span>
                                 </li>
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>Monthly Stock Ideas backed by research and market structure</span>
                                 </li>
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>ETF Recommendations to capture sectoral, thematic, and macro opportunities</span>
                                 </li>
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>Opportunity-driven strategy to help you act, not react, as markets evolve</span>
                                 </li>
                             </ul>
 
                             <div class="mt-auto pt-3 border-top">
-                                <div class="text-muted-green small mb-3">
+                                <div class="text-muted-secondary small mb-3">
                                     Minimum Investment:
-                                    <strong class="text-success fw-semibold">₹1. Crore</strong>
+                                    <strong class="fw-semibold text-body">₹1. Crore</strong>
                                 </div>
 
                                 <a href="../services/wealthx.php"
-                                    class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
+                                    class="fw-semibold text-body-emphasis text-decoration-none d-inline-flex align-items-center gap-2">
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
@@ -539,58 +605,84 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- WealthX+ -->
                     <div class="col-md-4">
-                        <div class="h-100 p-4 p-lg-3 rounded-1 d-flex flex-column border-0"
-                            style="
-                            background: linear-gradient(
-                                135deg,
-                                #FFFBEE 0%,
-                                #FFFDF6 100%
-                            );
-                            border:1px solid #EDE7D5;
-                        ">
+                        <div class="h-100 p-4 p-md-3 d-flex flex-column border-0 border-bottom theam1-card">
+                            <style>
+                                :root {
+                                    /* WealthX Card Colors */
+                                    --wealthx-card-top: rgba(0, 0, 0, 0.90);
+                                    --wealthx-card-mid: rgba(18, 18, 18, 1);
+                                    --wealthx-card-bottom: rgba(107, 90, 39, 0.35);
+                                    --wealthx-card-border: rgba(145, 120, 55, 0.25);
+                                }
 
-                            <h3 class="titleFont fw-semibold fs-4 mb-3">
+                                /* Light Theme */
+                                [data-bs-theme="light"] {
+                                    --wealthx-card-top: rgba(255, 255, 255, 0.96);
+                                    --wealthx-card-mid: rgba(195, 170, 95, 0.18);
+                                    --wealthx-card-bottom: rgba(195, 170, 95, 0.18);
+                                    --wealthx-card-border: rgba(145, 120, 55, 0.28);
+                                }
+
+                                /* Dark Theme */
+                                [data-bs-theme="dark"] {
+                                    --wealthx-card-top: #080808;
+                                    --wealthx-card-mid: #776937;
+                                    --wealthx-card-bottom: rgba(107, 90, 39, 0.75);
+                                    --wealthx-card-border: rgba(145, 120, 55, 0.22);
+                                }
+
+                                /* WealthX Card */
+                                .theam1-card {
+                                    background: linear-gradient(0deg,
+                                            var(--wealthx-card-top) 0%,
+                                            var(--wealthx-card-mid) 72%,
+                                            var(--wealthx-card-bottom) 100%);
+                                    border: 1px solid var(--wealthx-card-border);
+                                    transition: background .3s ease, border-color .3s ease;
+                                }
+                            </style>
+
+                            <h3 class="titleFont fw-semibold fs-4 mb-3 text-body-emphasis">
                                 WealthX+
                             </h3>
 
-                            <p class="text-muted-green mb-4" style="font-size:.94rem; line-height:1.7;">
+                            <p class="text-body mb-4">
                                 Opportunities Don't Wait. Neither Should You.<br>
                                 WealthX is a comprehensive equity investing service built
                                 to keep you aligned with opportunities across market cycles.
                             </p>
 
-                            <div class="text-uppercase fw-semibold small mb-3 text-muted-green"
-                                style="letter-spacing:.1em;font-size:.72rem;">
+                            <div class="text-uppercase fw-semibold small mb-3 text-body-emphasis">
                                 What you get
                             </div>
 
                             <ul class="list-unstyled mb-4">
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>Curated Stocks Portfolio for long-term wealth creation</span>
                                 </li>
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>Monthly Stock Ideas backed by research and market structure</span>
                                 </li>
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>ETF Recommendations to capture sectoral, thematic, and macro opportunities</span>
                                 </li>
                                 <li class="d-flex align-items-start gap-2 mb-3">
-                                    <i class="fa-solid fa-circle-check text-dark mt-1"></i>
+                                    <i class="fa-solid fa-circle-check text-body mt-1"></i>
                                     <span>Opportunity-driven strategy to help you act, not react, as markets evolve</span>
                                 </li>
                             </ul>
 
                             <div class="mt-auto pt-3 border-top">
-                                <div class="text-muted-green small mb-3">
+                                <div class="text-muted-secondary small mb-3">
                                     Minimum Investment:
-                                    <strong class="text-success fw-semibold">₹1. Crore</strong>
+                                    <strong class="fw-semibold text-body">₹1. Crore</strong>
                                 </div>
 
                                 <a href="../services/wealthx.php"
-                                    class="fw-semibold text-dark text-decoration-none d-inline-flex align-items-center gap-2">
+                                    class="fw-semibold text-body-emphasis text-decoration-none d-inline-flex align-items-center gap-2">
                                     Explore Strategies
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
@@ -607,7 +699,7 @@ require __DIR__ . '/../includes/header.php';
     <!-- SECTION 3: For Family Offices & Institutions -->
     <section id="institutions">
         <div class="container">
-            <div class="border border-top-0 border-bottom-0 border-light py-5">
+            <div class="border border-top-0 border-bottom-0 border-light py-0 py-md-5">
 
                 <div class="mb-3 px-3">
                     <h1 class="display-6 fw-semibold titleFont">
@@ -617,110 +709,199 @@ require __DIR__ . '/../includes/header.php';
 
                 <div class="row g-0">
 
-                    <!-- Card 1 -->
-                    <div class="col-md-5">
-                        <div class="image-box position-relative overflow-hidden h-100" style="cursor:pointer;">
+                    <div class="col-md-12">
+                        <div class="image-box position-relative overflow-hidden"
+                            style="background-image: url('<?= $base ?>imgs/c3.png');">
 
-                            <img
-                                src="<?= $base ?>imgs/c3.png"
-                                class="img-fluid w-100 h-100 object-fit-cover"
-                                alt="Business"
-                                loading="lazy"
-                                decoding="async">
+                            <div class="row g-0 h-100 align-items-center">
 
-                            <div class="image-content position-absolute bottom-0 start-0 w-100 h-100 p-3 text-light d-flex flex-column justify-content-end">
+                                <!-- Left Content: bg image visible on mobile & desktop -->
+                                <div class="col-md-5">
+                                    <div class="left-content-box position-relative h-100 p-3 p-lg-5 text-light d-flex flex-column justify-content-center"
+                                        style="--mobile-bg-image: url('<?= $base ?>imgs/c3.png');">
 
-                                <img
-                                    src="<?= $base ?>imgs/Vector3.svg"
-                                    alt="EquityPandit"
-                                    class="img-fluid logo mb-3 d-block align-self-start">
+                                        <img
+                                            src="<?= $base ?>imgs/Vector3.svg"
+                                            alt="EquityPandit"
+                                            class="img-fluid logo mb-3 d-block align-self-start">
 
-                                <h2 class="titleFont fs-3 fw-semibold mb-0">
-                                    For Family Offices
-                                    & Institutions
-                                </h2>
+                                        <h2 class="titleFont fs-3 fw-semibold mb-0">
+                                            For Family Offices
+                                            & Institutions
+                                        </h2>
 
-                                <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
-                                    WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
-                                </p>
+                                        <p class="pFont small mb-0">
+                                            WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
+                                        </p>
 
-                                <p class="sub-title pFont small mb-0" style="color:#FFFFFFBF;">
-                                    <i class="fa-solid fa-circle-check me-2 text-success"></i>
-                                    A detailed research report
-                                    <br>
-                                    <i class="fa-solid fa-circle-check me-2 text-success"></i>
-                                    Instant Alerts Via App
-                                </p>
+                                        <p class="pFont small mb-0">
+                                            <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                                            A detailed research report
+                                            <br>
+                                            <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                                            Instant Alerts Via App
+                                        </p>
 
-                                <a href="#" class="explore-btn pFont small text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
-                                    Explore Strategies
-                                    <i class="fa-solid fa-arrow-right-long ms-1"></i>
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Right Side: Contact Form -->
-                    <div class="col-md-7">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-12">
-                                <div class="card h-100 rounded-0">
-                                    <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-between">
-
-                                        <div>
-                                            <h3 class="mb-4 titleFont text-center text-md-start">
-                                                Send Us A Message
-                                            </h3>
-
-                                            <form>
-                                                <div class="form-floating mb-3">
-                                                    <input type="text"
-                                                        class="form-control border-0 border-bottom rounded-0 shadow-none"
-                                                        id="name1"
-                                                        placeholder="Your Name">
-                                                    <label for="name1">Your Name*</label>
-                                                </div>
-
-                                                <div class="form-floating mb-3">
-                                                    <input type="email"
-                                                        class="form-control border-0 border-bottom rounded-0 shadow-none"
-                                                        id="email1"
-                                                        placeholder="Email Address">
-                                                    <label for="email1">Email Address*</label>
-                                                </div>
-
-                                                <div class="form-floating mb-3">
-                                                    <input type="tel"
-                                                        class="form-control border-0 border-bottom rounded-0 shadow-none"
-                                                        id="phone1"
-                                                        placeholder="Phone Number">
-                                                    <label for="phone1">Phone Number*</label>
-                                                </div>
-
-                                                <div class="form-floating mb-3">
-                                                    <select class="form-select border-0 border-bottom rounded-0 shadow-none"
-                                                        id="subject1">
-                                                        <option selected>Choose Subject</option>
-                                                        <option>Portfolio</option>
-                                                        <option>Multibagger</option>
-                                                        <option>WealthX</option>
-                                                    </select>
-                                                    <label for="subject1">Choose Subject*</label>
-                                                </div>
-                                            </form>
-                                        </div>
-
-                                        <button type="submit"
-                                            class="btn rounded-0 w-100 text-white py-2"
-                                            style="background:#02181A;">
-                                            Send Message
-                                        </button>
+                                        <a href="#" class="mt-3 pFont small text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
+                                            Explore Strategies
+                                            <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                                        </a>
 
                                     </div>
                                 </div>
+
+                                <div class="col-md-2 d-none d-md-block"></div>
+
+                                <!-- Right Side: Contact Form — plain bg on mobile, transparent (shows image) on desktop -->
+                                <!-- Right Side: Contact Form -->
+                                <div class="col-md-5 d-flex align-items-center justify-content-center justify-content-md-center justify-content-end form-col-center py-0 py-md-5">
+
+                                    <div class="bg-body text-body p-3 form-card">
+
+                                        <!-- ================= Contact Form Card ================= -->
+                                        <div id="contactCard">
+
+                                            <h4 class="fw-semibold mb-3 titleFont">
+                                                Send Us A Message
+                                            </h4>
+
+                                            <form id="contactForm">
+
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control rounded-0 border-0 border-bottom" id="name" placeholder="Enter Your Name" required>
+                                                    <label for="name">Enter Your Name*</label>
+                                                </div>
+
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control rounded-0 border-0 border-bottom" id="email" placeholder="Enter Your Email" required>
+                                                    <label for="email">Enter Your Email*</label>
+                                                </div>
+
+                                                <div class="form-floating mb-4">
+                                                    <input type="tel" class="form-control rounded-0 border-0 border-bottom" id="mobile" placeholder="Enter Your Mobile" required>
+                                                    <label for="mobile">Enter Your Mobile*</label>
+                                                </div>
+
+                                                <div class="form-floating mb-4">
+                                                    <textarea class="form-control rounded-0 border-0 border-bottom" id="message" placeholder="Enter Your Message" style="height: 120px;" required></textarea>
+                                                    <label for="message">Enter Your Message*</label>
+                                                </div>
+
+                                                <!-- OTP field: hidden until "Send Otp" is clicked -->
+                                                <div class="form-floating mb-4 d-none" id="otpFieldWrap">
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-0 border-bottom "
+                                                        id="otp"
+                                                        maxlength="6"
+                                                        placeholder="OTP">
+                                                    <label for="otp">Enter OTP*</label>
+                                                </div>
+
+                                                <button type="button" id="actionBtn" class="btn rounded-0 text-white w-100" style="background-color: #02181A;">
+                                                    Send Otp
+                                                </button>
+
+                                                <p class="small fw-medium mt-3 mb-0">
+                                                    By submitting, you agree to our Terms & Conditions
+                                                </p>
+
+                                            </form>
+
+                                        </div>
+
+                                        <!-- ================= Thank You Card ================= -->
+                                        <div id="thankYouCard" class="d-none text-center">
+
+                                            <div class="mb-4">
+                                                <div class="rounded-circle border border-4 d-flex align-items-center justify-content-center mx-auto"
+                                                    style="width:110px;height:110px;border-color:#198754!important;">
+                                                    <i class="fa-solid fa-check fs-1 text-success"></i>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="titleFont fw-bold mb-0">
+                                                Thank You For
+                                            </h4>
+
+                                            <h4 class="titleFont fw-bold text-success mb-4">
+                                                Registering With Us!
+                                            </h4>
+
+                                            <p class="text-muted mb-4 small">
+                                                Our team has received your details and will contact you shortly for your free consultation.
+                                            </p>
+
+                                            <div class="border border-success px-4 py-2 d-inline-block">
+                                                <i class="fa-solid fa-headset text-success me-2"></i>
+                                                <span class="small">Our Team Will Reach Out To You Soon</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <script>
+                                    // Demo OTP
+                                    const demoOTP = "123456";
+
+                                    // Tracks whether we're in "send" mode or "verify" mode
+                                    let otpSent = false;
+
+                                    const actionBtn = document.getElementById("actionBtn");
+                                    const otpFieldWrap = document.getElementById("otpFieldWrap");
+
+                                    actionBtn.addEventListener("click", function() {
+
+                                        if (!otpSent) {
+
+                                            // ---- Step 1: Send OTP ----
+                                            if (
+                                                document.getElementById("name").value.trim() === "" ||
+                                                document.getElementById("email").value.trim() === "" ||
+                                                document.getElementById("mobile").value.trim() === "" ||
+                                                document.getElementById("message").value.trim() === ""
+                                            ) {
+                                                alert("Please fill all required fields.");
+                                                return;
+                                            }
+
+                                            // Replace with your OTP API
+                                            alert("OTP Sent Successfully!\n\nDemo OTP: 123456");
+
+                                            // Reveal OTP field
+                                            otpFieldWrap.classList.remove("d-none");
+
+                                            // Switch button to verify mode
+                                            actionBtn.textContent = "Verify Otp";
+                                            otpSent = true;
+
+                                        } else {
+
+                                            // ---- Step 2: Verify OTP ----
+                                            let otp = document.getElementById("otp").value.trim();
+
+                                            if (otp === "") {
+                                                alert("Please enter OTP.");
+                                                return;
+                                            }
+
+                                            if (otp === demoOTP) {
+
+                                                // Hide form, show thank you card
+                                                document.getElementById("contactCard").classList.add("d-none");
+                                                document.getElementById("thankYouCard").classList.remove("d-none");
+
+                                            } else {
+                                                alert("Invalid OTP.");
+                                            }
+
+                                        }
+
+                                    });
+                                </script>
                             </div>
+
                         </div>
                     </div>
 
@@ -728,7 +909,6 @@ require __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </section>
-
     <?php require __DIR__ . '/../includes/footer.php'; ?>
 
 </body>
