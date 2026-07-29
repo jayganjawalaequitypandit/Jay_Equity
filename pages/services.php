@@ -358,7 +358,7 @@ require __DIR__ . '/../includes/header.php';
                             </li>
                         </ul>
 
-                        <div class="mt-auto pt-3 border-top">
+                        <div class="mt-auto pt-3 ">
                             <div class="text-muted-secondary small mb-3">
                                 Minimum Investment:
                                 <strong class="text-body fw-semibold">₹2 Lacs</strong>
@@ -435,7 +435,7 @@ require __DIR__ . '/../includes/header.php';
                             </li>
                         </ul>
 
-                        <div class="mt-auto pt-3 border-top">
+                        <div class="mt-auto pt-3 ">
                             <div class="text-muted-secondary small mb-3">
                                 Minimum Investment:
                                 <strong class="text-body fw-semibold">₹20,000 per stock</strong>
@@ -587,7 +587,7 @@ require __DIR__ . '/../includes/header.php';
                                 </li>
                             </ul>
 
-                            <div class="mt-auto pt-3 border-top">
+                            <div class="mt-auto pt-3 ">
                                 <div class="text-muted-secondary small mb-3">
                                     Minimum Investment:
                                     <strong class="fw-semibold text-body">₹1. Crore</strong>
@@ -675,7 +675,7 @@ require __DIR__ . '/../includes/header.php';
                                 </li>
                             </ul>
 
-                            <div class="mt-auto pt-3 border-top">
+                            <div class="mt-auto pt-3 ">
                                 <div class="text-muted-secondary small mb-3">
                                     Minimum Investment:
                                     <strong class="fw-semibold text-body">₹1. Crore</strong>
