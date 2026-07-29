@@ -342,16 +342,16 @@ require __DIR__ . '/../includes/header.php';
                     <div class="col-12 col-md-4 d-flex">
                         <div class="border-top border-end p-4 d-flex flex-column w-100 h-100">
 
-                            <p class="p flex-grow-1 fs-6 d-flex align-items-center mt-md-0">
+                            <p class="flex-grow-1 pFont d-flex align-items-center mt-md-0">
                                 Over 21 years of industry expertise, delivering trusted solutions and
                                 measurable results across diverse markets.
                             </p>
 
                             <div class="flex-grow-1 d-flex align-items-end justify-content-between mt-3">
                                 <div>
-                                    <h1 class="display-4 fw-medium text-body-emphasis">
+                                    <h2 class="display-4 fw-medium text-body-emphasis">
                                         <span class="js-roll-counter" data-value="21"></span>+
-                                    </h1>
+                                    </h2>
                                     <p class="mb-0 fs-6">Years of Market Expertise</p>
                                 </div>
                                 <img src="<?= $base ?>imgs/services/w17.png"
@@ -372,7 +372,7 @@ require __DIR__ . '/../includes/header.php';
                     <div class="col-12 col-md-4 d-flex">
                         <div class="border-top border-end p-4 d-flex flex-column w-100 h-100">
 
-                            <p class="p fs-6">
+                            <p class="pFont ">
                                 Recognized with 11+ national and international awards for excellence,
                                 innovation, and outstanding business achievements.
                             </p>
@@ -1039,10 +1039,10 @@ require __DIR__ . '/../includes/header.php';
             <div class="border border-light border-top-0 border-bottom-0">
                 <div class="row align-items-stretch justify-content-center text-center py-5">
 
-                    <div class="col-12 col-md-8 ">
+                    <div class="col-12 ">
 
                         <div class="d-inline-block p-3 mb-4 mx-auto">
-                            <p class="titleFont mb-0 fs-3" style="color:#D6B770;">
+                            <p class="titleFont fw-semibold mb-0 display-6 fst-italic " style="color:#D0AB58;">
                                 "The Goal Is Not To Predict The Future - It Is
                                 To Be Positioned For Every Version Of It."
                             </p>
@@ -1055,7 +1055,7 @@ require __DIR__ . '/../includes/header.php';
                             <span> Through It All </span>
                         </div>
 
-                        <button class="btn btn-dark rounded-0 px-4 py-2 mt-2" style="color:#D6B770;">
+                        <button class="btn btn-dark rounded-0 px-4 py-2 mt-4" style="color:#D6B770;">
                             Schedule a Consultation
                         </button>
 
@@ -1363,10 +1363,9 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Right Button -->
                 <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
-                    <a href="../pages/contact-us.php"
-                        class="btn py-2 rounded-0 btn-ep-outline ">
+                    <button class="btn btn-dark rounded-0 px-4 py-2 mt-4" style="color:#D6B770;">
                         Schedule a Consultation
-                    </a>
+                    </button>
                 </div>
 
             </div>

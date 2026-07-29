@@ -176,9 +176,28 @@ require __DIR__ . '/../includes/header.php';
             <!-- Vertical Border Lines -->
             <div class="container h-100 position-relative">
                 <div class="border-start border-end border-light h-100"></div>
+                <style>
+                    .hero-text-bg {
+                        position: relative;
+                        z-index: 2;
+                    }
 
+                    .hero-text-bg::before {
+                        content: "";
+                        position: absolute;
+                        top: -60px;
+                        left: -100px;
+                        right: -100px;
+                        bottom: -60px;
+                        z-index: -1;
+
+                        background: rgba(0, 0, 0, .45);
+
+                        filter: blur(60px);
+                    }
+                </style>
                 <!-- Center Text (Lower Position) -->
-                <div class="position-absolute start-50 translate-middle-x text-center text-white w-100 px-3 hero-text">
+                <div class="position-absolute start-50 translate-middle-x hero-text-bg text-center text-white w-100 px-3 hero-text">
 
                     <h1 class="display-4 fw-bold text-white titleFont mb-0">
                         Start Your wealth creation journey
@@ -255,17 +274,24 @@ require __DIR__ . '/../includes/header.php';
 
                 <div class="row g-0">
                     <!-- Image panel -->
-                    <div class="col-md-4 border-bottom ">
+                    <div class="col-md-4 border-bottom">
                         <div class="image-box position-relative overflow-hidden h-100" style="cursor:pointer;">
 
+                            <!-- Image -->
                             <img
-                                src="<?= $base ?>imgs//c1.png"
+                                src="<?= $base ?>imgs/c1.png"
                                 class="img-fluid w-100 h-100 object-fit-cover"
                                 alt="Business"
                                 loading="lazy"
                                 decoding="async">
 
-                            <div class="image-content position-absolute bottom-0 start-0 w-100 h-100 p-3 text-light d-flex flex-column justify-content-end">
+                            <!-- Dark Overlay -->
+                            <div class="position-absolute top-0 start-0 w-100 h-100"
+                                style="background:linear-gradient(180deg, rgba(2,24,26,.15) 20%, rgba(2,24,26,.90) 100%);">
+                            </div>
+
+                            <!-- Content -->
+                            <div class="image-content position-absolute top-0 start-0 w-100 h-100 p-3 text-light d-flex flex-column justify-content-end">
 
                                 <img
                                     src="<?= $base ?>imgs/Vector1.svg"
@@ -276,23 +302,29 @@ require __DIR__ . '/../includes/header.php';
                                     For Individuals
                                 </h2>
 
-                                <p class="sub-title pFont small mb-0">
+                                <p class="sub-title pFont mb-3">
                                     A carefully curated list of 18-20 high-potential stocks,
                                     backed by 20+ years of market expertise, designed to create
                                     long-term wealth.
                                 </p>
 
-                                <p class="sub-title pFont small mb-0">
-                                    <i class="fa-solid fa-circle-check me-2 text-success"></i>
-                                    High-Conviction Stocks for 2026
-                                    <br>
-                                    <i class="fa-solid fa-circle-check me-2 text-success"></i>
-                                    Diversified Portfolio
-                                </p>
+                                <div class="mb-3">
+                                    <p class="sub-title pFont mb-2">
+                                        <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                                        High-Conviction Stocks for 2026
+                                    </p>
 
-                                <a href="#" class="explore-btn pFont small text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
+                                    <p class="sub-title pFont mb-0">
+                                        <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                                        Diversified Portfolio
+                                    </p>
+                                </div>
+
+                                <a href="#"
+                                    class="explore-btn pFont text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center"
+                                    style="width:fit-content;">
                                     Explore Strategies
-                                    <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                                    <i class="fa-solid fa-arrow-right-long ms-2"></i>
                                 </a>
 
                             </div>
@@ -339,7 +371,7 @@ require __DIR__ . '/../includes/header.php';
                                 long-term wealth.
                             </p>
 
-                            <div class=" text-uppercase fw-semibold small mb-3 text-body-emphasis">
+                            <div class=" text-uppercase fw-semibold mb-3 text-body-emphasis">
                                 What you get
                         </div>
 
@@ -359,7 +391,7 @@ require __DIR__ . '/../includes/header.php';
                         </ul>
 
                         <div class="mt-auto pt-3 ">
-                            <div class="text-muted-secondary small mb-3">
+                            <div class="text-muted-secondary mb-3">
                                 Minimum Investment:
                                 <strong class="text-body fw-semibold">₹2 Lacs</strong>
                             </div>
@@ -412,7 +444,7 @@ require __DIR__ . '/../includes/header.php';
                             focused on fundamentally strong businesses.
                         </p>
 
-                        <div class="text-uppercase fw-semibold small mb-3 text-body-emphasis">
+                        <div class="text-uppercase fw-semibold  mb-3 text-body-emphasis">
                             What you get
                         </div>
 
@@ -436,7 +468,7 @@ require __DIR__ . '/../includes/header.php';
                         </ul>
 
                         <div class="mt-auto pt-3 ">
-                            <div class="text-muted-secondary small mb-3">
+                            <div class="text-muted-secondary mb-3">
                                 Minimum Investment:
                                 <strong class="text-body fw-semibold">₹20,000 per stock</strong>
                             </div>
@@ -473,41 +505,53 @@ require __DIR__ . '/../includes/header.php';
                     <div class="col-md-4 border-bottom">
                         <div class="image-box position-relative overflow-hidden h-100" style="cursor:pointer;">
 
+                            <!-- Image -->
                             <img
-                                src="<?= $base ?>imgs//c2.png"
+                                src="<?= $base ?>imgs/c2.png"
                                 class="img-fluid w-100 h-100 object-fit-cover"
                                 alt="Business"
                                 loading="lazy"
                                 decoding="async">
 
-                            <div class="image-content position-absolute bottom-0 start-0 w-100 h-100 p-3 text-light d-flex flex-column justify-content-end">
+                            <!-- Dark Gradient Overlay -->
+                            <div class="position-absolute top-0 start-0 w-100 h-100"
+                                style="background:linear-gradient(180deg, rgba(2,24,26,.15) 20%, rgba(2,24,26,.90) 100%);">
+                            </div>
+
+                            <!-- Content -->
+                            <div class="image-content position-absolute top-0 start-0 w-100 h-100 p-3 text-light d-flex flex-column justify-content-end">
 
                                 <img
                                     src="<?= $base ?>imgs/Vector2.svg"
                                     alt="EquityPandit"
                                     class="img-fluid logo mb-3 d-block align-self-start">
 
-                                <h2 class="titleFont fs-3 fw-semibold mb-0">
-                                    For HNI's and Ultra
-                                    HNI's
+                                <h2 class="titleFont fs-3 fw-semibold mb-3">
+                                    For HNI's and Ultra HNI's
                                 </h2>
 
-                                <p class="sub-title pFont small mb-0">
+                                <p class="sub-title pFont mb-3">
                                     One high-growth stock every month for mid-term holding,
                                     focused on fundamentally strong businesses.
                                 </p>
 
-                                <p class="sub-title pFont small mb-0">
-                                    <i class="fa-solid fa-circle-check me-2 text-success"></i>
-                                    A detailed research report
-                                    <br>
-                                    <i class="fa-solid fa-circle-check me-2 text-success"></i>
-                                    Instant Alerts Via App
-                                </p>
+                                <div class="mb-3">
+                                    <p class="sub-title pFont mb-2">
+                                        <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                                        A detailed research report
+                                    </p>
 
-                                <a href="#" class="explore-btn pFont small text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
+                                    <p class="sub-title pFont mb-0">
+                                        <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                                        Instant Alerts Via App
+                                    </p>
+                                </div>
+
+                                <a href="#"
+                                    class="explore-btn pFont text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center"
+                                    style="width:fit-content;">
                                     Explore Strategies
-                                    <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                                    <i class="fa-solid fa-arrow-right-long ms-2"></i>
                                 </a>
 
                             </div>
@@ -564,7 +608,7 @@ require __DIR__ . '/../includes/header.php';
                                 to keep you aligned with opportunities across market cycles.
                             </p>
 
-                            <div class="text-uppercase fw-semibold small mb-3 text-body-emphasis">
+                            <div class="text-uppercase fw-semibold mb-3 text-body-emphasis">
                                 What you get
                             </div>
 
@@ -588,7 +632,7 @@ require __DIR__ . '/../includes/header.php';
                             </ul>
 
                             <div class="mt-auto pt-3 ">
-                                <div class="text-muted-secondary small mb-3">
+                                <div class="text-muted-secondary mb-3">
                                     Minimum Investment:
                                     <strong class="fw-semibold text-body">₹1. Crore</strong>
                                 </div>
@@ -652,7 +696,7 @@ require __DIR__ . '/../includes/header.php';
                                 to keep you aligned with opportunities across market cycles.
                             </p>
 
-                            <div class="text-uppercase fw-semibold small mb-3 text-body-emphasis">
+                            <div class="text-uppercase fw-semibold mb-3 text-body-emphasis">
                                 What you get
                             </div>
 
@@ -676,7 +720,7 @@ require __DIR__ . '/../includes/header.php';
                             </ul>
 
                             <div class="mt-auto pt-3 ">
-                                <div class="text-muted-secondary small mb-3">
+                                <div class="text-muted-secondary mb-3">
                                     Minimum Investment:
                                     <strong class="fw-semibold text-body">₹1. Crore</strong>
                                 </div>
@@ -752,11 +796,30 @@ require __DIR__ . '/../includes/header.php';
             }
         </style>
 
-        <div class="container">
-            <div class="border border-top-0 border-bottom-0 border-light py-0 py-md-5">
+        <div class="container ">
+            <div class="border border-top-0 border-bottom-0 border-light py-3 ">
+                <style>
+                    .hero-text-bg {
+                        position: relative;
+                        z-index: 2;
+                    }
 
-                <div class="mb-3 px-3">
-                    <h1 class="display-6 fw-semibold titleFont">
+                    .hero-text-bg::before {
+                        content: "";
+                        position: absolute;
+                        top: -60px;
+                        left: -100px;
+                        right: -100px;
+                        bottom: -60px;
+                        z-index: -1;
+
+                        background: rgba(0, 0, 0, .45);
+
+                        filter: blur(60px);
+                    }
+                </style>
+                <div class="mb-3 px-3 ">
+                    <h1 class="display-6 fw-semibold titleFont d-none">
                         For Family Offices & Institutions
                     </h1>
                 </div>
@@ -770,7 +833,7 @@ require __DIR__ . '/../includes/header.php';
                             <div class="row g-0 h-100 align-items-center">
 
                                 <!-- Left Content: bg image visible on mobile & desktop -->
-                                <div class="col-md-5">
+                                <div class="col-md-6 hero-text-bg">
                                     <div class="left-content-box position-relative h-100 p-3 p-lg-5 text-light d-flex flex-column justify-content-center"
                                         style="--mobile-bg-image: url('<?= $base ?>imgs/c3.png');">
 
@@ -779,16 +842,16 @@ require __DIR__ . '/../includes/header.php';
                                             alt="EquityPandit"
                                             class="img-fluid logo mb-3 d-block align-self-start">
 
-                                        <h2 class="titleFont fs-3 fw-semibold mb-0">
+                                        <h2 class="titleFont display-6 fw-semibold mb-0">
                                             For Family Offices
                                             & Institutions
                                         </h2>
 
-                                        <p class="pFont small mb-0">
+                                        <p class="pFont mb-3 fs-5">
                                             WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
                                         </p>
 
-                                        <p class="pFont small mb-0">
+                                        <p class="pFont mb-3">
                                             <i class="fa-solid fa-circle-check me-2 text-success"></i>
                                             A detailed research report
                                             <br>
@@ -796,7 +859,7 @@ require __DIR__ . '/../includes/header.php';
                                             Instant Alerts Via App
                                         </p>
 
-                                        <a href="#" class="mt-3 pFont small text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
+                                        <a href="#" class="mt-3 pFont text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
                                             Explore Strategies
                                             <i class="fa-solid fa-arrow-right-long ms-1"></i>
                                         </a>
@@ -804,11 +867,8 @@ require __DIR__ . '/../includes/header.php';
                                     </div>
                                 </div>
 
-                                <div class="col-md-2 d-none d-md-block"></div>
-
-                                <!-- Right Side: Contact Form — plain bg on mobile, transparent (shows image) on desktop -->
                                 <!-- Right Side: Contact Form -->
-                                <div class="col-md-5 d-flex align-items-center justify-content-center justify-content-md-center justify-content-end form-col-center py-0 py-md-5">
+                                <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-center justify-content-end form-col-center py-0 py-md-5">
 
                                     <div class="bg-body text-body p-3 form-card">
 
@@ -864,7 +924,7 @@ require __DIR__ . '/../includes/header.php';
                                         </div>
 
                                         <!-- ================= Thank You Card ================= -->
-                                        <div id="thankYouCard" class="d-none text-center">
+                                        <div id="thankYouCard" class="d-none text-center mt-auto">
 
                                             <div class="mb-4">
                                                 <div class="rounded-circle border border-4 d-flex align-items-center justify-content-center mx-auto"
@@ -881,7 +941,7 @@ require __DIR__ . '/../includes/header.php';
                                                 Registering With Us!
                                             </h4>
 
-                                            <p class="text-muted mb-4 small">
+                                            <p class="text-muted mb-4">
                                                 Our team has received your details and will contact you shortly for your free consultation.
                                             </p>
 
