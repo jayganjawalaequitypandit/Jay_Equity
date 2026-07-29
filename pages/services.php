@@ -266,8 +266,9 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
             <div class="border border-bottom-0 border-light py-5">
 
-                <div class="mb-3 px-3">
-                    <h1 class="display-6 fw-semibold titleFont">
+                <div class=" px-3">
+                    <p class="pFont mb-0 text-uppercase">service</p>
+                    <h1 class="display-6 mb-3 fw-semibold titleFont">
                         For an Individuals
                     </h1>
                 </div>
@@ -493,9 +494,10 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
             <div class="border border-top-0 border-bottom-0 border-light py-5">
 
-                <div class="mb-3 px-3">
-                    <h1 class="display-6 fw-semibold titleFont">
-                        For HNI's and Ultra HNI's
+                <div class="px-3">
+                    <p class="pFont mb-0 text-uppercase">service</p>
+                    <h1 class="display-6 mb-3  fw-semibold titleFont">
+                        Ultra HNI's and For HNI's
                     </h1>
                 </div>
 
@@ -527,7 +529,7 @@ require __DIR__ . '/../includes/header.php';
                                     class="img-fluid logo mb-3 d-block align-self-start">
 
                                 <h2 class="titleFont fs-3 fw-semibold mb-3">
-                                    For HNI's and Ultra HNI's
+                                    Ultra HNI's and For HNI's
                                 </h2>
 
                                 <p class="sub-title pFont mb-3">
@@ -841,17 +843,17 @@ require __DIR__ . '/../includes/header.php';
                                             src="<?= $base ?>imgs/Vector3.svg"
                                             alt="EquityPandit"
                                             class="img-fluid logo mb-3 d-block align-self-start">
-
-                                        <h2 class="titleFont display-6 fw-semibold mb-0">
+                                        <p class="pFont mb-0 text-uppercase">service</p>
+                                        <h2 class="titleFont display-6 fw-semibold mb-4">
                                             For Family Offices
                                             & Institutions
                                         </h2>
 
-                                        <p class="pFont mb-3 fs-5">
+                                        <p class="pFont mb-4 fs-5">
                                             WealthX is a comprehensive equity investing service built to keep you aligned with opportunities across market cycles.
                                         </p>
 
-                                        <p class="pFont mb-3">
+                                        <p class="pFont ">
                                             <i class="fa-solid fa-circle-check me-2 text-success"></i>
                                             A detailed research report
                                             <br>
@@ -859,7 +861,7 @@ require __DIR__ . '/../includes/header.php';
                                             Instant Alerts Via App
                                         </p>
 
-                                        <a href="#" class="mt-3 pFont text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
+                                        <a href="#" class=" pFont text-light text-decoration-none border-bottom border-success border-2 d-inline-flex align-items-center" style="width:fit-content;">
                                             Explore Strategies
                                             <i class="fa-solid fa-arrow-right-long ms-1"></i>
                                         </a>
