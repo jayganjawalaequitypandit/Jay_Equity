@@ -203,7 +203,7 @@ require __DIR__ . '/../includes/header.php';
             <div class="border">
                 <!-- Top -->
                 <div class="px-3 py-5 border-start border-end border-light">
-                    <div class="row g-3 justify-content-center mt-5 mb-5 mt-md-0 mb-md-0">
+                    <div class="row g-3 justify-content-center mt-5 mb-5 mt-md-4 mb-md-0">
                         <div class="col-md-3">
                             <p class="fs-5 pFont mb-0">• About EquityPandit</p>
                         </div>
@@ -533,7 +533,7 @@ require __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- section 3 -->
-    <section>
+    <section class="">
         <style>
             /* Outer wrapper reserves ONE scroll runway sized to the
        number of steps — this is what the sticky block pins against */
@@ -629,9 +629,9 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
 
             <div class="py-5 px-3 border border-light">
-                <div class="row g-0 mt-5">
+                <div class="row mt-5">
                     <div class="col-md-5 d-flex align-items-center">
-                        <h2 class="6 titleFont fw-semibold d-inline-block text-body-emphasis">
+                        <h2 class="display-6 titleFont fw-semibold d-inline-block text-body-emphasis">
                             Built For Every <br class="d-none d-md-block">Market Condition
                         </h2>
                     </div>
