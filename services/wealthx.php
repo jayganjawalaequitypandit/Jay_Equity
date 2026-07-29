@@ -208,7 +208,7 @@ require __DIR__ . '/../includes/header.php';
             <div class="border">
                 <!-- Top -->
                 <div class="px-3 py-5 border-start border-end border-light">
-                    <div class="row g-3 justify-content-center mt-5 mb-5 mt-md-4 mb-md-0">
+                    <div class="row g-3 justify-content-center mt-5 mb-4 mt-md-4 mb-md-0">
                         <div class="col-md-3">
                             <p class="fs-5 pFont mb-0">• About EquityPandit</p>
                         </div>
@@ -216,7 +216,7 @@ require __DIR__ . '/../includes/header.php';
                         <div class="col-md-9">
                             <h2 class="display-6 titleFont fst-italic fw-semibold scroll-reveal-text text-body-emphasis fst-italic">
                                 Accelerating business success through expert strategy,
-                                innovation, and sustainable long-term growth. 
+                                innovation, and sustainable long-term growth.
                             </h2>
                             <style>
                                 .scroll-reveal-text span {
@@ -634,13 +634,13 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
 
             <div class="py-5 px-3 border border-light">
-                <div class="row mt-5">
-                    <div class="col-md-5 d-flex align-items-center">
+                <div class="row mt-5 mb-4 mb-md-0">
+                    <div class="col-md-4 d-flex align-items-center">
                         <h2 class="display-6 titleFont fw-semibold d-inline-block text-body-emphasis">
-                            Built For Every <br class="d-none d-md-block">Market Condition
+                            Built For Every Market Condition
                         </h2>
                     </div>
-                    <div class="col-md-7 mt-2 mt-md-0">
+                    <div class="col-md-8 ">
                         <p class="fs-5 pFont">WealthX is a comprehensive multi-asset investment advisory service designed to capture every market opportunity for the super compounding of your wealth.</p>
                         <p class="fs-5 pFont mb-0">By combining expert research, disciplined portfolio construction, and active capital allocation, WealthX delivers institutional-quality investment
                             strategy - made accessible to individual investors.</p>
@@ -791,7 +791,7 @@ require __DIR__ . '/../includes/header.php';
     <section class="bg-black text-white ">
         <div class="container">
             <div class="px-3 py-5 border border-light">
-                <div class="row g-3 mt-5  mt-md-0 mt-md-0 justify-content-between">
+                <div class="row g-3 mt-5 mb-4 mt-md-4 mb-md-0 justify-content-between">
                     <div class="col-md-4">
                         <h2 class="display-6 titleFont fw-semibold">
                             Every Market.
@@ -1037,46 +1037,22 @@ require __DIR__ . '/../includes/header.php';
     <section>
         <div class="container">
             <div class="border border-light border-top-0 border-bottom-0">
-                <div class="row align-items-stretch">
+                <div class="row align-items-stretch justify-content-center text-center py-5">
 
-                    <!-- Mobile Heading -->
-                    <div class="col-12 d-block d-md-none order-1 p-4 pb-0">
-                        <h2 class="titleFont mb-4 text-body-emphasis">
-                            Not Built To Generate
-                            Excitement. Built To Generate
-                            Wealth.
-                        </h2>
-                    </div>
+                    <div class="col-12 col-md-8 ">
 
-                    <!-- Left Image -->
-                    <div class="col-12 col-md-6 order-2 order-md-1">
-                        <img src="<?= $base ?>imgs/services/welthx_7.jpg"
-                            class="img-fluid w-100 h-100 object-fit-cover"
-                            alt="">
-                    </div>
-
-                    <!-- Right Content -->
-                    <div class="col-12 col-md-6 order-3 order-md-2 p-4 p-md-5">
-
-                        <!-- Desktop Heading -->
-                        <h2 class="titleFont mb-4 text-body-emphasis d-none d-md-block">
-                            Not Built To Generate
-                            Excitement. Built To Generate
-                            Wealth.
-                        </h2>
-
-                        <div class="d-inline-block p-3 mb-4" style="background:#02181A;">
-                            <p class="titleFont mb-0 fs-5" style="color:#D6B770;">
+                        <div class="d-inline-block p-3 mb-4 mx-auto">
+                            <p class="titleFont mb-0 fs-3" style="color:#D6B770;">
                                 "The Goal Is Not To Predict The Future - It Is
                                 To Be Positioned For Every Version Of It."
                             </p>
                         </div>
 
-                        <div class="mb-5 d-flex flex-wrap gap-2 pFont">
-                            <span>| Rising Markets |</span>
-                            <span>| Volatile Periods |</span>
-                            <span>| Market Catalysts |</span>
-                            <span>| Through It All |</span>
+                        <div class="d-flex flex-wrap justify-content-center gap-2 pFont">
+                            <span> Rising Markets |</span>
+                            <span> Volatile Periods |</span>
+                            <span> Market Catalysts |</span>
+                            <span> Through It All </span>
                         </div>
 
                         <button class="btn btn-dark rounded-0 px-4 py-2 mt-2" style="color:#D6B770;">
@@ -1090,7 +1066,6 @@ require __DIR__ . '/../includes/header.php';
         </div>
 
     </section>
-
 
     <!-- Section 5 -->
     <section>
@@ -1404,9 +1379,9 @@ require __DIR__ . '/../includes/header.php';
             <div class="border">
                 <!-- Top -->
                 <div class="px-3 py-5 border border-light">
-                    <div class="row g-3 justify-content-center mt-5  mt-md-0 mb-md-0">
+                    <div class="row g-3 justify-content-centermt-5 mb-4 mt-md-4 mb-md-0">
                         <div class="col-md-5">
-                            <h2 class="6 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
+                            <h2 class="display-6 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
                         </div>
                         <div class="col-md-7">
                             <p class=" pFont fs-5">
