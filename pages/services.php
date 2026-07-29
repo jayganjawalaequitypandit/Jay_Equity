@@ -698,6 +698,60 @@ require __DIR__ . '/../includes/header.php';
 
     <!-- SECTION 3: For Family Offices & Institutions -->
     <section id="institutions">
+        <style>
+            #institutions .image-box {
+                min-height: 550px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            #institutions .form-card {
+                width: 100%;
+                max-width: 400px;
+                z-index: 10;
+                position: relative;
+                opacity: 1 !important;
+                visibility: visible !important;
+                display: block !important;
+                transform: none !important;
+            }
+
+            #institutions .col-md-5,
+            #institutions .col-md-2 {
+                position: relative;
+                z-index: 5;
+            }
+
+            /* Fallback CSS: center form-card column if Bootstrap flex utilities
+       aren't enough (e.g. custom grid overrides elsewhere) */
+            #institutions .form-col-center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+
+            @media (max-width: 767px) {
+                #institutions .image-box {
+                    min-height: auto;
+                    /* remove the shared background — each column handles its own on mobile */
+                    background-image: none !important;
+                }
+
+                /* Left content keeps the background image on mobile */
+                #institutions .left-content-box {
+                    background-image: var(--mobile-bg-image);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                /* Form column gets a plain solid background on mobile */
+                /* #for-institutions .form-col-center {
+                    background-color: #02181A;
+                } */
+            }
+        </style>
+
         <div class="container">
             <div class="border border-top-0 border-bottom-0 border-light py-0 py-md-5">
 

@@ -1518,60 +1518,62 @@ require __DIR__ . '/../includes/header.php';
     <!-- FAQ -->
     <section>
         <div class="container">
-            <div class="px-3 py-5 border border-top-0 border-light">
+            <div class="px-3 py-5 border border-start border-end border-light">
                 <div class="row g-3 py-md-5">
                     <div class="col-md-6">
-                        <h2 class="display-6 titleFont fw-semibold d-inline-block text-body-emphasis"
-                            data-aos-delay="100">Frequently Asked Questions</h2>
-                        <p class="fs-5 pFont mb-3"
-                            data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
+                        <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
+                        <p class="fs-6 pFont mb-3">Visit our FAQ section for answers to common queries.</p>
                         <img
                             src="<?= $base ?>imgs/Faq.jpg"
                             class="img-fluid"
-                            alt="background"
-
-                            data-aos-delay="100">
+                            alt="background">
                     </div>
                     <div class="col-md-6">
-                        <div class="accordion accordion-flush bg-body rounded-0 overflow-hidden" id="midcapFAQ"
-                            data-aos-delay="100">
-                            <div class="accordion-item">
+                        <style>
+                            .accordion-button,
+                            .accordion-button:focus {
+                                box-shadow: none;
+                                border: 0;
+                            }
+                        </style>
+                        <div class="accordion accordion-flush rounded-0 overflow-hidden bg-transparent" id="midcapFAQ">
+                            <div class="accordion-item bg-transparent border-0">
                                 <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
                                     <div class="px-0 accordion-body text-body-secondary">Yes. The portfolio is structured and easy to follow, even if you're new to stock investing.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Will I get updates when the portfolio changes?</button></h2>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="headingTwo"><button class="px-0 accordion-button collapsed fw-medium text-body bg-transparent" style="box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Will I get updates when the portfolio changes?</button></h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
                                     <div class="px-0 accordion-body text-body-secondary">Yes. You will receive timely updates whenever rebalancing or stock changes are made.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <div class="accordion-item bg-transparent border-0">
                                 <h2 class="accordion-header" id="headingThree"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Is this a stock tip service?</button></h2>
                                 <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
                                     <div class="px-0 accordion-body text-body-secondary">No. This is a structured portfolio strategy with allocation guidance and disciplined management.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <div class="accordion-item bg-transparent border-0">
                                 <h2 class="accordion-header" id="headingFour"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How is this different from free advice online?</button></h2>
                                 <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
                                     <div class="px-0 accordion-body text-body-secondary">Free advice is random and unstructured. This portfolio is research-driven, diversified, and actively monitored.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <div class="accordion-item bg-transparent border-0">
                                 <h2 class="accordion-header" id="headingFive"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Do I need a minimum investment amount?</button></h2>
                                 <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
                                     <div class="px-0 accordion-body text-body-secondary">No fixed minimum. You can allocate based on your capital size proportionally.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <div class="accordion-item bg-transparent border-0">
                                 <h2 class="accordion-header" id="headingSix"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">I’m an NRI. Is this suitable for me?</button></h2>
                                 <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
                                     <div class="px-0 accordion-body text-body-secondary">Yes, NRIs can invest subject to regulatory guidelines.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item" style="background-color: transparent; border-bottom: medium;">
+                            <div class="accordion-item bg-transparent border-0" style="border-bottom: medium;">
                                 <h2 class="accordion-header" id="headingSeven"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Do you execute trades on my behalf?</button></h2>
                                 <div id="collapseSeven" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
                                     <div class="px-0 accordion-body text-body-secondary">No. We provide guidance. You execute trades through your broker account.</div>
