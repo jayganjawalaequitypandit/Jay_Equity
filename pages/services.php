@@ -843,7 +843,7 @@ require __DIR__ . '/../includes/header.php';
                                             src="<?= $base ?>imgs/Vector3.svg"
                                             alt="EquityPandit"
                                             class="img-fluid logo mb-3 d-block align-self-start">
-
+                                        <p class="pFont mb-0 text-uppercase">service</p>
                                         <h2 class="titleFont display-6 fw-semibold mb-4">
                                             For Family Offices
                                             & Institutions
