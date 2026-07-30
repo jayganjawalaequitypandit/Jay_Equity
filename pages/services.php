@@ -290,7 +290,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Image -->
                             <img
-                                src="<?= $base ?>imgs/c1.png"
+                                src="<?= $base ?>imgs/services/service1.png"
                                 class="img-fluid w-100 h-100 object-fit-cover"
                                 alt="Business"
                                 loading="lazy"
@@ -519,7 +519,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <!-- Image -->
                             <img
-                                src="<?= $base ?>imgs/c2.png"
+                                src="<?= $base ?>imgs/services/service2.png"
                                 class="img-fluid w-100 h-100 object-fit-cover"
                                 alt="Business"
                                 loading="lazy"
@@ -840,7 +840,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <div class="col-md-12">
                         <div class="image-box position-relative overflow-hidden"
-                            style="background-image: url('<?= $base ?>imgs/c3.png');">
+                            style="background-image: url('<?= $base ?>imgs/services/service3.png');">
 
                             <div class="row g-0 h-100 align-items-center">
 
@@ -924,7 +924,7 @@ require __DIR__ . '/../includes/header.php';
                                                 </div>
 
                                                 <button type="button" id="actionBtn" class="btn-theme btn rounded-0  w-100">
-                                                    Send OTP
+                                                    Send OTPs
                                                 </button>
 
                                                 <p class="small fw-medium mt-3 mb-0">
