@@ -1377,7 +1377,7 @@ require __DIR__ . '/../includes/header.php';
         <div class="container">
             <div class="border">
                 <!-- Top -->
-                <div class="px-3 py-5 border border-light">
+                <div class="px-3 py-5 border border-start-0 border-end-0 border-light">
                     <div class="row g-3 justify-content-centermt-5 mb-4 mt-md-4 mb-md-0">
                         <div class="col-md-5">
                             <h2 class="display-6 titleFont fw-semibold text-body-emphasis">What Clients Should Expect From Us.</h2>
@@ -1497,7 +1497,7 @@ require __DIR__ . '/../includes/header.php';
     <!-- FAQ -->
     <section>
         <div class="container">
-            <div class="px-3 py-5 border border-start border-end border-light">
+            <div class="px-3 py-5 border border-start border-top-0 border-end border-light">
                 <div class="row g-3 py-md-5">
                     <div class="col-md-6">
                         <h2 class="display-6 titleFont fw-semibold d-inline-block">Frequently Asked Questions</h2>
