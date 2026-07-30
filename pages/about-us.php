@@ -19,12 +19,12 @@ require __DIR__ . '/../includes/header.php';
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://www.equitypandit.com/etheme/vendor/fortawesome/font-awesome/css/all.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <script src="https://kit.fontawesome.com/4789acf415.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/4789acf415.js" crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -101,6 +101,16 @@ require __DIR__ . '/../includes/header.php';
         margin-top: -80px;
       }
     }
+
+    [data-bs-theme="light"] .btn-theme {
+      background-color: #02181A;
+      color: #fff;
+    }
+
+    [data-bs-theme="dark"] .btn-theme {
+      background-color: #fff;
+      color: #02181A;
+    }
   </style>
 </head>
 
@@ -131,7 +141,7 @@ require __DIR__ . '/../includes/header.php';
         <div class="container h-100">
           <div class="border-start border-end border-light h-100 d-flex align-items-center justify-content-center">
 
-            <h1 class="display-2 fw-bold text-white text-center titleFont mb-0">
+            <h1 class="display-4 fw-bold text-white text-center titleFont mb-0">
               About Us
             </h1>
 
@@ -176,42 +186,44 @@ require __DIR__ . '/../includes/header.php';
   <!-- About -->
   <section>
     <div class="container">
-      <div class="border-start border-end border-light">
-        <div class="row g-0">
-          <div class="col-md-6 px-3 pt-5">
-            <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">About EquityPandit</h2>
-            <p class="fs-6 pFont mb-3">Founded in 2005, EquityPandit operates with a single belief: investment advice should be transparent, disciplined, and personalized.</p>
-            <p class="fs-6 fw-semibold pFont mb-3">Over the 21+ years:</p>
-            <div class="d-flex justify-content-centet mb-3 small">
-              <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
-              <div>
-                <p class="pFont mb-0">We have worked with Retail Investors, HNIs, UHNIs, and Institutions.</p>
+      <div class="py-5 border-start border-end border-light">
+        <div class="row g-3 my-5">
+          <div class="col-md-6">
+            <div class="px-3">
+              <h2 class="display-6 titleFont fw-semibold d-inline-block">About EquityPandit</h2>
+              <p class="fs-5 pFont mb-3">Founded in 2005, EquityPandit operates with a single belief: investment advice should be transparent, disciplined, and personalized.</p>
+              <p class="fs-6 fw-semibold pFont mb-3">Over the 21+ years:</p>
+              <div class="d-flex justify-content-centet mb-3">
+                <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
+                <div>
+                  <p class="pFont mb-0 fs-6">We have worked with Retail Investors, HNIs, UHNIs, and Institutions.</p>
+                </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-centet mb-3 small">
-              <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
-              <div>
-                <p class="pFont mb-0">We build the community of our 10,00,000+ registered users.</p>
+              <div class="d-flex justify-content-centet mb-3">
+                <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
+                <div>
+                  <p class="pFont mb-0 fs-6">We build the community of our 10,00,000+ registered users.</p>
+                </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-centet mb-3 small">
-              <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
-              <div>
-                <p class="pFont mb-0">Clients across 33+ countries.</p>
+              <div class="d-flex justify-content-centet mb-3">
+                <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
+                <div>
+                  <p class="pFont mb-0 fs-6">Clients across 33+ countries.</p>
+                </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-centet mb-3 small">
-              <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
-              <div>
-                <p class="pFont mb-0">350+ Research Algorithms.</p>
+              <div class="d-flex justify-content-centet mb-3">
+                <div class="me-2"><i class="fa-solid fa-circle-check" style="color: #02181A;"></i></div>
+                <div>
+                  <p class="pFont mb-0 fs-6">350+ Research Algorithms.</p>
+                </div>
               </div>
-            </div>
 
-            <p class="pFont mb-0">Trust is built through consistency and responsible
-              advisory practices.</p>
+              <p class="pFont mb-0 fs-6">Trust is built through consistency and responsible
+                advisory practices.</p>
 
+            </div>
           </div>
-          <div class="col-md-6 mt-3">
+          <div class="col-md-6">
             <img
               src="<?= $base ?>imgs/faq4.png"
               class="img-fluid"
@@ -269,17 +281,21 @@ require __DIR__ . '/../includes/header.php';
   <section>
     <div class="container">
       <div class="border-top border-start border-end border-light">
-        <div class="row g-3">
+        <div class="row g-3 align-items-center">
           <div class="col-md-6 p-md-4 pt-5 px-4">
-            <div class="py-md-5 py-0 pb-0">
-              <h2 class="display-5 titleFont fw-semibold d-inline-block" style="line-height: 1.5;">What Our Clients Say</h2>
-              <p class="fs-6 pFont mb-0">Read what our satisfied clients have to say about their experience with our platform.</p>
+            <div class="py-5 pb-0">
+              <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                data-aos-delay="100">What Our Clients Say</h2>
+              <p class="fs-5 pFont mb-0" data-aos="fade-up"
+                data-aos-delay="100">Read what our satisfied clients have to say about their experience with our platform.</p>
               <img
                 src="<?= $base ?>imgs/Google.svg"
                 class="img-fluid mt-3"
-                alt="background">
+                alt="background" data-aos="fade-up"
+                data-aos-delay="100">
             </div>
-            <button class="btn text-white rounded-0 mt-md-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" style="background-color: #02181A;" onclick="window.location.href='<?= $base ?>contact-us.php';">
+            <button class="btn btn-theme rounded-0 mt-3 pFont px-4 py-2 d-inline-flex align-items-center" onclick="window.location.href='<?= $base ?>pages/contact-us.php';" data-aos="fade-up"
+              data-aos-delay="100">
               Contact Now
               <i class="fa-solid fa-arrow-right-long ms-2"></i>
             </button>
@@ -290,12 +306,13 @@ require __DIR__ . '/../includes/header.php';
 
               <!-- Card 1 -->
               <div class="col-md-6 col-11 flex-shrink-0">
-                <div class="card border h-100 p-3 rounded-0">
+                <div class="card border h-100 p-4 rounded-0 bg-transparent" data-aos="fade-right"
+                  data-aos-delay="100">
                   <div class="text-warning fs-5 mb-3">
                     ★ ★ ★ ★ ☆
                   </div>
 
-                  <p class="mb-3 pFont small">
+                  <p class="mb-3 pFont">
                     EP Investors has completely changed the way I invest.
                     The recommendations are accurate, and the risk management is solid!
                   </p>
@@ -312,12 +329,13 @@ require __DIR__ . '/../includes/header.php';
 
               <!-- Card 2 -->
               <div class="col-md-6 col-11 flex-shrink-0">
-                <div class="card border h-100 p-3 rounded-0">
+                <div class="card border h-100 p-4 rounded-0 bg-transparent" data-aos="fade-right"
+                  data-aos-delay="100">
                   <div class="text-warning fs-5 mb-3">
                     ★ ★ ★ ★ ☆
                   </div>
 
-                  <p class="mb-3 pFont small">
+                  <p class="mb-3 pFont">
                     Timely alerts and expert analysis make trading effortless.
                     Highly recommended for short-term investors!
                   </p>
@@ -334,12 +352,13 @@ require __DIR__ . '/../includes/header.php';
 
               <!-- Card 3 -->
               <div class="col-md-6 col-11 flex-shrink-0">
-                <div class="card border h-100 p-3 rounded-0">
+                <div class="card border h-100 p-4 rounded-0 bg-transparent" data-aos="fade-right"
+                  data-aos-delay="100">
                   <div class="text-warning fs-5 mb-3">
                     ★ ★ ★ ★ ☆
                   </div>
 
-                  <p class="mb-3 pFont small">
+                  <p class="mb-3 pFont">
                     EP Investors has completely changed the way I invest.
                     The recommendations are accurate, and the risk management is solid!
                   </p>
@@ -356,12 +375,13 @@ require __DIR__ . '/../includes/header.php';
 
               <!-- Card 4 -->
               <div class="col-md-6 col-11 flex-shrink-0">
-                <div class="card border h-100 p-3 rounded-0">
+                <div class="card border h-100 p-4 rounded-0 bg-transparent" data-aos="fade-right"
+                  data-aos-delay="100">
                   <div class="text-warning fs-5 mb-3">
                     ★ ★ ★ ★ ☆
                   </div>
 
-                  <p class="mb-3 pFont small">
+                  <p class="mb-3 pFont">
                     Consistent profits with minimal effort.
                     The 80% accuracy claim is real!
                   </p>
@@ -375,6 +395,7 @@ require __DIR__ . '/../includes/header.php';
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -386,11 +407,11 @@ require __DIR__ . '/../includes/header.php';
   <section>
     <div class="container">
       <div class="py-5 px-3 border-top border-start border-end border-light">
-        <div class="row g-0">
+        <div class="row g-0 my-5">
           <div class="col-md-12">
             <h2 class="display-6 titleFont fw-semibold" data-aos="fade-up"
               data-aos-delay="100">Put your money to work <br class="d-xl-block d-md-none" />with our research, that suits your style.</h2>
-            <p class="pFont fs-6 mt-3 mb-3" data-aos="fade-up"
+            <p class="pFont fs-5 mt-3 mb-3" data-aos="fade-up"
               data-aos-delay="100">Writerap loved from thousands customers worldwide and get trusted from big companies.</p>
             <?php
             $awards = [
@@ -474,9 +495,11 @@ require __DIR__ . '/../includes/header.php';
               }
 
               .award-item img {
-                /* height: 100px; */
                 width: auto;
+                max-width: 100%;
+                height: 180px;
                 display: block;
+                object-fit: contain;
               }
 
               @keyframes scrollAwards {
@@ -527,7 +550,7 @@ require __DIR__ . '/../includes/header.php';
               </div>
 
             </div>
-            <button class="btn text-white rounded-0 px-4 py-2 pFont mt-3" style="background-color: #02181A;" data-aos="fade-up"
+            <button class="btn btn-theme rounded-0 px-4 py-2 pFont mt-3" data-aos="fade-up"
               data-aos-delay="100" onclick="window.location.href='#';">
               Get Started<i class="fa-solid fa-arrow-right-long ms-2"></i>
             </button>

@@ -16,7 +16,7 @@ require __DIR__ . '/../includes/header.php';
       <article class="col-md-12 mx-auto px-3 py-5 legal-content text-body">
         <h1 class="display-5 titleFont fw-semibold mb-4">Privacy Policy</h1>
 
-        <h2 class="fs-4 titleFont fw-bold mt-4">Disclaimer</h2>
+        <h2 class="fs-4 titleFont fw-semibold mt-4">Disclaimer</h2>
 
         <p class="pFont">
           EquityPandit Financial Services Private Limited respects and values the right to Privacy of each and every individual. We are esteemed by the relationship and by becoming our clients you have a promise from our side that we shall remain loyal to all our clients and non clients whose information resides with us. This Privacy Policy of EquityPandit applies to the current clients as well as former clients. Below are the word by word credentials of our Privacy Policy:
@@ -53,7 +53,7 @@ require __DIR__ . '/../includes/header.php';
           </li>
         </ol>
 
-        <h2 class="fs-4 titleFont fw-bold mt-4">Governing Laws</h2>
+        <h2 class="fs-4 titleFont fw-semibold mt-4">Governing Laws</h2>
 
         <p class="pFont">
           The terms of this Privacy Policy are governed exclusively by the laws of India.

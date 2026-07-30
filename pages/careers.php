@@ -5,6 +5,19 @@ $solidHeader = true;
 require __DIR__ . '/../includes/header.php';
 ?>
 
+
+<style>
+    [data-bs-theme="light"] .btn-theme {
+        background-color: #02181A;
+        color: #fff;
+    }
+
+    [data-bs-theme="dark"] .btn-theme {
+        background-color: #fff;
+        color: #02181A;
+    }
+</style>
+
 <!-- Hero -->
 <section class="position-relative overflow-hidden">
 
@@ -88,7 +101,7 @@ require __DIR__ . '/../includes/header.php';
                     • CAREERS
                 </div>
 
-                <h1 class="display-2 fw-bold text-white text-center titleFont mb-0">
+                <h1 class="display-4 fw-bold text-white text-center titleFont mb-0">
                     Build Your Career With Us
                 </h1>
 
@@ -105,7 +118,7 @@ require __DIR__ . '/../includes/header.php';
         <!-- Heading -->
         <div class="border border-bottom-0 border-light px-3 py-5 text-center">
             <h2 class="display-6 fw-semibold titleFont">Careers</h2>
-            <p class="mb-0 fs-6 pFont">
+            <p class="mb-0 fs-5 pFont">
                 Build your career with a research-driven equity advisory team.
             </p>
         </div>
@@ -131,8 +144,8 @@ require __DIR__ . '/../includes/header.php';
 
                     <div class="d-grid d-md-inline-block">
                         <button
-                            class="btn text-white rounded-0  py-2"
-                            style="background:#02181A;">
+                            class="btn btn-theme rounded-0  py-2"
+                            >
                             View Current Openings
                         </button>
                     </div>
@@ -144,14 +157,14 @@ require __DIR__ . '/../includes/header.php';
                     <div class="row g-0">
 
                         <div class="col-6 d-flex">
-                            <div class="border bg-white p-5 text-center w-100 d-flex flex-column justify-content-center" style="min-height:220px;">
+                            <div class="border p-5 text-center w-100 d-flex flex-column justify-content-center" style="min-height:220px;">
                                 <h2 class="fw-bold mb-2">1 Million+</h2>
                                 <p class="mb-0">Registered Users</p>
                             </div>
                         </div>
 
                         <div class="col-6 d-flex">
-                            <div class="border  p-5 text-center text-white w-100 d-flex flex-column justify-content-center" style="min-height:220px;background-color:#02181A;">
+                            <div class="border p-5 text-center text-white w-100 d-flex flex-column justify-content-center" style="min-height:220px;background-color:#02181A;">
                                 <h2 class="fw-bold mb-2">20+</h2>
                                 <p class="mb-0">Years of Experience</p>
                             </div>
@@ -165,7 +178,7 @@ require __DIR__ . '/../includes/header.php';
                         </div>
 
                         <div class="col-6 d-flex">
-                            <div class="border bg-white p-5 text-center w-100 d-flex flex-column justify-content-center" style="min-height:220px;">
+                            <div class="border p-5 text-center w-100 d-flex flex-column justify-content-center" style="min-height:220px;">
                                 <h2 class="fw-bold mb-2">350+</h2>
                                 <p class="mb-0">Research Algorithms</p>
                             </div>
@@ -185,7 +198,7 @@ require __DIR__ . '/../includes/header.php';
         <!-- Heading -->
         <div class="border border-bottom-0 border-light px-3 py-5 text-center">
             <h2 class="display-6 fw-semibold titleFont">What We Offer</h2>
-            <p class="mb-0 fs-6 pFont">
+            <p class="mb-0 fs-5 pFont">
                 A workplace designed to support your growth, nurture your wellbeing,
                 and empower you to connect, thrive, and achieve success.
             </p>
@@ -282,9 +295,8 @@ require __DIR__ . '/../includes/header.php';
     <div class="container">
         <div class="border border-bottom-0 border-light px-3 py-5 text-center">
             <h2 class="display-6 fw-semibold titleFont">Our Openings</h2>
-            <p class="mb-0 fs-6 pFont">
-                Join our team and be part of something great. <br class="d-none d-md-block">Explore new opportunities, grow your skills, and build your future with us.
-
+            <p class="mb-0 fs-5 pFont">
+                Join our team and be part of something great. Explore new opportunities, grow your skills, and build your future with us.
             </p>
         </div>
         <div class="border border-light">
