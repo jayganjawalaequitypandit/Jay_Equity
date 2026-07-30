@@ -78,6 +78,16 @@ require __DIR__ . '/../includes/header.php';
                 transition: none !important;
             }
         }
+
+        [data-bs-theme="light"] .btn-theme {
+            background-color: #02181A;
+            color: #fff;
+        }
+
+        [data-bs-theme="dark"] .btn-theme {
+            background-color: #fff;
+            color: #02181A;
+        }
     </style>
 </head>
 
@@ -913,8 +923,8 @@ require __DIR__ . '/../includes/header.php';
                                                     <label for="otp">Enter OTP*</label>
                                                 </div>
 
-                                                <button type="button" id="actionBtn" class="btn rounded-0 text-white w-100" style="background-color: #02181A;">
-                                                    Send Otp
+                                                <button type="button" id="actionBtn" class="btn-theme btn rounded-0  w-100">
+                                                    Send OTP
                                                 </button>
 
                                                 <p class="small fw-medium mt-3 mb-0">
