@@ -787,6 +787,7 @@ require __DIR__ . '/../includes/header.php';
             })();
         </script>
     </section>
+    
     <!-- section 4 -->
     <section class="bg-black text-white ">
         <div class="container">
@@ -977,7 +978,7 @@ require __DIR__ . '/../includes/header.php';
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const wrapper = document.getElementById("targetWrapper");
-            const items = document.querySelectorAll(".service-item");
+            const items = wrapper.querySelectorAll(".service-item");
             const circle = document.getElementById("circleRotate");
             const number = document.getElementById("circleNumber");
             const total = items.length;
