@@ -6,6 +6,18 @@ $solidHeader = true;
 require __DIR__ . '/../includes/header.php';
 ?>
 
+<style>
+    [data-bs-theme="light"] .btn-theme {
+        background-color: #02181A;
+        color: #fff;
+    }
+
+    [data-bs-theme="dark"] .btn-theme {
+        background-color: #fff;
+        color: #02181A;
+    }
+</style>
+
 <!-- Hero -->
 <section class="position-relative overflow-hidden">
 
@@ -113,11 +125,11 @@ require __DIR__ . '/../includes/header.php';
 <section>
     <div class="container">
         <div class="px-3 py-5 border border-top-0  border-light">
-            <div class="row g-3 justify-content-center">
+            <div class="row g-3 justify-content-center mt-5">
                 <div class="col-md-10">
                     <div class="text-start text-md-center">
                         <h2 class="display-6 titleFont fw-semibold">Our Offices</h2>
-                        <p class="fs-6 pFont mb-0"> Visit our nearest office or contact us anytime.</p>
+                        <p class="fs-5 pFont mb-0"> Visit our nearest office or contact us anytime.</p>
                     </div>
                 </div>
             </div>
@@ -153,16 +165,16 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Mumbai -->
                 <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                    <div class="card office-card h-100 text-center rounded-0 border-light bg-transparent">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
 
                             <h5 class="mb-3">Mumbai</h5>
 
-                            <p class="small mb-0">
-                                Innov8 Ackruti Star,<br>
-                                3rd Floor, 301, Ackruti Star<br>
-                                Central Road, Marol MIDC, Andheri<br>
+                            <p class="mb-0">
+                                Innov8 Ackruti Star
+                                3rd Floor, 301, Ackruti Star
+                                Central Road, Marol MIDC, Andheri
                                 East, Mumbai – 400093.
                             </p>
                         </div>
@@ -171,15 +183,15 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Rajasthan -->
                 <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                    <div class="card office-card h-100 text-center rounded-0 border-light bg-transparent">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
 
                             <h5 class="mb-3">Rajasthan</h5>
 
-                            <p class="small mb-0">
-                                A-488 Vidhyut Nagar<br>
-                                Ajmer Road<br>
+                            <p class="mb-0">
+                                A-488 Vidhyut Nagar
+                                Ajmer Road,
                                 Jaipur - 302019
                             </p>
                         </div>
@@ -188,16 +200,16 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Gujarat -->
                 <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                    <div class="card office-card h-100 text-center rounded-0 border-light bg-transparent">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <i class="fa-solid fa-location-dot fs-2 mb-3"></i>
 
                             <h5 class="mb-3">Gujarat</h5>
 
-                            <p class="small mb-0">
-                                209-The Galleria<br>
-                                Near Sanjeev Kumar Auditorium<br>
-                                Pal, Adajan<br>
+                            <p class="mb-0">
+                                209-The Galleria
+                                Near Sanjeev Kumar Auditorium
+                                Pal, Adajan,
                                 Surat - 395009
                             </p>
                         </div>
@@ -206,7 +218,7 @@ require __DIR__ . '/../includes/header.php';
 
                 <!-- Contact Us -->
                 <div class="col-md-3">
-                    <div class="card office-card h-100 text-center rounded-0 border-light">
+                    <div class="card office-card h-100 text-center rounded-0 border-light bg-transparent">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <i class="fa-solid fa-headset fs-2 mb-3"></i>
 
@@ -214,7 +226,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <p class="mb-2">
                                 <a href="mailto:support@equitypandit.com"
-                                    class="text-decoration-none text-dark">
+                                    class="text-decoration-none text-body">
                                     <i class="fa-solid fa-envelope me-1"></i>
                                     support@equitypandit.com
                                 </a>
@@ -222,7 +234,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <p class="mb-0">
                                 <a href="tel:+918000816688"
-                                    class="text-decoration-none text-dark">
+                                    class="text-decoration-none text-body">
                                     <i class="fa-solid fa-phone me-1"></i>
                                     +91 8000816688
                                 </a>
@@ -241,11 +253,11 @@ require __DIR__ . '/../includes/header.php';
 <section>
     <div class="container">
         <div class="px-3 py-5 border border-top-0 border-light">
-            <div class="row g-3 justify-content-center">
+            <div class="row g-3 justify-content-center mt-5">
                 <div class="col-md-10">
                     <div class="text-start text-md-center">
                         <h2 class="display-6 titleFont fw-semibold">Find Us</h2>
-                        <p class="fs-6 pFont mb-0"> Visit our office and connect with us in person, or use Google Maps for quick and easy directions to our location.</p>
+                        <p class="fs-5 pFont mb-0"> Visit our office and connect with us in person, or use Google Maps for quick and easy directions to our location.</p>
                     </div>
                 </div>
             </div>
@@ -302,7 +314,7 @@ require __DIR__ . '/../includes/header.php';
                             <div class="form-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                    class="form-control border-0 border-bottom rounded-0 shadow-none bg-transparent"
                                     id="name"
                                     name="name"
                                     placeholder="Your Name"
@@ -313,7 +325,7 @@ require __DIR__ . '/../includes/header.php';
                             <div class="form-floating mb-3">
                                 <input
                                     type="email"
-                                    class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                    class="form-control border-0 border-bottom rounded-0 shadow-none bg-transparent"
                                     id="email"
                                     name="email"
                                     placeholder="Email Address"
@@ -324,7 +336,7 @@ require __DIR__ . '/../includes/header.php';
                             <div class="form-floating mb-3">
                                 <input
                                     type="tel"
-                                    class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                    class="form-control border-0 border-bottom rounded-0 shadow-none bg-transparent"
                                     id="phone"
                                     name="phone"
                                     placeholder="Phone Number"
@@ -334,7 +346,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <div class="form-floating mb-3">
                                 <select
-                                    class="form-select border-0 border-bottom rounded-0 shadow-none"
+                                    class="form-select border-0 border-bottom rounded-0 shadow-none bg-transparent"
                                     id="service" name="service" required>
                                     <option selected>Choose Service</option>
                                     <option value="Portfolio">Portfolio</option>
@@ -346,7 +358,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <div class="form-floating mb-4">
                                 <textarea
-                                    class="form-control border-0 border-bottom rounded-0 shadow-none"
+                                    class="form-control border-0 border-bottom rounded-0 shadow-none bg-transparent"
                                     id="message"
                                     name="message"
                                     placeholder="Type Message"
@@ -357,8 +369,7 @@ require __DIR__ . '/../includes/header.php';
 
                             <button
                                 type="submit"
-                                class="btn rounded-0 w-100 text-white py-2 mb-4"
-                                style="background:#02181A;">
+                                class="btn rounded-0 w-100 btn-theme py-2 mb-4">
                                 Send Message
                             </button>
 
@@ -384,177 +395,72 @@ require __DIR__ . '/../includes/header.php';
 <!-- FAQ -->
 <section>
     <div class="container">
-        <div class="px-3 py-5 border border-top-0 border-start border-end border-light">
-            <div class="row g-4 align-items-center mt-3 mb-3">
-
-                <!-- Left Side -->
+        <div class="px-3 py-5 border border-start border-end border-light">
+            <div class="row g-3 py-5">
                 <div class="col-md-6">
-                    <h2 class="display-6 titleFont fw-semibold d-inline-block">
-                        Frequently Asked Questions
-                    </h2>
-                    <p class="fs-6 pFont mb-3">
-                        Visit our FAQ section for answers to common queries.
-                    </p>
-
+                    <h2 class="display-6 titleFont fw-semibold d-inline-block" data-aos="fade-up"
+                        data-aos-delay="100">Frequently Asked Questions</h2>
+                    <p class="fs-5 pFont mb-3" data-aos="fade-up"
+                        data-aos-delay="100">Visit our FAQ section for answers to common queries.</p>
                     <img
                         src="<?= $base ?>imgs/Faq.jpg"
                         class="img-fluid"
-                        alt="background">
+                        alt="background" data-aos="fade-up"
+                        data-aos-delay="100">
                 </div>
-
-                <!-- Right Side -->
                 <div class="col-md-6">
-                    <div class="accordion bg-body accordion-flush rounded-0 overflow-hidden" id="midcapFAQ">
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="px-0 accordion-button fw-medium text-body bg-transparent"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne"
-                                    aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    Is this portfolio suitable for beginners?
-                                </button>
-                            </h2>
-                            <div id="collapseOne"
-                                class="accordion-collapse collapse show"
-                                data-bs-parent="#midcapFAQ">
-                                <div class="px-0 accordion-body text-body-secondary">
-                                    Yes. The portfolio is structured and easy to follow, even if you're new to stock investing.
-                                </div>
+                    <style>
+                        .accordion-button,
+                        .accordion-button:focus {
+                            box-shadow: none;
+                            border: 0;
+                        }
+                    </style>
+                    <div class="accordion accordion-flush rounded-0 overflow-hidden bg-transparent" id="midcapFAQ">
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header" id="headingOne"><button class="px-0 accordion-button fw-medium text-body bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is this portfolio suitable for beginners?</button></h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#midcapFAQ">
+                                <div class="px-0 accordion-body text-body-secondary">Yes. The portfolio is structured and easy to follow, even if you're new to stock investing.</div>
                             </div>
                         </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="px-0 accordion-button collapsed fw-medium text-body"
-                                    style="background-color: transparent; box-shadow: none; border: none;"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo"
-                                    aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    Will I get updates when the portfolio changes?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#midcapFAQ">
-                                <div class="px-0 accordion-body text-body-secondary">
-                                    Yes. You will receive timely updates whenever rebalancing or stock changes are made.
-                                </div>
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header" id="headingTwo"><button class="px-0 accordion-button collapsed fw-medium text-body bg-transparent" style="box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Will I get updates when the portfolio changes?</button></h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
+                                <div class="px-0 accordion-body text-body-secondary">Yes. You will receive timely updates whenever rebalancing or stock changes are made.</div>
                             </div>
                         </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="px-0 accordion-button collapsed fw-medium text-body"
-                                    style="background-color: transparent; box-shadow: none; border: none;"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree"
-                                    aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    Is this a stock tip service?
-                                </button>
-                            </h2>
-                            <div id="collapseThree"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#midcapFAQ">
-                                <div class="px-0 accordion-body text-body-secondary">
-                                    No. This is a structured portfolio strategy with allocation guidance and disciplined management.
-                                </div>
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header" id="headingThree"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Is this a stock tip service?</button></h2>
+                            <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
+                                <div class="px-0 accordion-body text-body-secondary">No. This is a structured portfolio strategy with allocation guidance and disciplined management.</div>
                             </div>
                         </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="px-0 accordion-button collapsed fw-medium text-body"
-                                    style="background-color: transparent; box-shadow: none; border: none;"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    How is this different from free advice online?
-                                </button>
-                            </h2>
-                            <div id="collapseFour"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#midcapFAQ">
-                                <div class="px-0 accordion-body text-body-secondary">
-                                    Free advice is random and unstructured. This portfolio is research-driven, diversified, and actively monitored.
-                                </div>
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header" id="headingFour"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How is this different from free advice online?</button></h2>
+                            <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
+                                <div class="px-0 accordion-body text-body-secondary">Free advice is random and unstructured. This portfolio is research-driven, diversified, and actively monitored.</div>
                             </div>
                         </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="px-0 accordion-button collapsed fw-medium text-body"
-                                    style="background-color: transparent; box-shadow: none; border: none;"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFive">
-                                    Do I need a minimum investment amount?
-                                </button>
-                            </h2>
-                            <div id="collapseFive"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#midcapFAQ">
-                                <div class="px-0 accordion-body text-body-secondary">
-                                    No fixed minimum. You can allocate based on your capital size proportionally.
-                                </div>
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header" id="headingFive"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Do I need a minimum investment amount?</button></h2>
+                            <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
+                                <div class="px-0 accordion-body text-body-secondary">No fixed minimum. You can allocate based on your capital size proportionally.</div>
                             </div>
                         </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="px-0 accordion-button collapsed fw-medium text-body"
-                                    style="background-color: transparent; box-shadow: none; border: none;"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix"
-                                    aria-expanded="false"
-                                    aria-controls="collapseSix">
-                                    I’m an NRI. Is this suitable for me?
-                                </button>
-                            </h2>
-                            <div id="collapseSix"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#midcapFAQ">
-                                <div class="px-0 accordion-body text-body-secondary">
-                                    Yes, NRIs can invest subject to regulatory guidelines.
-                                </div>
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header" id="headingSix"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">I’m an NRI. Is this suitable for me?</button></h2>
+                            <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
+                                <div class="px-0 accordion-body text-body-secondary">Yes, NRIs can invest subject to regulatory guidelines.</div>
                             </div>
                         </div>
-
-                        <div class="accordion-item" style="background-color: transparent; border-bottom: none;">
-                            <h2 class="accordion-header" id="headingSeven">
-                                <button class="px-0 accordion-button collapsed fw-medium text-body"
-                                    style="background-color: transparent; box-shadow: none; border: none;"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven"
-                                    aria-expanded="false"
-                                    aria-controls="collapseSeven">
-                                    Do you execute trades on my behalf?
-                                </button>
-                            </h2>
-                            <div id="collapseSeven"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#midcapFAQ">
-                                <div class="px-0 accordion-body text-body-secondary">
-                                    No. We provide guidance. You execute trades through your broker account.
-                                </div>
+                        <div class="accordion-item bg-transparent border-0" style="border-bottom: medium;">
+                            <h2 class="accordion-header" id="headingSeven"><button class="px-0 accordion-button collapsed fw-medium text-body" style="background-color: transparent; box-shadow: none; border: medium;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Do you execute trades on my behalf?</button></h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse " data-bs-parent="#midcapFAQ">
+                                <div class="px-0 accordion-body text-body-secondary">No. We provide guidance. You execute trades through your broker account.</div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

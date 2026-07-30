@@ -18,7 +18,7 @@ require __DIR__ . '/../includes/header.php';
 
         <h1 class="display-5 titleFont fw-semibold">Disclosures</h1>
 
-        <h2 class="fs-4 titleFont fw-bold mt-4">About the Company</h2>
+        <h2 class="fs-4 titleFont fw-semibold mt-4">About the Company</h2>
 
         <p class="pFont mt-2">
           EquityPandit Financial Services Private Limited is registered under Companies Act, 1956 and is registered with SEBI under the SEBI Investment Advisor Regulation, 2013 as an Investment Advisor (SEBI Registration Number: INA000006688).
@@ -30,7 +30,7 @@ require __DIR__ . '/../includes/header.php';
           The Principal Place of Business is: 305, Trinnity Business Park, LP Savani Road, SURAT, [GUJARAT]-395009 Equitypandit has no branch as of now.
         </p>
 
-        <h2 class="fs-4 titleFont fw-bold mt-4">Operations</h2>
+        <h2 class="fs-4 titleFont fw-semibold mt-4">Operations</h2>
 
         <ul>
           <li>
@@ -68,7 +68,7 @@ require __DIR__ . '/../includes/header.php';
           </li>
         </ul>
 
-        <h2 class="fs-4 titleFont fw-bold mt-4">Disciplinary History</h2>
+        <h2 class="fs-4 titleFont fw-semibold mt-4">Disciplinary History</h2>
 
         <p>
           Equitypandit was served a show cause notice on 11th December 2017 by the regulator SEBI for acting as an Investment Advisor before applying for the Certificate of registration with SEBI as an Investment Advisor and in the a penalty of Rs.40 Lacs was imposed by the Adjudicating Officer on April 02, 2018.

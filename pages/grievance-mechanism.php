@@ -14,11 +14,11 @@ require __DIR__ . '/../includes/header.php';
         <div class="border-start border-end bordere-light">
             <div class="row g-3 align-items-center justify-content-center py-5 px-3">
                 <div class="col-md-12">
-                    <h1 class="fw-bold mb-3 titleFont">Investor Grievance</h1>
+                    <h1 class="display-5 fw-semibold mb-3 titleFont">Investor Grievance</h1>
 
                     <!-- Monthly Complaints -->
                     <div class="table-responsive">
-                        <h2 id="monthly-complaints-heading" class="pFont fs-5 fw-bold mb-3">
+                        <h2 id="monthly-complaints-heading" class="pFont fs-5 fw-semibold mb-3">
                             Data For The Month Ending
                         </h2>
 
@@ -42,7 +42,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Trend Of Monthly Disposal -->
                     <div class="table-responsive mt-3">
-                        <h2 id="monthly-disposal-heading" class="fs-5 pFont fw-bold mb-3">
+                        <h2 id="monthly-disposal-heading" class="fs-5 pFont fw-semibold mb-3">
                             Trend Of Monthly Disposal Of Complaints
                         </h2>
 
@@ -62,7 +62,7 @@ require __DIR__ . '/../includes/header.php';
 
                     <!-- Trend Of Annual Disposal -->
                     <div class="table-responsive mt-3">
-                        <h2 id="annual-disposal-heading" class="fs-5 pFont fw-bold mb-3">
+                        <h2 id="annual-disposal-heading" class="fs-5 pFont fw-semibold mb-3">
                             Trend Of Annual Disposal Of Complaints
                         </h2>
 

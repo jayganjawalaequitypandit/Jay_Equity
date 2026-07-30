@@ -6,7 +6,7 @@ require __DIR__ . '/../includes/header.php';
 ?>
 
 
-<section">
+<section>
     <div class="container-fluid p-0 position-relative d-none">
         <div class="py-5 pb-4" style="background:#02181A;">
         </div>
@@ -14,8 +14,8 @@ require __DIR__ . '/../includes/header.php';
     <div class="container">
         <!-- Heading -->
         <div class="border-start border-end border-light px-3 py-5 text-center">
-            <h2 class="display-6 fw-semibold titleFont">Compliance Audit</h2>
-            <p class="mb-0 fs-6 pFont">
+            <h2 class="display-5 fw-semibold titleFont">Compliance Audit</h2>
+            <p class="mb-0 fs-5 pFont">
                 A workplace designed to support your growth, nurture your wellbeing,
                 and empower you to connect, thrive, and achieve success.
             </p>
@@ -107,8 +107,8 @@ require __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </div>
-    </section>
+</section>
 
-    <?php
-    require_once __DIR__ . "/../includes/footer.php";
-    ?>
+<?php
+require_once __DIR__ . "/../includes/footer.php";
+?>
